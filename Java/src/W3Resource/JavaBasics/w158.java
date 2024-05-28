@@ -1,5 +1,6 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
+// Checking if an array contains a prime number
 public class w158 {
     public static void main(String[] args) {
         w158 obj = new w158();  // Creating an object

@@ -1,4 +1,5 @@
 package W3Resource.JavaBasics;
+// Transversing an array from 3D to 2D
 public class w155 {
     public static void main(String[] args) {
         int[][] arr = {{10,20,33},
