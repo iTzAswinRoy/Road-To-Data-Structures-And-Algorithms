@@ -7,7 +7,6 @@ public class w154 {
         String[][] array = obj.size(); // Creating an empty array
         obj.input(array);
         obj.iterator(array);
-
     }
     public String[][] size(){   // Method to initialize the size of the matrix
         Scanner in = new Scanner(System.in);
@@ -15,6 +14,7 @@ public class w154 {
         int rows = in.nextInt(); // Getting inputs from the user to initialize the rows
         System.out.println("Enter the number of columns: ");
         int columns = in.nextInt(); // Getting inputs from the user to initialize the column
+        in.close(); // Closing scanner to avoid data leaks
         return new String[rows][columns];
     }
     public void input(String[][] arr){  // Method to initialize the String
