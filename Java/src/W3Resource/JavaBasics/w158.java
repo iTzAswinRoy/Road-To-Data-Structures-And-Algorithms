@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class w158 {
     public static void main(String[] args) {
         w158 obj = new w158();  // Creating an object
-        System.out.println("Enter the size of the 2d array:");
+        System.out.println("Enter the size of the 2d array");
         int[][] array = obj.inputArray(); // Calling the method to initialize the size of the 2D array
         obj.printArray(array);  // Printing the 2D array
         obj.checkingIfPrime(array); // Calling the method if the array contains a prime number
@@ -12,7 +12,9 @@ public class w158 {
     }
     public int[][] inputArray() {   // This method is used to get the inputs of the 2D array
         Scanner in = new Scanner(System.in);
+        System.out.println("No. of rows: ");
         int row = in.nextInt(); // Getting no. of rows from the user
+        System.out.println("No of columns:");
         int column = in.nextInt();  // // Getting no. of columns from the user
         System.out.println("Enter the values for the 2d array:");
         int[][] arr = new int[row][column];
