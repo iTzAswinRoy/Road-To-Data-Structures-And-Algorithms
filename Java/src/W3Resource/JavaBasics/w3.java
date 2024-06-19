@@ -11,7 +11,7 @@ public class w3 {
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         System.out.println("Enter the first number:");
         float num1 = in.nextInt();    // Getting user inputs
-        System.out.println("Enter the first number:");
+        System.out.println("Enter the second number:");
         float num2 = in.nextInt();
         in.close();     // Closing scanner
         return num1 / num2;     // Returning the calculation
