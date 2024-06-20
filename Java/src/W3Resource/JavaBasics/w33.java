@@ -1,24 +1,23 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
-// 33
+// Write a Java program and compute the sum of an integer's digits.
 public class w33 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        // Prompt the user to input an integer
-        System.out.print("Input an integer: ");
-        // Read the integer from the user
-        long n = input.nextLong();
-        // Calculate and display the sum of the digits
-        System.out.println("The sum of the digits is: " + sumDigits(n));
+        w33 obj = new w33();    // Creating a class object to call the methods
+        System.out.println("Enter the number:");
+        int value = obj.userInputs();   // Storing the inputs in a variable
+        System.out.println("The sum of digits is "+obj.sumOfDigits(value));     // Displaying the result by calling the method
     }
-    public static int sumDigits(long n) {
-        int sum = 0;
-        // Calculate the sum of the digits
-        while (n != 0) {
-            sum += n % 10;
-            n /= 10;
+    public int userInputs() {    // Method to get the user inputs
+        Scanner in = new Scanner(System.in);    // Creating a scanner object
+        return in.nextInt();    // returning the scanner
+    }
+    public int sumOfDigits(int n){      // Method to calculate the sum of integers
+        int sum = 0;    // creating an empty variable to store the result
+        while(n !=  0) {       // Iterating over the string
+            sum += n % 10;      // Getting the last digit and adding till the loop runs
+            n = n/10;       // Removing the last digit from the number by dividing it by 10
         }
-        return sum;
-        }
+        return sum;     // Returning the final result
+    }
 }
-
