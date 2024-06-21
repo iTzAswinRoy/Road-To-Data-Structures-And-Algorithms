@@ -1,32 +1,24 @@
 package W3Resource.JavaBasics;
-
+import java.util.Scanner;
+// Write a Java program to accept an integer and count the factors of the number
 public class w57 {
-        public static void main(String[] args) {
-            // Create a Scanner object for user input
-            Scanner in = new Scanner(System.in);
-            System.out.print("Input an integer: ");
-
-            // Read an integer from the user
-            int x = in.nextInt();
-
-            // Call the result method and print the result
-            System.out.println(result(x));
-        }
-
-        // Define a method to calculate the number of divisors for a given integer
-        public static int result(int num) {
-            int ctr = 0;
-
-            // Iterate from 1 to the square root of the input number
-            for (int i = 1; i <= (int) Math.sqrt(num); i++) {
-                // Check if 'i' is a divisor, and if it's not a perfect square
-                if (num % i == 0 && i * i != num) {
-                    ctr += 2;  // Increase the count by 2
-                } else if (i * i == num) {
-                    ctr++;  // If 'i' is a perfect square, increase the count by 1
-                }
-            }
-            return ctr;  // Return the total count of divisors
-        }
+    public static void main(String[] args) {    // Main method
+        w57 obj = new w57();    // Creating an object
+        int number = obj.userInput();   // Storing the value by calling the method
+        obj.countFactor(number);     // Calling the method to find the factors of a number
     }
-
+    public int userInput(){     // Method to get inputs from the user
+        Scanner in = new Scanner(System.in);    // Creating a scanner object
+        System.out.println("Enter a number:");
+        return in.nextInt();    // Returning the inputs
+    }
+    public void countFactor(int value){      // Method to count the factors
+        int count = 0;      // Setting to count to 0
+        for (int i = 1; i <= value; i++) {
+            if (value % i == 0 ){      // Checking if the value give reminder 0
+                count++;    // Incrementing the count by 1
+            }
+        }
+        System.out.println("Number of factors: "+count);    // Displaying the result
+    }
+}
