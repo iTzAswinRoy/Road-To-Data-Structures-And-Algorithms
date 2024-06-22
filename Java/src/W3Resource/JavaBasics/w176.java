@@ -29,6 +29,6 @@ public class w176 {
                 temp.addLast(data.get(i));      // If yes,then it is added at the last of the array list
             }
         }
-        return temp;
+        return temp;    // Returning the array list
     }
 }
