@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program that takes two numbers as input and displays the product of two numbers.
-public class w5 {
+public class W5 {
     public static void main(String[] args) {
-        w5 obj = new w5();      // Creating an object to call the method
+        W5 obj = new W5();      // Creating an object to call the method
         int result = obj.multiply();      // Storing the multiply method in a variable
         obj.print(result);      // Printing the variable using a print method
     }
