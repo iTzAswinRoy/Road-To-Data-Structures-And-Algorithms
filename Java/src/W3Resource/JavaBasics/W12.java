@@ -2,9 +2,9 @@ package W3Resource.JavaBasics;
 import java.util.ArrayList;
 import java.util.Scanner;
 // Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
-public class w12 {
+public class W12 {
     public static void main(String[] args) {
-        w12 obj = new w12();    // Creating an object to call the method
+        W12 obj = new W12();    // Creating an object to call the method
         ArrayList<Integer> array = obj.inputs();     // Storing the user-inputs in an array list
         int result = obj.average(array);       // Storing the average method in a variable
         obj.print(result);      // Calling the print method
