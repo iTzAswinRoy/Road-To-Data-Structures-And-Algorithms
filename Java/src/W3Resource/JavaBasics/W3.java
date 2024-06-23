@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program to divide two numbers and print them on the screen.
-public class w3 {
+public class W3 {
     public static void main(String[] args) {
-        w3 obj = new w3();      // Creating an object to call the method
+        W3 obj = new W3();      // Creating an object to call the method
         float result = obj.divide();      // Storing the divide method in a variable
         obj.print(result);      // Printing the variable using a print method
     }
