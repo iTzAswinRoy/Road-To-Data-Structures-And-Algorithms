@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program to print the sum of two numbers.
-public class w2 {
+public class W2 {
     public static void main(String[] args) {
-        w2 obj = new w2();      // Creating an object to call the method
+        W2 obj = new W2();      // Creating an object to call the method
         int result = obj.sum();      // Storing the sum method in a variable
         obj.print(result);      // Printing the variable using a print method
     }
