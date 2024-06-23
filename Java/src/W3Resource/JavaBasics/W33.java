@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program and compute the sum of an integer's digits.
-public class w33 {
+public class W33 {
     public static void main(String[] args) {
-        w33 obj = new w33();    // Creating a class object to call the methods
+        W33 obj = new W33();    // Creating a class object to call the methods
         System.out.println("Enter the number:");
         int value = obj.userInputs();   // Storing the inputs in a variable
         System.out.println("The sum of digits is "+obj.sumOfDigits(value));     // Displaying the result by calling the method
