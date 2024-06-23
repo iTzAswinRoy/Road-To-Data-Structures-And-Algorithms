@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program to compare two numbers
-public class w32 {
+public class W32 {
     public static void main(String[] args) {
-        w32 obj = new w32();    // Creating a class object to call the methods
+        W32 obj = new W32();    // Creating a class object to call the methods
         System.out.println("Enter the first number: ");
         int n1 = obj.userInputs();     // Storing inputs in a variable for num1
         System.out.println("Enter the second number: ");
