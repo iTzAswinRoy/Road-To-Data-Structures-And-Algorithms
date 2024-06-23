@@ -1,7 +1,6 @@
 package W3Resource.JavaBasics;
 
-public class w13 {
-    public class Exercise13 {
+public class W13 {
         public static void main(String[] strings) {
             final double width = 5.6;
             final double height = 8.5;
@@ -11,5 +10,3 @@ public class w13 {
             System.out.printf("Area is %.1f * %.1f = %.2f \n", width, height, area);
         }
     }
-
-}
