@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program to reverse a string.
-public class w37 {
+public class W37 {
     public static void main(String[] args) {
-        w37 obj = new w37();    // Creating a class object to call the methods
+        W37 obj = new W37();    // Creating a class object to call the methods
         System.out.println("Enter a sentence: ");
         String sentence = obj.userInputs();     // Storing the inputs in a variable
         obj.reverseString(sentence);    // Calling the reversed string method
