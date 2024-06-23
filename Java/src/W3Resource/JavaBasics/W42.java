@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.io.Console;     // This imports console libraries
 // Write a Java program to input and display your password.
-public class w42 {
+public class W42 {
     public static void main(String[] args) {
-        w42 obj = new w42();    // Creating an abject
+        W42 obj = new W42();    // Creating an abject
         Console cons = obj.checkingConsole();   // Creating an abject from the console class
         if (cons == null) {     // Checking whether the console is available or not
             System.out.println("No console available");
