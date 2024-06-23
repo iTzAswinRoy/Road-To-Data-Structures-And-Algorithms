@@ -1,9 +1,9 @@
 package W3Resource.JavaBasics;
 import java.util.Scanner;
 // Write a Java program to print the area and perimeter of a circle.
-public class w11 {
+public class W11 {
     public static void main(String[] args) {
-        w11 obj = new w11();      // Creating an object to call the method
+        W11 obj = new W11();      // Creating an object to call the method
         int radius = obj.input();   // Storing the method in a variable
         obj.perimeter(radius);      // Calling the perimeter method
         obj.area(radius);       // Calling the area method
