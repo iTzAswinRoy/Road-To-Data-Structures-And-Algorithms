@@ -5,14 +5,14 @@ public class w175{      // Creating a class which handles linked list
     Node head;      // Creating a reference for head
     Node tail;      // Creating a reference for tail
     int size;       // Creating a size
-    w175(){     // Creating a constructor
+    w175(){     // Creating a constructor to initialize the size of the linked list
         this.size = 0;     // Initializing the size of the linked list
     }
     public class Node{      // Creating the Node class which handles data and its reference of the node
         int data;       // Creating a data which holds the value of the node
         Node next;      // Creating the reference of the next node
-        Node(int data){     // Creating a constructor to initialize the vale of the node
-            this.data = data;       // With the help of 'this' keyword, assigning the default value for Node from the user
+        Node(int data){     // Creating a constructor to initialize the value of the node
+            this.data = data;      // With the help of 'this' keyword, assigning the default value for Node from the user
         }
     }
     public void insertFirst(int value){     // Method to insert the node to the linked list
