@@ -22,20 +22,32 @@ public class w178 {
         return temp;
     }
     public int continuousSubsequence(ArrayList<Integer> data){
-//        ArrayList<Integer> temp = new ArrayList<>();
-        int count = 0;
-        for (int i = 0; i < data.size(); i++) {
-            for (int j = data.size(); j > 0 ; j--) {
-
+        int max = 0;
+        for (int i = 0; i < data.size() - 1; i++) {
+            int count = 1;
+            int j = i;
+            // Checking for an increasing sequence
+            if (data.get(i + 1) > data.get(i)) {
+                while (j < data.size() - 1 && data.get(j+1) > data.get(j)) {
+                    count++; // Incrementing the counter for each increasing element
+                    j++;
+                }
             }
-            if (data.get(i) > data.get(i+1)){
-//                temp.add(data.get(i));
-                count++;
-            } else if (data.get(i) < data.get(i+1)){
-                count++;
+            // Checking for a decreasing sequence
+            else if (data.get(i+1) < data.get(i)) {
+                while (j < data.size() - 1 && data.get(j+1) < data.get(j)) {
+                    count++; // Incrementing the counter for each decreasing element
+                    j++;
+                }
             }
+            // Updating the maximum sequence length encountered so far
+            if (count > max) {
+                max = count;
+            }
+            // Moving the index i ahead by the sequence length minus 2 to avoid rechecking elements
+            i += count - 2;
         }
-        return count;
+        return max;
 
     }
 }
