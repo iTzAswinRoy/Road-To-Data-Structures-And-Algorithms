@@ -36,7 +36,7 @@ public class w175{      // Creating a class which handles linked list
             current = current.next;     // Moving the current node reference to next node
             }
         previous.next = current.next;   // Once the current and previous reference are set to the required index, now we're assigning the reference of the previous to the reference of the current which automatically  deletes the current node and reference to the next node
-        size--;     // Once the node is deleted, the size is decremented by 1
+        size--;     // Incrementing the size by 1
     }
     public void display(){     // Method to display the linked list
         Node temp = head;       // Creating a temp variable which store the head node
@@ -44,7 +44,9 @@ public class w175{      // Creating a class which handles linked list
             System.out.print(temp.data + "->");     // Receiving the node
             temp = temp.next;   // Setting the temp referencing to next node
         }
-        System.out.println("End");
+        if(temp == tail.next){
+            System.out.print("END\n");    // Giving a reference to the tail node
+        }
     }
     public static void main(String[] args) {    // Main method
         Scanner in = new Scanner(System.in);    // Creating a Scanner object
