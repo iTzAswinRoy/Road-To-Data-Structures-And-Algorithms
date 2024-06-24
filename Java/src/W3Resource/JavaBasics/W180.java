@@ -64,6 +64,7 @@ public class W180 {     // Creating a class which handles linked list
         obj.insertFirst(70);
         obj.insertFirst(30);
         obj.insertFirst(40);
+        obj.insertFirst(99);
         System.out.println("Linked list before swapping:");
         obj.display();  // Calling the display method
         obj.swapNode(0,4);    // Calling the swap method
