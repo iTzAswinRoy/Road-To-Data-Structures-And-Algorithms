@@ -28,7 +28,7 @@ public class W180 {     // Creating a class which handles linked list
         Node nodeX = head;
         Node nodeY = head;
         if (x == y){
-            System.out.println(" The positions of the nodes are same, no swap needed.");
+            System.out.println("The positions of the nodes are same, no swap needed.");
             return;
         }
         if(size < 1 || x >= size || y >= size || x < 0 || y < 0){
