@@ -1,41 +1,37 @@
 package W3Resource.JavaBasics;
-
+// Write a Java program to compute the sum of the first 100 prime numbers.
 public class w66 {
-        public static void main(String[] args) {
-            // Initialize variables for sum, counter, and the number 'n'
-            int sum = 1;
-            int ctr = 0;
-            int n = 0;
-
-            // Iterate while the counter is less than 100
-            while (ctr < 100) {
-                n++;
-
-                // Check if the number is odd
-                if (n % 2 != 0) {
-                    // If the number is prime, add it to the sum
-                    if (is_Prime(n)) {
-                        sum += n;
-                    }
-                }
-
-                // Increment the counter
-                ctr++;
-            }
-
-            // Print the sum of prime numbers up to 100
-            System.out.println("\nSum of the prime numbers till 100: " + sum);
-        }
-
-        // Check if a number is prime
-        public static boolean is_Prime(int n) {
-            for (int i = 3; i * i <= n; i += 2) {
-                if (n % i == 0) {
-                    return false;
-                }
-            }
-            return true;
-        }
+    public static void main(String[] args) {
+        w66 obj = new w66();
+        obj.sumOfPrimeNumbers();
     }
+    public boolean isPrime(int n){
+        if(n <= 1) {
+            return false;
+        }
+        if(n % 2 == 0){
+            return false;
+        }
+        for (int i = 3; i < Math.sqrt(n); i += 2) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    public void sumOfPrimeNumbers(){
+        int number = 2;
+        int count = 0;
+        int sum = 0;
+        while (count < 100){
+            if(isPrime(number)){
+                sum += number;
+                count++;
+            }
+            number++;
+        }
+        System.out.println("The sum of first 100 prime numbers: "+sum);
+    }
+}
 
 
