@@ -1,4 +1,7 @@
 package W3Resource.JavaBasics;
+
+import java.util.Scanner;
+
 // Write a Java program to swap two adjacent nodes in a linked list.
 public class W180 {     // Creating a class which handles linked list
     Node head;      // Creating a reference for head
@@ -41,32 +44,32 @@ public class W180 {     // Creating a class which handles linked list
         for (int i = 0; i < indexY; i++) {     // Iterating over the linked list
             nodeY = nodeY.next;     // Initializing the node Y pointing to the required index
         }
-        int temp = nodeX.value;
-        nodeX.value = nodeY.value;
-        nodeY.value = temp;
+        int temp = nodeX.value;     // Creating a temporary variable to swap between the nodes
+        nodeX.value = nodeY.value;    // Here the swapping process takes place
+        nodeY.value = temp;     // Both the value of nodes are swapped
     }
     public void display(){      // Method to display the linked list
         Node temp = head;      // Creating a temp variable which store the head node
         while (temp != null) {      // Creating a loop until it reaches the end of the linked list
             System.out.print(temp.value + "->");     // Receiving the node
             temp = temp.next;   // Setting the temp referencing to next node
-            if(temp == tail.next){
+            if(temp == tail.next){      // Initializing the temp variable to the reference of the tail
                 System.out.print("END\n\n");    // Giving a reference to the tail node
             }
         }
     }
     public static void main(String[] args) {    // Main method
         W180 obj = new W180();      // Creating an object ot call the methods
-        obj.insertFirst(10);    // Initializing values to a node
-        obj.insertFirst(50);
-        obj.insertFirst(60);
-        obj.insertFirst(70);
-        obj.insertFirst(30);
-        obj.insertFirst(40);
-        obj.insertFirst(99);
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the size of the linked list:");
+        int LL_size = in.nextInt();
+        System.out.println("Enter the values of each node:");
+        for (int i = 0; i < LL_size; i++) {
+            obj.insertFirst(in.nextInt());
+        }
         System.out.println("Linked list before swapping:");
         obj.display();  // Calling the display method
-        obj.swapNode(0,4);    // Calling the swap method
+        obj.swapNode(0,1);    // Calling the swap method
         System.out.println("Linked list after swapping:");
         obj.display();  // Displaying the linked list after swapped
     }
