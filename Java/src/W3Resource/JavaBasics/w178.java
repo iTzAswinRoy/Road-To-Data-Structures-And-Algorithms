@@ -6,9 +6,8 @@ public class w178 {
     public static void main(String[] args) {
         w178 obj = new w178();      // Creating class object
         ArrayList<Integer> result = obj.userInputs();   // Storing the result in a variable by calling the input method
-        System.out.println("The longest increasing continuous subsequence in a given array of integers\n"+obj.continuousSubsequence(result));
+        System.out.println("The longest increasing continuous subsequence in a given array of integers\n"+obj.continuousSubsequence(result));   // Displaying the longest continuous subsequence in an array
     }
-
     public ArrayList<Integer> userInputs() {     // Method to get user inputs
         Scanner in = new Scanner(System.in);      // Creating a scanner object
         ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list
@@ -19,35 +18,29 @@ public class w178 {
             temp.add(in.nextInt());     // Adding elements for each iteration of the array list
         }
         in.close();     // Closing scanner
-        return temp;
+        return temp;    // Retuning the scanner to get inputs from the user
     }
     public int continuousSubsequence(ArrayList<Integer> data){
         int max = 0;
         for (int i = 0; i < data.size() - 1; i++) {
             int count = 1;
             int j = i;
-            // Checking for an increasing sequence
-            if (data.get(i + 1) > data.get(i)) {
-                while (j < data.size() - 1 && data.get(j+1) > data.get(j)) {
+            if (data.get(i + 1) > data.get(i)) {    // Checking the base condition if the number is greater than the next number
+                while (j < data.size() - 1 && data.get(j+1) > data.get(j)) {    // Checking for an increasing sequence
                     count++; // Incrementing the counter for each increasing element
-                    j++;
+                    j++;    // Incrementing the pointer by 1
                 }
             }
-            // Checking for a decreasing sequence
-            else if (data.get(i+1) < data.get(i)) {
-                while (j < data.size() - 1 && data.get(j+1) < data.get(j)) {
+            else if (data.get(i+1) < data.get(i)) {     // Checking the base condition if the number is lesser than the next number
+                while (j < data.size() - 1 && data.get(j+1) < data.get(j)) {    // Checking for a decreasing sequence
                     count++; // Incrementing the counter for each decreasing element
-                    j++;
+                    j++;    // Incrementing the pointer by 1
                 }
             }
-            // Updating the maximum sequence length encountered so far
-            if (count > max) {
+            if (count > max) {     // Updating the maximum sequence length encountered so far
                 max = count;
             }
-            // Moving the index i ahead by the sequence length minus 2 to avoid rechecking elements
-            i += count - 2;
         }
-        return max;
-
+        return max;    // Returning the maximum count value
     }
 }
