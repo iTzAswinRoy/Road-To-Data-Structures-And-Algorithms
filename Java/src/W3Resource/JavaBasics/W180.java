@@ -24,27 +24,26 @@ public class W180 {     // Creating a class which handles linked list
         }
         size++;     // Then the size will be incremented for each node is inserted
     }
-    public void swapNode(int x, int y){     // Method to swap the two adjacent nodes
-        Node nodeX = head;
-        Node nodeY = head;
-        if (x == y){
+    public void swapNode(int indexX, int indexY){     // Method to swap the two adjacent nodes
+        Node nodeX = head;      // Creating a reference for index 1 which is pointing to head
+        Node nodeY = head;      // Creating a reference for index 1 which is pointing to head
+        if (indexX == indexY){      // Checking if both indexes are pointing the same node
             System.out.println("The positions of the nodes are same, no swap needed.");
-            return;
+            return;     // Returns the error message
         }
-        if(size < 1 || x >= size || y >= size || x < 0 || y < 0){
-            System.out.println("Index out of bound");
-            return;
+        if(size < 1 || indexX >= size || indexY >= size || indexX < 0 || indexY < 0){     // Checking if given index doesn't exceed the size of the linked list
+            System.out.println("Index out of bound");   // Displays an error message
+            return;     // Exits the condition
         }
-        for (int i = 0; i < x; i++) {
-            nodeX = nodeX.next;
+        for (int i = 0; i < indexX; i++) {      // Iterating over the linked list
+            nodeX = nodeX.next;     //
         }
-        for (int i = 0; i < y; i++) {
+        for (int i = 0; i < indexY; i++) {
             nodeY = nodeY.next;
         }
         int temp = nodeX.value;
         nodeX.value = nodeY.value;
         nodeY.value = temp;
-
     }
     public void display(){      // Method to display the linked list
         Node temp = head;      // Creating a temp variable which store the head node
