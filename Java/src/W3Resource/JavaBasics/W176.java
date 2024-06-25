@@ -2,9 +2,9 @@ package W3Resource.JavaBasics;
 import java.util.ArrayList;
 import java.util.Scanner;
 //  Write a Java program that partitions an array of integers into even and odd numbers.
-public class w176 {
+public class W176 {
     public static void main(String[] args) {    // Main method
-        w176 obj = new w176();      // Creating class object
+        W176 obj = new W176();      // Creating class object
         ArrayList<Integer> result = obj.userInputs();   // Storing the result in a variable by calling the input method
         System.out.println("The partitioned even and odd elements in an array are\n"+obj.partitionArray(result));     // Displaying the results
     }
