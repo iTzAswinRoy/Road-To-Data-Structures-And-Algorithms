@@ -60,9 +60,9 @@ public class W180 {     // Creating a class which handles linked list
     }
     public static void main(String[] args) {    // Main method
         W180 obj = new W180();      // Creating an object ot call the methods
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);    // Creating a Scanner object
         System.out.println("Enter the size of the linked list:");
-        int LL_size = in.nextInt();
+        int LL_size = in.nextInt();     // Initializing the size of the linked list
         System.out.println("Enter the values of each node:");
         for (int i = 0; i < LL_size; i++) {
             obj.insertFirst(in.nextInt());
