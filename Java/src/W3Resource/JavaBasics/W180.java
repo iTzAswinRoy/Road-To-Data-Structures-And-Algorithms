@@ -35,11 +35,11 @@ public class W180 {     // Creating a class which handles linked list
             System.out.println("Index out of bound");   // Displays an error message
             return;     // Exits the condition
         }
-        for (int i = 0; i < indexX; i++) {      // Iterating over the linked list
-            nodeX = nodeX.next;     //
+        for (int i = 0; i < indexX; i++) {     // Iterating over the linked list
+            nodeX = nodeX.next;     // Initializing the node X pointing to the required index
         }
-        for (int i = 0; i < indexY; i++) {
-            nodeY = nodeY.next;
+        for (int i = 0; i < indexY; i++) {     // Iterating over the linked list
+            nodeY = nodeY.next;     // Initializing the node Y pointing to the required index
         }
         int temp = nodeX.value;
         nodeX.value = nodeY.value;
