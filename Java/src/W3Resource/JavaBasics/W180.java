@@ -65,7 +65,7 @@ public class W180 {     // Creating a class which handles linked list
         int LL_size = in.nextInt();     // Initializing the size of the linked list
         System.out.println("Enter the values of each node:");
         for (int i = 0; i < LL_size; i++) {     // Iterating over the linked list
-            obj.insertFirst(in.nextInt());
+            obj.insertFirst(in.nextInt());      // Initializing the value for each node in the linked list
         }
         System.out.println("Linked list before swapping:");
         obj.display();  // Calling the display method
