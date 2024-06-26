@@ -8,7 +8,7 @@ public class W212 {
         System.out.println("Enter the first number:");
         int num1 = obj.userInputs();    // Storing the inputs in a variable
         System.out.println("Enter the second number:");
-        int num2 = obj.userInputs();
+        int num2 = obj.userInputs();    // Storing the inputs in a variable
         obj.sumOfTwoIntegers(num1, num2);
     }
     public int userInputs(){
