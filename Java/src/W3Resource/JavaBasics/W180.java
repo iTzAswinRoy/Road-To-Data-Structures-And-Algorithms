@@ -28,25 +28,49 @@ public class W180 {     // Creating a class which handles linked list
         size++;     // Then the size will be incremented for each node is inserted
     }
     public void swapNode(int indexX, int indexY){     // Method to swap the two adjacent nodes
-        Node nodeX = head;      // Creating a reference for index 1 which is pointing to head
-        Node nodeY = head;      // Creating a reference for index 1 which is pointing to head
+        Node prevX = null;      // Creating a reference for index 1 which is pointing to head
+        Node prevY = null;      // Creating a reference for index 1 which is pointing to head
+        Node currX = head;
+        Node currY = head;
         if (indexX == indexY){      // Checking if both indexes are pointing the same node
             System.out.println("The positions of the nodes are same, no swap needed.");
             return;     // Returns the error message
         }
-        if(size < 1 || indexX >= size || indexY >= size || indexX < 0 || indexY < 0){     // Checking if given index doesn't exceed the size of the linked list
+        if(indexX < 0 || indexX > size){     // Checking if given index doesn't exceed the size of the linked list
             System.out.println("Index out of bound");   // Displays an error message
             return;     // Exits the condition
         }
         for (int i = 0; i < indexX; i++) {     // Iterating over the linked list
-            nodeX = nodeX.next;     // Initializing the node X pointing to the required index
+            prevX = currX;
+            currX = currX.next;     // Moving the node X to the required index
         }
         for (int i = 0; i < indexY; i++) {     // Iterating over the linked list
-            nodeY = nodeY.next;     // Initializing the node Y pointing to the required index
+            prevY = currY;
+            currY = currY.next;     // Moving the node Y to the required index
         }
-        int temp = nodeX.value;     // Creating a temporary variable to swap between the nodes
-        nodeX.value = nodeY.value;    // Here the swapping process takes place
-        nodeY.value = temp;     // Both the value of nodes are swapped
+        // Here's the swapping the reference of the previous node takes place
+        if (prevX != null) {    // Checking is the previous node of X contains a value
+            prevX.next = currY;     // Swapping the reference of the previous X to current node of y
+        } else {
+            head = currY;   // If the previous is still null the nit means the index is at 0
+        }
+        if (prevY != null) {    // Checking is the previous node of Y contains a value
+            prevY.next = currX;     // Swapping the reference of the previous Y to current node of X
+        } else {
+            head = currX;   // If the previous is still null the nit means the index is at 0
+        }
+        // Here's the swapping the reference of the current node takes place
+        Node temp = currX.next;     // With the help of temporary variable the swapping process takes place
+        currX.next = currY.next;      // Swapping the reference of the current node from X to y
+        currY.next = temp;      // Node is swapped
+        // Here the tail gets updated
+        if (currX.next == null) {   // Checking if the current node of X is pointing towards null
+            tail = currX;       // Setting the tail os current node of X
+        } else if (currY.next == null) {    // Checking if the current node of Y is pointing towards null
+            tail = currY;   // Setting the tail os current node of Y
+        }
+        System.out.println("Linked list after swapping:");     // Displaying the linked list after swapped
+        display();
     }
     public void display(){      // Method to display the linked list
         Node temp = head;      // Creating a temp variable which store the head node
@@ -54,7 +78,7 @@ public class W180 {     // Creating a class which handles linked list
             System.out.print(temp.value + "->");     // Receiving the node
             temp = temp.next;   // Setting the temp referencing to next node
             if(temp == tail.next){      // Initializing the temp variable to the reference of the tail
-                System.out.print("END\n\n");    // Giving a reference to the tail node
+                System.out.print("END\n");    // Giving a reference to the tail node
             }
         }
     }
@@ -69,8 +93,9 @@ public class W180 {     // Creating a class which handles linked list
         }
         System.out.println("Linked list before swapping:");
         obj.display();  // Calling the display method
-        obj.swapNode(0,1);    // Calling the swap method
-        System.out.println("Linked list after swapping:");
-        obj.display();  // Displaying the linked list after swapped
+        System.out.println("Enter the index to be swapped:");
+        int a = in.nextInt();   // Initializing the index to variable a
+        int b = in.nextInt();   // Initializing the index to variable a
+        obj.swapNode(a, b);     // Calling the swap method
     }
 }
