@@ -3,7 +3,7 @@ import java.util.Scanner;   // Importing scanner class
 import java.lang.String;    // Importing string class
 // Write a Java program to compute the digit number of the sum of two given integers.
 public class W212 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // Main method
         W212 obj = new W212();
         System.out.println("Enter the first number:");
         int num1 = obj.userInputs();
