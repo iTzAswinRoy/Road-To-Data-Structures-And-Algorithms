@@ -1,6 +1,6 @@
 package W3Resource.JavaBasics;
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList;     // Importing array list class
+import java.util.Scanner;       // Importing scanner class
 // Finding the largest 3 elements in an array
 public class w159 {
     public static void main(String[] args) {
