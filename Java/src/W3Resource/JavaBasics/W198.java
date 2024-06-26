@@ -1,5 +1,5 @@
 package W3Resource.JavaBasics;
-import java.util.Scanner;
+import java.util.Scanner;   // Importing scanner class
 //  Write a Java program to calculate the position of a given prime number.
 public class W198 {
     public static void main(String[] args) {    // Main method
