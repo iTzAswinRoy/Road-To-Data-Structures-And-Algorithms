@@ -31,13 +31,13 @@ public class W192 {
             for (int j = 0; j < alphabetsCount - i - 1; j++) {     // Reducing the length for each sorted elements
                 if(alphabets[j] > alphabets[j+1]) {     // Checking if the element is greater than the next element
                     char temp = alphabets[j];       // Swapping the element with the help of temporary variable
-                    alphabets[j] = alphabets[j+1];
+                    alphabets[j] = alphabets[j+1];  // Here the elements are assigned to each other
                     alphabets[j+1] = temp;      // Now the elements are swapped
                 }
             }
         }
         for (int i = 0; i < alphabetsCount; i++) {      // Printing each element in a for loop
-            System.out.print(alphabets[i]);
+            System.out.print(alphabets[i]);     // Prints the element for each iteration
         }
         System.out.print(numSum);   // Finally concatenation the sum of numbers along with the rearranged alphabets
     }
