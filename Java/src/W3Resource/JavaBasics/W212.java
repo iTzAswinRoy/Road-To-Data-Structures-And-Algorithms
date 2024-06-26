@@ -9,7 +9,7 @@ public class W212 {
         int num1 = obj.userInputs();    // Storing the inputs in a variable
         System.out.println("Enter the second number:");
         int num2 = obj.userInputs();    // Storing the inputs in a variable
-        obj.sumOfTwoIntegers(num1, num2);
+        obj.sumOfTwoIntegers(num1, num2);   // Calling the method for counting the digit number of the sum by passing two integers
     }
     public int userInputs(){
         Scanner in = new Scanner(System.in);
