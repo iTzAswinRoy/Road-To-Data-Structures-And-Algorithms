@@ -1,6 +1,6 @@
 package W3Resource.JavaBasics;
-import java.util.Scanner;
-import java.lang.String;
+import java.util.Scanner;   // Importing scanner class
+import java.lang.String;    // Importing string class
 // Write a Java program to compute the digit number of the sum of two given integers.
 public class W212 {
     public static void main(String[] args) {
