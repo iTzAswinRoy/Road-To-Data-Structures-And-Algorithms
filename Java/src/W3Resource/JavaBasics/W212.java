@@ -4,9 +4,9 @@ import java.lang.String;    // Importing string class
 // Write a Java program to compute the digit number of the sum of two given integers.
 public class W212 {
     public static void main(String[] args) {    // Main method
-        W212 obj = new W212();
+        W212 obj = new W212();      // Creating a class of an object
         System.out.println("Enter the first number:");
-        int num1 = obj.userInputs();
+        int num1 = obj.userInputs();    // Storing the inputs in a variable
         System.out.println("Enter the second number:");
         int num2 = obj.userInputs();
         obj.sumOfTwoIntegers(num1, num2);
