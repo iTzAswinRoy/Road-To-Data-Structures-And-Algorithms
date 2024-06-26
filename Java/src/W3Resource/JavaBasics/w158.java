@@ -1,5 +1,5 @@
 package W3Resource.JavaBasics;
-import java.util.Scanner;
+import java.util.Scanner;      // Importing scanner class
 // Checking if an array contains a prime number
 public class w158 {
     public static void main(String[] args) {
