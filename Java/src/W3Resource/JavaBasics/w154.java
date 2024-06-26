@@ -15,7 +15,7 @@ public class w154 {
         System.out.println("Enter the number of columns: ");
         int columns = in.nextInt(); // Getting inputs from the user to initialize the column
         in.close(); // Closing scanner to avoid data leaks
-        return new String[rows][columns];
+        return new String[rows][columns];   // Returning the rows and columns
     }
     public void input(String[][] arr){  // Method to initialize the String
         int rows = arr.length;
