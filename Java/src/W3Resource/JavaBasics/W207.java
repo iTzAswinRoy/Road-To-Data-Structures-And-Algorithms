@@ -87,18 +87,22 @@ public class W207 {
     public static void main(String[] args) {
         W207 obj1 = new W207();
         W207 obj2 = new W207();
+
         obj1.createLinkedList();
         obj2.createLinkedList();
+
         System.out.println("Linked list 1: ");
         obj1.display();
         obj1.sortLinkedList();
         obj1.display();
         System.out.println();
+
         System.out.println("Linked list 2: ");
         obj2.display();
         obj2.sortLinkedList();
         obj2.display();
         System.out.println();
+
         W207 result = W207.mergeLinkedList(obj1, obj2);
         result.display();
     }
