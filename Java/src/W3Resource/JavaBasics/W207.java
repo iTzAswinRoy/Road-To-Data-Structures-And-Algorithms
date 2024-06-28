@@ -5,11 +5,11 @@ public class W207 {
     Node head;
     Node tail;
     int size;
-//    int count = 1;
-//    int listCount;
+    static int count = 1;   // Initializing as static to increment the count correctly whenever the instances of the class is called
+    int listCount;
     W207(){
         this.size = 0;
-//        this.listCount = count++;
+        this.listCount = count++;
     }
     public void insertLast(int data){
         Node newNode = new Node(data);
@@ -24,14 +24,15 @@ public class W207 {
     }
     public void createLinkedList(){
         Scanner in = new Scanner(System.in);
-//        System.out.println("Enter the size of the Linked list "+listCount+":");
+        System.out.println("Enter the size of the Linked list "+listCount+":");
         int size = in.nextInt();
-//        System.out.println("Enter the values of linked list "+listCount+":");
+        System.out.println("Enter the values of linked list "+listCount+":");
         for (int i = 0; i < size; i++) {
             insertLast(in.nextInt());
         }
     }
     public void sortLinkedList(){
+        System.out.println("Sorted linked list "+listCount+":");
         for (Node i = head; i != null ; i = i.next) {
             for (Node j = head; j.next != null ; j = j.next) {
                 if(j.value > j.next.value){
@@ -47,6 +48,7 @@ public class W207 {
         W207 mergeList = new W207();
         Node curr1 = list1.head;
         Node curr2 = list2.head;
+        System.out.println("Merged the linked list in ascending order: ");
         while (curr1 !=  null && curr2 != null){
             if(curr1.value <= curr2.value){
                 mergeList.insertLast(curr1.value);
@@ -67,18 +69,14 @@ public class W207 {
         return mergeList;
     }
     public void display(){
-//        System.out.println("Linked List "+listCount+":");
         Node temp = head;
         while (temp != null){
             System.out.print(temp.value+"->");
             temp = temp.next;
-            if(temp == tail.next){
-                System.out.print("END\n");
-            }
         }
-
+        System.out.print("END\n");
     }
-    class Node{
+    static class Node{
         int value;
         Node next;
         Node(int value) {
@@ -88,24 +86,19 @@ public class W207 {
     }
     public static void main(String[] args) {
         W207 obj1 = new W207();
-        System.out.println("LL 1");
-        obj1.createLinkedList();
         W207 obj2 = new W207();
-        System.out.println("LL 2");
+        obj1.createLinkedList();
         obj2.createLinkedList();
-        System.out.println("Display LL 1");
+        System.out.println("Linked list 1: ");
         obj1.display();
-        System.out.println("Sorted LL 1");
         obj1.sortLinkedList();
         obj1.display();
         System.out.println();
-        System.out.println("Display LL 2");
+        System.out.println("Linked list 2: ");
         obj2.display();
-        System.out.println("Sorted LL 2");
         obj2.sortLinkedList();
         obj2.display();
         System.out.println();
-        System.out.println("Merge lists:");
         W207 result = W207.mergeLinkedList(obj1, obj2);
         result.display();
     }
