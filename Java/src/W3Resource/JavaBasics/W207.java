@@ -11,13 +11,15 @@ public class W207 {
         this.size = 0;
 //        this.listCount = count++;
     }
-    public void insertFirst(int data){
+    public void insertLast(int data){
         Node newNode = new Node(data);
-        if(tail == null){
-            tail = head;
+        if(head == null){
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
         }
-        newNode.next = head;
-        head = newNode;
         size++;
     }
     public void createLinkedList(){
@@ -26,7 +28,7 @@ public class W207 {
         int size = in.nextInt();
 //        System.out.println("Enter the values of linked list "+listCount+":");
         for (int i = 0; i < size; i++) {
-            insertFirst(in.nextInt());
+            insertLast(in.nextInt());
         }
     }
     public void sortLinkedList(){
@@ -47,19 +49,19 @@ public class W207 {
         Node curr2 = list2.head;
         while (curr1 !=  null && curr2 != null){
             if(curr1.value <= curr2.value){
-                mergeList.insertFirst(curr1.value);
+                mergeList.insertLast(curr1.value);
                 curr1 = curr1.next;
             } else {
-                mergeList.insertFirst(curr2.value);
+                mergeList.insertLast(curr2.value);
                 curr2 = curr2.next;
             }
         }
         while (curr1 != null){
-            mergeList.insertFirst(curr1.value);
+            mergeList.insertLast(curr1.value);
             curr1 = curr1.next;
         }
         while (curr2 != null){
-            mergeList.insertFirst(curr2.value);
+            mergeList.insertLast(curr2.value);
             curr2 = curr2.next;
         }
         return mergeList;
