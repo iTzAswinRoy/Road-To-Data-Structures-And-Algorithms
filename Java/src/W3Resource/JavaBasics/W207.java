@@ -54,17 +54,7 @@ public class W207 {
                 curr2 = curr2.next;
             }
         }
-//        while (curr1 != null){
-//            mergeList
-//        }
-
-
         return mergeList;
-//        if (curr1.value > curr2.value){
-//
-//        }
-
-
     }
     public void display(){
 //        System.out.println("Linked List "+listCount+":");
