@@ -5,11 +5,11 @@ public class W207 {
     Node head;
     Node tail;
     int size;
-//    int count = 1;
-//    int listCount;
+    int count = 1;
+    int listCount;
     W207(){
         this.size = 0;
-//        this.listCount = count++;
+        this.listCount = count++;
     }
     public void insertFirst(int data){
         Node newNode = new Node(data);
