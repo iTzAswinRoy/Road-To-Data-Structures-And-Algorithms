@@ -22,9 +22,9 @@ public class W207 {
     }
     public void createLinkedList(){
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the size of the Linked list "+listCount+":");
+//        System.out.println("Enter the size of the Linked list "+listCount+":");
         int size = in.nextInt();
-        System.out.println("Enter the values of linked list "+listCount+":");
+//        System.out.println("Enter the values of linked list "+listCount+":");
         for (int i = 0; i < size; i++) {
             insertFirst(in.nextInt());
         }
@@ -53,6 +53,14 @@ public class W207 {
                 mergeList.insertFirst(curr2.value);
                 curr2 = curr2.next;
             }
+        }
+        while (curr1 != null){
+            mergeList.insertFirst(curr1.value);
+            curr1 = curr1.next;
+        }
+        while (curr2 != null){
+            mergeList.insertFirst(curr2.value);
+            curr2 = curr2.next;
         }
         return mergeList;
     }
