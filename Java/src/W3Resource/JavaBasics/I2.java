@@ -16,7 +16,7 @@ public class I2 {
         int size = in.nextInt();    // Initializing the size of the array
         int[] temp = new int[size];     // Creating a temporary  variable to store the values
         System.out.println("Enter the values:");
-        for (int i = 0; i < size; i++) {    //
+        for (int i = 0; i < size; i++) {    //  Iterating through the array
             temp[i] = in.nextInt();
         }
         return temp;
