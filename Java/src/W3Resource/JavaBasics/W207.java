@@ -42,7 +42,6 @@ public class W207 {
                 }
             }
         }
-
     }
     public static W207 mergeLinkedList(W207 list1, W207 list2){
         W207 mergeList = new W207();
@@ -81,7 +80,6 @@ public class W207 {
         Node next;
         Node(int value) {
             this.value = value;
-
         }
     }
     public static void main(String[] args) {
@@ -93,12 +91,14 @@ public class W207 {
 
         System.out.println("Linked list 1: ");
         obj1.display();
+
         obj1.sortLinkedList();
         obj1.display();
         System.out.println();
 
         System.out.println("Linked list 2: ");
         obj2.display();
+
         obj2.sortLinkedList();
         obj2.display();
         System.out.println();
