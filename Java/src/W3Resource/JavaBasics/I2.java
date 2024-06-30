@@ -26,9 +26,9 @@ public class I2 {
             return false;   // Returns false if it reaches the condition
         }
         if (num == 2) {     // Checking if the number is equal to 2
-            return true;
+            return true;    // Returns true if it attains the condition
         }
-        if (num % 2 == 0) {
+        if (num % 2 == 0) {     // Checking if the number is even
             return false;
         }
         for (int i = 3; i < Math.sqrt(num); i+= 2) {
