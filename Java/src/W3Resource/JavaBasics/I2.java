@@ -23,9 +23,9 @@ public class I2 {
     }
     public boolean checkPrime(int num) {       // Method to check if the number is prime or not
         if (num <= 1) {     // Checking if the number is less than 1
-            return false;
+            return false;   // Returns false if it reaches the condition
         }
-        if (num == 2) {
+        if (num == 2) {     // Checking if the number is equal to 2
             return true;
         }
         if (num % 2 == 0) {
