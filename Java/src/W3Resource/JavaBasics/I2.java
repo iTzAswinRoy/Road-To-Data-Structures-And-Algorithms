@@ -38,8 +38,8 @@ public class I2 {
         }
         return true;    // Return true if the number is divisible by 1 or itself
     }
-    public ArrayList<Integer> displayPrime(int[] num){
-        ArrayList<Integer> temp = new ArrayList<>();
+    public ArrayList<Integer> displayPrime(int[] num){      // method to display the prime numbers
+        ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list to store the prime numbers
         for (int i = 0; i < num.length; i++) {
             if(checkPrime(num[i])){
             temp.add(num[i]);
