@@ -17,9 +17,9 @@ public class I2 {
         int[] temp = new int[size];     // Creating a temporary  variable to store the values
         System.out.println("Enter the values:");
         for (int i = 0; i < size; i++) {    //  Iterating through the array
-            temp[i] = in.nextInt();
+            temp[i] = in.nextInt();     // Storing the value in a temporary variable
         }
-        return temp;
+        return temp;    // Returning the input values
     }
     public boolean checkPrime(int num) {
         if (num <= 1) {
