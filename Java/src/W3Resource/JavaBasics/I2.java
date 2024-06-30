@@ -29,7 +29,7 @@ public class I2 {
             return true;    // Returns true if it attains the condition
         }
         if (num % 2 == 0) {     // Checking if the number is even
-            return false;
+            return false;       // Returns false if the number is even
         }
         for (int i = 3; i < Math.sqrt(num); i+= 2) {
             if (num % i == 0) {
