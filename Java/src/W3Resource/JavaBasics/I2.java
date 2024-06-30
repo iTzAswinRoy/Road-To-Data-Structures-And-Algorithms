@@ -41,7 +41,7 @@ public class I2 {
     public ArrayList<Integer> displayPrime(int[] num){      // method to display the prime numbers
         ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list to store the prime numbers
         for (int i = 0; i < num.length; i++) {      // iterating through the given array of random numbers
-            if(checkPrime(num[i])){
+            if(checkPrime(num[i])){     // Checking if the number is prime by calling the check prime method
             temp.add(num[i]);
             }
         }
