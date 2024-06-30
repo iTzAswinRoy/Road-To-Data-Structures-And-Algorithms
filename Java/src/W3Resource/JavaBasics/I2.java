@@ -31,7 +31,7 @@ public class I2 {
         if (num % 2 == 0) {     // Checking if the number is even
             return false;       // Returns false if the number is even
         }
-        for (int i = 3; i < Math.sqrt(num); i+= 2) {
+        for (int i = 3; i < Math.sqrt(num); i+= 2) {    // Checking is the square root of the number if divisible by 1 or itself
             if (num % i == 0) {
                 return false;
             }
