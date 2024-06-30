@@ -21,8 +21,8 @@ public class I2 {
         }
         return temp;    // Returning the input values
     }
-    public boolean checkPrime(int num) {
-        if (num <= 1) {
+    public boolean checkPrime(int num) {       // Method to check if the number is prime or not
+        if (num <= 1) {     // Checking if the number is less than 1
             return false;
         }
         if (num == 2) {
