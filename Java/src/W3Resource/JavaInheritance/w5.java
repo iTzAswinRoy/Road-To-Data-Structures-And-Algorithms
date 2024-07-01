@@ -15,7 +15,7 @@ public class w5 {     // Created a class names bank account
         }
     }
     public void withdraw(int amount) {      // Method to withdraw the amount
-        if(amount > 0 && balance >= amount){
+        if(amount > 0 && balance >= amount){    // Checking if the amount is not less than the accounts balance
             balance -= amount;
             System.out.println("Amount withdrawn: "+amount);
         }
