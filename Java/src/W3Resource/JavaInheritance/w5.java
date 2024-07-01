@@ -4,7 +4,7 @@ package W3Resource.JavaInheritance;
 public class w5 {     // Created a class names bank account
     private int balance;    // Creating a private variable to store the balance
     w5(int initialBalance){     // Creating a constructor to initialize the balance
-        this.balance = initialBalance;
+        this.balance = initialBalance;      // Using 'this' keyword, initializing the variable
     }
     public void deposit(int amount) {
         if(amount > 0) {
