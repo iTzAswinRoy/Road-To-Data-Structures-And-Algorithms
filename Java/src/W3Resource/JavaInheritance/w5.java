@@ -14,7 +14,6 @@ public class w5 {     // Created a class names bank account
             System.out.println("Invalid amount: ");
         }
     }
-
     public void withdraw(int amount) {
         if(amount > 0 && balance >= amount){
             balance -= amount;
@@ -49,7 +48,5 @@ class Main {
         savings.deposit(500);
         savings.withdraw(100);
         System.out.println("Saving's account balance is "+savings.getBalance());
-
-
     }
 }
