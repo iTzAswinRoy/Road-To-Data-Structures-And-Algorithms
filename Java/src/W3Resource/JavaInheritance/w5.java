@@ -9,12 +9,12 @@ public class w5 {     // Created a class names bank account
     public void deposit(int amount) {   // Method to deposit the money
         if(amount > 0) {    // Checking if the given money is greater than 0
             balance += amount;      // Adding up the balance the given amount
-            System.out.println("Amount deposited: "+amount);
+            System.out.println("Amount deposited: "+amount);    // Displaying the amount
         } else {
-            System.out.println("Invalid amount: ");
+            System.out.println("Invalid amount");   // Condition if the amount doesn't contain any negative value
         }
     }
-    public void withdraw(int amount) {
+    public void withdraw(int amount) {      // Method to withdraw the amount
         if(amount > 0 && balance >= amount){
             balance -= amount;
             System.out.println("Amount withdrawn: "+amount);
