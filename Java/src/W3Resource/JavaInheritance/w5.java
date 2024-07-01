@@ -17,7 +17,7 @@ public class w5 {     // Created a class names bank account
 
     public void withdraw(int amount) {
         if(amount > 0 && balance >= amount){
-            balance =- amount;
+            balance -= amount;
             System.out.println("Amount withdrawn: "+amount);
         }
     }
@@ -33,12 +33,23 @@ class SavingsAccount extends w5{
         if(getBalance() - amount >= 100) {
             super.withdraw(amount);
         } else {
-            System.out.println("Access denied. Entered amount is less than the minimum balance.");
+            System.out.println("Transaction declined. Cause the minimum balance shouldn't be less than 100.");
         }
     }
 }
 class Main {
     public static void main(String[] args) {
-        
+        w5 bank = new w5(100);
+        bank.deposit(10);
+        bank.withdraw(100);
+        System.out.println("Bank account balance is "+bank.getBalance());
+        System.out.println();
+
+        SavingsAccount savings = new SavingsAccount(200);
+        savings.deposit(500);
+        savings.withdraw(100);
+        System.out.println("Saving's account balance is "+savings.getBalance());
+
+
     }
 }
