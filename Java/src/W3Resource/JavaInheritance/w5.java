@@ -8,7 +8,7 @@ public class w5 {     // Created a class names bank account
     }
     public void deposit(int amount) {   // Method to deposit the money
         if(amount > 0) {    // Checking if the given money is greater than 0
-            balance += amount;
+            balance += amount;      // Adding up the balance the given amount
             System.out.println("Amount deposited: "+amount);
         } else {
             System.out.println("Invalid amount: ");
