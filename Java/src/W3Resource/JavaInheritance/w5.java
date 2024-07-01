@@ -6,8 +6,8 @@ public class w5 {     // Created a class names bank account
     w5(int initialBalance){     // Creating a constructor to initialize the balance
         this.balance = initialBalance;      // Using 'this' keyword, initializing the variable
     }
-    public void deposit(int amount) {
-        if(amount > 0) {
+    public void deposit(int amount) {   // Method to deposit the money
+        if(amount > 0) {    // Checking if the given money is greater than 0
             balance += amount;
             System.out.println("Amount deposited: "+amount);
         } else {
