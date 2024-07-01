@@ -3,7 +3,7 @@ package W3Resource.JavaInheritance;
 // Create a subclass called SavingsAccount that overrides the withdraw() method to prevent withdrawals if the account balance falls below one hundred.
 public class w5 {     // Created a class names bank account
     private int balance;    // Creating a private variable to store the balance
-    w5(int initialBalance){
+    w5(int initialBalance){     // Creating a constructor to initialize the balance
         this.balance = initialBalance;
     }
     public void deposit(int amount) {
