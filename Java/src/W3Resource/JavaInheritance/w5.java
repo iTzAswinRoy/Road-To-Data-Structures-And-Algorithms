@@ -1,9 +1,9 @@
 package W3Resource.JavaInheritance;
 // Write a Java program to create a class known as "BankAccount" with methods called deposit() and withdraw().
 // Create a subclass called SavingsAccount that overrides the withdraw() method to prevent withdrawals if the account balance falls below one hundred.
-public class w5 {     // Created a class names bank account
+ class BankAccount{     // Created a class, named bank account
     private int balance;    // Creating a private variable to store the balance
-    w5(int initialBalance){     // Creating a constructor to initialize the balance
+    BankAccount(int initialBalance){     // Creating a constructor to initialize the balance
         this.balance = initialBalance;      // Using 'this' keyword, initializing the variable
     }
     public void deposit(int amount) {   // Method to deposit the money
@@ -24,7 +24,7 @@ public class w5 {     // Created a class names bank account
         return balance;
     }
 }
-class SavingsAccount extends w5{
+class SavingsAccount extends BankAccount{
     SavingsAccount(int initialBalance) {
         super(initialBalance);
     }
@@ -36,9 +36,9 @@ class SavingsAccount extends w5{
         }
     }
 }
-class Main {
+ public class w5 {
     public static void main(String[] args) {
-        w5 bank = new w5(100);
+        BankAccount bank = new BankAccount(100);
         bank.deposit(10);
         bank.withdraw(100);
         System.out.println("Bank account balance is "+bank.getBalance());
