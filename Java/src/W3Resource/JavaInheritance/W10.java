@@ -69,7 +69,7 @@ class Programmer extends CompanyEmployee {
         System.out.println("Developer "+ getName() +" is writing code.");
     }
 }
-public class W10 {
+public class W10 {    // Main class
     public static void main(String[] args) {    // main method
         Manager manager = new Manager("Harold", "Mumbai", 500000, "Manager");
         Developer developer = new Developer("Aswin", "Chennai", 250000, "Developer");
