@@ -57,6 +57,7 @@ public class w1 {   // Stack class
 
         System.out.println();
         obj.peek();
+
     }
 }
 
