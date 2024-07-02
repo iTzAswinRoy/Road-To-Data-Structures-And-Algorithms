@@ -46,7 +46,5 @@ public class w7 {
         System.out.println("Employee first name: "+emp.getFirstName());
         System.out.println("Employee last name: "+emp.getLastName());
         System.out.println("Employee ID: "+emp.getEmployeeId());
-
-
     }
 }
