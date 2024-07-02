@@ -34,7 +34,7 @@ class Employee extends Person{
         return super.getLastName()+", "+jobTitle;
     }
 }
-public class w7 {
+public class w7 {    // Main method
     public static void main(String[] args) {
         Person psrn = new Person("Aswin", "Roy");
         System.out.println("Person first name: "+psrn.getFirstName());
