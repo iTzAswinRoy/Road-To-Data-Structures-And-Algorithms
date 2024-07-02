@@ -70,7 +70,7 @@ class Programmer extends CompanyEmployee {
     }
 }
 public class W10 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // main method
         Manager manager = new Manager("Harold", "Mumbai", 500000, "Manager");
         Developer developer = new Developer("Aswin", "Chennai", 250000, "Developer");
         Programmer programmer = new Programmer("Sam", "Kerala", 150000, "Programmer");
