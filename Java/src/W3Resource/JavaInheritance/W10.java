@@ -55,7 +55,7 @@ class Developer extends CompanyEmployee {
         System.out.println("Developer " + getName() + " is working on projects.");
     }
 }
-class Programmer extends CompanyEmployee {
+class Programmer extends CompanyEmployee {      // Sub class
     Programmer(String name, String address, int salary, String jobTitle) {
         super(name, address, salary, jobTitle);
     }
