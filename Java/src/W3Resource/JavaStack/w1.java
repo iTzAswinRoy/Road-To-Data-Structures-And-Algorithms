@@ -1,6 +1,7 @@
 package W3Resource.JavaStack;
-// testing again done
-public class w1 {   // Stack class
+// Write a Java program to implement a stack with push and pop operations.
+// Find the top element of the stack and check if the stack is empty or not.
+ public class w1 {   // Stack class
     private int[] arr;
     private int top;
     w1(int size) {
@@ -15,13 +16,14 @@ public class w1 {   // Stack class
             arr[top] = num;
         }
     }
-    public void pop() {
+    public int pop() {
         if(top == -1){
             System.out.println("Stack is empty");
-            return;
+            return -1;
         } else {
             int popElement = arr[top];
             top--;
+            return popElement;
         }
     }
     public void peek(){
@@ -29,7 +31,7 @@ public class w1 {   // Stack class
             System.out.println("stack is empty");
 //            return -1;
         } else {
-            System.out.println(arr[top]);;
+            System.out.println(arr[top]);
         }
     }
     public void display(){
@@ -56,6 +58,7 @@ public class w1 {   // Stack class
         obj.display();
 
         System.out.println();
+        obj.peek();
         obj.peek();
 
     }
