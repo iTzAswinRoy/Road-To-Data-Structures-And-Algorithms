@@ -64,7 +64,7 @@ public class WS18 {
         obj1.push(3);
         obj1.push(4);
         obj1.push(5);
-        obj1.display();
+        obj1.display();     // displaying
 
         WS18 obj2 = new WS18(5);
         System.out.println("Stack - 1");
