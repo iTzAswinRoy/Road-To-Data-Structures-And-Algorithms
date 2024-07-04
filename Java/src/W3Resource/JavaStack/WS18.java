@@ -56,7 +56,7 @@ public class WS18 {
         }
         return newStack;
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) {    // Main method
         WS18 obj1 = new WS18(5);
         System.out.println("Stack - 1");
         obj1.push(1);
