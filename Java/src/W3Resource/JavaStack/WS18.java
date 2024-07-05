@@ -45,7 +45,7 @@ public class WS18 {
         }
         System.out.println("\n");
     }
-    static WS18 mergeStack(WS18 obj1, WS18 obj2) {
+    static void mergeStack(WS18 obj1, WS18 obj2) {
         int newSize = obj1.arr.length + obj2.arr.length;
         WS18 newStack = new WS18(newSize);
         for (int i = obj1.arr.length-1; i >= 0; i--) {
@@ -54,7 +54,7 @@ public class WS18 {
         for (int j = obj2.arr.length-1; j >= 0; j--) {
             newStack.push(obj2.arr[j]);
         }
-        return newStack;
+        newStack.display();
     }
     public static void main(String[] args) {    // Main method
         WS18 obj1 = new WS18(5);    // Creating a class object
@@ -76,7 +76,7 @@ public class WS18 {
         obj2.display();
 
         System.out.println("Merging those two stacks into one");
-        WS18 mergeStack = mergeStack(obj1, obj2);
-        mergeStack.display();
+        mergeStack(obj1, obj2);
+
     }
 }
