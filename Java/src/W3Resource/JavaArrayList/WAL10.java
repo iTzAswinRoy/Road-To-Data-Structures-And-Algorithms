@@ -9,11 +9,12 @@ public class WAL10 {
     public static void main(String[] args) {
         WAL10 obj = new WAL10();
         ArrayList<Integer> list = obj.userInputs();
+
         System.out.println("Given array list:");
         obj.display(list);
+
         System.out.println("Array list after being shuffled:");
         obj.display(obj.shuffle(list));
-
     }
     public ArrayList<Integer> userInputs(){
         Scanner in = new Scanner(System.in);
