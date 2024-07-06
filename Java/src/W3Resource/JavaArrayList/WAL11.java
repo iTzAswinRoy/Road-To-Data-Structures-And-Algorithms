@@ -7,7 +7,7 @@ public class WAL11 {
         WAL11 obj = new WAL11();    // Creating an object
         ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
         System.out.println("Given list;");
-        obj.display(list);      //
+        obj.display(list);      // Calling the method to display the array list
 
         System.out.println("Reversed list:");
         obj.reverseList(list);
