@@ -10,7 +10,7 @@ public class WAL11 {
         obj.display(list);      // Calling the method to display the array list
 
         System.out.println("Reversed list:");
-        obj.reverseList(list);
+        obj.reverseList(list);     // Calling the method to reverse the arraylist
     }
     public ArrayList<Integer> userInputs(){
         Scanner in = new Scanner(System.in);
