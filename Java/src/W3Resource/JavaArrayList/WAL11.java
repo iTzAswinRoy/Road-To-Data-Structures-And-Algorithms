@@ -1,8 +1,6 @@
 package W3Resource.JavaArrayList;
-
 import java.util.ArrayList;
 import java.util.Scanner;
-
 // Write a Java program to reverse elements in an array list
 public class WAL11 {
     public static void main(String[] args) {
