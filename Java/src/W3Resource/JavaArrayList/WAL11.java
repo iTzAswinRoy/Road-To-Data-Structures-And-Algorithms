@@ -12,7 +12,7 @@ public class WAL11 {
         System.out.println("Reversed list:");
         obj.reverseList(list);     // Calling the method to reverse the arraylist
     }
-    public ArrayList<Integer> userInputs(){
+    public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the size of hte array list:");
         int size = in.nextInt();
