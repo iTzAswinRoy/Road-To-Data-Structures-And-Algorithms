@@ -4,7 +4,7 @@ import java.util.Scanner;
 // Write a Java program to reverse elements in an array list
 public class WAL11 {
     public static void main(String[] args) {    // Main method
-        WAL11 obj = new WAL11();
+        WAL11 obj = new WAL11();    //
         ArrayList<Integer> list = obj.userInputs();
         System.out.println("Given list;");
         obj.display(list);
