@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class WAL11 {
     public static void main(String[] args) {    // Main method
         WAL11 obj = new WAL11();    // Creating an object
-        ArrayList<Integer> list = obj.userInputs();     //
+        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
         System.out.println("Given list;");
         obj.display(list);
 
