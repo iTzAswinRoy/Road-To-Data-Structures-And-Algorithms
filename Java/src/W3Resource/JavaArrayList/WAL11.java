@@ -6,7 +6,7 @@ public class WAL11 {
     public static void main(String[] args) {    // Main method
         WAL11 obj = new WAL11();    // Creating an object
         ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
-        System.out.println("Given list;");
+        System.out.println("Given list:");
         obj.display(list);      // Calling the method to display the array list
 
         System.out.println("Reversed list:");
@@ -14,7 +14,7 @@ public class WAL11 {
     }
     public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the size of hte array list:");
+        System.out.println("Enter the size of the array list:");
         int size = in.nextInt();
         ArrayList<Integer> temp = new ArrayList<Integer>(size);
         System.out.println("Enter the values in the list:");
