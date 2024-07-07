@@ -13,7 +13,6 @@ public class WAL3 {
         obj.insertElementAtFirst(list);
         System.out.println("List after adding the element:");
         obj.display(list);
-
     }
     public ArrayList<Integer> userInputs(){
         Scanner in = new Scanner(System.in);
