@@ -8,7 +8,6 @@ public class WAL1 {
         ArrayList<String> list = obj.userInputs();     //  Creating an array list
         System.out.println("List containing name of colours:");
         obj.display(list);      // Calling the method to display the array list
-
     }
     public ArrayList<String> userInputs(){
         Scanner in = new Scanner(System.in);
