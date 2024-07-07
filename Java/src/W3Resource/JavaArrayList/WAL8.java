@@ -10,7 +10,6 @@ public class WAL8 {
         obj.display(stringList);
         System.out.println("Sorted array list:");
         obj.display(obj.sortArrayList(stringList));
-
     }
     public ArrayList<String> userInputs(){
         Scanner in = new Scanner(System.in);
