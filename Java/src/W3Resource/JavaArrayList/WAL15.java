@@ -32,7 +32,7 @@ public class WAL15 {
         }
 
     }
-    public void display(ArrayList<Integer> list) {
+    public void display(ArrayList<Integer> list) {      // Method to display the list
         for (int i = 0; i < list.size(); i++) {
             System.out.print(list.get(i) + " ");
         }
