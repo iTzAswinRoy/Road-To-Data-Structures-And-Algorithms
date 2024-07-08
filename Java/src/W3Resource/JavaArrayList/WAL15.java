@@ -10,8 +10,10 @@ public class WAL15 {
         ArrayList<Integer> list2 = obj.userInputs();     //  Creating an array list
 
         System.out.println("The given array list are");
-        obj.display(list);
-        obj.swapList(list);
+        System.out.println("List-1:\n" +list1);
+        System.out.println("List-2:\n"+list2);
+
+        obj.joinList(list1, list2);
     }
     public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
          Scanner in = new Scanner(System.in);
@@ -25,16 +27,16 @@ public class WAL15 {
          return temp;
     }
     public void joinList(ArrayList<Integer> list1, ArrayList<Integer> list2){
-//        int size = list1.size()+list2.size();
         ArrayList<Integer> newList = new ArrayList<Integer>();
+        for (int i = 0; i < (list1.size() + list2.size()); i++) {       // Initializing null values to the entire new list.
+            newList.add(null);      // Because we can't set values to an empty list. This avoids IndexOutOfBound exception.
+        }
         for (int i = 0; i < list1.size(); i++) {
             newList.set(i, list1.get(i));
         }
-    }
-    public void display(ArrayList<Integer> list) {      // Method to display the list
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
+        for (int i = 0; i < list2.size(); i++) {
+            newList.set(i+list1.size(), list2.get(i));
         }
-        System.out.println();
+        System.out.println("\nJoined list: "+newList);
     }
 }
