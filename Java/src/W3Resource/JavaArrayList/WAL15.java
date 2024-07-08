@@ -1,5 +1,4 @@
 package W3Resource.JavaArrayList;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 // Write a Java program to join two array lists.
