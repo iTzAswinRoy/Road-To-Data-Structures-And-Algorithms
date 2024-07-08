@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 // Write a Java program to join two array lists.
 public class WAL15 {
-    public static void main(String[] args) {    //
+    public static void main(String[] args) {    // Main method
         WAL15 obj = new WAL15();    // Creating an object
 
         ArrayList<Integer> list1 = obj.userInputs();     //  Creating an array list
