@@ -25,7 +25,12 @@ public class WAL15 {
          }
          return temp;
     }
-    public void swapList(ArrayList<Integer> list){
+    public void joinList(ArrayList<Integer> list1, ArrayList<Integer> list2){
+//        int size = list1.size()+list2.size();
+        ArrayList<Integer> newList = new ArrayList<Integer>();
+        for (int i = 0; i < list1.size(); i++) {
+            newList.set(i, list1.get(i));
+        }
 
     }
     public void display(ArrayList<Integer> list) {
