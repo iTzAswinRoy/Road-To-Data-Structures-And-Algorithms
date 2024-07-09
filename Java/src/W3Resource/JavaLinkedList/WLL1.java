@@ -8,12 +8,13 @@ public class WLL1 {
         this.size = 0;
     }
     public void insertFirst(int value){
-        if(tail == null){
-            tail = head;
-        }
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
+        if(tail == null){
+            tail = head;
+            return;
+        }
         size++;
     }
     public void insertLast(int value){
@@ -78,21 +79,15 @@ public class WLL1 {
     }
 
     public static void main(String[] args) {
-        WLL1 temp = new WLL1();
-        temp.insertFirst(1);
-        temp.insertFirst(2);
-        temp.insertFirst(3);
-        temp.insertFirst(4);
-        temp.insertFirst(5);
-        temp.insertFirst(6);
-        temp.insertLast(71);
-        temp.insertLast(11);
-        temp.insertLast(12);
-        temp.display();
-        temp.deleteLast();
-        temp.display();
-        temp.deleteNode(1);
-        temp.display();
+        WLL1 obj = new WLL1();
+        obj.insertLast(1);
+        obj.insertLast(2);
+        obj.insertLast(3);
+        obj.insertLast(4);
+        obj.insertLast(5);
+        obj.insertLast(6);
+        System.out.println("Linked list after appending the elements:");
+        obj.display();
 
 
     }
