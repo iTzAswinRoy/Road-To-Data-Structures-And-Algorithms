@@ -31,12 +31,12 @@ public class WLL3 {
         Node previous = null;
         Node current = head;
         for (int i = 0; i < size; i++) {    // Iterating through the list in order to change its reference in backwards.
-            Node nextNode = current.next;   // Setting the 'nextNode' to once node ahead of current node.
-            current.next = previous;    // Changing the reference of the current node pointing towards to previous (behind) node.
-            previous = current;     // Now, updating the previous node to current node.
-            current = nextNode;     // Again updating the current node to its next node.
+            Node nextNode = current.next;   // Storing the next node which is ahead of the current node.
+            current.next = previous;    // Reversing the current node's pointer to previous (behind) node.
+            previous = current;     // Now, moving the previous node to current node.
+            current = nextNode;     // Again moving the current node to its next node.
         }
-        head = previous;    // Assigning the head to 'previous' where the new head starts from the end of the list
+        head = previous;    // Updating the head to 'previous' where the new head starts from the end of the list.
     }
     public class Node{
         int value;
