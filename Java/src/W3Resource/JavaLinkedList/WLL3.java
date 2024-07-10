@@ -1,5 +1,5 @@
 package W3Resource.JavaLinkedList;
-// Reverse a singly linked list using stack.
+// Reverse a singly linked list.
 public class WLL3 {
     Node head;
     Node tail;
@@ -54,7 +54,7 @@ public class WLL3 {
         linkedList.insertFirst(5);
         System.out.println("Given linked list:");
         linkedList.display();
-        System.out.println("Reversed linked list");
+        System.out.println("\nReversed linked list:");
         linkedList.reversLinkedList();
         linkedList.display();
     }
