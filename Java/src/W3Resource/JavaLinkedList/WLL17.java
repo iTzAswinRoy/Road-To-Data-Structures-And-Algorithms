@@ -19,14 +19,15 @@ public class WLL17 {
         }
         size++;
     }
-    public void display(){
+    public void display() {
         Node temp = head;
-        while(temp!= null) {
-            System.out.print(temp.value+"->");
+        for (int i = 0; i < size; i++) {
+            System.out.print(temp.value + "->");
             temp = temp.next;
         }
+        if (temp == null) {
             System.out.println("END");
-
+        }
     }
     public static WLL17 joinLinkedList(WLL17 LL1, WLL17 LL2){
         WLL17 combinedLinkedList = new WLL17();
@@ -34,14 +35,12 @@ public class WLL17 {
         for (int i = 0; i < LL1.size; i++) {
             combinedLinkedList.insertNode(temp1.value);
             temp1 = temp1.next;
-            combinedLinkedList.size++;
         }
 
         Node temp2 = LL2.head;
         for (int i = 0; i < LL2.size; i++) {
             combinedLinkedList.insertNode(temp2.value);
             temp2 = temp2.next;
-            combinedLinkedList.size++;
         }
         return combinedLinkedList;
     }
