@@ -42,7 +42,7 @@ public class WLL26 {
             temp.value = element;
         }
     }
-    public class Node{
+    public class Node{  // Nested class
         int value;
         Node next;
         Node(int value){
