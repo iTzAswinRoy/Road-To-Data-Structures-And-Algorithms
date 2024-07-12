@@ -1,4 +1,4 @@
-package Tempfile.subPackage;
+package Tempfile;
 
 public class tempProgram2 {
 }
