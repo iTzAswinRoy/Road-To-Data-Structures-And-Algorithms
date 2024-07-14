@@ -6,7 +6,7 @@ public class DLL1 {
     DLL1(){
         this.size = 0;
     }
-    public void insertFirst(int value){
+    public void insertFirst(int value){     // inset node
         Node newNode = new Node(value);
 
         if(head == null) {
