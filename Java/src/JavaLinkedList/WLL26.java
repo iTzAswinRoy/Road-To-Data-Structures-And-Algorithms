@@ -33,7 +33,7 @@ public class WLL26 {
         if(index >= size){
             System.out.println("\nIndex out of bound!");
         } else {
-            System.out.println("\nReplacing the element "+element+" ar index "+index);
+            System.out.println("\nReplacing the element "+element+" at index "+index);
             Node temp = head;
             System.out.println("\nLinked list after replacing the element:");
             for (int i = 0; i < index; i++) {

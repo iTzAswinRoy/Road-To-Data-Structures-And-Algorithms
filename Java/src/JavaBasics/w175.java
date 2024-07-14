@@ -51,7 +51,7 @@ public class w175{      // Creating a class which handles linked list
     public static void main(String[] args) {    // Main method
         Scanner in = new Scanner(System.in);    // Creating a Scanner object
         w175 obj = new w175();      // Creating an object ot call the methods
-        System.out.println("Enter the size of the LinkedList:");
+        System.out.println("Enter the size of the PersonalCode.Aswin.LinkedList:");
         int LL_size = in.nextInt();     // Assigning the size of the linked list
         System.out.println("Enter the values of each Node:");
         for (int i = 0; i < LL_size; i++) {     // Iterating over the linked list
