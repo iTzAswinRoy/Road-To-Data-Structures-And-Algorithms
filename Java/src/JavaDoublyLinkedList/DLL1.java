@@ -19,7 +19,7 @@ public class DLL1 {
     public class Node{      // Nested class
         int value;      // Getting value
         Node next;      // Node next
-        Node prev;
+        Node prev;      // Sering prev
         Node(int value){
             this.value = value;
         }
