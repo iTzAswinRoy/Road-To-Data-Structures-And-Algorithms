@@ -21,7 +21,7 @@ public class DLL1 {
         Node next;      // Node next
         Node prev;      // Sering prev
         Node(int value){    // constructor
-            this.value = value;
+            this.value = value;     // initializing
         }
     }
 }
