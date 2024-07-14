@@ -17,7 +17,7 @@ public class DLL1 {
 
     }
     public class Node{      // Nested class
-        int value;
+        int value;      // Getting value
         Node next;
         Node prev;
         Node(int value){
