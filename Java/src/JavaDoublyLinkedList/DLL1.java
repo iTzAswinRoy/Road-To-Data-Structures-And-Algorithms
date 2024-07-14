@@ -20,7 +20,7 @@ public class DLL1 {
         int value;      // Getting value
         Node next;      // Node next
         Node prev;      // Sering prev
-        Node(int value){
+        Node(int value){    // constructor
             this.value = value;
         }
     }
