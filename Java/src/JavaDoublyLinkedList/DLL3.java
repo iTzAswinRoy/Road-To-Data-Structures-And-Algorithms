@@ -35,8 +35,16 @@ public class DLL3 {     // Main class
         }
     }
     public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
-        return;
-
+        DLL3 result = new DLL3();
+        Node temp = head;
+        result.insertNode(temp.value);      // Always first value is unique
+        for (int i = 0; i < size-1; i++) {
+            if(temp.value != temp.next.value){
+                result.insertNode(temp.next.value);
+            }
+            temp = temp.next;
+        }
+        return result;
     }
 
     public void display(){
@@ -65,15 +73,19 @@ public class DLL3 {     // Main class
         DoublyLinkedList.insertNode(2);
         DoublyLinkedList.insertNode(2);
         DoublyLinkedList.insertNode(89);
+        DoublyLinkedList.insertNode(89);
+        DoublyLinkedList.insertNode(20);
+
+
 
         System.out.println("Original doubly linked list:");
         DoublyLinkedList.display();
 
-        System.out.println("Sorted doubly linked list:");
+        System.out.println("\nSorted doubly linked list:");
         DoublyLinkedList.sortNode();
         DoublyLinkedList.display();
 
-        System.out.println("Removing duplicate nodes:");
+        System.out.println("\nRemoving duplicate nodes:");
         DLL3 removedDuplicateNode = DoublyLinkedList.removeDuplicates();
         removedDuplicateNode.display();
     }
