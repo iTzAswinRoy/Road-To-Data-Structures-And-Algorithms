@@ -1,7 +1,7 @@
 package JavaDoublyLinkedList;
 
 //Given a doubly linked list, remove all duplicate nodes.
-public class DLL3 {
+public class DLL3 {     // Main class
     Node head;
     Node tail;
     int size;
