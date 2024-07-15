@@ -1,7 +1,5 @@
 package JavaDoublyLinkedList;
 
-import java.util.ArrayList;
-
 //Given a doubly linked list, remove all duplicate nodes.
 public class DLL3 {
     Node head;
@@ -38,6 +36,7 @@ public class DLL3 {
     }
     public DLL3 removeDuplicates() {
 
+    }
 
     public void display(){
         Node temp = head;
