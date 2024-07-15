@@ -68,13 +68,15 @@ public class DLL3 {     // Main class
 
     public static void main(String[] args) {
         DLL3 DoublyLinkedList = new DLL3();
-        DoublyLinkedList.insertNode(1);
-        DoublyLinkedList.insertNode(1);
-        DoublyLinkedList.insertNode(2);
-        DoublyLinkedList.insertNode(2);
-        DoublyLinkedList.insertNode(89);
-        DoublyLinkedList.insertNode(89);
-        DoublyLinkedList.insertNode(20);
+        DoublyLinkedList.insertNode(10);
+        DoublyLinkedList.insertNode(85);
+        DoublyLinkedList.insertNode(25);
+        DoublyLinkedList.insertNode(10);
+        DoublyLinkedList.insertNode(99);
+        DoublyLinkedList.insertNode(85);
+        DoublyLinkedList.insertNode(25);
+        DoublyLinkedList.insertNode(60);
+
 
 
 
