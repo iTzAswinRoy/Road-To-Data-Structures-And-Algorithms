@@ -34,7 +34,7 @@ public class DLL3 {     // Main class
             temp = head;
         }
     }
-    public DLL3 removeDuplicates() {
+    public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
         return;
 
     }
