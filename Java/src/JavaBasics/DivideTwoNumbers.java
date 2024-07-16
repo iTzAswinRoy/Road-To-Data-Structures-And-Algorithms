@@ -12,12 +12,14 @@ public class DivideTwoNumbers {
         float b = obj.userInputs();     // Getting inputs from user
 
         float result = obj.divide(a,b);      // Storing the divide method in a variable
-        System.out.println(result);   // Printing the result using a print method
+        System.out.println("\nDividing the number:\n"+result);   // Printing the result using a print method
     }
+
     public int userInputs() {       // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         return in.nextInt();    // Returning the input
     }
+
     public float divide(float n1, float n2) {     // Method to calculate division
         return n1 / n2;     // Returning the divided value
     }

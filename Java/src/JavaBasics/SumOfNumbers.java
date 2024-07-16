@@ -14,10 +14,12 @@ public class SumOfNumbers {
         int result = obj.sum(a,b);      // Storing the sum method in a variable
         System.out.println(result);      // Printing the result using a print method
     }
+
     public int userInputs() {    // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         return in.nextInt();    // Returning the input
     }
+
     public int sum(int n1, int n2) {     // Method to calculate the sum
         System.out.println("\nSum of two numbers:");
         return n1 + n2;     // Returning the sum
