@@ -1,6 +1,6 @@
 package JavaCircularLinkedList;
 // Given a circular linked list, determine if it contains a cycle and return the starting node of the cycle.
-public class CLL1 {
+public class CLL1 {     // Circular linked list class
     Node head;
     Node tail;
     int size;
