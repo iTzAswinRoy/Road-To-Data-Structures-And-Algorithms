@@ -1,17 +1,17 @@
 package JavaCircularLinkedList;
-// Find the k-th node from the end of a circular linked list.
-public class CLL9 {
+// Implement a function to rotate a circular linked list to the right by k positions.
+public class CLL10 {
     Node head;
     Node tail;
     int size;
 
-    CLL9(){
+    CLL10() {
         this.size = 0;
     }
 
-    public void insertNode(int value){
+    public void insertNode (int value){
         Node newNode = new Node(value);
-        if(tail == null){
+        if (tail == null) {
             head = newNode;
             tail = head;
             tail.next = head;
@@ -23,27 +23,27 @@ public class CLL9 {
         size++;
     }
 
-    public void findKthFromEnd(int k){
-        Node temp = head;
-        Node kth = head;
-        if(k > size){
-            System.out.println("\nIndex out of bound!");
+    public void rotateCircularLinkedList(int k){
+        Node curr = head;
+        Node prev = null;
+        System.out.println("\nRotating the circular linked list at "+k+"th position.");
+        if(k > size || head == null){
+            System.out.println("Index out of bound!");
             return;
         }
-        for (int i = 0; i < k; i++) {
-            temp = temp.next;
+        for (int i = 1; i < k; i++) {
+            prev = curr;
+            curr = curr.next;
         }
-        while (temp!=head){
-            temp = temp.next;
-            kth = kth.next;
-        }
-        System.out.println("\nThe "+k+"th from the last of the circular linked list is "+kth.value+".");
+        tail.next = head;
+        head = curr;
+        tail = prev;
     }
 
-    public void display(){
+    public void display() {
         Node temp = head;
-        do{
-            System.out.print(temp.value+" -> ");
+        do {
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
 
         } while (temp != head);
@@ -60,7 +60,7 @@ public class CLL9 {
     }
 
     public static void main(String[] args) {
-        CLL9 circularLinkedList = new CLL9();
+        CLL10 circularLinkedList = new CLL10();
 
         circularLinkedList.insertNode(1);
         circularLinkedList.insertNode(2);
@@ -71,6 +71,7 @@ public class CLL9 {
         System.out.println("Original circular linked list:");
         circularLinkedList.display();
 
-        circularLinkedList.findKthFromEnd(2);
+        circularLinkedList.rotateCircularLinkedList(3);
+        circularLinkedList.display();
     }
 }
