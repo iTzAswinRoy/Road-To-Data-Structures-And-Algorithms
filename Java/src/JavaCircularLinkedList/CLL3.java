@@ -22,11 +22,13 @@ public class CLL3 {
         size++;
     }
 
-    public int survivor(int k){
+    public void survivor(int k){
         Node curr = head;
         Node prev = tail;
+        System.out.println("\nEliminating every "+k+"th person in the circle.");
         if(k > size){
-            System.out.println("Index out of bound!");
+            System.out.println("\nIndex out of bound!");
+            return;
         }
         while (curr.next != curr) {
             for (int i = 1; i < k; i++) {
@@ -37,7 +39,7 @@ public class CLL3 {
             curr = curr.next;
         }
         head = curr;
-        return curr.value;
+        System.out.println("\nThe last survivor is "+curr.value);
     }
 
     public void display(){
@@ -67,9 +69,9 @@ public class CLL3 {
         circularLinkedList.insertNode(4);
         circularLinkedList.insertNode(5);
 
-        System.out.println("Original circular linked list:");
+        System.out.println("People standing in a circle:");
         circularLinkedList.display();
 
-        System.out.println("\nThe last survivor is "+ circularLinkedList.survivor(5));
+         circularLinkedList.survivor(3);
     }
 }
