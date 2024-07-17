@@ -26,9 +26,12 @@ public class CLL2 {     // Circular linked list class
     public void display(){
         Node temp = head;
         do {
+
             System.out.print(temp.value+ " -> ");
             temp = temp.next;
+
         } while (temp!= head);
+
         System.out.println("HEAD");
     }
 

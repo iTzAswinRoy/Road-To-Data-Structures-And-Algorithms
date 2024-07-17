@@ -66,8 +66,8 @@ public class CLL5 {
             temp = temp.next;
         } while (temp != head);
         System.out.println("HEAD");
-
     }
+
     class Node {
         int value;
         Node next;

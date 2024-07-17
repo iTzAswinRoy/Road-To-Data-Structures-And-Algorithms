@@ -48,7 +48,9 @@ public class CLL3 {
         do {
             System.out.print(temp.value+" -> ");
             temp = temp.next;
+
         } while (temp != head);
+
         System.out.println("HEAD");
     }
 

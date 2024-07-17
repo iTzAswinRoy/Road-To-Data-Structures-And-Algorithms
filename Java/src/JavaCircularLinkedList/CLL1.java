@@ -32,7 +32,9 @@ public class CLL1 {     // Circular linked list class
         do {
             System.out.print(temp.value + " -> ");
             temp = temp.next;
+
         } while (temp != head);
+
         System.out.println("HEAD");
     }
 
