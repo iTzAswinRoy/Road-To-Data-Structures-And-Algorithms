@@ -14,6 +14,7 @@ public class CLL1 {     // Circular linked list class
         if(tail == null){
             head = newNode;
             tail = head;
+            tail.next = head;
         } else {
             tail.next = newNode;
             tail = newNode;

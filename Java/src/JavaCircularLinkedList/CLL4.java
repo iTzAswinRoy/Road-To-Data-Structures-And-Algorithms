@@ -14,6 +14,7 @@ public class CLL4 {
         if (tail == null) {
             head = newNode;
             tail = head;
+            tail.next = head;
         } else {
             tail.next = newNode;
             tail = newNode;
@@ -22,14 +23,14 @@ public class CLL4 {
         size++;
     }
     public void nodeAtSpecificPosition(int index, int value) {
-        Node prev = tail;
-        Node curr = head;
         Node newNode = new Node(value);
         System.out.println("\nInserting node "+value+" at index "+index);
         if(index > size){
             System.out.println("\nIndex out of bound!");
             return;
         } else{
+            Node prev = tail;
+            Node curr = head;
             for (int i = 0; i < index; i++) {
                 prev = curr;
                 curr = curr.next;
