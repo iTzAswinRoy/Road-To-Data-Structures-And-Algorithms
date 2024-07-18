@@ -50,7 +50,7 @@ public class CLL9 {
         System.out.println("HEAD");
     }
 
-    class Node {
+    class Node {    //
         int value;
         Node next;
 
