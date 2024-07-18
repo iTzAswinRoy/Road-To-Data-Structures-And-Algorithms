@@ -10,7 +10,7 @@ public class CLL9 {
     }
 
     public void insertNode(int value){      //
-        Node newNode = new Node(value);
+        Node newNode = new Node(value);     //
         if(tail == null){
             head = newNode;
             tail = head;
