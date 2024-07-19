@@ -23,7 +23,7 @@ public class CLL8 {
         size++;
     }
 
-    public void reverse(){
+    public void reverse(){      //
         if(head == null || head.next == head){
             return;
         }
