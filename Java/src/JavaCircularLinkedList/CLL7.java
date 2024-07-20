@@ -56,7 +56,7 @@ public class CLL7 {
         list2.display();
     }
 
-    public void display(){
+    public void display(){      //
         Node temp = head;
         do {
             System.out.print(temp.value+" -> ");
