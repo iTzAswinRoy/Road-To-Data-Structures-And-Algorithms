@@ -10,7 +10,7 @@ public class CLL7 {
         this.size = size;
     }
 
-    public void insertNode(int value){
+    public void insertNode(int value){      //
         Node newNode = new Node(value);
         if(tail == null){
             head = newNode;
