@@ -70,7 +70,7 @@ public class CLL7 {
         Node next;
         int value;
 
-        Node(int value){
+        Node(int value){      //
             this.value = value;
         }
     }
