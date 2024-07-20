@@ -66,7 +66,7 @@ public class CLL7 {
         System.out.println("HEAD");
     }
 
-    class Node{
+    class Node{     //
         Node next;
         int value;
 
