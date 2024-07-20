@@ -6,7 +6,7 @@ public class CLL7 {
     Node tail;
     int size;
 
-    CLL7(){
+    CLL7(){     //
         this.size = size;
     }
 
