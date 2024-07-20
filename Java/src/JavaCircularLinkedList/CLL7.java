@@ -24,7 +24,7 @@ public class CLL7 {
         size++;
     }
 
-    public void splittingCircularLinkedList(CLL7 list){
+    public void splittingCircularLinkedList(CLL7 list){     //
         CLL7 list1 = new CLL7();
         CLL7 list2 = new CLL7();
         Node temp = head;
