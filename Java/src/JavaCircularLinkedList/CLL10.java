@@ -1,9 +1,9 @@
 package JavaCircularLinkedList;
 // Implement a function to rotate a circular linked list to the right by k positions.
-public class CLL10 {        //
-    Node head;
-    Node tail;
-    int size;
+public class CLL10 {        // Class containing circular linked list properties
+    Node head;      // Creating a head node
+    Node tail;      // Creating a tail node
+    int size;       // // Creating the size for circular linked list
 
     CLL10() {      //
         this.size = 0;
