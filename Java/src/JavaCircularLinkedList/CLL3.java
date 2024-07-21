@@ -1,6 +1,6 @@
 package JavaCircularLinkedList;
 // Given n people standing in a circle and a number k, every kth person is eliminated until only one remains.
-public class CLL3 {
+public class CLL3 {     //
     Node head;
     Node tail;
     int size;
