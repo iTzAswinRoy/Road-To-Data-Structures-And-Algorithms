@@ -43,7 +43,7 @@ public class CLL3 {     //
         System.out.println("\nThe last survivor is "+curr.value);
     }
 
-    public void display(){
+    public void display(){      //
         Node temp = head;
         do {
             System.out.print(temp.value+" -> ");
