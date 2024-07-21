@@ -31,7 +31,7 @@ public class CLL3 {     //
             System.out.println("\nIndex out of bound!");
             return;
         }
-        while (curr.next != curr) {
+        while (curr.next != curr) {     //
             for (int i = 1; i < k; i++) {
                 prev = curr;
                 curr = curr.next;
