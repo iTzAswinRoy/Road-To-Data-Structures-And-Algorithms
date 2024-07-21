@@ -23,7 +23,7 @@ public class CLL3 {     //
         size++;
     }
 
-    public void survivor(int k){
+    public void survivor(int k){       //
         Node curr = head;
         Node prev = tail;
         System.out.println("\nEliminating every "+k+"th person in the circle.");
