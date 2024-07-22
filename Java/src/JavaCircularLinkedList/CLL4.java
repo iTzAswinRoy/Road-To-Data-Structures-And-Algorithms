@@ -51,7 +51,7 @@ public class CLL4 {     //
         System.out.println("HEAD");
     }
 
-    class Node {
+    class Node {      //
         int value;
         Node next;
 
