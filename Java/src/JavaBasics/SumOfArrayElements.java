@@ -6,8 +6,10 @@ import java.util.Scanner;   // Importing scanner class
 public class SumOfArrayElements {
     public static void main(String[] args) {    // Main method
         SumOfArrayElements obj = new SumOfArrayElements();    // Creating a class object
+
         System.out.println("Enter the number of elements: ");
         int size = obj.userInput();     // Initializing size by calling the suer input method
+
         System.out.println("Display array: "+Arrays.toString(obj.series(size)));    // Displaying the array
         System.out.println("Sum of array: "+obj.sum(obj.series(size)));     // Displaying the sum of the array
     }
