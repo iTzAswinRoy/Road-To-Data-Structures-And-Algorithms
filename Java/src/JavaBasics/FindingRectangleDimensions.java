@@ -13,11 +13,11 @@ public class FindingRectangleDimensions {
 
         obj.sizeOfAnRectangle(width, height);   // Calling the method to find the size of the rectangle
     }
-    public int userInputs(){    // Method to receive inputs from the user
+    public int userInputs() {    // Method to receive inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         return in.nextInt();    // Returning the inputs
     }
-    public void sizeOfAnRectangle(int w, int h){    // Method to find the size of the rectangle
+    public void sizeOfAnRectangle(int w, int h) {    // Method to find the size of the rectangle
         int perimeter = 2 * (h + w);    // Initializing the formula for perimeter of a rectangle
         int area = w * h;   // Initializing the formula for area of a rectangle
 
