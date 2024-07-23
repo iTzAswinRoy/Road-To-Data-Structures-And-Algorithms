@@ -12,6 +12,7 @@ public class SumOfPrimeNumbers {
         System.out.println("Extracting only prime numbers from the array:\n"+obj.displayPrime(arr));   // Displaying the array consisting of prime numbers
         System.out.println("Sum of prime numbers: "+obj.sumOfPrime(arr));     // Displaying the sum of prime numbers is an array
     }
+
     public int[] userInput() {      // Method to get user inputs
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         System.out.println("Enter the size");
@@ -23,6 +24,7 @@ public class SumOfPrimeNumbers {
         }
         return temp;    // Returning the input values
     }
+
     public boolean checkPrime(int num) {       // Method to check if the number is prime or not
         if (num <= 1) {     // Checking if the number is less than 1
             return false;   // Returns false if it reaches the condition
@@ -40,6 +42,7 @@ public class SumOfPrimeNumbers {
         }
         return true;    // Return true if the number is divisible by 1 or itself
     }
+
     public ArrayList<Integer> displayPrime(int[] num){      // method to display the prime numbers
         ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list to store the prime numbers
         for (int i = 0; i < num.length; i++) {      // iterating through the given array of random numbers
@@ -49,6 +52,7 @@ public class SumOfPrimeNumbers {
         }
         return temp;    // Returning the list containing the prime numbers
     }
+
     public int sumOfPrime(int[] num){     // Method to calculate the sum of prime numbers
         int sum = 0;    // Creating an empty variable to store the sum.
         for (int i = 0; i < num.length; i++) {      // Iterating through the array
