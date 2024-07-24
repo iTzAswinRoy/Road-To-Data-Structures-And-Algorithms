@@ -68,7 +68,7 @@ public class DLL1 {     //
         System.out.println("Node at index "+index+" is "+temp.value);
     }
 
-    public void display() {
+    public void display() {     //
         Node temp = head;
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value + "->");
