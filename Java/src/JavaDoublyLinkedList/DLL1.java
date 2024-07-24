@@ -89,11 +89,11 @@ public class DLL1 {     //
             System.out.println("END");
         }
     }
-    class Node{
+    class Node{     //
         int value;
         Node next;
         Node prev;
-        Node(int value){
+        Node(int value){    //
             this.value = value;
         }
     }
