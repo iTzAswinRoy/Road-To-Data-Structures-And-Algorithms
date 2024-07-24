@@ -10,7 +10,7 @@ public class DLL1 {     //
     }
 
     public void insertFirst(int value) {     // inset node
-        Node newNode = new Node(value);
+        Node newNode = new Node(value);     //
         if(tail == null){
             head = newNode;
             tail = head;
