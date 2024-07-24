@@ -1,6 +1,6 @@
 package JavaDoublyLinkedList;
 // Create a class that implements a doubly linked list with operations such as insert, delete, search, and display (both forward and backward).
-public class DLL1 {
+public class DLL1 {     //
     Node head;
     Node tail;
     int size;
