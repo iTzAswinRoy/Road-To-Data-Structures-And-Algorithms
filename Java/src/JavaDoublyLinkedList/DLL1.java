@@ -56,7 +56,7 @@ public class DLL1 {     //
         size--;
     }
 
-    public void searchNode(int index){
+    public void searchNode(int index){      //
         if(index > size){
             System.out.println("\nIndex out of bound!");
             return;
