@@ -34,7 +34,7 @@ public class DLL1 {     //
         size++;
     }
 
-    public void deleteFirst(){
+    public void deleteFirst(){      //
         if(head == null){
             System.out.println("List is empty.");
             return;
