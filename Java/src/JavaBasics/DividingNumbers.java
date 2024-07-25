@@ -1,9 +1,9 @@
 package JavaBasics;
 import java.util.ArrayList;
 // Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
-public class w50 {
+public class DividingNumbers {
     public static void main(String[] args) {    // Main method
-        w50 obj = new w50();    // Creating an object to call the method
+        DividingNumbers obj = new DividingNumbers();    // Creating an object to call the method
 
         System.out.println("Numbers which are divisible by 3, 5 and both:");
         ArrayList<Integer> array = obj.numbers();   // Creating an array list to containing numbers from 1 to 100
