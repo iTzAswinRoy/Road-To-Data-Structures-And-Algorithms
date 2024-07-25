@@ -29,7 +29,7 @@ public class DividingNumbers {
     public void divideBy3(ArrayList<Integer> data) {     // Method to divide the number by 3
         ArrayList<Integer> result = new ArrayList<>();      // Creating an array list to store the results
         for (int i = 1; i < data.size(); i++) {
-            if (data.get(i) % 3 == 0){       // Checking if the number is divisible by 3
+            if (data.get(i) % 3 == 0) {       // Checking if the number is divisible by 3
                 result.add(data.get(i));    // Storing the number to an array list
             }
         }
@@ -49,7 +49,7 @@ public class DividingNumbers {
     public void divideBy3And5(ArrayList<Integer> data){     // Method to divide the number by 5
         ArrayList<Integer> result = new ArrayList<>();      // Creating an array list to store the results
         for (int i = 1; i < data.size(); i++) {
-            if(data.get(i) % 3 == 0 && data.get(i) % 5 == 0){      // Checking if the number is divisible by 3 and5
+            if(data.get(i) % 3 == 0 && data.get(i) % 5 == 0) {      // Checking if the number is divisible by 3 and5
                 result.add(data.get(i));        // Storing the number to an array list
             }
         }
