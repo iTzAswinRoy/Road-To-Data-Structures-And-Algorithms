@@ -7,7 +7,7 @@ public class W42 {
         Console cons = obj.checkingConsole();   // Creating an abject from the console class
         if (cons == null) {     // Checking whether the console is available or not
             System.out.println("No console available");
-            return;
+            return;     // Exiting the condition
         }
         char[] pass_ward = cons.readPassword("Input your Password: ");      // Storing the password in character array
         System.out.println("Your password was: " + new String(pass_ward));      // Printing the password by converting to sting
