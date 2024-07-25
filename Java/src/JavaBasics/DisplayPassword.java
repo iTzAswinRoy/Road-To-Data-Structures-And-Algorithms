@@ -9,8 +9,8 @@ public class DisplayPassword {
             System.out.println("No console available");
             return;     // Exiting the condition
         }
-        char[] pass_ward = cons.readPassword("Input your Password: ");      // Storing the password in character array
-        System.out.println("Your password was: " + new String(pass_ward));      // Printing the password by converting to sting
+        char[] pass_ward = cons.readPassword("Enter your Password: ");      // Storing the password in character array
+        System.out.println("\nYour password is " + new String(pass_ward));      // Printing the password by converting to sting
         java.util.Arrays.fill(pass_ward, ' '); // Clear the password from memory
     }
     private Console checkingConsole() {     // Method to check if the console is available or not
