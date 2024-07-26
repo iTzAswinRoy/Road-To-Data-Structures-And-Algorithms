@@ -22,6 +22,6 @@ public class CountTheFactors {
                 count++;    // Incrementing the count by 1
             }
         }
-        System.out.println("Number of factors: "+count);    // Displaying the result
+        System.out.println("Number of factors: " + count);    // Displaying the result
     }
 }
