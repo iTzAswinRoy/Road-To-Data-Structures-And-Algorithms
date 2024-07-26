@@ -22,11 +22,11 @@ public class FindingCircleDimensions {
 
     public void perimeter(int radius) {      // Method to calculate perimeter
         double result = 2 * Math.PI * radius;       // Using the perimeter formula
-        System.out.println("Perimeter of the circle is "+result);     // Printing the result
+        System.out.println("Perimeter of the circle is " + result);     // Printing the result
     }
 
     public void area(int radius) {       // Method to find the area of the circle
         double result = Math.PI * radius * radius;      // Using area formula
-        System.out.println("\nArea of the circle is "+result);      // Printing the results
+        System.out.println("\nArea of the circle is " + result);      // Printing the results
     }
 }
