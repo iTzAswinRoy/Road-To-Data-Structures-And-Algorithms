@@ -12,7 +12,7 @@ public class MultiplyingTheNumbers {
         int b = obj.userInputs();     // Getting inputs from user
 
         int result = obj.multiply(a,b);      // Storing the multiply method in a variable
-        System.out.println("\nThe product of two number:\n"+result);     // Printing the result using a print method
+        System.out.println("\nThe product of two number:\n" + result);     // Printing the result using a print method
     }
 
     public int userInputs() {       // Method to get inputs from the user
