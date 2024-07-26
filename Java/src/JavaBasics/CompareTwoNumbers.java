@@ -13,17 +13,19 @@ public class CompareTwoNumbers {
 
         obj.compare(n1, n2);    // Calling the method to compare the numbers
     }
-    public int userInputs(){    // Method to get the user inputs
+
+    public int userInputs() {    // Method to get the user inputs
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         return in.nextInt();    // returning the scanner
     }
+
     public void compare(int n1, int n2){    // Method to compare the two numbers
         if (n1 == n2) {     // Condition if the both numbers are equal
             System.out.println("Both numbers are equal!");
         } else if (n1 > n2) {    // Checking if the number is greater or less than
-            System.out.println("Number "+n1+" is greater than number "+n2);
+            System.out.println("Number " + n1 + " is greater than number " + n2);
         } else {
-            System.out.println("Number "+n1+" is less than number "+n2);
+            System.out.println("Number " + n1 + " is less than number " + n2);
         }
     }
 }
