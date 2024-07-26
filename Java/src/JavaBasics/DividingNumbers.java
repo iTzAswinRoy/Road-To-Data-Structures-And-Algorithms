@@ -18,7 +18,7 @@ public class DividingNumbers {
         obj.divideBy3And5(array);   // Calling the number divided by 3 and 5 method
     }
 
-    public ArrayList<Integer> numbers(){    // Method to collect numbers from 1 to 100
+    public ArrayList<Integer> numbers() {    // Method to collect numbers from 1 to 100
         ArrayList<Integer> num = new ArrayList<>();     // Creating an array list to store the numbers from 1 to 100
         for (int i = 0; i < 100; i++) {
             num.add(i);       // Storing each numbers to the array list
@@ -46,10 +46,10 @@ public class DividingNumbers {
         System.out.println(result);  // Displaying the result
     }
 
-    public void divideBy3And5(ArrayList<Integer> data){     // Method to divide the number by 5
+    public void divideBy3And5(ArrayList<Integer> data) {     // Method to divide the number by 5
         ArrayList<Integer> result = new ArrayList<>();      // Creating an array list to store the results
         for (int i = 1; i < data.size(); i++) {
-            if(data.get(i) % 3 == 0 && data.get(i) % 5 == 0) {      // Checking if the number is divisible by 3 and5
+            if (data.get(i) % 3 == 0 && data.get(i) % 5 == 0) {      // Checking if the number is divisible by 3 and5
                 result.add(data.get(i));        // Storing the number to an array list
             }
         }
