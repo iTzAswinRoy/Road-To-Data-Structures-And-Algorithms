@@ -21,7 +21,7 @@ public class FindingRectangleDimensions {
         int perimeter = 2 * (h + w);    // Initializing the formula for perimeter of a rectangle
         int area = w * h;   // Initializing the formula for area of a rectangle
 
-        System.out.println("Perimeter of a rectangle: "+perimeter);    // Displaying the perimeter of a rectangle
-        System.out.println("\nArea of a rectangle: "+area);   // Displaying the perimeter of a rectangle
+        System.out.println("Perimeter of a rectangle: " + perimeter);    // Displaying the perimeter of a rectangle
+        System.out.println("\nArea of a rectangle: " + area);   // Displaying the perimeter of a rectangle
     }
 }
