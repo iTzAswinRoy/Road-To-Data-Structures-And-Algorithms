@@ -12,7 +12,7 @@ public class DivideTwoNumbers {
         float b = obj.userInputs();     // Getting inputs from user
 
         float result = obj.divide(a,b);      // Storing the divide method in a variable
-        System.out.println("\nDividing the number:\n"+result);   // Printing the result using a print method
+        System.out.println("\nDividing the number:\n" + result);   // Printing the result using a print method
     }
 
     public int userInputs() {       // Method to get inputs from the user
