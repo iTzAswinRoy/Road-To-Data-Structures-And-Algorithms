@@ -10,7 +10,7 @@ public class FindingAverageNumber {
         System.out.println("Original array:\n"+array);      // Displaying the array
 
         int result = obj.average(array);       // Storing the average method in a variable
-        System.out.println("\nThe average value of an array is "+result);     // Displaying the average value
+        System.out.println("\nThe average value of an array is " + result);     // Displaying the average value
     }
 
     public ArrayList<Integer> inputs() {     // Method to get inputs from the user
