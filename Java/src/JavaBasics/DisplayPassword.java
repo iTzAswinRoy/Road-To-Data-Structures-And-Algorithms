@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.io.Console;     // This imports console libraries
+
 // Write a Java program to input and display your password.
 public class DisplayPassword {
     public static void main(String[] args) {    // Main method
@@ -18,11 +19,12 @@ public class DisplayPassword {
 
     private Console checkingConsole() {     // Method to check if the console is available or not
         Console checkCons = System.console();       // Creating a Console object
+
         if (checkCons != null) {    // Condition for availability
             System.out.println("Console is available");
         } else {
             System.out.println("Console is not available");
-            }
+        }
         return checkCons;   // Returning the console
     }
 }
