@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.util.Scanner;   // Importing scanner class
+
 // Write a Java program to print the area and perimeter of a rectangle
 public class FindingRectangleDimensions {
     public static void main(String[] strings) {     // Main method
@@ -15,6 +16,7 @@ public class FindingRectangleDimensions {
     }
     public int userInputs() {    // Method to receive inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
+
         return in.nextInt();    // Returning the inputs
     }
     public void sizeOfAnRectangle(int w, int h) {    // Method to find the size of the rectangle
