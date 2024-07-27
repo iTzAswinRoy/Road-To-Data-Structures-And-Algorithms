@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program that takes two numbers as input and displays the product of two numbers.
 public class MultiplyingTheNumbers {
     public static void main(String[] args) {       // Main method
@@ -17,6 +18,7 @@ public class MultiplyingTheNumbers {
 
     public int userInputs() {       // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
+
         return in.nextInt();    // Returning the input
     }
 
