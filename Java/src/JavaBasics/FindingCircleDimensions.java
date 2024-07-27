@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program to print the area and perimeter of a circle.
 public class FindingCircleDimensions {
     public static void main(String[] args) {    // Main method
@@ -15,8 +16,8 @@ public class FindingCircleDimensions {
 
         System.out.println("Enter the radius: ");
         int r = in.nextInt();   // Getting the radius from the user
-
         in.close();     // Closing scanner
+
         return r;   // Returning the radius
     }
 
