@@ -1,5 +1,6 @@
 package JavaBasics;
-import java.util.ArrayList;
+import java.util.ArrayList;     // Importing Array list
+
 // Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
 public class DividingNumbers {
     public static void main(String[] args) {    // Main method
@@ -19,7 +20,8 @@ public class DividingNumbers {
     }
 
     public ArrayList<Integer> numbers() {    // Method to collect numbers from 1 to 100
-        ArrayList<Integer> num = new ArrayList<>();     // Creating an array list to store the numbers from 1 to 100
+        ArrayList<Integer> num = new ArrayList<>();     // Creating an array list to store the numbers
+
         for (int i = 0; i < 100; i++) {
             num.add(i);       // Storing each numbers to the array list
         }
@@ -28,6 +30,7 @@ public class DividingNumbers {
 
     public void divideBy3(ArrayList<Integer> data) {     // Method to divide the number by 3
         ArrayList<Integer> result = new ArrayList<>();      // Creating an array list to store the results
+
         for (int i = 1; i < data.size(); i++) {
             if (data.get(i) % 3 == 0) {       // Checking if the number is divisible by 3
                 result.add(data.get(i));    // Storing the number to an array list
@@ -38,6 +41,7 @@ public class DividingNumbers {
 
     public void divideBy5(ArrayList<Integer> data) {    // Method to divide the number by 5
         ArrayList<Integer> result = new ArrayList<>();  // Creating an array list to store the results
+
         for (int i = 1; i < data.size(); i++) {
             if (data.get(i) % 5 == 0) {     // Checking if the number is divisible by 5
                 result.add(data.get(i));    // Storing the number to an array list
@@ -48,6 +52,7 @@ public class DividingNumbers {
 
     public void divideBy3And5(ArrayList<Integer> data) {     // Method to divide the number by 5
         ArrayList<Integer> result = new ArrayList<>();      // Creating an array list to store the results
+
         for (int i = 1; i < data.size(); i++) {
             if (data.get(i) % 3 == 0 && data.get(i) % 5 == 0) {      // Checking if the number is divisible by 3 and5
                 result.add(data.get(i));        // Storing the number to an array list
