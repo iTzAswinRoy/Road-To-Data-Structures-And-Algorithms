@@ -1,6 +1,7 @@
 package JavaBasics;
 import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program that takes three numbers as input to calculate and print the average of the numbers.
 public class FindingAverageNumber {
     public static void main(String[] args) {    // Main method
@@ -25,6 +26,7 @@ public class FindingAverageNumber {
             num.add(in.nextInt());      // Storing the values in the arraylist for each iteration
         }
         in.close();     // Closing scanner
+
         return num;     // Returning the inputs
     }
 
@@ -33,6 +35,7 @@ public class FindingAverageNumber {
         for (int i = 0; i < data.size(); i++) {     // Iterating over the arraylist
             sum += data.get(i);     // Adding the values for each iteration
         }
+
         return sum / data.size();     // Returning the average formula
     }
 }
