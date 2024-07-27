@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program to divide two numbers and print them on the screen.
 public class DivideTwoNumbers {
     public static void main(String[] args) {       // Main method
@@ -17,6 +18,7 @@ public class DivideTwoNumbers {
 
     public int userInputs() {       // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
+
         return in.nextInt();    // Returning the input
     }
 
