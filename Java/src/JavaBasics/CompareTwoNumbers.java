@@ -1,5 +1,6 @@
 package JavaBasics;
 import java.util.Scanner;     // Importing scanner class
+
 // Write a Java program to compare two numbers
 public class CompareTwoNumbers {
     public static void main(String[] args) {    // Main method
@@ -16,6 +17,7 @@ public class CompareTwoNumbers {
 
     public int userInputs() {    // Method to get the user inputs
         Scanner in = new Scanner(System.in);    // Creating a scanner object
+
         return in.nextInt();    // returning the scanner
     }
 
