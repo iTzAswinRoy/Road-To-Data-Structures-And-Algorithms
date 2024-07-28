@@ -42,6 +42,7 @@ public class CheckingArrayElements {
 
     public boolean checkArray(ArrayList<Integer> arr1, ArrayList<Integer> arr2) {     // Method to check if both the array contains same first and last elements
         if (arr1.size() >= 2 && arr2.size() >= 2) {     // Setting a condition that the array length should be greater than 2
+
             for (int i = 0; i < arr1.size(); i++) {     // Iteration over array list 1
                 for (int j = 0; j < arr2.size(); j++) {     // Iteration over array list 2
 
