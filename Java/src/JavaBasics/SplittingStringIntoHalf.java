@@ -19,7 +19,7 @@ public class SplittingStringIntoHalf {
     public void splittingString(String text) {      // Method to split the string in a half
         String result = " ";    // Creating an empty string to store the result
         if (text.length() % 2 == 0) {      // Checking if the string is even
-            result = text.substring(0, text.length()/2);    // Splitting the string into half
+            result = text.substring(0, text.length() / 2);    // Splitting the string into half
             System.out.println("The first half of the given string:\n" + result);     // Displaying the result
         } else {
             System.out.println("Invalid string!");   // This executes if the string contains odd no. of letters
