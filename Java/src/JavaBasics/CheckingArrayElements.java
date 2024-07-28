@@ -44,6 +44,7 @@ public class CheckingArrayElements {
         if (arr1.size() >= 2 && arr2.size() >= 2) {     // Setting a condition that the array length should be greater than 2
             for (int i = 0; i < arr1.size(); i++) {     // Iteration over array list 1
                 for (int j = 0; j < arr2.size(); j++) {     // Iteration over array list 2
+
                     if(Objects.equals(arr1.getFirst(), arr2.getFirst()) && Objects.equals(arr1.getLast(), arr2.getLast())){     // Applying the main condition over here
                         return true;    // Returns true if the conditions are met
                     }
