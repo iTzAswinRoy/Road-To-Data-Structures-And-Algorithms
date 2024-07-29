@@ -10,7 +10,9 @@ public class w155 {
         obj.transposeArray(arr);       //
         obj.printArray(obj.transposeArray(arr));    // Calling the method inside the method
     }
-
+    public int[][] userInputs(){
+        return
+    }
     public int[][] transposeArray(int[][] data){     // Creating a method to transpose the array
         int[][] new_arr = new int[data[0].length][data.length];      // Creating a new array were the rows and columns are swapped
         for (int i = 0; i < data.length; i++) {       // Iterating through the rows
