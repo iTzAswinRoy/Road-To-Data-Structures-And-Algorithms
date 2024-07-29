@@ -18,7 +18,7 @@ public class w155 {
                 new_arr[j][i] = data[i][j];     // Storing the values in a new array
             }
         }
-        return new_arr;
+        return new_arr;     //
     }
 
     public void printArray(int[][] data) {      // Creating a method to print the array
