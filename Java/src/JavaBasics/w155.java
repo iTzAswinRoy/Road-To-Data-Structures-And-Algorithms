@@ -1,5 +1,5 @@
 package JavaBasics;
-import java.util.Scanner;
+import java.util.Scanner;       //
 // Transversing an array from 3D to 2D
 public class w155 {
     public static void main(String[] args) {       // Main method
