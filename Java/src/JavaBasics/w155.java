@@ -6,7 +6,7 @@ public class w155 {
         int[][] arr = {{10,20,33},
                 {40,50,60}};       // Assigning the values for a 2D array
 
-        obj.transposeArray(arr);
+        obj.transposeArray(arr);       //
         obj.printArray(obj.transposeArray(arr));    // Calling the method inside the method
     }
 
