@@ -9,7 +9,7 @@ public class FirstLetterInMatrix {
         System.out.println("\nGiven string array:");
         obj.printArray(array);      // DDisplaying the array
 
-        System.out.println("\nFinding the first letter in the array:");
+        System.out.println("\nGetting only the first letter in the array:");
         obj.printArray(obj.findingLetters(array));      // Calling the method to find the first letter in the matrix
     }
 
