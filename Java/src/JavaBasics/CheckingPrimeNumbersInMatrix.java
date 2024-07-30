@@ -1,5 +1,7 @@
 package JavaBasics;
+
 import java.util.Scanner;      // Importing scanner class
+
 // Checking if an array contains a prime number
 public class CheckingPrimeNumbersInMatrix {
     public static void main(String[] args) {        // Main method
