@@ -1,7 +1,9 @@
 package JavaBasics;
+
 import java.util.Arrays;        // Importing arrays class
 import java.util.Objects;       // Importing object class
 import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program to test if the first and last element of two integer arrays are the same.
 // The array length must be greater than or equal to 2.
 public class CheckingArrayElements {
