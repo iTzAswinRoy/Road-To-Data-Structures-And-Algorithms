@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.lang.String;        // Importing string class
 import java.util.Scanner;       // Importing scanner class
 
