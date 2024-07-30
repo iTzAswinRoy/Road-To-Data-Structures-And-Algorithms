@@ -1,5 +1,7 @@
 package JavaBasics;
+
 import java.util.Scanner;       // Importing scanner class
+
 // Transposing an array
 public class ArrayTranspose {
     public static void main(String[] args) {       // Main method
