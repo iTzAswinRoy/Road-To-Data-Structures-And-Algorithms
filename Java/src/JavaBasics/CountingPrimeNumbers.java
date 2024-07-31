@@ -1,5 +1,7 @@
 package JavaBasics;
+
 // Write a Java program to compute the sum of the first 100 prime numbers.
+
 public class CountingPrimeNumbers {
     public static void main(String[] args) {      // Main method
         CountingPrimeNumbers obj = new CountingPrimeNumbers();       // Creating an object to call the methods
