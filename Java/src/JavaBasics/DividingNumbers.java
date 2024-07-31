@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.util.ArrayList;     // Importing Array list
 
 // Write a Java program to print numbers between 1 and 100 divisible by 3, 5 and both.
