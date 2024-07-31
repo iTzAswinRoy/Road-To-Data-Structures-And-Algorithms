@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
 
