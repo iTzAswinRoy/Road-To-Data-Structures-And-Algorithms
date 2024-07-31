@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.util.Scanner;   // Importing scanner class
 
 // Write a Java program to accept an integer and count the factors of the number
