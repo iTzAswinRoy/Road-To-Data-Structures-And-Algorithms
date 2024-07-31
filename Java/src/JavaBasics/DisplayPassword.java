@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.io.Console;     // This imports console libraries
 
 // Write a Java program to input and display your password.
