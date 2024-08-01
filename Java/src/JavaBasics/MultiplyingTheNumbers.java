@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program that takes two numbers as input and displays the product of two numbers.
