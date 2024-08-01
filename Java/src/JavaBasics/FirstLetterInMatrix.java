@@ -1,5 +1,7 @@
 package JavaBasics;
+
 import java.util.Scanner;     // Importing scanner class
+
 // Finding the first letter in an 2D array
 public class FirstLetterInMatrix {
     public static void main(String[] args) {        // Main method
