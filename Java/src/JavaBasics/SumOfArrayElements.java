@@ -1,6 +1,8 @@
 package JavaBasics;
+
 import java.util.Arrays;    // Importing array class
 import java.util.Scanner;   // Importing scanner class
+
 // Generate the following series and store them in an array. Display from the array, Display the Sum
 // Example: if N = 50, then Output: 1, 2, 5, 10, 17, 26, 37, 50, 65, 82, 101, 122 ....... N
 public class SumOfArrayElements {
