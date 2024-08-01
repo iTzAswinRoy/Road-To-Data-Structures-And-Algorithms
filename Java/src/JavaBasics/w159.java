@@ -1,9 +1,11 @@
 package JavaBasics;
+
 import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
+
 // Finding the largest 3 elements in an array
 public class w159 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         w159 obj = new w159();  // Creating an object to call the method
         ArrayList<Integer> arr = obj.getInput();    // Get user input and store it in an ArrayList
         obj.printArray(arr);    // Prints the ArrayList
