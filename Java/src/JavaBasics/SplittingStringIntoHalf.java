@@ -1,5 +1,7 @@
 package JavaBasics;
+
 import java.util.Scanner;   // Importing scanner class
+
 // Write a Java program to extract the first half of even string.
 public class SplittingStringIntoHalf {
     public static void main(String[] args) {    //  Main method
@@ -18,6 +20,7 @@ public class SplittingStringIntoHalf {
 
     public void splittingString(String text) {      // Method to split the string in a half
         String result = " ";    // Creating an empty string to store the result
+
         if (text.length() % 2 == 0) {      // Checking if the string is even
             result = text.substring(0, text.length() / 2);    // Splitting the string into half
             System.out.println("The first half of the given string:\n" + result);     // Displaying the result
