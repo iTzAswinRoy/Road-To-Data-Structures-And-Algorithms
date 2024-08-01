@@ -1,7 +1,9 @@
 package JavaBasics;
+
 import java.util.ArrayList;     // Importing array list class
 import java.util.Arrays;        // Importing arrays class
 import java.util.Scanner;       // Importing scanner class
+
 // Extract the prime numbers from the array and display the same. Also display the sum of the prime numbers displayed.
 public class SumOfPrimeNumbers {
     public static void main(String[] args) {    // Main method
