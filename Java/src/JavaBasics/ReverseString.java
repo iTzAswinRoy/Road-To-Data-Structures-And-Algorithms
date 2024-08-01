@@ -1,4 +1,5 @@
 package JavaBasics;
+
 import java.util.Scanner;
 
 // Write a Java program to reverse a string.
