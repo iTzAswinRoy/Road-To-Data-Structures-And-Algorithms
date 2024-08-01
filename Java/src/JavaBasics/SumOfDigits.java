@@ -1,5 +1,7 @@
 package JavaBasics;
+
 import java.util.Scanner;      // Importing scanner class
+
 // Write a Java program and compute the sum of an integer's digits.
 public class SumOfDigits {
     public static void main(String[] args) {    // Main method
