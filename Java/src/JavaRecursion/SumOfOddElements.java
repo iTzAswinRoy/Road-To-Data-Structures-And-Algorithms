@@ -1,6 +1,5 @@
 package JavaRecursion;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 // Write a recursive function to find the sum of elements at odd indices in an array.
@@ -8,30 +7,27 @@ public class SumOfOddElements {
     public static void main(String[] args) {
         SumOfOddElements obj = new SumOfOddElements();
 
-        int[] array = {2,5,6,9,1};
-        int result = obj.sumOfOddNumbers(array, array.length);
+        int[] array = {8,5,1,3,6};
+        int result = obj.sumOfOddNumbers(array, array.length, 0);
+
         System.out.println("Given array:\n" + Arrays.toString(array));
-        System.out.println("Sum of odd numbers:" + result);
+        System.out.println("\nSum of odd numbers:\n" + result);
     }
-    public int sumOfOddNumbers(int[] data, int length){
-        int sumOdd = 0;
 
-        if (length <= 0){
-            return sumOdd;
+    public int sumOfOddNumbers(int[] data, int index, int sum) {
+        if(index <= 0){
+            return sum;
         }
-        sumOdd += findingOddNumber(data, length-1).get(length-1);
-        return sumOfOddNumbers(data, length-1);
-
+        if (checkingOddNumber(data[index-1])) {
+            sum = sum + data[index-1];
+        }
+        return sumOfOddNumbers(data, index-1, sum);
     }
-    public ArrayList<Integer> findingOddNumber(int[] num, int length){
-        ArrayList<Integer> list = new ArrayList<>();
 
-        if(length <= 0 ){
-            return list;
+    public boolean checkingOddNumber(int num){
+        if (num % 2 != 0){
+            return true;
         }
-        if(num[num.length-1] % 2 != 0){
-            list.add(num[num.length-1]);
-        }
-        return findingOddNumber(num, length-1);
+        return false;
     }
 }
