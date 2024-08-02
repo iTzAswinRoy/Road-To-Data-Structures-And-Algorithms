@@ -6,7 +6,7 @@ public class w162 {     // Main class
     public static void main(String[] args) {
         w162 obj = new w162();  // Creating an object
         int[] arr = obj.inputArray();   // Calling a method to get inputs from the user
-        obj.printArray(arr);    // Printing the array
+//        obj.printArray(arr);    // Printing the array
         System.out.println("The average value of the array:\n"+obj.average(arr));   // Getting the average value of the array
         obj.aboveAverage(arr);  // Getting the above average value of the array
     }
@@ -21,9 +21,6 @@ public class w162 {     // Main class
         }
         in.close(); // Closing scanner
         return arr;
-    }
-    public void printArray(int[] data) {    // Creating a method to print the array
-        System.out.println("Given array: \n"+Arrays.toString(data));
     }
     public int average(int[] data){     // Creating a method to get an average
         int sum = 0;    // Creating a variable to store the sum value
