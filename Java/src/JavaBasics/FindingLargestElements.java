@@ -10,7 +10,7 @@ public class FindingLargestElements {
         ArrayList<Integer> array = obj.getInput();     // Get user input and store it in an ArrayList
 
         System.out.println("Given array list:\n" + array);        // Prints the ArrayList
-        System.out.println("\nThe 3 largest elements are " + obj.maximumArray(array));      // Calling the Maximum array method
+        System.out.println("\nThe 3 largest elements are " + obj.LargestElements(array));      // Calling the Maximum array method
     }
 
     public ArrayList<Integer> getInput() {      // Creating an array to get the size and values
@@ -30,7 +30,7 @@ public class FindingLargestElements {
         return list;     // Returning values containing ArrayList
     }
 
-    public ArrayList<Integer> maximumArray(ArrayList<Integer> data){       // Method to find the maximum elements in an ArrayList
+    public ArrayList<Integer> LargestElements(ArrayList<Integer> data){       // Method to find the maximum elements in an ArrayList
         ArrayList<Integer> newArray = new ArrayList<>();    // A new ArrayList to store the maximum elements
         // Creating empty variables to store the maximum numbers
         int first = 0;
