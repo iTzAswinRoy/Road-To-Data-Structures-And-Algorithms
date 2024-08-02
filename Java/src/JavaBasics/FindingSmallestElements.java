@@ -10,7 +10,7 @@ public class FindingSmallestElements {
         ArrayList<Integer> array = obj.getInput();        // Get user input and store it in an ArrayList
 
         System.out.println("Given array list:\n" + array);        // Displaying the ArrayList
-        System.out.println("The 3 smallest elements are " + obj.minimumElements(array));       // Calling the method to find the smallest 3 elements
+        System.out.println("\nThe 3 smallest elements are " + obj.minimumElements(array));       // Calling the method to find the smallest 3 elements
     }
 
     public ArrayList<Integer> getInput() {      // Creating an array to get the size and values
