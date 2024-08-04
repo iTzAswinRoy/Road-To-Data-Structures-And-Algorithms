@@ -32,7 +32,7 @@ public class w163 {
             binaryNumber.add(reminder);
             num = num / 2;
         }
-        return binaryNumber;
+        return binaryNumber;  //
     }
     public int count(Queue<Integer> num){    // Creating a method to count the zero bits present in the binary number
         int count = 0;
