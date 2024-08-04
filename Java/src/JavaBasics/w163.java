@@ -5,7 +5,7 @@ import java.util.Queue;  //
 // Write a Java program that will accept an integer and convert it into a binary representation.
 // Now count the number of bits equal to zero in this representation.
 public class w163 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //
         w163 obj = new w163();  // Creating an object
         int number = obj.integer();  // Storing the integer value to a variable
         Queue<Integer> binaryRepresentation = obj.convertToBinary(number);  // Storing the binary number to a queue interface
