@@ -1,6 +1,6 @@
 package JavaBasics;
 import java.util.LinkedList; //
-import java.util.Scanner;
+import java.util.Scanner; //
 import java.util.Queue;
 // Write a Java program that will accept an integer and convert it into a binary representation.
 // Now count the number of bits equal to zero in this representation.
