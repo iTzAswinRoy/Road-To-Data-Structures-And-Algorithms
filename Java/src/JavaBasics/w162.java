@@ -29,7 +29,7 @@ public class w162 {     // Main class
         }
         in.close(); // Closing scanner
 
-        return arr;
+        return arr;  //
     }
 
     public int average(int[] data){     // Creating a method to get an average
