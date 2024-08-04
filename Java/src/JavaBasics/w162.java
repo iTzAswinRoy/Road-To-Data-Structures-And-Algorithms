@@ -1,7 +1,7 @@
 package JavaBasics;
 
 import java.util.Arrays;  //
-import java.util.Scanner;
+import java.util.Scanner;  //
 
 // Write a Java program that finds numbers greater than the average of an array.
 public class w162 {     // Main class
