@@ -25,7 +25,7 @@ public class w163 {
         int reminder = 0;
         if (num == 0){  // If the input value is zero then it returns 0
             binaryNumber.add(0); //
-            return binaryNumber;
+            return binaryNumber; //
         }
         while(num > 0) {    // Here the conversion of binary number takes place
             reminder = num % 2;
