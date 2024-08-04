@@ -24,7 +24,7 @@ public class w163 {
         Queue<Integer> binaryNumber = new LinkedList<>();  // Creating a queue interface
         int reminder = 0;
         if (num == 0){  // If the input value is zero then it returns 0
-            binaryNumber.add(0);
+            binaryNumber.add(0); //
             return binaryNumber;
         }
         while(num > 0) {    // Here the conversion of binary number takes place
