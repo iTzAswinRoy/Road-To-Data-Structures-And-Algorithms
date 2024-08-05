@@ -1,7 +1,9 @@
 package JavaBasics;
+
 import java.util.LinkedList; //
 import java.util.Scanner; //
 import java.util.Queue;  //
+
 // Write a Java program that will accept an integer and convert it into a binary representation.
 // Now count the number of bits equal to zero in this representation.
 public class w163 {
@@ -48,7 +50,7 @@ public class w163 {
         int count = 0;
 
         for (int i = 0; i < num.size(); i++) {
-            // Here I'm converting the queue interface to an linknedList so that I can access a certain element
+            // Here I'm converting the queue interface to an linked list so that I can access a certain element
             int element = ((LinkedList<Integer>) num).get(i);
             if (element == 0) {
                 count++;    // For each iteration the count increase a values by 1
