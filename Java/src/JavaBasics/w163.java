@@ -28,17 +28,21 @@ public class w163 {
     public Queue<Integer> convertToBinary(int num){     // Creating a method to convert the number to binary
         Queue<Integer> binaryNumber = new LinkedList<>();  // Creating a queue interface
         int reminder = 0;
+
         if (num == 0){  // If the input value is zero then it returns 0
             binaryNumber.add(0); //
+
             return binaryNumber; //
         }
         while(num > 0) {    // Here the conversion of binary number takes place
+
             reminder = num % 2;
             binaryNumber.add(reminder);
             num = num / 2;
         }
         return binaryNumber;  //
     }
+
     public int count(Queue<Integer> num){    // Creating a method to count the zero bits present in the binary number
         int count = 0;
         for (int i = 0; i < num.size(); i++) {
