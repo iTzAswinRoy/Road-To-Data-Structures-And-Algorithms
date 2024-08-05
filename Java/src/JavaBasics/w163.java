@@ -14,6 +14,7 @@ public class w163 {
         System.out.println("Binary representation of "+number+" is "+binaryRepresentation);
         System.out.println("Number of zero bits: "+ obj.count(binaryRepresentation));   // Displaying the count of zero bits
     }
+
     public int integer(){   // Creating a method to get values from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner class
         System.out.println("Enter the number: ");
