@@ -1,4 +1,4 @@
-package JavaRecursion;
+package JavaRecursion.Arrays;
 
 // Implement a recursive function to find the n-th Fibonacci number.
 public class FibonacciSequence {

@@ -1,4 +1,4 @@
-package JavaRecursion;
+package JavaRecursion.Arrays;
 
 // Write a recursive function to calculate the factorial of a number n.
 public class FactorialCalculation {
