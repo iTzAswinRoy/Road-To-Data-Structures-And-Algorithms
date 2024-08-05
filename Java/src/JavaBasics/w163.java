@@ -8,8 +8,8 @@ public class w163 {
     public static void main(String[] args) { //
         w163 obj = new w163();  // Creating an object
         int number = obj.integer();  // Storing the integer value to a variable
-
         Queue<Integer> binaryRepresentation = obj.convertToBinary(number);  // Storing the binary number to a queue interface
+
         System.out.println("Input number: \n"+number);  // Displaying the input number
         System.out.println("Binary representation of "+number+" is "+binaryRepresentation);
         System.out.println("Number of zero bits: "+ obj.count(binaryRepresentation));   // Displaying the count of zero bits
@@ -25,6 +25,7 @@ public class w163 {
 
         return num;     // returning the input value
     }
+
     public Queue<Integer> convertToBinary(int num){     // Creating a method to convert the number to binary
         Queue<Integer> binaryNumber = new LinkedList<>();  // Creating a queue interface
         int reminder = 0;
@@ -45,6 +46,7 @@ public class w163 {
 
     public int count(Queue<Integer> num){    // Creating a method to count the zero bits present in the binary number
         int count = 0;
+
         for (int i = 0; i < num.size(); i++) {
             // Here I'm converting the queue interface to an linknedList so that I can access a certain element
             int element = ((LinkedList<Integer>) num).get(i);
