@@ -17,9 +17,12 @@ public class w163 {
 
     public int integer(){   // Creating a method to get values from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner class
+
         System.out.println("Enter the number: ");
         int num = in.nextInt();   // Storing the value to a variable
+
         in.close();   // Closing scanner to avoid data breach
+
         return num;     // returning the input value
     }
     public Queue<Integer> convertToBinary(int num){     // Creating a method to convert the number to binary
