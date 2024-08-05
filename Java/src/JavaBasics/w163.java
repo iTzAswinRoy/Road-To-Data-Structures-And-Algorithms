@@ -8,6 +8,7 @@ public class w163 {
     public static void main(String[] args) { //
         w163 obj = new w163();  // Creating an object
         int number = obj.integer();  // Storing the integer value to a variable
+
         Queue<Integer> binaryRepresentation = obj.convertToBinary(number);  // Storing the binary number to a queue interface
         System.out.println("Input number: \n"+number);  // Displaying the input number
         System.out.println("Binary representation of "+number+" is "+binaryRepresentation);
