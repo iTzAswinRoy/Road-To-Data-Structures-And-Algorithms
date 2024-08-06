@@ -22,6 +22,8 @@ public class CheckSorted {
     }
 
     public int[] sortingList(ArrayList<Integer> data, int index){
-        
+        if(index == data.size()){
+            return;
+        }
     }
 }
