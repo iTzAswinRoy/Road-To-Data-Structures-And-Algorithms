@@ -25,5 +25,8 @@ public class CheckSorted {
         if(index == data.size()){
             return;
         }
+        for (int i = 0; i < ; i++) {
+            
+        }
     }
 }
