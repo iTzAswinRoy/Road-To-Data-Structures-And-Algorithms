@@ -34,10 +34,10 @@ public class FindDuplicates {
         }
 
         if (isChecked) {
-            if (!result.contains(currentElements)){
+            if (!result.contains(currentElements)) {
                 result.add(currentElements);
             }
         }
-        return duplicateElements(data, index+1, result);
+        return duplicateElements(data, index + 1, result);
     }
 }
