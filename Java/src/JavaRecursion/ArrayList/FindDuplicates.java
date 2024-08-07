@@ -27,13 +27,13 @@ public class FindDuplicates {
         boolean isChecked = false;
 
         for (int i = 0; i < data.size(); i++) {
-            if(data.get(i) == currentElements && index != i){
+            if (data.get(i) == currentElements && index != i) {
                 isChecked = true;
                 break;
             }
         }
 
-        if(isChecked){
+        if (isChecked) {
             if (!result.contains(currentElements)){
                 result.add(currentElements);
             }
