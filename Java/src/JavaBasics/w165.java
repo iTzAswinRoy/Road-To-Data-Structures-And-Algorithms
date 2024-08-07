@@ -7,8 +7,10 @@ import java.util.Arrays;
 public class w165 {
     public static void main(String[] args) {
         w165 obj = new w165();     // Creating an object ot call the methods
+
         int[] array = obj.inputElements();  // Calling a method to get inputs for the array
         int[] result = obj.rearrangeArray(array);   // Storing the rearranged array in a variable
+
         obj.printArray(result);     // Printing the result
     }
     public int[] inputElements(){   // Method to get the inputs
