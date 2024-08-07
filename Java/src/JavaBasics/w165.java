@@ -1,6 +1,8 @@
 package JavaBasics;
+
 import java.util.Scanner;
 import java.util.Arrays;
+
 // Write a Java program to move every positive number to the right and every negative number to the left of a given array of integers.
 public class w165 {
     public static void main(String[] args) {
