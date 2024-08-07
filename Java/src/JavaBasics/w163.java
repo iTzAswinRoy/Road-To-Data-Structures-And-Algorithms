@@ -47,7 +47,7 @@ public class w163 {
     }
 
     public int count(Queue<Integer> num){    // Creating a method to count the zero bits present in the binary number
-        int count = 0;
+        int count = 0;      //
 
         for (int i = 0; i < num.size(); i++) {
             // Here I'm converting the queue interface to an linked list so that I can access a certain element
