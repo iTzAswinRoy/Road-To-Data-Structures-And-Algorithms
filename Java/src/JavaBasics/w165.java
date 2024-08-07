@@ -13,6 +13,7 @@ public class w165 {
 
         obj.printArray(result);     // Printing the result
     }
+
     public int[] inputElements(){   // Method to get the inputs
         Scanner in = new Scanner(System.in);    // Creating a scanner object
         System.out.println("Enter the size of the array: ");
