@@ -17,7 +17,7 @@ public class ProductOfElements {
 
         int result = obj.multiplyingElements(list, 0);
         System.out.println("Given array list:\n" + list);
-        System.out.println("\nFinding the product of the elements in the array list:\n"+ result);
+        System.out.println("\nFinding the product of the elements in the array list:\n" + result);
     }
 
     public int multiplyingElements(ArrayList<Integer> data, int index){
