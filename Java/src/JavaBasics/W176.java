@@ -13,7 +13,7 @@ public class W176 {
         System.out.println("\nThe partitioned even and odd elements in an array are\n" + obj.partitionArray(result));     // Displaying the results
     }
 
-    public ArrayList<Integer> userInputs(){     // Method to get user inputs
+    public ArrayList<Integer> userInputs() {     // Method to get user inputs
         Scanner in = new Scanner(System.in);      // Creating a scanner object
 
         ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list
@@ -29,15 +29,15 @@ public class W176 {
         return temp;    // Retuning the list containing elements
     }
 
-    public ArrayList<Integer> partitionArray(ArrayList<Integer> data){      // Method to partition the even and odd numbers in an array
+    public ArrayList<Integer> partitionArray(ArrayList<Integer> data) {      // Method to partition the even and odd numbers in an array
         ArrayList<Integer> temp = new ArrayList<>();    // Creating a temporary array list to store the partitioned array
 
         for (int i = 0; i < data.size(); i++) {     // Iterating through an array list
 
-            if(data.get(i) % 2 == 0){       // Checking if the element is even
+            if (data.get(i) % 2 == 0) {       // Checking if the element is even
                 temp.addFirst(data.get(i));     // If yes,then it is added at the first of the array list
 
-            } else if (data.get(i) % 2 != 0){   // Checking if the element is odd
+            } else if (data.get(i) % 2 != 0) {   // Checking if the element is odd
                 temp.addLast(data.get(i));      // If yes,then it is added at the last of the array list
             }
         }
