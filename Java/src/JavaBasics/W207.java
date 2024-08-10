@@ -7,12 +7,15 @@ public class W207 {
     int size;
     static int count = 1;   // Initializing as static to increment the count correctly whenever the instances of the class is called
     int listCount;
+
     W207(){
         this.size = 0;
         this.listCount = count++;
     }
+
     public void insertLast(int data){
         Node newNode = new Node(data);
+
         if (head == null){
             head = newNode;
             tail = newNode;
@@ -22,19 +25,26 @@ public class W207 {
         }
         size++;
     }
+
     public void createLinkedList(){
         Scanner in = new Scanner(System.in);
-        System.out.println("Enter the size of the Linked list "+listCount+":");
+
+        System.out.println("Enter the size of the Linked list " + listCount + ":");
         int size = in.nextInt();
-        System.out.println("Enter the values of linked list "+listCount+":");
+
+        System.out.println("Enter the values of linked list " + listCount + ":");
         for (int i = 0; i < size; i++) {
             insertLast(in.nextInt());
         }
     }
+
     public void sortLinkedList(){
-        System.out.println("Sorted linked list "+listCount+":");
+        System.out.println("Sorted linked list " + listCount + ":");
+
         for (Node i = head; i != null ; i = i.next) {
+
             for (Node j = head; j.next != null ; j = j.next) {
+
                 if(j.value > j.next.value){
                     int temp = j.value;
                     j.value = j.next.value;
@@ -43,13 +53,16 @@ public class W207 {
             }
         }
     }
-    public static W207 mergeLinkedList(W207 list1, W207 list2){
+
+    public static W207 mergeLinkedList(W207 list1, W207 list2) {
         W207 mergeList = new W207();
         Node curr1 = list1.head;
         Node curr2 = list2.head;
-        System.out.println("Merged the linked list in ascending order: ");
-        while (curr1 !=  null && curr2 != null){
-            if(curr1.value <= curr2.value){
+        System.out.println("Merged the linked list in ascending order:");
+
+        while (curr1 !=  null && curr2 != null) {
+
+            if (curr1.value <= curr2.value) {
                 mergeList.insertLast(curr1.value);
                 curr1 = curr1.next;
             } else {
@@ -57,31 +70,35 @@ public class W207 {
                 curr2 = curr2.next;
             }
         }
-        while (curr1 != null){
+        while (curr1 != null) {
             mergeList.insertLast(curr1.value);
             curr1 = curr1.next;
         }
-        while (curr2 != null){
+        while (curr2 != null) {
             mergeList.insertLast(curr2.value);
             curr2 = curr2.next;
         }
         return mergeList;
     }
-    public void display(){
+
+    public void display() {
         Node temp = head;
-        while (temp != null){
+
+        while (temp != null) {
             System.out.print(temp.value+"->");
             temp = temp.next;
         }
         System.out.print("END\n");
     }
-    static class Node{
+    static class Node {
         int value;
         Node next;
+
         Node(int value) {
             this.value = value;
         }
     }
+
     public static void main(String[] args) {
         W207 obj1 = new W207();
         W207 obj2 = new W207();
