@@ -34,10 +34,13 @@ public class w165 {
         int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
         int[] newArray = new int[data.length];    // Creating a new array to store the rearranged array
+
         for (int i = 0; i < data.length; i++) {     // Iterating over the array to rearrange the positive and negative elements
+
             if(data[i] > 0){
                 newArray[right] = data[i];
                 right--;
+
             } else if(data[i] < 0){
                 newArray[left] = data[i];
                 left++;
