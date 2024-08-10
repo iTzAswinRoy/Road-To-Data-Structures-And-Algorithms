@@ -15,7 +15,7 @@ public class W192 {
         obj.rearrangeCharacters(upperCaseText);    // Displaying the rearranged string by calling the method
     }
 
-    public String userInputs(){     // Method to get inputs from the user
+    public String userInputs() {     // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
 
         return in.nextLine();   // Returning the scanner object
