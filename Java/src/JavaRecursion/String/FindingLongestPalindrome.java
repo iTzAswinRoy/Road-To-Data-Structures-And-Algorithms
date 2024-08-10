@@ -6,33 +6,34 @@ public class FindingLongestPalindrome {
         FindingLongestPalindrome obj = new FindingLongestPalindrome();
         String sentence = "bopob holloh";
 
-        System.out.println("Given string:\n"+sentence);
-        System.out.println("\nFinding longest palindromic substring in a string.:\n");
-
-
-        System.out.println(obj.longestPalindrome(sentence, Integer.MIN_VALUE));
-
-//        System.out.println(obj.checkPalindrome(sentence));
+        System.out.println("Enter a series of string containing palindrome:\n"+sentence);
+        System.out.println("\nFinding longest palindromic substring in a string:\n" + obj.longestPalindrome(sentence, "", Integer.MIN_VALUE));
     }
 
-    public String longestPalindrome(String data, int length){
+    public String longestPalindrome(String data, String result, int max){
         if(data.isEmpty() ){
-            return data;
+            return result;
         }
-        if(data.indexOf(" ")== -1){
-            return data.substring(0, data.length()-1);
+        if(data.indexOf(" ") == -1){
+
+            if(checkPalindrome(data) && data.length() > max) {
+
+                return data;
+            }
+            return result;
         }
 
         String currentString = data.substring(0, data.indexOf(" "));
 
-
         if(checkPalindrome(currentString)){
-            if(currentString.length() > length) {
-                length = currentString.length();
+
+            if(currentString.length() > max) {
+
+                result = currentString;
+                max = currentString.length();
             }
         }
-
-        return longestPalindrome(data.substring(data.indexOf(" ")+1), length);
+        return longestPalindrome(data.substring(data.indexOf(" ")+1), result, max);
     }
 
     public boolean checkPalindrome(String data) {
