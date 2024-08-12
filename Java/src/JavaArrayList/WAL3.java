@@ -32,7 +32,7 @@ public class WAL3 {
     }
 
     public void insertElementAtFirst(ArrayList<Integer> temp){      // Method the insert element at firts
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);        // Creating a scanner object
 
         System.out.println("\nEnter the element to add at the first:");
         temp.add(0,in.nextInt());
