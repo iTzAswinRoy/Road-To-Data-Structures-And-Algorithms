@@ -17,7 +17,7 @@ public class WAL3 {
     }
 
     public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);        // Creating a scanner object
 
         System.out.println("Enter the size of the array list:");
         int size = in.nextInt();
