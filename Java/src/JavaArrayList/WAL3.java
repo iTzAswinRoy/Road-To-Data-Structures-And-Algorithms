@@ -25,8 +25,8 @@ public class WAL3 {
         ArrayList<Integer> temp = new ArrayList<Integer>(size);     // Creating a temporary array list
         System.out.println("Enter the value:");
 
-        for (int i = 0; i < size; i++) {
-            temp.add(in.nextInt());
+        for (int i = 0; i < size; i++) {        // Iterating over the array list
+            temp.add(in.nextInt());     // Adding elements for each iteration
         }
         return temp;
     }
