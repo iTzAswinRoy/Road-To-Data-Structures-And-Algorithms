@@ -20,7 +20,7 @@ public class WAL3 {
         Scanner in = new Scanner(System.in);        // Creating a scanner object
 
         System.out.println("Enter the size of the array list:");
-        int size = in.nextInt();
+        int size = in.nextInt();        // Getting the size from the user
 
         ArrayList<Integer> temp = new ArrayList<Integer>(size);
         System.out.println("Enter the value:");
