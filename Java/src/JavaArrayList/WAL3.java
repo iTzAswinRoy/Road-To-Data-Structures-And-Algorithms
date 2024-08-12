@@ -22,7 +22,7 @@ public class WAL3 {
         System.out.println("Enter the size of the array list:");
         int size = in.nextInt();        // Getting the size from the user
 
-        ArrayList<Integer> temp = new ArrayList<Integer>(size);
+        ArrayList<Integer> temp = new ArrayList<Integer>(size);     // Creating a temporary array list
         System.out.println("Enter the value:");
 
         for (int i = 0; i < size; i++) {
