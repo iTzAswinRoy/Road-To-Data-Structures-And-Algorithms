@@ -11,8 +11,8 @@ public class WAL3 {
 
         System.out.println("List containing name of colours:" + list);     // Displaying the arraylist
 
-        obj.insertElementAtFirst(list);
-        System.out.println("\nList after adding the element:" + list);
+        obj.insertElementAtFirst(list);      // Calling the method to insert the element at first
+        System.out.println("\nList after adding the element:" + list);      // Displaying the result
 
     }
 
