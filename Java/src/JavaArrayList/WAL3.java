@@ -28,10 +28,10 @@ public class WAL3 {
         for (int i = 0; i < size; i++) {        // Iterating over the array list
             temp.add(in.nextInt());     // Adding elements for each iteration
         }
-        return temp;
+        return temp;        // Returning the array list
     }
 
-    public void insertElementAtFirst(ArrayList<Integer> temp){
+    public void insertElementAtFirst(ArrayList<Integer> temp){      // Method the insert element at firts
         Scanner in = new Scanner(System.in);
 
         System.out.println("\nEnter the element to add at the first:");
