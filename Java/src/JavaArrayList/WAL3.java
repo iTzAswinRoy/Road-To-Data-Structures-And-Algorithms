@@ -35,6 +35,6 @@ public class WAL3 {
         Scanner in = new Scanner(System.in);        // Creating a scanner object
 
         System.out.println("\nEnter the element to add at the first:");
-        temp.add(0,in.nextInt());
+        temp.add(0,in.nextInt());       // Adding element at first
     }
 }
