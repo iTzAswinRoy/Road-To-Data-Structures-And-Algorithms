@@ -21,7 +21,7 @@ public class SortingList {
         System.out.println("Enter the size of the list:");
         int size = in.nextInt();        // Getting the size from the user
 
-        in.nextLine(); // Consume the newline after nextInt()
+        in.nextLine();      // Consume the newline after nextInt()
 
         ArrayList<String> newArrayList = new ArrayList<>(size);     // Creating a temporary array list
         System.out.println("Enter the string in the array list:");
