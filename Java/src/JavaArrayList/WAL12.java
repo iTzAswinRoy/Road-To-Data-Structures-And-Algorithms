@@ -1,30 +1,35 @@
 package JavaArrayList;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList;       // Importing scanner class
+import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to extract a portion of an array list.
 public class WAL12 {
-    public static void main(String[] args) {    // Main method
-        WAL12 obj = new WAL12();    // Creating an object
-        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
-        System.out.println("Given list:");
-        obj.display(list);      // Calling the method to display the array list
+    public static void main(String[] args) {        // Main method
+        WAL12 obj = new WAL12();     // Creating an object
+        ArrayList<Integer> list = obj.userInputs();         //  Creating an array list
+        System.out.println("Given list:" + list);
         obj.extractList(list);
 
     }
-    public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
-        Scanner in = new Scanner(System.in);
-        System.out.println("Enter the size of the array list:");
-        int size = in.nextInt();
-        ArrayList<Integer> temp = new ArrayList<Integer>(size);
-        System.out.println("Enter the values in the list:");
-        for (int i = 0; i < size; i++) {
-            temp.add(in.nextInt());
+    public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
+        Scanner in = new Scanner(System.in);      // Creating a scanner object
+
+        System.out.println("Enter the size:");
+        int size = in.nextInt();        // Getting the size from the user
+
+        ArrayList<Integer> tempList = new ArrayList<>();        // Creating a temporary array list
+        System.out.println("Enter the values:");
+
+        for (int i = 0; i < size; i++) {        // Iterating over the array list
+            tempList.add(in.nextInt());       // Adding elements for each iteration
         }
-        return temp;
+        in.close();         // Closing scanner for avoid excess memory storage
+
+        return tempList;        // Returning the array list
     }
-    public void extractList(ArrayList<Integer> list){
+
+    public void extractList(ArrayList<Integer> list) {
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter the starting and ending index to extract the elements from the list");
         System.out.println("Index-1:");
@@ -44,11 +49,5 @@ public class WAL12 {
                 System.out.print(list.get(i)+" ");
             }
         }
-    }
-    public void display(ArrayList<Integer> list) {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
-        }
-        System.out.println();
     }
 }
