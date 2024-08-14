@@ -32,19 +32,25 @@ public class WAL12 {
     public void extractList(ArrayList<Integer> list) {
         Scanner in = new Scanner(System.in);
         System.out.println("\nEnter the starting and ending index to extract the elements from the list");
+
         System.out.println("Index-1:");
         int i1 = in.nextInt();
+
         System.out.println("Index-2:");
         int i2 = in.nextInt();
+
         if(i1> list.size() || i2 > list.size() ) {
             System.out.println("Index out of bound!");
+
         } else if (i1 > i2){
             System.out.println("List from given index "+i1+" and "+i2+":");
+
             for (int i = i2; i <= i1; i++) {
                 System.out.print(list.get(i)+" ");
             }
         } else {
             System.out.println("List from given index " + i1 + " and " + i2 + ":");
+
             for (int i = i1; i <= i2; i++) {
                 System.out.print(list.get(i)+" ");
             }
