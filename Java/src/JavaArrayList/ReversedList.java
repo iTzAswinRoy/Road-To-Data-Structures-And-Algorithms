@@ -1,7 +1,7 @@
 package JavaArrayList;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList;         // Importing array list class
+import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to reverse elements in an array list
 public class ReversedList {
