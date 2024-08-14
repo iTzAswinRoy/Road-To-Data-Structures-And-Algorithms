@@ -19,19 +19,21 @@ public class WAL13 {
         System.out.println(obj.compareList(list1, list2));
     }
 
-    public ArrayList<Integer> userInputs(){     // Method to get inputs from the user
-        Scanner in = new Scanner(System.in);
+    public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
+        Scanner in = new Scanner(System.in);      // Creating a scanner object
 
-        System.out.println("Enter the size of the array list:");
-        int size = in.nextInt();
+        System.out.println("Enter the size:");
+        int size = in.nextInt();        // Getting the size from the user
 
-        ArrayList<Integer> temp = new ArrayList<>(size);
-        System.out.println("Enter the values in the list:");
+        ArrayList<Integer> tempList = new ArrayList<>();        // Creating a temporary array list
+        System.out.println("Enter the values:");
 
-        for (int i = 0; i < size; i++) {
-            temp.add(in.nextInt());
+        for (int i = 0; i < size; i++) {        // Iterating over the array list
+            tempList.add(in.nextInt());       // Adding elements for each iteration
         }
-        return temp;
+        in.close();         // Closing scanner for avoid excess memory storage
+
+        return tempList;        // Returning the array list
     }
 
     public boolean compareList(ArrayList<Integer> list1, ArrayList<Integer> list2){
