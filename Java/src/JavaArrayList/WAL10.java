@@ -1,46 +1,45 @@
 package JavaArrayList;
 
-import java.util.ArrayList;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.ArrayList;         // Importing array list class
+import java.util.Random;        // Importing random class
+import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to shuffle elements in an array list.
 public class WAL10 {
-    public static void main(String[] args) {
-        WAL10 obj = new WAL10();
-        ArrayList<Integer> list = obj.userInputs();
+    public static void main(String[] args) {        // Main method
+        WAL10 obj = new WAL10();        //Creating an object
+        ArrayList<Integer> list = obj.userInputs();         // Creating a empty list to stroe inputs
 
-        System.out.println("Given array list:");
-        obj.display(list);
+        System.out.println("Given array list:\n" + list);
 
         System.out.println("Array list after being shuffled:");
         obj.display(obj.shuffle(list));
     }
-    public ArrayList<Integer> userInputs(){
-        Scanner in = new Scanner(System.in);
+
+    public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
+        Scanner in = new Scanner(System.in);      // Creating a scanner object
 
         System.out.println("Enter the size of the list:");
-        int size = in.nextInt();
+        int size = in.nextInt();        // Getting the size from the user
 
-        ArrayList<Integer> tempList = new ArrayList<>();
+        ArrayList<Integer> tempList = new ArrayList<>();        // Creating a temporary array list
         System.out.println("Enter the values to add in the list:");
 
-        for (int i = 0; i < size; i++) {
-            tempList.add(in.nextInt());
+        for (int i = 0; i < size; i++) {        // Iterating over the array list
+            tempList.add(in.nextInt());       // Adding elements for each iteration
         }
-        System.out.println();
-        in.close();
+        in.close();         // Closing scanner for avoid excess memory storage
 
-        return tempList;
+        return tempList;        // Returning the array list
     }
 
-    public ArrayList<Integer> shuffle(ArrayList<Integer> list){
-        Random rnd = new Random();
+    public ArrayList<Integer> shuffle(ArrayList<Integer> list) {        // Method to shuffle elements ion the array list
+        Random rnd = new Random();      // Creating an object from random class
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {     // Iterating over the array list
 
-            int randomValue = rnd.nextInt(i+1); // The reason for (i + 1) is the nextInt range cant be zero, so it should start with a value
-            int temp = list.get(randomValue);
+            int randomValue = rnd.nextInt(i+1);     // The reason for (i + 1) is the nextInt range can't be zero, so it should start with a value
+            int temp = list.get(randomValue);       // Strong the random value from the lsit
 
             list.set(randomValue, i);
             list.set(i, temp);
