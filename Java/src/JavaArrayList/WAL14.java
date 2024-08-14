@@ -61,6 +61,7 @@ public class WAL14 {
             list.set(index1, list.get(index2));
             list.set(index2, temp);
             display(list);
+
         } else {
             System.out.println("\nElement not found!");
         }
