@@ -68,10 +68,4 @@ public class WAL14 {
             System.out.println("\nElement not found!");
         }
     }
-    public void display(ArrayList<Integer> list) {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + " ");
-        }
-        System.out.println();
-    }
 }
