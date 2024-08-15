@@ -46,9 +46,9 @@ public class WAL14 {
         int index1 = -1;
         int index2 = -1;
 
-        for (int i = 0; i < list.size(); i++) {
+        for (int i = 0; i < list.size(); i++) {     //
 
-            if (list.get(i) == e1 && index1 == -1){
+            if (list.get(i) == e1 && index1 == -1){     //
                 index1 = i;
             }
             if (list.get(i) == e2 && index2 == -1) {
