@@ -55,7 +55,7 @@ public class WAL14 {
                 index2 = i;
             }
         }
-        if(index1 != -1 && index2 != -1) {
+        if(index1 != -1 && index2 != -1) {      //
             System.out.println("\nElements after swapping:");
 
             int temp = list.get(index1);
