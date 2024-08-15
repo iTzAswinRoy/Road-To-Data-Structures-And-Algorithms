@@ -42,6 +42,7 @@ public class WAL14 {
         System.out.println("Element-2:");
         int e2 = in.nextInt();      //
 
+        //
         int index1 = -1;
         int index2 = -1;
 
