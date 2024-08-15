@@ -51,7 +51,7 @@ public class WAL14 {
             if (list.get(i) == e1 && index1 == -1){     //
                 index1 = i;
             }
-            if (list.get(i) == e2 && index2 == -1) {
+            if (list.get(i) == e2 && index2 == -1) {        //
                 index2 = i;
             }
         }
