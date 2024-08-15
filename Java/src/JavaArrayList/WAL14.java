@@ -58,6 +58,7 @@ public class WAL14 {
         if(index1 != -1 && index2 != -1) {      //
             System.out.println("\nElements after swapping:");
 
+            //
             int temp = list.get(index1);
             list.set(index1, list.get(index2));
             list.set(index2, temp);
