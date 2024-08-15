@@ -1,14 +1,14 @@
 package JavaArrayList;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.ArrayList;         // Importing array list class
+import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program that swaps two elements in an array list
 public class WAL14 {
     public static void main(String[] args) {    // Main method
-        WAL14 obj = new WAL14();    // Creating an object
+        WAL14 obj = new WAL14();      // Creating an object
 
-        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
+        ArrayList<Integer> list = obj.userInputs();       //  Creating an array list
         System.out.println("The given array list are");
 
         obj.display(list);
