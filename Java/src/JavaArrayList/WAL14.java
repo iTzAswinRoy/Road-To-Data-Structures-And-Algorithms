@@ -32,7 +32,7 @@ public class WAL14 {
         return tempList;        // Returning the array list
     }
 
-    public void swapList(ArrayList<Integer> list){
+    public void swapList(ArrayList<Integer> list){      //
         Scanner in = new Scanner(System.in);
 
         System.out.println("\nEnter the elements to be swapped");
