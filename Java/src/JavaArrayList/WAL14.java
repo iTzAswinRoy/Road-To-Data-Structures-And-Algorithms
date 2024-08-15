@@ -33,11 +33,11 @@ public class WAL14 {
     }
 
     public void swapList(ArrayList<Integer> list){      //
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);      //
 
         System.out.println("\nEnter the elements to be swapped");
         System.out.println("Element-1:");
-        int e1 = in.nextInt();
+        int e1 = in.nextInt();      //
 
         System.out.println("Element-2:");
         int e2 = in.nextInt();
