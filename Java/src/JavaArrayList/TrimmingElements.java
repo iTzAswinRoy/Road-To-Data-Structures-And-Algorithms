@@ -35,7 +35,7 @@ public class TrimmingElements {
         System.out.println("\nEnter the size to trim the list:");
         int size = in.nextInt();         // Getting the size from the user
 
-        if (size > list.size()){        // Checking if the size is less than the size of the list
+        if (size > list.size()) {        // Checking if the size is less than the size of the list
             System.out.println("\nInvalid size!");
 
         } else {
