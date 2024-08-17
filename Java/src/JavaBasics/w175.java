@@ -1,5 +1,7 @@
 package JavaBasics;
-import java.util.Scanner;
+
+import java.util.Scanner;       // Importing scanner class
+
 // Write a Java program to delete a specified node in the middle of a singly linked list.
 public class w175 {      // Creating a class which handles linked list
     Node head;      // Creating a reference for head
