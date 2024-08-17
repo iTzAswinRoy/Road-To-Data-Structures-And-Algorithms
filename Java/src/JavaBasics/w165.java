@@ -31,7 +31,7 @@ public class w165 {
         return data;        //
     }
 
-    public int[] rearrangeArray(int[] data){    // Method to rearrange the array
+    public int[] rearrangeArray(int[] data) {    // Method to rearrange the array
         int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
         int[] newArray = new int[data.length];    // Creating a new array to store the rearranged array
@@ -50,7 +50,7 @@ public class w165 {
         return newArray;
     }
 
-    public void printArray(int[] data){     // Method to display the final result
+    public void printArray(int[] data) {     // Method to display the final result
         System.out.println("Rearranged array:\n "+Arrays.toString(data));
     }
 }
