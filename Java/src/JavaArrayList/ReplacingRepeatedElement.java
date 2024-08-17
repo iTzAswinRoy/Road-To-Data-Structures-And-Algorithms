@@ -4,16 +4,16 @@
 //import java.util.Scanner;       // Importing scanner class
 //
 //// Write a Java program to update an array element by the given element.
-//public class ReplacingElement {
+//public class ReplacingRepeatedElement {
 //    public static void main(String[] args) {        // Main method
-//        ReplacingElement obj = new ReplacingElement();    // Creating an object
+//        ReplacingRepeatedElement obj = new ReplacingRepeatedElement();    // Creating an object
 //
 //        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
 //        System.out.println("Given array list:\n" + list);        // Displaying the list
 //
-//        ArrayList<Integer> updatedList = obj.setElement(list);      // Calling the method to replace the element
+////        ArrayList<Integer> updatedList = obj.setElement(list);      // Calling the method to replace the element
 //
-//        System.out.println("\nThe updated list:\n" + updatedList);    // Displaying the updated list
+////        System.out.println("\nThe updated list:\n" + updatedList);    // Displaying the updated list
 //    }
 //
 //    public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
