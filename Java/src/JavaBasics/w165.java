@@ -51,6 +51,6 @@ public class w165 {
     }
 
     public void printArray(int[] data) {     // Method to display the final result
-        System.out.println("Rearranged array:\n "+Arrays.toString(data));
+        System.out.println("Rearranged array:\n " + Arrays.toString(data));
     }
 }
