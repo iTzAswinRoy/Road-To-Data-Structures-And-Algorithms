@@ -28,8 +28,9 @@ public class w165 {
 
         in.close();         // Closing scanner
 
-        return data;
+        return data;        //
     }
+
     public int[] rearrangeArray(int[] data){    // Method to rearrange the array
         int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
