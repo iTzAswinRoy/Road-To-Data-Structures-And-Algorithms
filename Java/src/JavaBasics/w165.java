@@ -28,7 +28,7 @@ public class w165 {
 
         in.close();         // Closing scanner
 
-        return data;        //
+        return data;        // Returning the user inputs
     }
 
     public int[] rearrangeArray(int[] data) {    // Method to rearrange the array
