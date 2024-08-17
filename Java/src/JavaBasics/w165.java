@@ -49,6 +49,7 @@ public class w165 {
         }
         return newArray;
     }
+
     public void printArray(int[] data){     // Method to display the final result
         System.out.println("Rearranged array:\n "+Arrays.toString(data));
     }
