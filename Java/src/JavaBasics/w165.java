@@ -47,7 +47,7 @@ public class w165 {
                 left++;
             }
         }
-        return newArray;        //
+        return newArray;        // Returning the rearranged array
     }
 
     public void printArray(int[] data) {     // Method to display the final result
