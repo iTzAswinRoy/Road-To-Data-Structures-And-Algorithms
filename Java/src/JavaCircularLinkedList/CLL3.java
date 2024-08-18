@@ -16,6 +16,7 @@ public class CLL3 {     //
             head = newNode;
             tail = head;
             tail.next = head;
+
         } else {
             tail.next = newNode;
             tail = newNode;
