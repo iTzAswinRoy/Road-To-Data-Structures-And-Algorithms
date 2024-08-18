@@ -11,10 +11,12 @@ public class CLL1 {     // Circular linked list class
 
     public void insertNode(int value){      //
         Node newNode = new Node(value);     //
+
         if(tail == null){       //
             head = newNode;
             tail = head;
             tail.next = head;
+
         } else {
             tail.next = newNode;
             tail = newNode;
