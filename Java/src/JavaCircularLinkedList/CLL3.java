@@ -28,7 +28,9 @@ public class CLL3 {     //
     public void survivor(int k){       //
         Node curr = head;
         Node prev = tail;
+
         System.out.println("\nEliminating every "+k+"th person in the circle.");
+
         if(k > size){
             System.out.println("\nIndex out of bound!");
             return;
