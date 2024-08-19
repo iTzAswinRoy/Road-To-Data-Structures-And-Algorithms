@@ -1,18 +1,19 @@
 package JavaCircularLinkedList;
+
 // Write a function that calculates the length of a circular linked list.
 public class CLL2 {     // Circular linked list class
     Node head;
     Node tail;
     int size;
 
-    CLL2(){
+    CLL2() {
         this.size = 0;
     }
 
-    public void insertNode(int value){
+    public void insertNode(int value) {
         Node newNode = new Node(value);
 
-        if (tail == null){
+        if (tail == null) {
             head = newNode;
             tail = head;
             tail.next = head;
@@ -25,14 +26,14 @@ public class CLL2 {     // Circular linked list class
         size++;
     }
 
-    public void display(){
+    public void display() {
         Node temp = head;
 
         do {
-            System.out.print(temp.value+ " -> ");
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
 
-        } while (temp!= head);
+        } while (temp != head);
 
         System.out.println("HEAD");
     }
@@ -41,7 +42,7 @@ public class CLL2 {     // Circular linked list class
         int value;
         Node next;
 
-        Node(int value){
+        Node(int value) {
             this.value = value;
         }
     }
@@ -58,6 +59,6 @@ public class CLL2 {     // Circular linked list class
         System.out.println("Original circular linked list:");
         circularLinkedList.display();
 
-        System.out.println("\nLength of the circular linked list is "+circularLinkedList.size);
+        System.out.println("\nLength of the circular linked list is " + circularLinkedList.size);
     }
 }
