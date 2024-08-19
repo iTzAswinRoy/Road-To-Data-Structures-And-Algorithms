@@ -1,7 +1,7 @@
 package JavaCircularLinkedList;
 // Given a circular linked list, determine if it contains a cycle and return the starting node of the cycle.
 public class CLL1 {     // Creating a circular linked list class
-    int size;       // Creating instacne variable for size
+    int size;       // Creating instance variable for size
     Node head;      // Creating head pointer
     Node tail;      // Creating tail pointer
 
@@ -44,7 +44,7 @@ public class CLL1 {     // Creating a circular linked list class
     }
 
     class Node {        // Creating a node class
-        int value;      // Creating a variable contains a value of the node
+        int value;      // Creating an instance variable to contain a value for the node
         Node next;      // Creating a reference pointer for the node
 
         Node(int value) {       // Creating a parameterized constructor by passing the value
@@ -52,8 +52,8 @@ public class CLL1 {     // Creating a circular linked list class
         }
     }
 
-    public static void main(String[] args) {
-        CLL1 circularLinkedList = new CLL1();
+    public static void main(String[] args) {    // Main method
+        CLL1 circularLinkedList = new CLL1();       // Creating an object of class type
 
         circularLinkedList.insertNode(1);
         circularLinkedList.insertNode(2);
