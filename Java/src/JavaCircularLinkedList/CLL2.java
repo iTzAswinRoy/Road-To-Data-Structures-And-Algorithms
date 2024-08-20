@@ -10,11 +10,12 @@ public class CLL2 {     // Circular linked list class
         this.size = 0;      // Initializing the size to 0
     }
 
-    public void insertNode(int value) {
-        Node newNode = new Node(value);
+    public void insertNode(int value) {     // Method to insert node
+        Node newNode = new Node(value);      // Creating a node by passing the value
 
+        // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            head = newNode;
+            head = newNode;     // Assigning value to head
             tail = head;
             tail.next = head;
 
