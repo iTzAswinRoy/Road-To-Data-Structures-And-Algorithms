@@ -36,7 +36,7 @@ public class RetrievingFirstNode {     // Creating a circular linked list class
         Node temp = head;       // Creating a temp node pointing at head
 
         do {       // Using do while loop in order to print node starting from head
-            System.out.print(temp.value + " -> ");      // Displaying the node's value
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
             temp = temp.next;       // Moving the pointer to the next node
 
         } while (temp != head);     // Condition keeps going until the pointer reaches th head node

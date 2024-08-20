@@ -29,15 +29,15 @@ public class CLL2 {     // Circular linked list class
     }
 
     public void display() {     // Method to display the circular linked list
-        Node temp = head;
+        Node temp = head;       // Creating a temp node pointing at head
 
-        do {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+        do {        // Using do while loop in order to print node starting from head
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
+            temp = temp.next;       // Moving the pointer to the next node
 
-        } while (temp != head);
+        } while (temp != head);     // Condition keeps going until the pointer reaches th head node
 
-        System.out.println("HEAD");
+        System.out.println("HEAD");         // Displaying 'head' for reference
     }
 
     class Node {
