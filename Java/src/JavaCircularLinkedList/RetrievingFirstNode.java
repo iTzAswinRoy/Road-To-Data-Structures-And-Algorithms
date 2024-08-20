@@ -16,7 +16,7 @@ public class RetrievingFirstNode {     // Creating a circular linked list class
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
             head = newNode;     // Assigning value to head
-            tail = head;        // Assigning tail is head
+            tail = head;        // Assigning tail as head
             tail.next = head;       // Referencing tail node pointing towards head in order to perform circular linked list
 
         } else {
