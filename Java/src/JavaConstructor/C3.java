@@ -11,8 +11,8 @@ public class C3 {
     }
 
     C3(int length, int width){
-        this.length = length;
-        this.width = width;
+        setLength(length);
+        setWidth(width);
     }
 
     public int getLength() {
@@ -31,19 +31,22 @@ public class C3 {
         return 2 * (length + width);
     }
 
+    // Setter methods with validation
     public void setLength(int length) {
-        if(length > 0) {
+        if (length > 0) {
             this.length = length;
         } else {
             System.out.println("Length must be positive!");
+            this.length = 10; // Setting a default value if validation fails
         }
     }
 
     public void setWidth(int width) {
-        if(width > 0) {
+        if (width > 0) {
             this.width = width;
         } else {
             System.out.println("Width must be positive!");
+            this.width = 15; // Setting a default value if validation fails
         }
     }
 
@@ -53,7 +56,7 @@ public class C3 {
         System.out.println("Area of the rectangle: " + rectangle1.area());
         System.out.println("Perimeter of the rectangle: " + rectangle1.perimeter());
 
-        C3 rectangle2 = new C3(20, 5);
+        C3 rectangle2 = new C3(20, -5);
         System.out.println("\nRectangle 2: \nLength = "+ rectangle2.getLength() + "\nWidth = "+rectangle2.getWidth());
         System.out.println("Area of the rectangle: " + rectangle2.area());
         System.out.println("Perimeter of the rectangle: " + rectangle2.perimeter());
