@@ -2,12 +2,12 @@ package JavaCircularLinkedList;
 
 // Write a function that calculates the length of a circular linked list.
 public class CLL2 {     // Circular linked list class
-    Node head;
-    Node tail;
-    int size;
+    Node head;      // Creating instance variable for size
+    Node tail;      // Creating head pointer
+    int size;       // Creating tail pointer
 
-    CLL2() {
-        this.size = 0;
+    CLL2() {        // Creating a default constructor
+        this.size = 0;      // Initializing the size to 0
     }
 
     public void insertNode(int value) {
