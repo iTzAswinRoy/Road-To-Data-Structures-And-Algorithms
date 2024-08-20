@@ -23,7 +23,7 @@ public class RetrievingFirstNode {     // Creating a circular linked list class
             // If the tail is not null, then there's more than one node present in the linked list
             tail.next = newNode;       // Referencing the tail node pointing towards the new node
             tail = newNode;        // Assigning new node as tail
-            tail.next = head;       // now the tail is pointing towards head
+            tail.next = head;       // Now the tail is pointing towards head
         }
         size++;     // Incrementing size by 1
     }

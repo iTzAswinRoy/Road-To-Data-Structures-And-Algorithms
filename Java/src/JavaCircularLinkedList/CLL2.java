@@ -17,18 +17,18 @@ public class CLL2 {     // Circular linked list class
         if (tail == null) {
             head = newNode;     // Assigning value to head
             tail = head;        // Assigning tail as head
-            tail.next = head;       // Setting the tail pointer to head
+            tail.next = head;       // Setting the tail pointing towards head
 
         } else {
             // If the tail is not null, then there's more than one node present in the linked list
             tail.next = newNode;       // Setting the tail pointer to the new node
             tail = newNode;      // Assigning tail as new node
-            tail.next = head;
+            tail.next = head;       // Setting the tail pointing towards head
         }
-        size++;
+        size++;     // Incrementing size by 1
     }
 
-    public void display() {
+    public void display() {     // Method to display the circular linked list
         Node temp = head;
 
         do {
