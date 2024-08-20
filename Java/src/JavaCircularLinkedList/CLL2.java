@@ -16,12 +16,13 @@ public class CLL2 {     // Circular linked list class
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
             head = newNode;     // Assigning value to head
-            tail = head;
-            tail.next = head;
+            tail = head;        // Assigning tail as head
+            tail.next = head;       // Setting the tail pointer to head
 
         } else {
-            tail.next = newNode;
-            tail = newNode;
+            // If the tail is not null, then there's more than one node present in the linked list
+            tail.next = newNode;       // Setting the tail pointer to the new node
+            tail = newNode;      // Assigning tail as new node
             tail.next = head;
         }
         size++;
