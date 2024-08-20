@@ -40,9 +40,9 @@ public class CLL2 {     // Circular linked list class
         System.out.println("HEAD");         // Displaying 'head' for reference
     }
 
-    class Node {
-        int value;
-        Node next;
+    class Node {        // Creating a node class
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference pointer for the node
 
         Node(int value) {
             this.value = value;
