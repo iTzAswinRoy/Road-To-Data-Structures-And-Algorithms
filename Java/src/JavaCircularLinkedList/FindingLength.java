@@ -1,12 +1,12 @@
 package JavaCircularLinkedList;
 
 // Write a function that calculates the length of a circular linked list.
-public class CLL2 {     // Circular linked list class
+public class FindingLength {     // Circular linked list class
     Node head;      // Creating instance variable for size
     Node tail;      // Creating head pointer
     int size;       // Creating tail pointer
 
-    CLL2() {        // Creating a default constructor
+    FindingLength() {        // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -44,14 +44,15 @@ public class CLL2 {     // Circular linked list class
         int value;      // Creating an instance variable to store a value for the node
         Node next;      // Creating a reference pointer for the node
 
-        Node(int value) {
-            this.value = value;
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
         }
     }
 
-    public static void main(String[] args) {
-        CLL2 circularLinkedList = new CLL2();
+    public static void main(String[] args) {        // Main method
+        FindingLength circularLinkedList = new FindingLength();        // Creating an object of class type
 
+        // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
         circularLinkedList.insertNode(2);
         circularLinkedList.insertNode(3);
@@ -59,8 +60,8 @@ public class CLL2 {     // Circular linked list class
         circularLinkedList.insertNode(5);
 
         System.out.println("Original circular linked list:");
-        circularLinkedList.display();
+        circularLinkedList.display();       // Displaying the circular linked list
 
-        System.out.println("\nLength of the circular linked list is " + circularLinkedList.size);
+        System.out.println("\nLength of the circular linked list is " + circularLinkedList.size);       // Displaying the length ofh the circular linked list
     }
 }
