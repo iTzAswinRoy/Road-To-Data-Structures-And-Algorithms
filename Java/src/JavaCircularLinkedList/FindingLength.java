@@ -2,9 +2,9 @@ package JavaCircularLinkedList;
 
 // Write a function that calculates the length of a circular linked list.
 public class FindingLength {     // Circular linked list class
-    Node head;      // Creating instance variable for size
-    Node tail;      // Creating head pointer
-    int size;       // Creating tail pointer
+    int size;       // Creating instance variable for size
+    Node head;      // Creating head pointer
+    Node tail;      // Creating tail pointer
 
     FindingLength() {        // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
@@ -42,7 +42,7 @@ public class FindingLength {     // Circular linked list class
 
     class Node {        // Creating a node class
         int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference pointer for the node
+        Node next;      // Creating a reference, pointing towards the next node
 
         Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;     // Assigning the parameter value to the instance variable
