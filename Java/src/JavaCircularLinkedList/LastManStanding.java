@@ -10,8 +10,8 @@ public class LastManStanding {     // Circular linked list class
         this.size = 0;      // Initializing the size to 0
     }
 
-    public void insertNode(int value) {      // Method to insert node
-        Node newNode = new Node(value);     // Creating a node by passing the value
+    public void insertNode(int value) {      // Method to insert node in the circular linked list
+        Node newNode = new Node(value);        // Creating a node by passing the value
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
