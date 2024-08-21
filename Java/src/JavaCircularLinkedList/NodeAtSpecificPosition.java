@@ -23,7 +23,7 @@ public class NodeAtSpecificPosition {       // Circular linked list class
             // If the tail is not null, then there's more than one node present in the linked list
             tail.next = newNode;        // Setting the tail pointer to the new node
             tail = newNode;         // Assigning tail as new node
-            tail.next = head;       // Setting the tail pointing towards head
+            tail.next = head;       // Now the tail is pointing towards head
         }
         size++;     // Incrementing size by 1
     }
@@ -32,6 +32,7 @@ public class NodeAtSpecificPosition {       // Circular linked list class
         Node newNode = new Node(value);         // Creating a node by passing the value
 
         System.out.println("\nInserting node " + value + " at index " + index);
+
         if(index > size) {      // Checking if the index is greater than the size
             System.out.println("\nIndex out of bound!");        // Displays error message
             return;     // Exits the method
@@ -59,7 +60,7 @@ public class NodeAtSpecificPosition {       // Circular linked list class
             System.out.print(temp.value + " -> ");      // Displaying the value of each node
             temp = temp.next;       // Moving the pointer to the next node
 
-        } while (temp != head);      // Condition keeps going until the pointer reaches th head node
+        } while (temp != head);      // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");       // Displaying 'head' for reference
     }
