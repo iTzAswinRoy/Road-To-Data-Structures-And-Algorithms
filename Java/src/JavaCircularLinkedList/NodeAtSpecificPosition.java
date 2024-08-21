@@ -1,12 +1,12 @@
 package JavaCircularLinkedList;
 
 // Write a function to insert a node into a circular linked list at a specified position.
-public class CLL4 {       // Circular linked list class
+public class NodeAtSpecificPosition {       // Circular linked list class
     int size;       // Creating instance variable for size
     Node head;      // Creating head pointer
     Node tail;      // Creating tail pointer
 
-    CLL4() {      // Creating a default constructor
+    NodeAtSpecificPosition() {      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -28,7 +28,7 @@ public class CLL4 {       // Circular linked list class
         size++;     // Incrementing size by 1
     }
 
-    public void nodeAtSpecificPosition(int index, int value) {      // Method to insert a node at a specific position
+    public void specificPosition(int index, int value) {      // Method to insert a node at a specific position
         Node newNode = new Node(value);         // Creating a node by passing the value
 
         System.out.println("\nInserting node " + value + " at index " + index);
@@ -74,7 +74,7 @@ public class CLL4 {       // Circular linked list class
     }
 
     public static void main(String[] args) {       // Main method
-        CLL4 circularLinkedList = new CLL4();       // Creating an object of class type
+        NodeAtSpecificPosition circularLinkedList = new NodeAtSpecificPosition();       // Creating an object of class type
 
         // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
@@ -86,7 +86,7 @@ public class CLL4 {       // Circular linked list class
         System.out.println("Original circular linked list:");
         circularLinkedList.display();       // Displaying the circular linked list
 
-        circularLinkedList.nodeAtSpecificPosition(2,7);     // Calling the method to insert node at specific index
+        circularLinkedList.specificPosition(2,7);     // Calling the method to insert node at specific index
 
         System.out.println("\nCircular linked list after inserting the node:");
         circularLinkedList.display();       // Displaying the updated circular linked list
