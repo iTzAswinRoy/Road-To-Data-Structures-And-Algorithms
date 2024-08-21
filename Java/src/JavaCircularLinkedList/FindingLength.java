@@ -35,7 +35,7 @@ public class FindingLength {     // Circular linked list class
             System.out.print(temp.value + " -> ");      // Displaying the value of each node
             temp = temp.next;       // Moving the pointer to the next node
 
-        } while (temp != head);     // Condition keeps going until the pointer reaches th head node
+        } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");         // Displaying 'head' for reference
     }
