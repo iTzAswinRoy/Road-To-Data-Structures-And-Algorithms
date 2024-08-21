@@ -33,6 +33,7 @@ public class LastManStanding {     // Circular linked list class
         Node prev = tail;       // Creating 'previous' pointing at tail
 
         System.out.println("\nEliminating every " + k + "th person in the circle.");
+
         while (curr.next != curr) {       // This loop iterates till the list contains the last element
 
             for (int i = 1; i < k; i++) {        // Iterating till the given kth number
@@ -56,7 +57,7 @@ public class LastManStanding {     // Circular linked list class
             System.out.print(temp.value + " -> ");        // Displaying the value of each node
             temp = temp.next;       // Moving the pointer to the next node
 
-        } while (temp != head);      // Condition keeps going until the pointer reaches th head node
+        } while (temp != head);      // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");      // Displaying 'head' for reference
     }
