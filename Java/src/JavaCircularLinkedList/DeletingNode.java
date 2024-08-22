@@ -105,8 +105,9 @@ public class DeletingNode {       // Circular linked list class
         circularLinkedList.insertNode(4);
         circularLinkedList.insertNode(5);
 
+        // Displaying the circular linked list
         System.out.println("Original circular linked list:");
-        circularLinkedList.display();       // Displaying the circular linked list
+        circularLinkedList.display();
 
         System.out.println("\nRemoving node at first:");
         circularLinkedList.deleteFist();        // Calling the method to delete the first node
@@ -116,10 +117,11 @@ public class DeletingNode {       // Circular linked list class
         circularLinkedList.deleteLast();        // Calling the method to delete the last node
         circularLinkedList.display();       // Displaying the updated circular linked list
 
+        // Calling the method to delete the node at specific index
+        circularLinkedList.deleteAtSpecificIndex(1);
 
-        circularLinkedList.deleteAtSpecificIndex(1);        // Calling the method to delete the node at specific index
-
+        // Displaying the updated circular linked list
         System.out.println("\nCircular linked list after removing the nodes:");
-        circularLinkedList.display();       // Displaying the updated circular linked list
+        circularLinkedList.display();
     }
 }
