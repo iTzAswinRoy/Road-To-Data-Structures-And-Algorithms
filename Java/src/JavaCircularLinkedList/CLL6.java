@@ -47,15 +47,16 @@ public class CLL6 {        // Circular linked list class
         return newList;
     }
 
-    public void display() {
-        Node temp = head;
-        do {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+    public void display() {         // Method to display the circular linked list
+        Node temp = head;       // Creating a temp node pointing at head
 
-        } while (temp != head);
+        do {        // Using do while loop in order to print node starting from head
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
+            temp = temp.next;       // Moving the pointer to the next node
 
-        System.out.println("HEAD");
+        } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
+
+        System.out.println("HEAD");        // Displaying 'head' for reference
     }
 
     class Node {
