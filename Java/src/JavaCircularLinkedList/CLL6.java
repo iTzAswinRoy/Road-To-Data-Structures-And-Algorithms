@@ -59,12 +59,12 @@ public class CLL6 {        // Circular linked list class
         System.out.println("HEAD");        // Displaying 'head' for reference
     }
 
-    class Node {
-        int value;
-        Node next;
+    class Node {        // Creating a node class
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference, pointing towards the next node
 
-        Node(int value) {
-            this.value = value;
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;         // Assigning the parameter value to the instance variable
         }
     }
 
