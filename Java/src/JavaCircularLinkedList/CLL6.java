@@ -1,9 +1,9 @@
 package JavaCircularLinkedList;
 // Given two circular linked lists, merge them into one circular linked list, maintaining the order of the original lists.
-public class CLL6 {
-    Node head;
-    Node tail;
-    int size;
+public class CLL6 {        // Circular linked list class
+    int size;       // Creating instance variable for size
+    Node head;      // Creating head pointer
+    Node tail;      // Creating tail pointer
 
     CLL6() {
         this.size = 0;
