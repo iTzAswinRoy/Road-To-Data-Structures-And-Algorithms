@@ -84,12 +84,15 @@ public class NodeAtSpecificPosition {       // Circular linked list class
         circularLinkedList.insertNode(4);
         circularLinkedList.insertNode(5);
 
+        // Displaying the circular linked list
         System.out.println("Original circular linked list:");
-        circularLinkedList.display();       // Displaying the circular linked list
+        circularLinkedList.display();
 
-        circularLinkedList.specificPosition(2,7);     // Calling the method to insert node at specific index
+        // Calling the method to insert node at specific index
+        circularLinkedList.specificPosition(2,7);
 
+        // Displaying the updated circular linked list
         System.out.println("\nCircular linked list after inserting the node:");
-        circularLinkedList.display();       // Displaying the updated circular linked list
+        circularLinkedList.display();
     }
 }
