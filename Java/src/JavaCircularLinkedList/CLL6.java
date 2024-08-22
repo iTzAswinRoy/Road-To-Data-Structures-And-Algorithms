@@ -68,29 +68,37 @@ public class CLL6 {        // Circular linked list class
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
+        // Creating an object of class type
         CLL6 circularLinkedList1 = new CLL6();
         CLL6 circularLinkedList2 = new CLL6();
 
-
+        // Inserting node to the  1st circular linked list
         circularLinkedList1.insertNode(1);
         circularLinkedList1.insertNode(2);
         circularLinkedList1.insertNode(3);
         circularLinkedList1.insertNode(4);
         circularLinkedList1.insertNode(5);
-        System.out.println("Circular linked list-1:");
 
+        // Displaying the 1st circular linked list
+        System.out.println("Circular linked list-1:");
         circularLinkedList1.display();
 
+        // Inserting node to the 2nd circular linked list
         circularLinkedList2.insertNode(10);
         circularLinkedList2.insertNode(20);
         circularLinkedList2.insertNode(30);
         circularLinkedList2.insertNode(40);
         circularLinkedList2.insertNode(50);
+
+        // Displaying the 1st circular linked list
         System.out.println("\nCircular linked list-2:");
         circularLinkedList2.display();
 
+        // Creating a new circular linked list to store the merged circular linked list of 1 and 2
         CLL6 mergedCircularLinkedList1 = mergeList(circularLinkedList1, circularLinkedList2);
+
+        // Displaying the merged circular linked list
         System.out.println("\nMerged circular linked list:");
         mergedCircularLinkedList1.display();
     }
