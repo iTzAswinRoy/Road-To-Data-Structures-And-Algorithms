@@ -1,12 +1,12 @@
 package JavaCircularLinkedList;
 
 // Given two circular linked lists, merge them into one circular linked list, maintaining the order of the original lists.
-public class CLL6 {        // Circular linked list class
-    int size;       // Creating instance variable for size
-    Node head;      // Creating head pointer
-    Node tail;      // Creating tail pointer
+public class MergeCircularLinkedList {        // Circular linked list class
+    private int size;       // Creating instance variable for size
+    private Node head;      // Creating head pointer
+    private Node tail;      // Creating tail pointer
 
-    CLL6() {        // Creating a default constructor
+    MergeCircularLinkedList() {       // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -17,19 +17,18 @@ public class CLL6 {        // Circular linked list class
         if (tail == null) {
             head = newNode;     // Assigning value to head
             tail = head;        // Assigning tail as head
-            tail.next = head;       // Setting the tail pointing towards head
 
         } else {
             // If the tail is not null, then there's more than one node present in the linked list
             tail.next = newNode;        // Setting the tail pointer to the new node
             tail = newNode;         // Assigning tail as new node
-            tail.next = head;       // Now the tail is pointing towards head
         }
+        tail.next = head;       // Setting the tail pointing towards head
         size++;         // Incrementing size by 1
     }
 
-    static CLL6 mergeList(CLL6 list1, CLL6 list2) {     // Method to merge the circular linked list
-        CLL6 newList = new CLL6();      // Creating an object to store the merged list
+    static MergeCircularLinkedList mergeList(MergeCircularLinkedList list1, MergeCircularLinkedList list2) {     // Method to merge the circular linked list
+        MergeCircularLinkedList newList = new MergeCircularLinkedList();      // Creating an object to store the merged list
 
         // Creating a 'temp' reference, pointing at head for each list
         Node temp1 = list1.head;
@@ -53,7 +52,7 @@ public class CLL6 {        // Circular linked list class
     }
 
     public void display() {         // Method to display the circular linked list
-        Node temp = head;       // Creating a temp node pointing at head
+        Node temp = head;       // Creating a 'temp' node pointing at head
 
         do {        // Using do while loop in order to print node starting from head
             System.out.print(temp.value + " -> ");      // Displaying the value of each node
@@ -65,8 +64,8 @@ public class CLL6 {        // Circular linked list class
     }
 
     class Node {        // Creating a node class
-        int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference, pointing towards the next node
+        private  int value;      // Creating an instance variable to store a value for the node
+        private Node next;      // Creating a reference, pointing towards the next node
 
         Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;         // Assigning the parameter value to the instance variable
@@ -75,10 +74,10 @@ public class CLL6 {        // Circular linked list class
 
     public static void main(String[] args) {        // Main method
         // Creating an object of class type
-        CLL6 circularLinkedList1 = new CLL6();
-        CLL6 circularLinkedList2 = new CLL6();
+        MergeCircularLinkedList circularLinkedList1 = new MergeCircularLinkedList();
+        MergeCircularLinkedList circularLinkedList2 = new MergeCircularLinkedList();
 
-        // Inserting node to the  1st circular linked list
+        // Inserting node to the 1st circular linked list
         circularLinkedList1.insertNode(1);
         circularLinkedList1.insertNode(2);
         circularLinkedList1.insertNode(3);
@@ -96,12 +95,12 @@ public class CLL6 {        // Circular linked list class
         circularLinkedList2.insertNode(40);
         circularLinkedList2.insertNode(50);
 
-        // Displaying the 1st circular linked list
+        // Displaying the 2nd circular linked list
         System.out.println("\nCircular linked list-2:");
         circularLinkedList2.display();
 
         // Creating a new circular linked list to store the merged circular linked list of 1 and 2
-        CLL6 mergedCircularLinkedList1 = mergeList(circularLinkedList1, circularLinkedList2);
+        MergeCircularLinkedList mergedCircularLinkedList1 = mergeList(circularLinkedList1, circularLinkedList2);
 
         // Displaying the merged circular linked list
         System.out.println("\nMerged circular linked list:");
