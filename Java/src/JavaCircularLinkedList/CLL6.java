@@ -28,23 +28,28 @@ public class CLL6 {        // Circular linked list class
         size++;         // Incrementing size by 1
     }
 
-    static CLL6 mergeList(CLL6 list1, CLL6 list2){
-        CLL6 newList = new CLL6();
+    static CLL6 mergeList(CLL6 list1, CLL6 list2) {     // Method to merge the circular linked list
+        CLL6 newList = new CLL6();      // Creating an object to store the merged list
+
+        // Creating a 'temp' reference, pointing at head for each list
         Node temp1 = list1.head;
         Node temp2 = list2.head;
-        do{
-            newList.insertNode(temp1.value);
-            temp1 = temp1.next;
 
-        } while (temp1 != list1.head);
+        do{     // Using a nested do while loop to in order to insert each node from both the linked list to the new list
+            newList.insertNode(temp1.value);      // Inserting node from list 1 to the new list for each iteration
+            temp1 = temp1.next;       // Moving the pointer to the next node
 
-        do{
-            newList.insertNode(temp2.value);
-            temp2 = temp2.next;
+            if (temp1 == list1.head) {        // Checking if all the nodes are finished inserting in the new list
 
-        } while (temp2 != list2.head);
+                do{     // Now continuing the list 2 to insert node to the new list
+                    newList.insertNode(temp2.value);       // Inserting node from list 2 to the new list for each iteration
+                    temp2 = temp2.next;     // Moving the pointer to the next node
 
-        return newList;
+                } while (temp2 != list2.head);      // Condition keeps going until the pointer reaches the tail node for the list 2
+            }
+        } while (temp1 != list1.head);      // Condition keeps going until the pointer reaches the tail node for the list 1
+
+        return newList;     // Returning the merged list from list 1 & 2
     }
 
     public void display() {         // Method to display the circular linked list
