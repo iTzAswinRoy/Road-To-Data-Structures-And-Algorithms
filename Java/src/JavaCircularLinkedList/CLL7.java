@@ -37,11 +37,13 @@ public class CLL7 {      // Circular linked list class
 
         if (size % 2 == 0) {
             for (int i = 0; i < size / 2; i++) {
+
                 list1.insertNode(temp.value);
                 temp = temp.next;
             }
         } else {
             for (int i = 0; i <= size / 2; i++) {
+
                 list1.insertNode(temp.value);
                 temp = temp.next;
             }

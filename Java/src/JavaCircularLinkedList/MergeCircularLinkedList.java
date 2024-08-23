@@ -2,9 +2,9 @@ package JavaCircularLinkedList;
 
 // Given two circular linked lists, merge them into one circular linked list, maintaining the order of the original lists.
 public class MergeCircularLinkedList {        // Circular linked list class
-    private int size;       // Creating instance variable for size
-    private Node head;      // Creating head pointer
-    private Node tail;      // Creating tail pointer
+    int size;       // Creating instance variable for size
+    Node head;      // Creating head pointer
+    Node tail;      // Creating tail pointer
 
     MergeCircularLinkedList() {       // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
@@ -64,8 +64,8 @@ public class MergeCircularLinkedList {        // Circular linked list class
     }
 
     class Node {        // Creating a node class
-        private  int value;      // Creating an instance variable to store a value for the node
-        private Node next;      // Creating a reference, pointing towards the next node
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference, pointing towards the next node
 
         Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;         // Assigning the parameter value to the instance variable
