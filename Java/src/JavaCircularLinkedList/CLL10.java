@@ -63,19 +63,21 @@ public class CLL10 {        // Class containing circular linked list properties
         }
     }
 
-    public static void main(String[] args) {
-        CLL10 circularLinkedList = new CLL10();
+    public static void main(String[] args) {        // Main method
+        CLL10 circularLinkedList = new CLL10();      // Creating an object of class type
 
+        // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
         circularLinkedList.insertNode(2);
         circularLinkedList.insertNode(3);
         circularLinkedList.insertNode(4);
         circularLinkedList.insertNode(5);
 
+        // Displaying the circular linked list
         System.out.println("Original circular linked list:");
         circularLinkedList.display();
 
-        circularLinkedList.rotateCircularLinkedList(3);
-        circularLinkedList.display();
+        circularLinkedList.rotateCircularLinkedList(3);         // Calling the method to rotate the circular linked list
+        circularLinkedList.display();       // Displaying the updated circular linked list
     }
 }
