@@ -1,26 +1,28 @@
 package JavaCircularLinkedList;
 // Implement a function to rotate a circular linked list to the right by k positions.
 public class CLL10 {        // Class containing circular linked list properties
+    int size;       // // Creating the size for circular linked list
     Node head;      // Creating a head node
     Node tail;      // Creating a tail node
-    int size;       // // Creating the size for circular linked list
 
-    CLL10() {      //
-        this.size = 0;
+    CLL10() {      // Creating a default constructor
+        this.size = 0;      // Initializing the size to 0
     }
 
-    public void insertNode (int value){     //
-        Node newNode = new Node(value);
+    public void insertNode (int value){         // Method to insert node in the circular linked list
+        Node newNode = new Node(value);     // Creating a node by passing the value
+
+        // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            head = newNode;
-            tail = head;
-            tail.next = head;
+            head = newNode;     // Assigning value to head
+            tail = head;        // Assigning tail as head
         } else {
-            tail.next = newNode;
-            tail = newNode;
-            tail.next = head;
+            // If the tail is not null, then there's more than one node present in the linked list
+            tail.next = newNode;        // Setting the tail pointer to the new node
+            tail = newNode;         // Assigning tail as new node
         }
-        size++;
+        tail.next = head;       // Setting the tail pointing towards head
+        size++;       // Incrementing size by 1
     }
 
     public void rotateCircularLinkedList(int k){
