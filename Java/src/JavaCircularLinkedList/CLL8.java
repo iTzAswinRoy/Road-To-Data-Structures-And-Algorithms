@@ -54,7 +54,7 @@ public class CLL8 {         // Circular linked list class
 
         } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
 
-        System.out.println("HEAD");         // Displaying 'head' for reference
+        System.out.println("HEAD");       // Displaying 'head' for reference
     }
 
     class Node {        // Creating a node class

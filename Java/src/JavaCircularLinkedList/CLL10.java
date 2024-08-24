@@ -25,7 +25,7 @@ public class CLL10 {        // Class containing circular linked list properties
         size++;       // Incrementing size by 1
     }
 
-    public void rotateCircularLinkedList(int k){
+    public void rotateCircularLinkedList(int k) {
         Node curr = head;
         Node prev = null;
         System.out.println("\nRotating the circular linked list at "+k+"th position.");
@@ -42,14 +42,16 @@ public class CLL10 {        // Class containing circular linked list properties
         tail = prev;
     }
 
-    public void display() {
-        Node temp = head;
-        do {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+    public void display() {     // Method to display the circular linked list
+        Node temp = head;       // Creating a 'temp' node pointing at head
 
-        } while (temp != head);
-        System.out.println("HEAD");
+        do {        // Using do while loop in order to print node starting from head
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
+            temp = temp.next;         // Moving the pointer to the next node
+
+        } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
+
+        System.out.println("HEAD");       // Displaying 'head' for reference
     }
 
     class Node {
