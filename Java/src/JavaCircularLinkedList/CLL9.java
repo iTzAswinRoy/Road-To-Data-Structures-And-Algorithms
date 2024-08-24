@@ -64,17 +64,20 @@ public class CLL9 {       // Circular linked list class
     }
 
     public static void main(String[] args) {        // Main method
-        CLL9 circularLinkedList = new CLL9();       //
+        CLL9 circularLinkedList = new CLL9();       // Creating an object of class type
 
+        // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
         circularLinkedList.insertNode(2);
         circularLinkedList.insertNode(3);
         circularLinkedList.insertNode(4);
         circularLinkedList.insertNode(5);
 
+        // Displaying the circular linked list
         System.out.println("Original circular linked list:");
-        circularLinkedList.display();       //
+        circularLinkedList.display();
 
+        // Calling the method to find the kth element from the end of circular linked list
         circularLinkedList.findKthFromEnd(2);
     }
 }
