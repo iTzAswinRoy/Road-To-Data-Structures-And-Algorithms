@@ -1,12 +1,12 @@
 package JavaCircularLinkedList;
 // Find the k-th node from the end of a circular linked list.
-public class CLL9 {     //
-    Node head;
-    Node tail;
-    int size;
+public class CLL9 {       // Circular linked list class
+    int size;       // Creating instance variable for size
+    Node head;      // Creating head pointer
+    Node tail;      // Creating tail pointer
 
-    CLL9(){     //
-        this.size = 0;
+    CLL9(){     // Creating a default constructor
+        this.size = 0;      // Initializing the size to 0
     }
 
     public void insertNode(int value){      //
