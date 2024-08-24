@@ -77,7 +77,7 @@ public class CLL7 {      // Circular linked list class
         private int value;      // Creating an instance variable to store a value for the node
         private Node next;      // Creating a reference, pointing towards the next node
 
-        Node(int value){      // Creating a parameter constructor by passing the value
+        Node(int value) {      // Creating a parameter constructor by passing the value
             this.value = value;      // Assigning the parameter value to the instance variable
         }
     }
