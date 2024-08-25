@@ -42,7 +42,7 @@ public class CLL8 {         // Circular linked list class
         }  while (curr != head);        //
         head.next = prev;       //
         head = prev;        //
-        tail = originalHead;
+        tail = originalHead;        //
     }
 
     public void display() {      // Method to display the circular linked list
