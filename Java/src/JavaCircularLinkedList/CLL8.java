@@ -35,7 +35,7 @@ public class CLL8 {         // Circular linked list class
         Node originalHead = head;       //
         do{
             Node after = curr.next;     // Creating a node which helps transverse through the list
-            curr.next = prev;
+            curr.next = prev;       //
             prev = curr;
             curr = after;
 
