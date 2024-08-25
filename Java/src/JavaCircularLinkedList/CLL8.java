@@ -40,7 +40,7 @@ public class CLL8 {         // Circular linked list class
             curr = after;       //
 
         }  while (curr != head);        //
-        head.next = prev;
+        head.next = prev;       //
         head = prev;
         tail = originalHead;
     }
