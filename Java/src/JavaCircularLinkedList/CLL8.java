@@ -27,10 +27,10 @@ public class CLL8 {         // Circular linked list class
     }
 
     public void reverse() {      //
-        if(head == null || head.next == head){      //
+        if(head == null || head.next == head) {      //
             return;
         }
-        Node prev = null;
+        Node prev = null;       //
         Node curr = head;
         Node originalHead = head;
         do{
