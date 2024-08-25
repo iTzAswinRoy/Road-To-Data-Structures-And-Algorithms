@@ -41,7 +41,7 @@ public class CLL8 {         // Circular linked list class
 
         }  while (curr != head);        //
         head.next = prev;       //
-        head = prev;
+        head = prev;        //
         tail = originalHead;
     }
 
