@@ -3,7 +3,7 @@ package JavaConstructor;
 // Create a class Person with a default constructor that initializes name to "Aswin" and age to 20.
 public class c1 {       //
     private String name;        //
-    private int age;
+    private int age;        //
 
     public c1() {
         this.name = "Aswin";
