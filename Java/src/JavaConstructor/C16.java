@@ -24,6 +24,7 @@ public class C16 {
         System.out.println("Name: "+person.getName());
         System.out.println("Age: "+person.getAge());
 
+        // testing
         C16 sad = new C16("jhgjk", 25);
         System.out.println("Name: "+sad.getName());
         System.out.println("Age: "+sad.getAge());
