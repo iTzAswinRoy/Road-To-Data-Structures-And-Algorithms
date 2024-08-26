@@ -34,13 +34,12 @@ public class C11 {
         C11 obj = new C11(100);
         try {
             obj.deposit(500);
-            obj.withdrawn(300);
+            obj.withdrawn(-300);
+
         } catch (IllegalArgumentException e) {
-            System.out.println(e.getMessage());
-        } finally {
             System.err.println("Transaction cancelled");
+            System.out.println(e.getMessage());
         }
         System.out.println("Your current balance is "+obj.getBalance());
-
     }
 }
