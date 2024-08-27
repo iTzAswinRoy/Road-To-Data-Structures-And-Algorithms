@@ -10,7 +10,7 @@ public class C3 {
         this.width = 15;
     }
 
-    C3(int length, int width){
+    C3(int length, int width) {
         setLength(length);
         setWidth(width);
     }
