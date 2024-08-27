@@ -10,11 +10,11 @@ public class c1 {       //
         this.age = 20;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
 
-    public int getAge(){
+    public int getAge() {
         return age;
     }
 
@@ -22,7 +22,7 @@ public class c1 {       //
         this.name = name;
     }
 
-    public void setAge(int age){
+    public void setAge(int age) {
         if(age < 70) {
             this.age = age;
         }
