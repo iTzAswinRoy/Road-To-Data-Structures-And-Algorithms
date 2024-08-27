@@ -33,7 +33,7 @@ public class c1 {       //
         obj.setAge(45);
 
         System.out.println("My name is " + obj.getName());
-        System.out.println("My age is "+ obj.getAge());
+        System.out.println("My age is " + obj.getAge());
     }
 }
 
