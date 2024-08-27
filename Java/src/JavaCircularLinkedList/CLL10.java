@@ -25,21 +25,24 @@ public class CLL10 {        // Class containing circular linked list properties
         size++;       // Incrementing size by 1
     }
 
-    public void rotateCircularLinkedList(int k) {
-        Node curr = head;
-        Node prev = null;
-        System.out.println("\nRotating the circular linked list at "+k+"th position.");
-        if(k > size || head == null){
-            System.out.println("Index out of bound!");
-            return;
+    public void rotateCircularLinkedList(int k) {       // Method to rotate the circular linked list
+        Node current = head;        // Assigning 'current' pointer, pointing at head
+        Node previous = null;       // Assigning 'previous' pointer to null
+
+        System.out.println("\nRotating the circular linked list at " + k + "th position.");
+        if (k > size || head == null) {         // Checking if the given k element is withing the range of the list
+            System.out.println("Index out of bound!");      // Error message
+            return;     // Exits the method if it's true
         }
-        for (int i = 1; i < k; i++) {
-            prev = curr;
-            curr = curr.next;
+        for (int i = 1; i < k; i++) {       // Iterating over the list till it reaches the k value
+            // Moving the current and previous pointer one after the other for each iteration
+            previous = current;
+            current = current.next;
         }
-        tail.next = head;
-        head = curr;
-        tail = prev;
+
+        tail.next = head;       // Updating the referenc pointer of the tail pointing at head
+        head = current;         // Updating the new head to the current node
+        tail = previous;        // Updating the tail to
     }
 
     public void display() {     // Method to display the circular linked list
@@ -77,7 +80,7 @@ public class CLL10 {        // Class containing circular linked list properties
         System.out.println("Original circular linked list:");
         circularLinkedList.display();
 
-        circularLinkedList.rotateCircularLinkedList(3);         // Calling the method to rotate the circular linked list
+        circularLinkedList.rotateCircularLinkedList(3);        // Calling the method to rotate the circular linked list
         circularLinkedList.display();       // Displaying the updated circular linked list
     }
 }
