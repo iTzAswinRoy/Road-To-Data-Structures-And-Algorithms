@@ -6,7 +6,7 @@ public class C2 {
     private String model;
     private int year;
 
-    public C2(String make, String model, int year){
+    public C2(String make, String model, int year) {
         this.make = make;
         this.model = model;
         this.year = year;
