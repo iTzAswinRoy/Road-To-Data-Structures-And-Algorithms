@@ -1,11 +1,12 @@
 package JavaCircularLinkedList;
+
 // Find the k-th node from the end of a circular linked list.
-public class CLL9 {       // Circular linked list class
+public class FindKthNodeFromLast {       // Circular linked list class
     int size;       // Creating instance variable for size
     Node head;      // Creating head pointer
     Node tail;      // Creating tail pointer
 
-    CLL9() {     // Creating a default constructor
+    FindKthNodeFromLast() {     // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -25,21 +26,24 @@ public class CLL9 {       // Circular linked list class
         size++;         // Incrementing size by 1
     }
 
-    public void findKthFromEnd(int k){      //
-        Node temp = head;
-        Node kth = head;
-        if(k > size){
-            System.out.println("\nIndex out of bound!");
+    public void nodeFromLast(int k) {      // Method to find the Kth node from the end of the list
+        Node temp = head;       // Creating a temp 'pointer', pointing at head
+        Node kth = head;        // Also, creating a 'k' pointer which is pointing at head
+
+        if(k > size) {      // Checking if the node to be found in within the rage
+            System.out.println("\nIndex out of bound!");        // Error message
             return;
         }
-        for (int i = 0; i < k; i++) {
-            temp = temp.next;
+        for (int i = 0; i < k; i++) {       // Iterating through the list
+            temp = temp.next;       // Moving the pointer till it reaches th kth node
         }
-        while (temp!=head){
-            temp = temp.next;
+        while (temp != head) {      // Iterating through the list
+
+            temp = temp.next;       // Now, we're iterating 'temp' and 'kth' node consecutively
             kth = kth.next;
+            // Where the 'kth' node is behind of the 'temp' pointer which eventuality makes the 'kth' pointer pointing from the end of the list
         }
-        System.out.println("\nThe "+k+"th from the last of the circular linked list is "+kth.value+".");
+        System.out.println("\nThe " + k + "th from the last of the circular linked list is " + kth.value + ".");        // Displaying the result
     }
 
     public void display() {      // Method to display the circular linked list
@@ -64,7 +68,7 @@ public class CLL9 {       // Circular linked list class
     }
 
     public static void main(String[] args) {        // Main method
-        CLL9 circularLinkedList = new CLL9();       // Creating an object of class type
+        FindKthNodeFromLast circularLinkedList = new FindKthNodeFromLast();       // Creating an object of class type
 
         // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
@@ -78,6 +82,6 @@ public class CLL9 {       // Circular linked list class
         circularLinkedList.display();
 
         // Calling the method to find the kth element from the end of circular linked list
-        circularLinkedList.findKthFromEnd(2);
+        circularLinkedList.nodeFromLast(2);
     }
 }
