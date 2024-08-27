@@ -2,12 +2,12 @@ package JavaCircularLinkedList;
 
 // Given a circular linked list, split it into two halves.
 // If the list has an odd number of nodes, one half should have one more node than the other.
-public class CLL7 {      // Circular linked list class
+public class SplittingList {      // Circular linked list class
     private int size;       // Creating instance variable for size
     private Node head;      // Creating head pointer
     private Node tail;      // Creating tail pointer
 
-    CLL7(){      // Creating a default constructor
+    SplittingList(){      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -28,35 +28,37 @@ public class CLL7 {      // Circular linked list class
         size++;     // Incrementing size by 1
     }
 
-    public void splittingCircularLinkedList(CLL7 mainList) {      // Method to split the list into half
+    public void splittingCircularLinkedList(SplittingList mainList) {      // Method to split the list into half
         // Creating a separate list to store the nodes separated from the main list
-        CLL7 list1 = new CLL7();
-        CLL7 list2 = new CLL7();
+        SplittingList list1 = new SplittingList();
+        SplittingList list2 = new SplittingList();
 
-        Node temp = mainList.head;       // Creating a 'temp' node pointing at head
+        Node main = mainList.head;       // Creating a 'main' node pointing at head
 
-        if (size % 2 == 0) {
-            for (int i = 0; i < size / 2; i++) {
+        if (size % 2 == 0) {        // checking if the size of the list is even
+            for (int i = 0; i < size / 2; i++) {      // Iterating till the half the size of the list
 
-                list1.insertNode(temp.value);
-                temp = temp.next;
+                list1.insertNode(main.value);       // Inserting node to the list 1
+                main = main.next;       // Moving the pointer to the next node
             }
-        } else {
-            for (int i = 0; i <= size / 2; i++) {
+        } else {        // If size is not even
+            for (int i = 0; i <= size / 2; i++) {       // Iterating till the half the size of the list with one node extra
 
-                list1.insertNode(temp.value);
-                temp = temp.next;
+                list1.insertNode(main.value);       // Inserting node to the list 1
+                main = main.next;       // Moving the pointer to the next node
             }
         }
-        do {
-            list2.insertNode(temp.value);
-            temp = temp.next;
+        do {        // Using do while loop till 'main' pointer reaches its tail
+            list2.insertNode(main.value);       // Inserting the remaining node from the main list to the list 2
+            main = main.next;       // Moving the pointer to the next node
 
-        } while (temp != head);
+        } while (main != head);     // Checking if the pointer doesn't pass through head
 
+        // Displaying the list 1
         System.out.println("List-1:");
         list1.display();
 
+        // Displaying the list 2
         System.out.println("\nList-2:");
         list2.display();
     }
@@ -83,7 +85,7 @@ public class CLL7 {      // Circular linked list class
     }
 
     public static void main(String[] args) {        // Main method
-        CLL7 circularLinkedList = new CLL7();               // Creating an object of class type
+        SplittingList circularLinkedList = new SplittingList();               // Creating an object of class type
 
         // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
