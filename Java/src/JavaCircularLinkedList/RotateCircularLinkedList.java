@@ -1,11 +1,12 @@
 package JavaCircularLinkedList;
+
 // Implement a function to rotate a circular linked list to the right by k positions.
-public class CLL10 {        // Class containing circular linked list properties
+public class RotateCircularLinkedList {        // Class containing circular linked list properties
     int size;       // // Creating the size for circular linked list
     Node head;      // Creating a head node
     Node tail;      // Creating a tail node
 
-    CLL10() {      // Creating a default constructor
+    RotateCircularLinkedList() {      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -25,7 +26,7 @@ public class CLL10 {        // Class containing circular linked list properties
         size++;       // Incrementing size by 1
     }
 
-    public void rotateCircularLinkedList(int k) {       // Method to rotate the circular linked list
+    public void rotateList(int k) {       // Method to rotate the circular linked list
         Node current = head;        // Assigning 'current' pointer, pointing at head
         Node previous = null;       // Assigning 'previous' pointer to null
 
@@ -40,9 +41,9 @@ public class CLL10 {        // Class containing circular linked list properties
             current = current.next;
         }
 
-        tail.next = head;       // Updating the referenc pointer of the tail pointing at head
+        tail.next = head;       // Updating the reference pointer of the tail pointing at head
         head = current;         // Updating the new head to the current node
-        tail = previous;        // Updating the tail to
+        tail = previous;        // Updating the tail to previous pointer
     }
 
     public void display() {     // Method to display the circular linked list
@@ -67,7 +68,7 @@ public class CLL10 {        // Class containing circular linked list properties
     }
 
     public static void main(String[] args) {        // Main method
-        CLL10 circularLinkedList = new CLL10();      // Creating an object of class type
+        RotateCircularLinkedList circularLinkedList = new RotateCircularLinkedList();      // Creating an object of class type
 
         // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
@@ -80,7 +81,7 @@ public class CLL10 {        // Class containing circular linked list properties
         System.out.println("Original circular linked list:");
         circularLinkedList.display();
 
-        circularLinkedList.rotateCircularLinkedList(3);        // Calling the method to rotate the circular linked list
+        circularLinkedList.rotateList(3);        // Calling the method to rotate the circular linked list
         circularLinkedList.display();       // Displaying the updated circular linked list
     }
 }
