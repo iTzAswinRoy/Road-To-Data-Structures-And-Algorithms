@@ -1,11 +1,12 @@
 package JavaCircularLinkedList;
+
 // Write a function to reverse a circular linked list.
-public class CLL8 {         // Circular linked list class
+public class ReversingList {         // Circular linked list class
     int size;       // Creating instance variable for size
     Node head;      // Creating head pointer
     Node tail;      // Creating tail pointer
 
-    CLL8() {     // Creating a default constructor
+    ReversingList() {     // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -26,23 +27,24 @@ public class CLL8 {         // Circular linked list class
         size++;        // Incrementing size by 1
     }
 
-    public void reverse() {      //
-        if(head == null || head.next == head) {      //
+    public void reverse() {      // Method to reverse a node in the circular linked list
+        if(head == null || head.next == head) {      // Checking if tht list is empty
             return;
         }
-        Node prev = null;       //
-        Node curr = head;       //
-        Node originalHead = head;       //
+        Node previous = null;       // Assigning 'previous' reference to null
+        Node current = head;       // Assigning 'current' reference pointing towards null
+        Node next;       // Creating a 'next' reference which helps transverse through the list
         do{
-            Node after = curr.next;     // Creating a node which helps transverse through the list
-            curr.next = prev;       //
-            prev = curr;        //
-            curr = after;       //
+            next = current.next;     // Assigning the 'next' reference as current's next node
+            current.next = previous;       // Here, we're reversing the reference pointer of the current node
+            previous = current;        // Assigning, the 'previous' pointing at current node
+            current = next;       // Transversing the current node to its next node
 
-        }  while (curr != head);        //
-        head.next = prev;       //
-        head = prev;        //
-        tail = originalHead;        //
+        }  while (current != head);        // Iterating till the pointer reaches the head
+
+        // Adjust the head and tail pointers
+        head.next = previous;       // Now, reversing the pointer of the head node
+        head = previous;        // Finally, the 'head' pointer is set to previous, marking the new head of the reversed list.
     }
 
     public void display() {      // Method to display the circular linked list
@@ -67,7 +69,7 @@ public class CLL8 {         // Circular linked list class
     }
 
      public static void main(String[] args) {       // Main method
-        CLL8 circularLinkedList = new CLL8();      // Creating an object of class type
+        ReversingList circularLinkedList = new ReversingList();      // Creating an object of class type
 
         // Inserting node to the circular linked list
         circularLinkedList.insertNode(1);
