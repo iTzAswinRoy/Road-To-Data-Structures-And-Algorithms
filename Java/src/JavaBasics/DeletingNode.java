@@ -35,8 +35,8 @@ public class DeletingNode {      // Creating a class which handles linked list
 
     public void deleteIndex(int index) {     // Method to delete a specified node
         if (index < 0 || index > size) {      // Using a condition if the given index exceeds the size of the linked list
-            System.out.println("Index out of bound!");
-            return;
+            System.err.println("Index out of bound!");      // Displaying  an error message
+            throw new IllegalArgumentException();     // Throwing an exception
         }
         Node current = head;    // Creating a current node which is assigned to head
         Node previous = current.next;     // Creating a previous node which contains the reference of the current's next node
@@ -47,6 +47,8 @@ public class DeletingNode {      // Creating a class which handles linked list
         }
         previous.next = current.next;     // Once the current and previous reference are set to the required index, now we're assigning the reference of the previous to the reference of the current which automatically  deletes the current node and reference to the next node
         size--;     // Incrementing the size by 1
+
+        System.out.println("\nLinked list after deleting index at " + index + ":");
     }
 
     public void display() {     // Method to display the linked list
@@ -75,12 +77,14 @@ public class DeletingNode {      // Creating a class which handles linked list
         System.out.println("\nLinked list after inserting node:");
         obj.display();      // Calling the method to display the linked list
 
-        System.out.println("\nEnter the index to be deleted:");
-        int indexToBeDeleted = in.nextInt();    // Enter ing the index of the node to be deleted
+        try {
+            System.out.println("\nEnter the index to be deleted:");
+            int indexToBeDeleted = in.nextInt();    // Enter ing the index of the node to be deleted
+            obj.deleteIndex(indexToBeDeleted);      // Calling the delete method the remove the specific noe
 
-        System.out.println("\nAfter deleting index:" + indexToBeDeleted);
-
-        obj.deleteIndex(indexToBeDeleted);      // Calling the delete method the remove the specific noe
+        } catch (IllegalArgumentException e) {      // Catching the exception and also creating an object
+            System.out.println("\nCurrent linked list:");       // Displays the error message, if catch block is occurred
+        }
         obj.display();      // Calling the method to display the linked list
         in.close();     // Closing scanner
     }
