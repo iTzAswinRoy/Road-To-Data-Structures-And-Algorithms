@@ -9,12 +9,12 @@ public class w167 {
         w167 obj = new w167();     // Creating an object ot call the methods
 
         int[] array = obj.inputElements();  // Calling a method to get inputs for the array
-        int[] result = obj.separatedArray(array);   // Storing the separated array in a variable
+        int[] result = obj.separatedArray(array);   // Storing the separated array in a new array
 
-        System.out.println("Result:\n" + Arrays.toString(result));
+        System.out.println("Result:\n" + Arrays.toString(result));      // Displaying the separated array
     }
 
-    public int[] inputElements() {   // Method to get the inputs
+    public int[] inputElements() {      // Method to get the inputs
         Scanner in = new Scanner(System.in);    // Creating a scanner object
 
         System.out.println("Enter the size of the array:");
@@ -24,7 +24,7 @@ public class w167 {
         for (int i = 0; i < data.length; i++) {     // iterating over an array to assign values to an array
             data[i] = in.nextInt();     // Getting inputs using scanner object
         }
-        System.out.println("Given array:\n" + Arrays.toString(data));
+        System.out.println("Given array:\n" + Arrays.toString(data));       // Displaying the given array
 
         in.close();     // Closing scanner
         return data;    // Returning the inputs from the user
@@ -48,6 +48,6 @@ public class w167 {
                 left++;     // Incrementing left by 1
             }
         }
-        return modifiedArray;
+        return modifiedArray;       // Returning the rearranged array
     }
 }
