@@ -36,20 +36,18 @@ public class w167 {
         int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
 
-        for (int i = 0; i < data.length; i++) {     // Iterating over the array to separate zeros from the array
-
-            if (data[i] == 0) {
-                modifiedArray[right] = data[i];
-                right--;
+        for (int i = 0; i < data.length; i++) {      // Iterating over the array to separate zeros from the array
+            // Checking if the array containing 0's in it
+            if (data[i] == 0) {         // If the element is zero then it moves it to the right of the array
+                modifiedArray[right] = data[i];       // Initializing the value to the right of the array
+                right--;      // Decrementing right by 1
 
             } else {
-                modifiedArray[left] = data[i];
-                left++;
+                // If it's non-zero element then it moves it to the left of the array
+                modifiedArray[left] = data[i];      // Initializing the value to the right of the array
+                left++;     // Incrementing left by 1
             }
         }
         return modifiedArray;
-    }
-
-    public void printArray(int[] data) {     // Method to display the final result
     }
 }
