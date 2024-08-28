@@ -46,7 +46,7 @@ public class RearrangeArray {
             } else {
                 // If it's negative, then it adds on the left of the array
                 newArray[left] = data[i];       // Initializing the value to the right of the array
-                left++;     // Incrementing right by 1
+                left++;     // Incrementing left by 1
             }
         }
         return newArray;      // Returning the rearranged array
