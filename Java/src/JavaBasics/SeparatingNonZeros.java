@@ -4,9 +4,9 @@ import java.util.Arrays;      // Importing array class
 import java.util.Scanner;      // Importing scanner class
 
 // Write a Java program to move every zero to the right side of a given array of integers.
-public class w167 {
+public class SeparatingNonZeros {
     public static void main(String[] args) {      // Main method
-        w167 obj = new w167();     // Creating an object ot call the methods
+        SeparatingNonZeros obj = new SeparatingNonZeros();     // Creating an object ot call the methods
 
         int[] array = obj.inputElements();  // Calling a method to get inputs for the array
         int[] result = obj.separatedArray(array);   // Storing the separated array in a new array
