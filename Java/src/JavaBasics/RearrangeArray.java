@@ -11,7 +11,7 @@ public class RearrangeArray {
         int[] array = obj.inputElements();      // Calling a method to get inputs for the array
         int[] result = obj.rearrangeArray(array);     // Storing the rearranged array in a variable
 
-        System.out.println("Rearranged array:\n" + Arrays.toString(result));      // Calling the method to rearrange the array
+        System.out.println("Rearranged array:\n" + Arrays.toString(result));      // Displaying the rearranged the array
     }
 
     public int[] inputElements() {       // Method to get the inputs
