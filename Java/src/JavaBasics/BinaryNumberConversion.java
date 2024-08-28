@@ -5,9 +5,9 @@ import java.util.Stack;     // Importing stack class
 
 // Write a Java program that will accept an integer and convert it into a binary representation.
 // Now count the number of bits equal to zero in this representation.
-public class w163 {
+public class BinaryNumberConversion {
     public static void main(String[] args) {      // Main method
-        w163 obj = new w163();      // Creating an object
+        BinaryNumberConversion obj = new BinaryNumberConversion();      // Creating an object
 
         int number = obj.userInputs();      // Storing the integer value to a variable
         Stack<Integer> binaryRepresentation = obj.convertToBinary(number);       // Storing the binary number to a queue interface
@@ -38,8 +38,9 @@ public class w163 {
 
             return binaryNumber;    // Returning the binary number
         }
-        while (num > 0) {    // Here the conversion of binary number takes place
+        while (num > 0) {      // Iterating till the number is 0
 
+            // Here the conversion of binary number takes place
             int reminder = num % 2;     // Getting the reminder from the number
             binaryNumber.add(reminder);     // Storing the reminder in the stack
             num = num / 2;      // Reducing the number by dividing it
@@ -48,10 +49,10 @@ public class w163 {
     }
 
     public void displayBinaryNumber(Stack<Integer> data) {       // Method to display the binary number
-        Stack<Integer> result = (Stack<Integer>) data.clone();
+        Stack<Integer> result = (Stack<Integer>) data.clone();      // Creating a stack which clones the data from the original stack
 
-        while (!result.isEmpty()){
-            System.out.print(result.pop());
+        while (!result.isEmpty()) {     // Iterates till the stack is empty
+            System.out.print(result.pop());     // Removing the element from the clone stack in order to print the value
         }
     }
 
