@@ -11,7 +11,7 @@ public class w167 {
         int[] array = obj.inputElements();  // Calling a method to get inputs for the array
         int[] result = obj.separatedArray(array);   // Storing the separated array in a variable
 
-        obj.printArray(result);    // Printing the result
+        System.out.println("Result:\n" + Arrays.toString(result));
     }
 
     public int[] inputElements() {   // Method to get the inputs
@@ -20,11 +20,11 @@ public class w167 {
         System.out.println("Enter the size of the array:");
         int[] data = new int[in.nextInt()];    // Getting the size of an array
 
-        System.out.println("Enter the values for the array:");
+        System.out.println("Enter the value containing 0's:");
         for (int i = 0; i < data.length; i++) {     // iterating over an array to assign values to an array
             data[i] = in.nextInt();     // Getting inputs using scanner object
         }
-        System.out.println("Given array:\n "+ Arrays.toString(data));
+        System.out.println("Given array:\n" + Arrays.toString(data));
 
         in.close();     // Closing scanner
         return data;    // Returning the inputs from the user
@@ -36,13 +36,13 @@ public class w167 {
         int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
 
-        for (int i = 0; i < data.length; i++) {     // Iterating over the array to separate the zeros
+        for (int i = 0; i < data.length; i++) {     // Iterating over the array to separate zeros from the array
 
-            if(data[i] == 0){
+            if (data[i] == 0) {
                 modifiedArray[right] = data[i];
                 right--;
 
-            } else if (data[i] != 0) {
+            } else {
                 modifiedArray[left] = data[i];
                 left++;
             }
@@ -51,6 +51,5 @@ public class w167 {
     }
 
     public void printArray(int[] data) {     // Method to display the final result
-        System.out.println("Result:\n "+Arrays.toString(data));
     }
 }
