@@ -45,11 +45,14 @@ public class W207 {     // Creating a class which handles linked list
     public void sortLinkedList() {      // Method to sort the linked list
         System.out.println("Sorted linked list " + listCount + ":");
 
-        for (Node i = head; i != null ; i = i.next) {
+        // Using bubble sort method to sort the linked list
+        for (Node i = head; i != null ; i = i.next) {       // Iterating through the linked list
 
-            for (Node j = head; j.next != null ; j = j.next) {
+            for (Node j = head; j.next != null ; j = j.next) {      // Using nested for loop to iterate over the linked list
 
-                if (j.value > j.next.value) {
+                if (j.value > j.next.value) {       // Checking if the current node is greater than the next node
+
+                    // If it's true, then the swapping process takes place
                     int temp = j.value;
                     j.value = j.next.value;
                     j.next.value = temp;
@@ -58,76 +61,82 @@ public class W207 {     // Creating a class which handles linked list
         }
     }
 
-    public static W207 mergeLinkedList(W207 list1, W207 list2) {
-        W207 mergeList = new W207();
+    public static W207 mergeLinkedList(W207 list1, W207 list2) {        // Method to merge multiple linked list
+        W207 mergeList = new W207();        // Creating a empty linked list to sore the merged list
 
-        Node curr1 = list1.head;
-        Node curr2 = list2.head;
+        Node current1 = list1.head;        // Creating a current pointer of list 1 pointing at head
+        Node current2 = list2.head;        // Creating a current pointer of list 2 pointing at head
 
         System.out.println("Merged the linked list in ascending order:");
-        while (curr1 !=  null && curr2 != null) {
+        while (current1 !=  null && current2 != null) {      // Using while loop till both the pointers of the list reaches the end of the list
 
-            if (curr1.value <= curr2.value) {
-                mergeList.insertLast(curr1.value);
-                curr1 = curr1.next;
+            if (current1.value <= current2.value) {
+                mergeList.insertLast(current1.value);
+                current1 = current1.next;
 
             } else {
-                mergeList.insertLast(curr2.value);
-                curr2 = curr2.next;
+                mergeList.insertLast(current2.value);
+                current2 = current2.next;
             }
         }
-        while (curr1 != null) {
-            mergeList.insertLast(curr1.value);
-            curr1 = curr1.next;
+        while (current1 != null) {
+            mergeList.insertLast(current1.value);
+            current1 = current1.next;
         }
 
-        while (curr2 != null) {
-            mergeList.insertLast(curr2.value);
-            curr2 = curr2.next;
+        while (current2 != null) {
+            mergeList.insertLast(current2.value);
+            current2 = current2.next;
         }
         return mergeList;
     }
 
-    public void display() {
-        Node temp = head;
+    public void display() {        // Method to display the linked list
+        Node temp = head;       // Creating a temp node pointing at head
 
-        while (temp != null) {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+        while (temp != null) {      // Using while loop in order to print node till it reaches null
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
+            temp = temp.next;       // Moving the pointer to the next node
         }
-        System.out.print("END\n");
-    }
-    static class Node {
-        int value;
-        Node next;
-
-        Node(int value) {
-            this.value = value;
-        }
+        System.out.print("END\n");      // Displaying 'head' for reference
     }
 
-    public static void main(String[] args) {
+    static class Node {       // Creating a node class
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference, pointing towards the next node
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
+        }
+    }
+
+    public static void main(String[] args) {        // Main method
+        // Creating an object of class type
         W207 obj1 = new W207();
         W207 obj2 = new W207();
 
+        // Inserting node to the linked list
         obj1.insertNode();
         obj2.insertNode();
 
+        // Displaying the linked list 1
         System.out.println("Linked list 1: ");
         obj1.display();
 
-        obj1.sortLinkedList();
-        obj1.display();
+
+        obj1.sortLinkedList();      // Sorting the linked list 1
+        obj1.display();      // Displaying the sorted lined list 1
         System.out.println();
 
+        // Displaying the linked list 2
         System.out.println("Linked list 2: ");
         obj2.display();
 
-        obj2.sortLinkedList();
-        obj2.display();
+        obj2.sortLinkedList();      // Sorting the linked list 2
+        obj2.display();       // Displaying the sorted lined list 2
         System.out.println();
 
-        W207 result = W207.mergeLinkedList(obj1, obj2);
-        result.display();
+        W207 result = W207.mergeLinkedList(obj1, obj2);         // Creating an object to store the merged lined list
+        result.display();       // Calling the method to display the merged linked list
     }
 }

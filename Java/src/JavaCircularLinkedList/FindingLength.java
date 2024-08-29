@@ -28,7 +28,7 @@ public class FindingLength {     // Circular linked list class
     }
 
     public void display() {     // Method to display the circular linked list
-        Node temp = head;       // Creating a temp node pointing at head
+        Node temp = head;       // Creating a 'temp' node pointing at head
 
         do {        // Using do while loop in order to print node starting from head
             System.out.print(temp.value + " -> ");      // Displaying the value of each node
@@ -36,7 +36,7 @@ public class FindingLength {     // Circular linked list class
 
         } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
 
-        System.out.println("HEAD");         // Displaying 'head' for reference
+        System.out.println("HEAD");        // Displaying 'head' for reference
     }
 
     class Node {        // Creating a node class
