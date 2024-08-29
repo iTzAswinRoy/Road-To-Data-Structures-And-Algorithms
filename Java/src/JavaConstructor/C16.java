@@ -5,15 +5,16 @@ public class C16 {
     private final String name;
     private final int age;
 
-    C16(String name, int age){
+    C16(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
-    public String getName(){
+    public String getName() {
         return name;
     }
-    public int getAge(){
+
+    public int getAge() {
         return age;
     }
 
@@ -21,14 +22,7 @@ public class C16 {
         C16 person = new C16("Aswin", 25);
         System.out.println("Person details:");
 
-        System.out.println("Name: "+person.getName());
-        System.out.println("Age: "+person.getAge());
-
-        // testing
-        C16 sad = new C16("jhgjk", 25);
-        System.out.println("Name: "+sad.getName());
-        System.out.println("Age: "+sad.getAge());
-
-
+        System.out.println("Name: " + person.getName());
+        System.out.println("Age: " + person.getAge());
     }
 }
