@@ -71,6 +71,7 @@ public class W207 {     // Creating a class which handles linked list
         while (current1 !=  null && current2 != null) {      // Using while loop till both the pointers of the list reaches the end of the list
 
             if (current1.value <= current2.value) {
+
                 mergeList.insertLast(current1.value);
                 current1 = current1.next;
 
