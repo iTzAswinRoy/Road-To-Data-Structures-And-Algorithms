@@ -4,9 +4,9 @@ import java.util.ArrayList;     // Importing arraylist class
 import java.util.Scanner;       // Importing scanner class
 
 //  Write a Java program that partitions an array of integers into even and odd numbers.
-public class W176 {
+public class PartitionArray {
     public static void main(String[] args) {    // Main method
-        W176 obj = new W176();      // Creating class object
+        PartitionArray obj = new PartitionArray();      // Creating class object
         ArrayList<Integer> result = obj.userInputs();   // Storing the result in a variable by calling the input method
 
         System.out.println("Given array list:\n" + result);
