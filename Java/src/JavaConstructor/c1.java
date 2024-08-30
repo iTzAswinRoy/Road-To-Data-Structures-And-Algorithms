@@ -7,6 +7,7 @@ public class c1 {       // Creating a class contains person details
     private int age;        // Creating instance variable to store age
 
     public c1() {       // Creating default constructor
+        // Initializing default values to the instance variable
         this.name = "Aswin";
         this.age = 20;
     }
