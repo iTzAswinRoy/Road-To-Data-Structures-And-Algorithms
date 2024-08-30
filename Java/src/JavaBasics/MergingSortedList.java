@@ -3,7 +3,7 @@ package JavaBasics;
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to merge two sorted (ascending) linked lists in ascending order.
-public class W207 {     // Creating a class which handles linked list
+public class MergingSortedList {     // Creating a class which handles linked list
     Node head;      // Creating a reference for head
     Node tail;      // Creating a reference for tail
     int size;       // Creating a size
@@ -11,7 +11,7 @@ public class W207 {     // Creating a class which handles linked list
     static int count = 1;   // Initializing as static to increment the count correctly whenever the instances of the class is called
     int listCount;
 
-    W207() {        // Creating a default constructor
+    MergingSortedList() {        // Creating a default constructor
         this.size = 0;       // Initializing the size to 0
         this.listCount = count++;       // Incrementing count by 1 whenever the object is created
     }
@@ -61,8 +61,8 @@ public class W207 {     // Creating a class which handles linked list
         }
     }
 
-    public static W207 mergeLinkedList(W207 list1, W207 list2) {        // Method to merge multiple linked list
-        W207 mergeList = new W207();        // Creating a empty linked list to sore the merged list
+    public static MergingSortedList mergeLinkedList(MergingSortedList list1, MergingSortedList list2) {        // Method to merge multiple linked list
+        MergingSortedList mergeList = new MergingSortedList();        // Creating a empty linked list to sore the merged list
 
         Node current1 = list1.head;        // Creating a current pointer of list 1 pointing at head
         Node current2 = list2.head;        // Creating a current pointer of list 2 pointing at head
@@ -117,8 +117,8 @@ public class W207 {     // Creating a class which handles linked list
 
     public static void main(String[] args) {        // Main method
         // Creating an object of class type
-        W207 obj1 = new W207();
-        W207 obj2 = new W207();
+        MergingSortedList obj1 = new MergingSortedList();
+        MergingSortedList obj2 = new MergingSortedList();
 
         // Inserting node to the linked list
         obj1.insertNode();
@@ -141,7 +141,7 @@ public class W207 {     // Creating a class which handles linked list
         obj2.display();       // Displaying the sorted lined list 2
         System.out.println();
 
-        W207 result = W207.mergeLinkedList(obj1, obj2);         // Creating an object to store the merged lined list
+        MergingSortedList result = MergingSortedList.mergeLinkedList(obj1, obj2);         // Creating an object to store the merged lined list
         result.display();       // Calling the method to display the merged linked list
     }
 }
