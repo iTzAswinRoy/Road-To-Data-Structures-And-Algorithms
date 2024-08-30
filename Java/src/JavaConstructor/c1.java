@@ -20,16 +20,18 @@ public class c1 {       // Creating a class contains person details
         return age;     // Returning age
     }
 
-    public void setAge(int age) {       //
+    public void setAge(int age) {       // Creating a setter method to assign the age under certain conditions
+        // Setting the age only if the value of age satisfies the condition
         if (age < 70) {
             this.age = age;
         }
     }
 
-    public static void main(String[] args) {
-        c1 obj = new c1();
-        obj.setAge(45);
+    public static void main(String[] args) {        // Main method
+        c1 obj = new c1();      // Creating an object of the class type
+        obj.setAge(45);     // Setting the age the setter method
 
+        // Accessing the name and age using getter method
         System.out.println("My name is " + obj.getName());
         System.out.println("My age is " + obj.getAge());
     }
