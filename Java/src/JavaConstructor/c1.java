@@ -1,11 +1,12 @@
 package JavaConstructor;
 
 // Create a class Person with a default constructor that initializes name to "Aswin" and age to 20.
-public class c1 {       //
-    private String name;        //
-    private int age;        //
+public class c1 {       // Creating a class contains person details
+    // Creating instance variable for the class
+    private String name;        // Creating instance variable to store name
+    private int age;        // Creating instance variable to store age
 
-    public c1() {
+    public c1() {       // Creating default constructor
         this.name = "Aswin";
         this.age = 20;
     }
@@ -18,12 +19,8 @@ public class c1 {       //
         return age;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public void setAge(int age) {
-        if(age < 70) {
+        if (age < 70) {
             this.age = age;
         }
     }
