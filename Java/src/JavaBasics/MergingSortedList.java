@@ -46,7 +46,7 @@ public class MergingSortedList {     // Creating a class which handles linked li
         System.out.println("Sorted linked list " + listCount + ":");
 
         // Using bubble sort method to sort the linked list
-        for (Node i = head; i != null ; i = i.next) {       // Iterating through the linked list
+        for (Node i = head; i != null ; i = i.next) {       // With the helper of reference type, we are iterating through the linked list
 
             for (Node j = head; j.next != null ; j = j.next) {      // Using nested for loop to iterate over the linked list
 
