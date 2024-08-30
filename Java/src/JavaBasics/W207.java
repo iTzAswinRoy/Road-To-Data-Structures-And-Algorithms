@@ -68,8 +68,11 @@ public class W207 {     // Creating a class which handles linked list
         Node current2 = list2.head;        // Creating a current pointer of list 2 pointing at head
 
         System.out.println("Merged the linked list in ascending order:");
-        while (current1 !=  null && current2 != null) {      // Using while loop till both the pointers of the list reaches the end of the list
 
+        // Using while loop till both the pointers of the list reaches the end of the list
+        while (current1 !=  null && current2 != null) {
+
+            // This condition checks whether the current node from list 1 is less than the list 2
             if (current1.value <= current2.value) {
 
                 mergeList.insertLast(current1.value);
@@ -80,16 +83,17 @@ public class W207 {     // Creating a class which handles linked list
                 current2 = current2.next;
             }
         }
+        // Inserting the remaining nodes from the linked list 1 to the merge list
         while (current1 != null) {
             mergeList.insertLast(current1.value);
             current1 = current1.next;
         }
-
+        // Inserting the remaining nodes from the linked list 2 to the merge list
         while (current2 != null) {
             mergeList.insertLast(current2.value);
             current2 = current2.next;
         }
-        return mergeList;
+        return mergeList;       // Returning the merged list
     }
 
     public void display() {        // Method to display the linked list
