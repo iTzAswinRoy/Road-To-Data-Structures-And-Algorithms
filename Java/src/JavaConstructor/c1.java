@@ -12,15 +12,15 @@ public class c1 {       // Creating a class contains person details
         this.age = 20;
     }
 
-    public String getName() {
-        return name;
+    public String getName() {       // Creating a getter method to get the name
+        return name;      // Returning name
     }
 
-    public int getAge() {
-        return age;
+    public int getAge() {       // Creating a getter method to get the age
+        return age;     // Returning age
     }
 
-    public void setAge(int age) {
+    public void setAge(int age) {       //
         if (age < 70) {
             this.age = age;
         }
