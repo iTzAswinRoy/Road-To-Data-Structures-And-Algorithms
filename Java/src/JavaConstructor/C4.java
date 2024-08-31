@@ -10,7 +10,7 @@ public class C4 {       //
         this.grade = grade;       //
     }
 
-    C4 (C4 obj){
+    C4 (C4 obj){        //
         this.name = obj.name;
         this.grade = obj.grade;
     }
