@@ -6,8 +6,8 @@ public class C4 {       //
     private String grade;       //
 
     C4 (String name, String grade){         //
-        this.name = name;
-        this.grade = grade;
+        this.name = name;       //
+        this.grade = grade;       //
     }
 
     C4 (C4 obj){
