@@ -61,7 +61,7 @@ public class C3 {       // Creating a class that contains car details
         C3 rectangle1 = new C3();     // Creating an objects with no parameters
 
         // Displaying the object and its values by calling getter methods
-        System.out.println("Rectangle 1: \nLength = "+ rectangle1.getLength() + "\nWidth = "+rectangle1.getWidth());
+        System.out.println("Rectangle 1: \nLength = "+ rectangle1.getLength() + "\nWidth = " + rectangle1.getWidth());
         System.out.println("Area of the rectangle: " + rectangle1.area());
         System.out.println("Perimeter of the rectangle: " + rectangle1.perimeter());
 
