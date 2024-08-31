@@ -1,8 +1,8 @@
 package JavaConstructor;
 
 // Create a class Student with a copy constructor that copies the values of name and grade from another Student object.
-public class C4 {
-    private String name;
+public class C4 {       //
+    private String name;        //
     private String grade;
 
     C4 (String name, String grade){
