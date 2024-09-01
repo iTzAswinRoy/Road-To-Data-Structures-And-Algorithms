@@ -7,7 +7,7 @@ public class C5 {       // Creating a class that contains book details
     private String author;      // Crating a variable to store the author
     private int price = 500;        // Assigning a default value to the price
 
-    C5 (String title, String author, int price) {
+    C5 (String title, String author, int price) {       // Creating a parameterized constructor that takes 3 arguments
         this.title = title;     //
         this.author = author;       //
         this.price = price;     //

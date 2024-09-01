@@ -6,7 +6,7 @@ public class C4 {        // Creating a class that contains car details
     private String name;        // Crating a variable to store the name
     private String grade;       // Crating a variable to store the grade
 
-    C4(String name, String grade) {         // Creating a parameterized constructor that takes 2 arguments
+    C4(String name, String grade) {        // Creating a parameterized constructor that takes 2 arguments
         // Initialing values to the instance variables
         this.name = name;
         this.grade = grade;
