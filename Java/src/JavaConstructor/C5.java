@@ -9,7 +9,7 @@ public class C5 {       //
     C5 (String title, String author, int price) {
         this.title = title;     //
         this.author = author;       //
-        this.price = price;
+        this.price = price;     //
     }
 
     C5 (String title, String author) {
