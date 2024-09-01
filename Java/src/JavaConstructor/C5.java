@@ -1,7 +1,7 @@
 package JavaConstructor;
 
 // Write a class Book that has an overloaded constructor with a default value for price.
-public class C5 {       //
+public class C5 {       // Creating a class that contains book details
     private String title;       //
     private String author;      //
     private int price = 500;        //
@@ -13,11 +13,11 @@ public class C5 {       //
     }
 
     C5 (String title, String author) {      //
-        this.title = title;
-        this.author = author;
+        this.title = title;     //
+        this.author = author;       //
     }
     public String getTitle() {
-        return title;
+        return title;       //
     }
     public String getAuthor() {
         return author;
