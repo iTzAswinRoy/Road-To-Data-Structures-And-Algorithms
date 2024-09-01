@@ -14,9 +14,10 @@ public class C5 {       // Creating a class that contains book details
         this.price = price;
     }
 
-    C5 (String title, String author) {      //
-        this.title = title;     //
-        this.author = author;       //
+    C5 (String title, String author) {      // Creating a parameterized constructor that takes 2 arguments
+        // Initialing values to the instance variables
+        this.title = title;
+        this.author = author;
     }
     public String getTitle() {
         return title;       //
