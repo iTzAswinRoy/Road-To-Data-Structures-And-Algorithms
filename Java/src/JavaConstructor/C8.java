@@ -17,7 +17,7 @@ public class C8 {       //
     }
 
     public static void main(String[] args) {        //
-        ArrayList<String> bookTitles = new ArrayList<>();
+        ArrayList<String> bookTitles = new ArrayList<>();       //
 
         bookTitles.add("Harry Potter");
         bookTitles.add("Prince of Persia");
