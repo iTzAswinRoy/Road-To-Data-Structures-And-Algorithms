@@ -23,7 +23,7 @@ public class C8 {       //
         bookTitles.add("Prince of Persia");
         bookTitles.add("Joker");
 
-        C8 obj = new C8(bookTitles);
+        C8 obj = new C8(bookTitles);        //
 
         System.out.println("Displaying the books from the collection:");
         obj.getBooks();
