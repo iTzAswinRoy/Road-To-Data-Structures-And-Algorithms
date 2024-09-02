@@ -26,6 +26,6 @@ public class C8 {       //
         C8 obj = new C8(bookTitles);        //
 
         System.out.println("Displaying the books from the collection:");
-        obj.getBooks();
+        obj.getBooks();     //
     }
 }
