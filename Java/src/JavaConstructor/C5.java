@@ -22,7 +22,7 @@ public class C5 {       // Creating a class that contains book details
     public String getTitle() {
         return title;       //
     }
-    public String getAuthor() {
+    public String getAuthor() {     //
         return author;
     }
     public int getPrice() {
