@@ -25,7 +25,7 @@ public class C5 {       // Creating a class that contains book details
     public String getAuthor() {     //
         return author;
     }
-    public int getPrice() {
+    public int getPrice() {     //
         return price;
     }
 
