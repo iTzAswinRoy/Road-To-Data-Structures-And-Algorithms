@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ArrayList;
 
 // Write a class Library that initializes a list of books using an ArrayList passed to the constructor.
-public class C8 {
+public class C8 {       //
     private ArrayList<String> books;
 
     C8(ArrayList<String> books){
