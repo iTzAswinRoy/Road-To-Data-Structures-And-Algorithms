@@ -2,8 +2,8 @@ package JavaConstructor;
 
 // Create a base class Animal with a constructor that initializes species.
 // Then, create a derived class Dog that calls the base class constructor.
- class Animal {
-     private String species;
+ class Animal {     //
+     private String species;      //
 
      Animal(String species){
          this.species = species;
@@ -34,7 +34,7 @@ class Dog extends Animal {
 public class C9 {
     public static void main(String[] args) {
         Dog myDog = new Dog("Pit bull", "Dog");
-        Dog myDog2 = new Dog("SHitzuh");
+        Dog myDog2 = new Dog("Shit-zuh");
 
 
         myDog.displaySpecies();
