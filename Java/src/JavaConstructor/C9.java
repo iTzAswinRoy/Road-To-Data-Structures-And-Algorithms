@@ -5,7 +5,7 @@ package JavaConstructor;
  class Animal {     //
      private String species;      //
 
-     Animal(String species){
+     Animal(String species) {
          this.species = species;
 
      }
