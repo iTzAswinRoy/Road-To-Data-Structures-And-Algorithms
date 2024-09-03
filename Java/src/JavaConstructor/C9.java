@@ -18,7 +18,7 @@ package JavaConstructor;
 class Dog extends Animal {      //
      private String breed;
 
-     Dog(String breed) {
+     Dog(String breed) {        //
           this(breed, "unknown");
      }
 
