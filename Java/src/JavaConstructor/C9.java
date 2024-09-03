@@ -10,7 +10,7 @@ package JavaConstructor;
 
      }
 
-     public void displaySpecies() {
+     public void displaySpecies() {      //
          System.out.println("Animal class species is " + species);
      }
 }
