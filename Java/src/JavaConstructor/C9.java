@@ -22,7 +22,7 @@ class Dog extends Animal {      //
           this(breed, "unknown");
      }
 
-     Dog(String breed, String species){
+     Dog(String breed, String species) {     //
          super(species);
          this.breed = breed;
      }
