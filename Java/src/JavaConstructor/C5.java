@@ -19,22 +19,24 @@ public class C5 {       // Creating a class that contains book details
         this.title = title;
         this.author = author;
     }
-    public String getTitle() {
-        return title;       //
+    public String getTitle() {      // Creating a getter method to get the instance variable title
+        return title;       // Returning the value of title
     }
-    public String getAuthor() {     //
-        return author;
+    public String getAuthor() {     // Creating a getter method to get the instance variable author
+        return author;      // Returning the value of author
     }
-    public int getPrice() {     //
-        return price;
+    public int getPrice() {     // Creating a getter method to get the instance variable price
+        return price;       // Returning the value of price
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
+        // Creating an objects by passing arguments based on its constructor
         C5 obj1 = new C5("Balls of steel", "G.P. Muthu", 69);
         C5 obj2 = new C5("Chick with dick", "Sumar Munji Kumar");
 
         System.out.println("Displaying the the book details:");
-        System.out.println("Book - 1:\nTitle: " + obj1.getTitle() + "\nAuthor: " + obj1.getAuthor()+"\nPrice: "+obj1.getPrice());
-        System.out.println("\nBook - 2:\nTitle: " + obj2.getTitle() + "\nAuthor: " + obj2.getAuthor()+"\nPrice: "+obj2.getPrice());
+        // Displaying the object's parameter using the getter method
+        System.out.println("Book - 1:\nTitle: " + obj1.getTitle() + "\nAuthor: " + obj1.getAuthor() + "\nPrice: " + obj1.getPrice());
+        System.out.println("\nBook - 2:\nTitle: " + obj2.getTitle() + "\nAuthor: " + obj2.getAuthor() + "\nPrice: " + obj2.getPrice());
     }
 }
