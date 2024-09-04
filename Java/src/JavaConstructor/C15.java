@@ -2,7 +2,7 @@ package JavaConstructor;
 
 // Implement a class CoffeeOrder that takes a Size enum and an extraShots parameter in the constructor.
 
-public class C15 {
+public class C15 { //
     enum Size {
         SMALL, MEDIUM, LARGE
     }
