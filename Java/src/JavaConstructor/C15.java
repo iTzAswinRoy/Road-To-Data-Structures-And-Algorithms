@@ -13,7 +13,7 @@ public class C15 { //
     C15(Size size, int orderCount){
         this.size = size;       //
         this.orderCount = orderCount;
-    }
+    } //
 
     public Size getSize() {
         return size;
