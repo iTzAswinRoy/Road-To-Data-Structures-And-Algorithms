@@ -4,7 +4,7 @@ package JavaConstructor;
 
 public class C15 { //
     enum Size {
-        SMALL, MEDIUM, LARGE
+        SMALL, MEDIUM, LARGE //
     }
 
     private Size size;
