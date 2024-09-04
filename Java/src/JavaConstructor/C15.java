@@ -8,7 +8,7 @@ public class C15 { //
     }
 
     private Size size;      //
-    private int orderCount;
+    private int orderCount;     //
 
     C15(Size size, int orderCount){
         this.size = size;
