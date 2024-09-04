@@ -15,7 +15,7 @@ public class C15 { //
         this.orderCount = orderCount;
     } //
 
-    public Size getSize() {
+    public Size getSize() { //
         return size;
     }
 
