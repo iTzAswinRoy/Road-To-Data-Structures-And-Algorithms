@@ -11,7 +11,7 @@ public class C15 { //
     private int orderCount;     //
 
     C15(Size size, int orderCount){
-        this.size = size;
+        this.size = size;       //
         this.orderCount = orderCount;
     }
 
