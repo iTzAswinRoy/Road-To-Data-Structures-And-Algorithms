@@ -28,6 +28,6 @@ public class C15 { //
 
         System.out.println("Coffee order:\n------------");
         System.out.println("Size: "+order.getSize());
-        System.out.println("Number of orders: "+order.getOrderCount());
+        System.out.println("Number of orders: "+order.getOrderCount());     //
     }
 }
