@@ -7,7 +7,7 @@ public class C15 { //
         SMALL, MEDIUM, LARGE //
     }
 
-    private Size size;
+    private Size size;      //
     private int orderCount;
 
     C15(Size size, int orderCount){
