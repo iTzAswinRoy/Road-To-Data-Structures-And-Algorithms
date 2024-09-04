@@ -23,7 +23,7 @@ public class C15 { //
         return orderCount;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {    //
         C15 order = new C15(Size.MEDIUM, 5);
 
         System.out.println("Coffee order:\n------------");
