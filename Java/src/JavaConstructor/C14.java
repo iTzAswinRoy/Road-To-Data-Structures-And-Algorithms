@@ -6,7 +6,7 @@ public class C14 {      //
     private Processor processor;
 
     C14(String brand, int ram, int storage, int graphicsCard) {
-        this.brand = brand;
+        this.brand = brand;     //
         this.processor = new Processor(ram, storage, graphicsCard);
     }
 
