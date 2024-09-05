@@ -10,7 +10,7 @@ public class C14 {      //
         this.processor = new Processor(ram, storage, graphicsCard);     //
     }
 
-    public String getBrand() {
+    public String getBrand() {      //
         return brand;
     }
 
