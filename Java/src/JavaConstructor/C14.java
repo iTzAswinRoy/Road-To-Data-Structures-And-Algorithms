@@ -19,7 +19,7 @@ public class C14 {      //
         processor.getProcessorDetails();        //
     }
 
-    class Processor {
+    class Processor {       //
         int ram;
         int storage;
         int graphicsCard;
