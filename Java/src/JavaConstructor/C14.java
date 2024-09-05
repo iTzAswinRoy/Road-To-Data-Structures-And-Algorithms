@@ -16,7 +16,7 @@ public class C14 {      //
 
     public void displayDetails() {          //
         System.out.println("Computer brand: " + getBrand());        //
-        processor.getProcessorDetails();
+        processor.getProcessorDetails();        //
     }
 
     class Processor {
