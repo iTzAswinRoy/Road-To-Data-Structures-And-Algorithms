@@ -7,7 +7,7 @@ public class C14 {      //
 
     C14(String brand, int ram, int storage, int graphicsCard) {
         this.brand = brand;     //
-        this.processor = new Processor(ram, storage, graphicsCard);
+        this.processor = new Processor(ram, storage, graphicsCard);     //
     }
 
     public String getBrand() {
