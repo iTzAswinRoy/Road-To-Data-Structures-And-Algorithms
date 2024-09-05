@@ -1,7 +1,7 @@
 package JavaConstructor;
 
 // Write a class Computer with an inner class Processor. Initialize the Processor using the outer class's constructor.
-public class C14 {
+public class C14 {      //
     private String brand;
     private Processor processor;
 
