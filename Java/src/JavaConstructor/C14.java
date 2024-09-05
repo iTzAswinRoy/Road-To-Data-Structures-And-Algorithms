@@ -20,7 +20,7 @@ public class C14 {      //
     }
 
     class Processor {       //
-        int ram;
+        int ram;        //
         int storage;
         int graphicsCard;
 
