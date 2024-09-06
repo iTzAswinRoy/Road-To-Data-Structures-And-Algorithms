@@ -18,7 +18,7 @@ public class C16 {      //
         return age;     //
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        //
         C16 person = new C16("Aswin", 25);
         System.out.println("Person details:");
 
