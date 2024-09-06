@@ -11,10 +11,10 @@ public class C16 {      //
     }
 
     public String getName() {       //
-        return name;
+        return name;        //
     }
 
-    public int getAge() {
+    public int getAge() {       //
         return age;
     }
 
