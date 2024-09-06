@@ -19,7 +19,7 @@ public class C16 {      //
     }
 
     public static void main(String[] args) {        //
-        C16 person = new C16("Aswin", 25);
+        C16 person = new C16("Aswin", 25);      //
         System.out.println("Person details:");
 
         System.out.println("Name: " + person.getName());
