@@ -15,7 +15,7 @@ public class C16 {      //
     }
 
     public int getAge() {       //
-        return age;
+        return age;     //
     }
 
     public static void main(String[] args) {
