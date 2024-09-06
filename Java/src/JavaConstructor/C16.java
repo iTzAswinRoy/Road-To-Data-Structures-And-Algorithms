@@ -5,7 +5,7 @@ public class C16 {      //
     private final String name;
     private final int age;
 
-    C16(String name, int age) {
+    C16(String name, int age) {     //
         this.name = name;
         this.age = age;
     }
