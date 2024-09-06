@@ -22,7 +22,7 @@ public class C16 {      //
         C16 person = new C16("Aswin", 25);      //
         System.out.println("Person details:");
 
-        System.out.println("Name: " + person.getName());
+        System.out.println("Name: " + person.getName());        //
         System.out.println("Age: " + person.getAge());
     }
 }
