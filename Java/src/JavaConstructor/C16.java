@@ -1,7 +1,7 @@
 package JavaConstructor;
 
 // Write a class ImmutablePerson that has final fields and only provides a constructor for initializing these fields.
-public class C16 {
+public class C16 {      //
     private final String name;
     private final int age;
 
