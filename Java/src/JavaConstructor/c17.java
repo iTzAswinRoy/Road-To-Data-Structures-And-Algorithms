@@ -10,7 +10,7 @@ abstract class Shape {      //
 
     public abstract double area(int radius);        //
 
-    public abstract double perimeter(int radius);
+    public abstract double perimeter(int radius);       //
 
     public String getColor() {
         return color;
