@@ -4,7 +4,7 @@ package JavaConstructor;
 abstract class Shape {      //
     private String color;       //
 
-    Shape(String colour){
+    Shape(String colour){       //
         this.color = colour;
     }
 
