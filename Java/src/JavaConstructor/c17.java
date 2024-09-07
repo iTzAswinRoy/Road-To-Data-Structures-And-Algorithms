@@ -1,7 +1,7 @@
 package JavaConstructor;
 
 // Create an abstract class Shape with a constructor that initializes color. Then, implement a concrete class Circle that extends Shape.
-abstract class Shape {
+abstract class Shape {      //
     private String color;
 
     Shape(String colour){
