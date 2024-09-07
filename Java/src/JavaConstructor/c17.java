@@ -12,7 +12,7 @@ abstract class Shape {      //
 
     public abstract double perimeter(int radius);       //
 
-    public String getColor() {
+    public String getColor() {      //
         return color;
     }
 }
