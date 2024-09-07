@@ -20,7 +20,7 @@ abstract class Shape {      //
 public class c17 extends Shape {        //
     private int radius;
 
-    c17(String color, int radius) {
+    c17(String color, int radius) {     //
         super(color);
         this.radius = radius;
     }
