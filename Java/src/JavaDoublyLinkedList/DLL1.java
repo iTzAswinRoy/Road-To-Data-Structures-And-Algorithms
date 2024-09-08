@@ -42,6 +42,7 @@ public class DLL1 {     //
             System.out.println("List is empty.");
             return;
         } else {
+            //
             head = head.next;
             head.prev = null;
         }
