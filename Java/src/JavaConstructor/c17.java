@@ -40,8 +40,8 @@ public class c17 extends Shape {        //
     public static void main(String[] args) {        //
         c17 obj = new c17("red", 5);
 
-        System.out.println("area of the circle:\n" + obj.area(obj.getRadius()));
+        System.out.println("area of the circle:\n" + obj.area(obj.getRadius()));        //
 
-        System.out.println("Perimeter of the circle:\n" + obj.perimeter(obj.getRadius()));
+        System.out.println("Perimeter of the circle:\n" + obj.perimeter(obj.getRadius()));      //
     }
 }
