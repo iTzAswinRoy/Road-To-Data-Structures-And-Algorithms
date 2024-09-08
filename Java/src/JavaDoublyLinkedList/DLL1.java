@@ -50,7 +50,7 @@ public class DLL1 {     //
     }
 
     public void deleteLast(){       //
-        if(head == null){
+        if(head == null){       //
             System.out.println("List is empty.");
             return;
         } else {
