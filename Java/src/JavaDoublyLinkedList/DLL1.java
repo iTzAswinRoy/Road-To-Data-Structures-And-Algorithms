@@ -15,6 +15,7 @@ public class DLL1 {     //
             head = newNode;
             tail = head;
         } else {
+            //
             head.prev = newNode;
             newNode.next = head;
             head = newNode;
