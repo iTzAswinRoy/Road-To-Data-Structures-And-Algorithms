@@ -1,6 +1,6 @@
 package JavaDoublyLinkedList;
 // Write a function to reverse the nodes of a doubly linked list in place.
-public class DLL2 {
+public class DLL2 {     //
     Node head;
     Node tail;
     int size;
