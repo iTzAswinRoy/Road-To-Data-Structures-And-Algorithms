@@ -20,7 +20,7 @@ public class DLL2 {     //
         }
         size++;
     }
-    public void reverseList(){
+    public void reverseList(){      //
         Node temp = tail;
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+" -> ");
