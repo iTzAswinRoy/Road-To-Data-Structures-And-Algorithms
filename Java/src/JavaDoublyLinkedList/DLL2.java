@@ -8,7 +8,7 @@ public class DLL2 {     //
         this.size = 0;
     }
     public void insertNode(int value){      //
-        Node newNode = new Node(value);
+        Node newNode = new Node(value);     //
         if(tail == null){
             head = newNode;
             tail = head;
