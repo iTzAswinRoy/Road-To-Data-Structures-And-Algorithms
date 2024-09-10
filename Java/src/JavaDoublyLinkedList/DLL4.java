@@ -19,7 +19,7 @@ public class DLL4 {     //
         }
         size++;
     }
-    public void middleNode(){
+    public void middleNode(){       //
         if(size % 2 == 0){
             System.out.println("There's no middle node in the doubly linked list!");
             System.out.println("\nTry inserting another node to the doubly linked list to make the size even.");
