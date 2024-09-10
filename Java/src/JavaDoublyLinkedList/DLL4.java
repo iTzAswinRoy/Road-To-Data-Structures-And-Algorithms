@@ -44,7 +44,7 @@ public class DLL4 {     //
             System.out.println("END");
         }
     }
-    class Node{
+    class Node{     //
         Node prev;
         Node next;
         int value;
