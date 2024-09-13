@@ -28,7 +28,7 @@ public class DLL5 { //
                     temp.next.value = temp.value;
                     temp.value = swap;
                 }
-                temp = temp.next;
+                temp = temp.next;       //
             }
             temp = head;
         }
