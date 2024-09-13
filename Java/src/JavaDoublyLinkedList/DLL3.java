@@ -21,7 +21,7 @@ public class DLL3 {     // Main class
         size++;
     }
     public void sortNode(){     // Method to sort the doubly linked list
-        Node temp = head;
+        Node temp = head;       //
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size -1 -i; j++) {
                 if(temp.value > temp.next.value){
