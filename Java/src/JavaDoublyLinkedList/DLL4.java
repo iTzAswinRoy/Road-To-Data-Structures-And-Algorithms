@@ -53,7 +53,7 @@ public class DLL4 {     //
         }
     }
     public static void main(String[] args) {        //
-        DLL4 doublyLinkedList = new DLL4();
+        DLL4 doublyLinkedList = new DLL4();     //
         doublyLinkedList.insertNode(1);
         doublyLinkedList.insertNode(2);
         doublyLinkedList.insertNode(3);
