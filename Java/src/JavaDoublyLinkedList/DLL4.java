@@ -49,7 +49,7 @@ public class DLL4 {     //
         Node next;
         int value;
         Node(int value){        //
-            this.value = value;
+            this.value = value; //
         }
     }
     public static void main(String[] args) {        //
