@@ -64,6 +64,6 @@ public class DLL4 {     //
         doublyLinkedList.display();     //
 
         System.out.println("\nFinding the middle node:");
-        doublyLinkedList.middleNode();
+        doublyLinkedList.middleNode();      //
     }
 }
