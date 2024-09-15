@@ -1,13 +1,13 @@
 package JavaConstructor;
 
 // Write a class Car that takes make, model, and year as parameters and initializes them.
-public class C2 {       // Creating a class that contains car details
+public class ParameterizedConstructor {       // Creating a class that contains car details
     // Creating instance variables for the class
     private String manufacture;        // Crating a variable to store car manufacture details
     private String model;       // Crating a variable to store car model details
     private int year;       // Crating a variable to store year
 
-    public C2(String manufacture, String model, int year) {         // Creating a parameterized constructor by passing arguments
+    public ParameterizedConstructor(String manufacture, String model, int year) {         // Creating a parameterized constructor by passing arguments
         // Initialing values to the instance variables
         this.manufacture = manufacture;
         this.model = model;
@@ -28,9 +28,9 @@ public class C2 {       // Creating a class that contains car details
 
     public static void main(String[] args) {        // Main method
         // Creating multiple objects of the same class
-        C2 car1 = new C2("Audi","R8",2021);
-        C2 car2 = new C2("Benz","S-class",2025);
-        C2 car3 = new C2("Honda","Civic",1990);
+        ParameterizedConstructor car1 = new ParameterizedConstructor("Audi","R8",2021);
+        ParameterizedConstructor car2 = new ParameterizedConstructor("Benz","S-class",2025);
+        ParameterizedConstructor car3 = new ParameterizedConstructor("Honda","Civic",1990);
 
         // Displaying the object's parameter using the getter method
         System.out.println("Car 1: " + car1.getManufacture() + ", " + car1.getModel() + ", " + car1.getYear());
