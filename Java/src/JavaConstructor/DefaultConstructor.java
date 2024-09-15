@@ -1,12 +1,12 @@
 package JavaConstructor;
 
 // Create a class Person with a default constructor that initializes name to "Aswin" and age to 20.
-public class c1 {       // Creating a class that contains person details
+public class DefaultConstructor {       // Creating a class that contains person details
     // Creating instance variable for the class
     private String name;        // Creating instance variable to store name
     private int age;        // Creating instance variable to store age
 
-    public c1() {       // Creating default constructor
+    public DefaultConstructor() {       // Creating default constructor
         // Initializing default values to the instance variable
         this.name = "Aswin";
         this.age = 20;
@@ -28,7 +28,7 @@ public class c1 {       // Creating a class that contains person details
     }
 
     public static void main(String[] args) {        // Main method
-        c1 obj = new c1();      // Creating an object of the class type
+        DefaultConstructor obj = new DefaultConstructor();      // Creating an object of the class type
         obj.setAge(45);     // Setting the age the setter method
 
         // Accessing the name and age using getter method
