@@ -5,10 +5,10 @@ import java.util.Arrays;        // Importing arrays class
 import java.util.List;      // Importing list class
 
 // Implement a class Team that initializes a list of players using an array passed as a parameter to the constructor.
-public class C6 {       // Creating a class named 'Team' which contains player details
+public class Team {       // Creating a class named 'Team' which contains player details
     private List<String> players;       // Creating an instance variable of type list
 
-    C6(String[] player) {       // Creating a parameterized constructor that takes array as an arguments
+    Team(String[] player) {       // Creating a parameterized constructor that takes array as an arguments
         // Initialing values to the instance variables by converting array into array list
         this.players = new ArrayList<>(Arrays.asList(player));
     }
@@ -26,7 +26,7 @@ public class C6 {       // Creating a class named 'Team' which contains player d
 
     public static void main(String[] args) {        // Main method
         String[] team = {"Aswin", "Melwin", "Joel"};        // Creating an array that holds the player names
-        C6 obj = new C6(team);      // Creating an objects by passing string as an arguments
+        Team obj = new Team(team);      // Creating an objects by passing string as an arguments
 
         System.out.println("Team list\n" + obj.getPlayers());       // Calling the getter method to access the instance variable player
 
