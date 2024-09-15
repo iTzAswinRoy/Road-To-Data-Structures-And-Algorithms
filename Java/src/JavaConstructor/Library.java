@@ -3,10 +3,10 @@ package JavaConstructor;
 import java.util.ArrayList;      // Importing array list class
 
 // Write a class Library that initializes a list of books using an ArrayList passed to the constructor.
-public class C8 {       // Creating a class named 'Library' which contains player details
+public class Library {       // Creating a class named 'Library' which contains player details
     private ArrayList<String> books;        // Creating an instance variable of type array list
 
-    C8(ArrayList<String> books) {        // Creating a parameterized constructor that takes array list as an arguments
+    Library(ArrayList<String> books) {        // Creating a parameterized constructor that takes array list as an arguments
         // Initialing values to the instance variables
         this.books = books;
     }
@@ -23,7 +23,7 @@ public class C8 {       // Creating a class named 'Library' which contains playe
         bookTitles.add("Prince of Persia");
         bookTitles.add("Joker");
 
-        C8 obj = new C8(bookTitles);        // Creating an objects by passing array list as an arguments
+        Library obj = new Library(bookTitles);        // Creating an objects by passing array list as an arguments
 
         // Displaying the object's parameter using the getter method
         System.out.println("Displaying the books from the collection:");
