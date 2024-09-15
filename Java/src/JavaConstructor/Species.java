@@ -31,7 +31,7 @@ class Dog extends Animal {      //
      }
 }
 
-public class C9 {
+public class Species {
     public static void main(String[] args) {
         Dog myDog = new Dog("Pit bull", "Dog");
         Dog myDog2 = new Dog("Shit-zuh");
