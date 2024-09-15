@@ -1,20 +1,20 @@
 package JavaConstructor;
 
 // Write a class Book that has an overloaded constructor with a default value for price.
-public class C5 {       // Creating a class that contains book details
+public class ConstructorOverloading {       // Creating a class that contains book details
     // Creating instance variables for the class
     private String title;       // Crating a variable to store the title
     private String author;      // Crating a variable to store the author
     private int price = 500;        // Assigning a default value to the price
 
-    C5 (String title, String author, int price) {       // Creating a parameterized constructor that takes 3 arguments
+    ConstructorOverloading(String title, String author, int price) {       // Creating a parameterized constructor that takes 3 arguments
         // Initialing values to the instance variables
         this.title = title;
         this.author = author;
         this.price = price;
     }
 
-    C5 (String title, String author) {      // Creating a parameterized constructor that takes 2 arguments
+    ConstructorOverloading(String title, String author) {      // Creating a parameterized constructor that takes 2 arguments
         // Initialing values to the instance variables
         this.title = title;
         this.author = author;
@@ -31,8 +31,8 @@ public class C5 {       // Creating a class that contains book details
 
     public static void main(String[] args) {        // Main method
         // Creating an objects by passing arguments based on its constructor
-        C5 obj1 = new C5("Balls of steel", "G.P. Muthu", 69);
-        C5 obj2 = new C5("Chick with dick", "Sumar Munji Kumar");
+        ConstructorOverloading obj1 = new ConstructorOverloading("Balls of steel", "G.P. Muthu", 69);
+        ConstructorOverloading obj2 = new ConstructorOverloading("Chick with dick", "Sumar Munji Kumar");
 
         System.out.println("Displaying the the book details:");
         // Displaying the object's parameter using the getter method
