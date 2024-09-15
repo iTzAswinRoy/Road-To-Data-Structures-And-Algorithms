@@ -1,18 +1,18 @@
 package JavaConstructor;
 
 // Implement a class Rectangle with two constructors: one that takes length and width as parameters and another that sets both to a default value.
-public class C3 {       // Creating a class that contains car details
+public class MultipleConstructor {       // Creating a class that contains car details
     // Creating instance variables for the class
     private int length;         // Crating a variable to store the length
     private int width;         // Crating a variable to store the width
 
-    C3() {       // Creating a default constructor that takes no arguments
+    MultipleConstructor() {       // Creating a default constructor that takes no arguments
         // Initialing default values to the instance variables
         this.length = 10;
         this.width = 15;
     }
 
-    C3(int length, int width) {     // Creating a parameterized constructor that takes 2 arguments
+    MultipleConstructor(int length, int width) {     // Creating a parameterized constructor that takes 2 arguments
         // Calling the setter method to put a condition to initialize values to the instance variables
         setLength(length);
         setWidth(width);
@@ -58,14 +58,14 @@ public class C3 {       // Creating a class that contains car details
     }
 
     public static void main(String[] args) {        // Main method
-        C3 rectangle1 = new C3();     // Creating an objects with no parameters
+        MultipleConstructor rectangle1 = new MultipleConstructor();     // Creating an objects with no parameters
 
         // Displaying the object and its values by calling getter methods
         System.out.println("Rectangle 1: \nLength = "+ rectangle1.getLength() + "\nWidth = " + rectangle1.getWidth());
         System.out.println("Area of the rectangle: " + rectangle1.area());
         System.out.println("Perimeter of the rectangle: " + rectangle1.perimeter());
 
-        C3 rectangle2 = new C3(20, -5);     // Creating an objects by passing 2 parameters
+        MultipleConstructor rectangle2 = new MultipleConstructor(20, -5);     // Creating an objects by passing 2 parameters
 
         // Displaying the object and its values by calling getter methods
         System.out.println("\nRectangle 2: \nLength = "+ rectangle2.getLength() + "\nWidth = "+rectangle2.getWidth());
