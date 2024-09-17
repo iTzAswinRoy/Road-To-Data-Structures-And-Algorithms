@@ -1,11 +1,11 @@
 package JavaConstructor;
 
-// Create a base class Vehicle with a constructor that initializes brand.
-// Then, create a derived class Bike that uses super() to call the base class constructor.
+// Create a base class 'Vehicle' with a constructor that initializes brand.
+// Then, create a derived class 'Bike' that uses super() to call the base class constructor.
 class Vehicle {      // Vehicle class
-    private String brand;
+    private String brand;       //
 
-    Vehicle(String brand) {
+    Vehicle(String brand) {     //
         this.brand = brand;
     }
 
