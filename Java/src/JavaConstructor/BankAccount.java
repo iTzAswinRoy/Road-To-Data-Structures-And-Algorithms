@@ -1,11 +1,11 @@
 package JavaConstructor;
 
 // Write a class BankAccount with a constructor that throws an exception if the initial balance is negative.
-public class C11 {      // Creating a class named 'BankAccount' that contains 'balance'
+public class BankAccount {      // Creating a class named 'BankAccount' that contains 'balance'
     // Creating instance variables for the class
     private int balance;        // Crating a variable to store the balance
 
-    C11(int balance) {      // Creating a parameterized constructor that takes one argument
+    BankAccount(int balance) {      // Creating a parameterized constructor that takes one argument
         // Initialing values to the instance variables
         this.balance = balance;
     }
@@ -33,7 +33,7 @@ public class C11 {      // Creating a class named 'BankAccount' that contains 'b
     }
 
     public static void main(String[] args) {        // Main method
-        C11 obj = new C11(100);         // Creating an objects by passing 1 parameter
+        BankAccount obj = new BankAccount(100);         // Creating an objects by passing 1 parameter
         try {       // Performing try-catch method to handle exceptions
             obj.deposit(500);       // Calling the deposit method
             obj.withdrawn(-300);        // Calling the withdrawn method
