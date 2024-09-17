@@ -27,7 +27,7 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
         int storage;
         int graphicsCard;
 
-        Processor(int ram, int storage, int graphicsCard) {
+        Processor(int ram, int storage, int graphicsCard) {     //
             this.ram = ram;
             this.storage = storage;
             this.graphicsCard = graphicsCard;
