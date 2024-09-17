@@ -1,17 +1,17 @@
 package JavaConstructor;
 // Implement a class DatabaseConnection using the Singleton pattern with a private constructor.
-public class C12 {      // Creating a class named 'DatabaseConnection' that contains 'database'
+public class DatabaseConnection {      // Creating a class named 'DatabaseConnection' that contains 'database'
     // Creating instance variables for the class
 
-    private static C12 database;        // Crating a variable to store the database
+    private static DatabaseConnection database;        // Crating a variable to store the database
 
-    private C12 () {        // Creating a default constructor that takes no arguments
+    private DatabaseConnection() {        // Creating a default constructor that takes no arguments
         System.out.println("Database connection is established");
     }
 
-    public static C12 getInstance() {       // Creating a getter method to get the instance variable database
+    public static DatabaseConnection getInstance() {       // Creating a getter method to get the instance variable database
         if (database == null) {         // Checking if the database is empty
-            database = new C12();       // Creating a new database, if its empty
+            database = new DatabaseConnection();       // Creating a new database, if its empty
         }
         return database;        // Returning the database
     }
@@ -25,14 +25,14 @@ public class C12 {      // Creating a class named 'DatabaseConnection' that cont
     }
 
     public static void main(String[] args) {        // Main method
-        C12 databaseConnection = getInstance();       // Creating an objects by calling the method
+        DatabaseConnection databaseConnection = getInstance();       // Creating an objects by calling the method
 
         databaseConnection.connect();       // Calling the method to connect the database
         databaseConnection.disconnect();        // Calling the method to disconnect the database
 
         System.out.println();
 
-        C12 secondaryConnection = getInstance();        // Creating another object by calling the method
+        DatabaseConnection secondaryConnection = getInstance();        // Creating another object by calling the method
         secondaryConnection.connect();       // Calling the method to connect the database
         secondaryConnection.disconnect();       // Calling the method to disconnect the database
 
