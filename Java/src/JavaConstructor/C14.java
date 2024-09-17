@@ -33,7 +33,7 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
             this.graphicsCard = graphicsCard;
         }
 
-        public int getRam() {
+        public int getRam() {       //
             return ram;
         }
 
