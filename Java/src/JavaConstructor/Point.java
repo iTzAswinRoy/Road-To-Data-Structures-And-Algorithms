@@ -1,6 +1,6 @@
 package JavaConstructor;
 
-//Create a class Point that has three constructors:
+// Create a class Point that has three constructors:
 // one with no parameters, one with two parameters (x, y), and one with three parameters (x, y, z). Use constructor chaining.
 public class Point {       // Creating a class named 'Point' which contains (x, y, z)
     // Creating instance variables for the class
