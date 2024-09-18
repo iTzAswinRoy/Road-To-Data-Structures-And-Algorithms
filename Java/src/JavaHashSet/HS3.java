@@ -15,7 +15,7 @@ public class HS3 {
         set.add(5);
 
         System.out.println("Original hash set:\n"+ set);
-        System.out.println(obj.checkingElement(set, 5));
+        System.out.println(obj.checkingElement(set, 5));//
     }
 
     public boolean checkingElement(HashSet<Integer> set, int data){
