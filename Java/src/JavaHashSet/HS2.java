@@ -13,7 +13,7 @@ public class HS2 {
         set.add(4);
         set.add(5);
 
-        System.out.println("Original hash set:\n"+ set);
+        System.out.println("Original hash set:\n"+ set);    //
         set.remove(3);
         System.out.println("\nHashSet after removing a specific element:\n" + set);
     }
