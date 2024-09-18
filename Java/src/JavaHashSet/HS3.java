@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 // Write a method to check whether a given element exists in a HashSet.
 public class HS3 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         HS3 obj = new HS3();
         HashSet<Integer> set = new HashSet<>();
 
