@@ -18,7 +18,7 @@ public class DLL2 {     //
             newNode.prev = tail;//
             tail = newNode;//
         }
-        size++;
+        size++;//
     }
     public void reverseList(){      //
         Node temp = tail;       //
