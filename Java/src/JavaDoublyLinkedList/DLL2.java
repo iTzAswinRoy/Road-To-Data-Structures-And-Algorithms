@@ -26,7 +26,7 @@ public class DLL2 {     //
             System.out.print(temp.value+" -> ");
             temp = temp.prev;
         }
-        if(temp == null){
+        if(temp == null){//
             System.out.println("END");
         }
     }
