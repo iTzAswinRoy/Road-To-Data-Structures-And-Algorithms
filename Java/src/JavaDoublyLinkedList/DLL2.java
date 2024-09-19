@@ -34,7 +34,7 @@ public class DLL2 {     //
         Node temp = head;//
         for (int i = 0; i < size; i++) {//
             System.out.print(temp.value+" -> ");
-            temp = temp.next;
+            temp = temp.next;//
         }
         if(temp == null){
             System.out.println("END");
