@@ -15,7 +15,7 @@ public class DLL2 {     //
         } else {
             //
             tail.next = newNode;//
-            newNode.prev = tail;
+            newNode.prev = tail;//
             tail = newNode;//
         }
         size++;
