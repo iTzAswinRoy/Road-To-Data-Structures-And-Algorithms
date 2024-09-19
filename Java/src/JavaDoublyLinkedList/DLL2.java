@@ -27,7 +27,7 @@ public class DLL2 {     //
             temp = temp.prev;
         }
         if(temp == null){//
-            System.out.println("END");
+            System.out.println("END");//
         }
     }
     public void display(){
