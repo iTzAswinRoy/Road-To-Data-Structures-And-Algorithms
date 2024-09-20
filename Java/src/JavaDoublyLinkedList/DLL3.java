@@ -18,7 +18,7 @@ public class DLL3 {     // Main class
             newNode.prev = tail; //
             tail = newNode; //
         }
-        size++;
+        size++; //
     }
     public void sortNode(){     // Method to sort the doubly linked list
         Node temp = head;       //
