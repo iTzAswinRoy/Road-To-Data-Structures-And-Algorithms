@@ -11,7 +11,7 @@ public class DLL3 {     // Main class
     public void insertNode(int value){      // Method to insert node to the doubly linked list
         Node newNode = new Node(value); //
         if(tail == null){
-            head = newNode;
+            head = newNode; //
             tail = head;
         } else {
             tail.next = newNode;
