@@ -9,7 +9,7 @@ public class DLL3 {     // Main class
         this.size = 0;
     }
     public void insertNode(int value){      // Method to insert node to the doubly linked list
-        Node newNode = new Node(value);
+        Node newNode = new Node(value); //
         if(tail == null){
             head = newNode;
             tail = head;
