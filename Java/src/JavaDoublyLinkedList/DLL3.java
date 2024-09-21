@@ -17,7 +17,7 @@ public class DLL3 {     // Main class
             head = newNode;     // Assigning the head to new node
             tail = head;        // Updating the tail to head since theres only one node
         } else {
-            tail.next = newNode; //
+            tail.next = newNode;        // Updating the tail with the new node
             newNode.prev = tail; //
             tail = newNode; //
         }
