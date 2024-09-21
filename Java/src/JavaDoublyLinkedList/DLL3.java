@@ -21,8 +21,9 @@ public class DLL3 {     // Main class
             newNode.prev = tail;        // Assigning the previous pointer of the node to tail
             tail = newNode;         // Now updating the tail as new node
         }
-        size++; //
+        size++;         // Incrementing size by 1
     }
+
     public void sortNode(){     // Method to sort the doubly linked list
         Node temp = head;       //
         for (int i = 0; i < size - 1; i++) {
