@@ -19,7 +19,7 @@ public class DLL3 {     // Main class
         } else {
             tail.next = newNode;        // Updating the tail with the new node
             newNode.prev = tail;        // Assigning the previous pointer of the node to tail
-            tail = newNode;
+            tail = newNode;         // Now updating the tail as new node
         }
         size++; //
     }
