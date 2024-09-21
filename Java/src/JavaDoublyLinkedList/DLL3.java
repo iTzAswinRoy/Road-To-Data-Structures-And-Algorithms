@@ -14,8 +14,8 @@ public class DLL3 {     // Main class
         Node newNode = new Node(value);     // Creating a new node
 
         if(tail == null){       // Checking if the tail is null
-            head = newNode; //
-            tail = head;
+            head = newNode;     // Assigning the head to new node
+            tail = head;        // Updating the tail to head since theres only one node
         } else {
             tail.next = newNode; //
             newNode.prev = tail; //
