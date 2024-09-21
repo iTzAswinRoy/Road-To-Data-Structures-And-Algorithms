@@ -4,10 +4,11 @@ package JavaDoublyLinkedList;
 public class DLL3 {     // Main class
     // Creating instance variables for the class
     Node head;      // Crating a reference variable 'head' of class Node type
-    Node tail;
-    int size;
-    DLL3(){     //
-        this.size = 0;
+    Node tail;      // Crating a reference variable 'tail' of class Node type
+    int size;       // Creating a variable to store size
+
+    DLL3(){         // Creating a default constructor
+        this.size = 0;      // Initializing size to the instance variable
     }
     public void insertNode(int value){      // Method to insert node to the doubly linked list
         Node newNode = new Node(value); //
