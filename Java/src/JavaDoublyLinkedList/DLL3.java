@@ -11,7 +11,8 @@ public class DLL3 {     // Main class
         this.size = 0;      // Initializing size to the instance variable
     }
     public void insertNode(int value){      // Method to insert node to the doubly linked list
-        Node newNode = new Node(value); //
+        Node newNode = new Node(value);     // Creating a new node
+
         if(tail == null){
             head = newNode; //
             tail = head;
