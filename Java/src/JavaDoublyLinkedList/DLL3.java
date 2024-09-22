@@ -35,7 +35,7 @@ public class DLL3 {     // Main class
                     temp.next.value = temp.value;
                     temp.value = swap;
                 }
-                temp = temp.next;       // For each iteration the temp pointer is moved to next node
+                temp = temp.next;       // For each iteration the temp is pointing towards the next node
             }
             temp = head;
         }
