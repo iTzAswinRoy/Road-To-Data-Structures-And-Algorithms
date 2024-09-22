@@ -37,7 +37,7 @@ public class DLL3 {     // Main class
                 }
                 temp = temp.next;       // For each iteration the temp is pointing towards the next node
             }
-            temp = head;
+            temp = head;       // Reassigning the new head
         }
     }
     public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
