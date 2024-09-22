@@ -42,11 +42,11 @@ public class DLL3 {     // Main class
     }
 
     public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
-        DLL3 result = new DLL3();       // Creating an object
-        Node temp = head;       // Creatiing an
+        DLL3 result = new DLL3();       // Creating an object to store the results
+        Node temp = head;       // Creating a reference variable pointing at head
         result.insertNode(temp.value);      // Always first value is unique
-        for (int i = 0; i < size-1; i++) {
-            if(temp.value != temp.next.value){
+        for (int i = 0; i < size-1; i++) {      // Iterating through the doubly linked list
+            if(temp.value != temp.next.value){      // Checking if both the is not equal
                 result.insertNode(temp.next.value);
             }
             temp = temp.next;
