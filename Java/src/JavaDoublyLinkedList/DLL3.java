@@ -29,7 +29,8 @@ public class DLL3 {     // Main class
         // Using bubble sort to doubly linked list
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size -1 -i; j++) {
-                if(temp.value > temp.next.value){
+                if(temp.value > temp.next.value){       // Checking if the node is greater than the next node
+                    // Here the swapping process takes place
                     int swap = temp.next.value;
                     temp.next.value = temp.value;
                     temp.value = swap;
