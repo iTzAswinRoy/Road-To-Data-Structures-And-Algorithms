@@ -49,7 +49,7 @@ public class DLL3 {     // Main class
             if(temp.value != temp.next.value){      // Checking if both the is not equal
                 result.insertNode(temp.next.value);         // Calling the insert method to insert the node
             }
-            temp = temp.next;
+            temp = temp.next;       // Moving the temp  'pointer' to next node
         }
         return result;
     }
