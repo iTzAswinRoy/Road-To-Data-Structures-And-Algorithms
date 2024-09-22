@@ -26,6 +26,7 @@ public class DLL3 {     // Main class
 
     public void sortNode(){     // Method to sort the doubly linked list
         Node temp = head;       //  Creating a reference variable pointing at head
+        // Using bubble sort to doubly linked list
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size -1 -i; j++) {
                 if(temp.value > temp.next.value){
