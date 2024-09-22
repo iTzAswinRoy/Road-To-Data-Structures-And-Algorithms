@@ -47,7 +47,7 @@ public class DLL3 {     // Main class
         result.insertNode(temp.value);      // Always first value is unique
         for (int i = 0; i < size-1; i++) {      // Iterating through the doubly linked list
             if(temp.value != temp.next.value){      // Checking if both the is not equal
-                result.insertNode(temp.next.value);
+                result.insertNode(temp.next.value);         // Calling the insert method to insert the node
             }
             temp = temp.next;
         }
