@@ -25,7 +25,7 @@ public class DLL3 {     // Main class
     }
 
     public void sortNode(){     // Method to sort the doubly linked list
-        Node temp = head;       //  Creating a reference variable pointing at head
+        Node temp = head;       // Creating a reference variable pointing at head
         // Using bubble sort to doubly linked list
         for (int i = 0; i < size - 1; i++) {
             for (int j = 0; j < size -1 -i; j++) {
@@ -40,9 +40,10 @@ public class DLL3 {     // Main class
             temp = head;       // Reassigning the new head
         }
     }
+
     public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
-        DLL3 result = new DLL3();
-        Node temp = head;
+        DLL3 result = new DLL3();       // Creating an object
+        Node temp = head;       // Creatiing an
         result.insertNode(temp.value);      // Always first value is unique
         for (int i = 0; i < size-1; i++) {
             if(temp.value != temp.next.value){
