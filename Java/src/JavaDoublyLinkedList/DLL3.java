@@ -55,16 +55,16 @@ public class DLL3 {     // Main class
     }
 
     public void display() {     // Method to display the doubly linked list
-        Node temp = head;
-        for (int i = 0; i < size; i++) {
-            System.out.print(temp.value+" -> ");
-            temp = temp.next;
+        Node temp = head;       // Creating a 'temp' pointer pointing at head
+        for (int i = 0; i < size; i++) {        // Iterating through the doubly linked list
+            System.out.print(temp.value+" -> ");        // Displaying node for each iteration
+            temp = temp.next;       // Moving the temp point to its next node
         }
-        if (temp == null){
-            System.out.println("END");
+        if (temp == null) {     // Checking if 'temp' is null
+            System.out.println("END");      // Which means it reaches the end of the list
         }
     }
-    class Node{
+    class Node {        // Creating a 'Node' class
         int value;
         Node next;
         Node prev;
