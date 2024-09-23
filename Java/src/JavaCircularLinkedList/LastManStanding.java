@@ -2,12 +2,22 @@ package JavaCircularLinkedList;
 
 // Given n people standing in a circle and a number k, every kth person is eliminated until only one remains.
 public class LastManStanding {     // Circular linked list class
-    int size;       // Creating instance variable for size
-    Node head;      // Creating head pointer
-    Node tail;      // Creating tail pointer
+    // Creating instance variables for the class
+    int size;       // Creating a variable to store size
+    Node head;      // Crating a reference variable 'head' of class Node type
+    Node tail;      // Crating a reference variable 'tail' of class Node type
 
     LastManStanding() {     // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
+    }
+
+    class Node {      // Creating a Node class
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference, pointing towards the next node
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
+        }
     }
 
     public void insertNode(int value) {      // Method to insert node in the circular linked list
@@ -60,15 +70,6 @@ public class LastManStanding {     // Circular linked list class
         } while (temp != head);      // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");      // Displaying 'head' for reference
-    }
-
-    class Node {      // Creating a node class
-        int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference, pointing towards the next node
-
-        Node(int value) {       // Creating a parameter constructor by passing the value
-            this.value = value;     // Assigning the parameter value to the instance variable
-        }
     }
 
     public static void main(String[] args) {        // Main method
