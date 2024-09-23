@@ -64,7 +64,9 @@ public class DLL3 {     // Main class
             System.out.println("END");      // Which means it reaches the end of the list
         }
     }
+
     class Node {        // Creating a 'Node' class
+        // Creating instance variables for the class Node
         int value;
         Node next;
         Node prev;
