@@ -68,7 +68,7 @@ public class DLL3 {     // Main class
         int value;
         Node next;
         Node prev;
-        Node(int value){
+        Node(int value) {
             this.value = value;
         }
     }
