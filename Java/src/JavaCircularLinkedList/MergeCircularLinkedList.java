@@ -12,6 +12,7 @@ public class MergeCircularLinkedList {        // Circular linked list class
     }
 
     class Node {        // Creating a node class
+        // Creating instance variables for the class
         int value;      // Creating an instance variable to store a value of the node
         Node next;      // Creating a reference variable, pointing towards the next node
 
