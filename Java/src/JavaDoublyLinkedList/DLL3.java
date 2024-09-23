@@ -49,12 +49,12 @@ public class DLL3 {     // Main class
             if(temp.value != temp.next.value){      // Checking if both the is not equal
                 result.insertNode(temp.next.value);         // Calling the insert method to insert the node
             }
-            temp = temp.next;       // Moving the temp  'pointer' to next node
+            temp = temp.next;       // Moving the temp 'pointer' to next node
         }
-        return result;
+        return result;        // Retuning the doubly linked list with unique node
     }
 
-    public void display(){
+    public void display() {     // Method to display the doubly linked list
         Node temp = head;
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+" -> ");
