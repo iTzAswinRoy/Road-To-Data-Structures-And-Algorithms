@@ -5,7 +5,7 @@ public class DLL6 {
     Node tail;//
     int size;//
 
-    DLL6() {
+    DLL6() {//
         this.size = 0;
     }
     public void insertNode(int value){
