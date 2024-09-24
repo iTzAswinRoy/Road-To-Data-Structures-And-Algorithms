@@ -11,7 +11,7 @@ public class DLL6 {
     public void insertNode(int value){//
         Node newNode = new Node(value);//
         if( tail == null){
-            head = newNode;
+            head = newNode;//
             tail = head;//
         } else {
             tail.next = newNode;
