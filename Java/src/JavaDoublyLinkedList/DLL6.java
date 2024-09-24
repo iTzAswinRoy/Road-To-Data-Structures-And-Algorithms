@@ -2,7 +2,7 @@ package JavaDoublyLinkedList;
 // Rotate a doubly linked list by k nodes (where k can be positive or negative).
 public class DLL6 {
     Node head;//
-    Node tail;
+    Node tail;//
     int size;
 
     DLL6() {
