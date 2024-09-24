@@ -6,7 +6,7 @@ public class DLL6 {
     int size;//
 
     DLL6() {//
-        this.size = 0;
+        this.size = 0;//
     }
     public void insertNode(int value){
         Node newNode = new Node(value);
