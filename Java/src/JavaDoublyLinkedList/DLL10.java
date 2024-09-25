@@ -11,7 +11,7 @@ public class DLL10 {
         Node newNode = new Node(value);//
         if(tail == null){//
             head = newNode;//
-            tail = head;
+            tail = head;//
         } else {
             tail.next = newNode;
             newNode.prev = tail;
