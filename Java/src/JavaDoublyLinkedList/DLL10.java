@@ -19,7 +19,7 @@ public class DLL10 {
         }
         size++;//
     }
-    public void splittingList(){
+    public void splittingList(){//
         DLL10 list1 = new DLL10();
         DLL10 list2 = new DLL10();
         Node temp = head;
