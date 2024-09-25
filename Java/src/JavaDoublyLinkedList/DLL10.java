@@ -9,7 +9,7 @@ public class DLL10 {
     }
     public void insertNode(int value){//
         Node newNode = new Node(value);//
-        if(tail == null){
+        if(tail == null){//
             head = newNode;
             tail = head;
         } else {
