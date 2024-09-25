@@ -17,7 +17,7 @@ public class DLL10 {
             newNode.prev = tail;//
             tail = newNode;//
         }
-        size++;
+        size++;//
     }
     public void splittingList(){
         DLL10 list1 = new DLL10();
