@@ -14,7 +14,7 @@ public class DLL10 {
             tail = head;//
         } else {
             tail.next = newNode;//
-            newNode.prev = tail;
+            newNode.prev = tail;//
             tail = newNode;
         }
         size++;
