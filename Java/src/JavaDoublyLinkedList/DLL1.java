@@ -34,7 +34,7 @@ public class DLL1 {     //
             newNode.prev = tail;//
             tail = newNode;//
         }
-        size++;
+        size++;//
     }
 
     public void deleteFirst(){      //
