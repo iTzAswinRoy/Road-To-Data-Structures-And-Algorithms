@@ -20,7 +20,7 @@ public class DLL1 {     //
             newNode.next = head;//
             head = newNode;//
         }
-        size++;
+        size++;//
     }
 
     public void insertLast(int value){      //
