@@ -27,7 +27,7 @@ public class DLL1 {     //
         Node newNode = new Node(value);     //
         //
         if(tail == null){       //
-            insertFirst(value);
+            insertFirst(value);//
         } else {
             //
             tail.next = newNode;
