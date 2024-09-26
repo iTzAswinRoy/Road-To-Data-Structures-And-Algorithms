@@ -30,7 +30,7 @@ public class DLL1 {     //
             insertFirst(value);//
         } else {
             //
-            tail.next = newNode;
+            tail.next = newNode;//
             newNode.prev = tail;
             tail = newNode;
         }
