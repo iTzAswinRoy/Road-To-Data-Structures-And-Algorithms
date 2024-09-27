@@ -3,9 +3,9 @@ package JavaCircularLinkedList;
 // Given a circular linked list, determine if it contains a cycle and return the starting node of the cycle.
 public class RetrievingFirstNode {     // Creating a circular linked list class
     // Creating instance variables for the class
-    int size;       // Creating instance variable for size
-    Node head;      // Creating head pointer
-    Node tail;      // Creating tail pointer
+    private int size;       // Creating instance variable for size
+    private Node head;      // Creating head pointer
+    private Node tail;      // Creating tail pointer
 
     RetrievingFirstNode() {     // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
@@ -13,8 +13,8 @@ public class RetrievingFirstNode {     // Creating a circular linked list class
 
     class Node {        // Creating a node class
         // Creating instance variables for the class
-        int value;      // Creating an instance variable to store a value of the node
-        Node next;      // Creating a reference variable, pointing towards the next node
+        private int value;      // Creating an instance variable to store a value of the node
+        private Node next;      // Creating a reference variable, pointing towards the next node
 
         Node(int value) {       // Creating a parameterized constructor by passing the value
             this.value = value;     // Assigning the parameter value to the instance variable
