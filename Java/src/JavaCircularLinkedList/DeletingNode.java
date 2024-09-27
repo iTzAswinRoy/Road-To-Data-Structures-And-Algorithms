@@ -3,9 +3,9 @@ package JavaCircularLinkedList;
 // Implement a function to delete a node from a circular linked list.
 public class DeletingNode {       // Circular linked list class
     // Creating instance variables for the class
-    int size;       // Creating a variable to store size
-    Node head;      // Crating a reference variable 'head' of class Node type
-    Node tail;      // Crating a reference variable 'tail' of class Node type
+    private int size;       // Creating a variable to store size
+    private Node head;      // Crating a reference variable 'head' of class Node type
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
 
     DeletingNode() {        // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
@@ -13,8 +13,8 @@ public class DeletingNode {       // Circular linked list class
 
     class Node {        // Creating a 'Node' class
         // Creating instance variables for the class 'Node'
-        int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference, pointing towards the next node
+        private int value;      // Creating an instance variable to store a value for the node
+        private Node next;      // Creating a reference, pointing towards the next node
 
         Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;      // Assigning the parameter value to the instance variable
