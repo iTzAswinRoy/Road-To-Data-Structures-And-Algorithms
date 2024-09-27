@@ -2,12 +2,23 @@ package JavaCircularLinkedList;
 
 // Implement a function to rotate a circular linked list to the right by k positions.
 public class RotateCircularLinkedList {        // Class containing circular linked list properties
-    int size;       // // Creating the size for circular linked list
-    Node head;      // Creating a head node
-    Node tail;      // Creating a tail node
+    // Creating instance variables for the class
+    int size;       // Creating instance variable for size
+    Node head;      // Creating head pointer
+    Node tail;      // Creating tail pointer
 
     RotateCircularLinkedList() {      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
+    }
+
+    class Node {        // Creating a node class
+        // Creating instance variables for the class
+        int value;      // Creating an instance variable to store a value of the node
+        Node next;      // Creating a reference variable, pointing towards the next node
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
+        }
     }
 
     public void insertNode (int value){         // Method to insert node in the circular linked list
@@ -56,15 +67,6 @@ public class RotateCircularLinkedList {        // Class containing circular link
         } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");       // Displaying 'head' for reference
-    }
-
-    class Node {        // Creating a node class
-        int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference, pointing towards the next node
-
-        Node(int value) {       // Creating a parameter constructor by passing the value
-            this.value = value;     // Assigning the parameter value to the instance variable
-        }
     }
 
     public static void main(String[] args) {        // Main method
