@@ -1,26 +1,40 @@
 package JavaDoublyLinkedList;
 // Create a class that implements a doubly linked list with operations such as insert, delete, search, and display (both forward and backward).
-public class DLL1 {     //
-    Node head;
-    Node tail;
-    int size;
+public class DLL1 {     // Creating a class for doubly linked list
+    // Creating instance variables for the class
+    private Node head;      // Crating a reference variable 'head' of class Node type
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
+    private int size;       // Creating a variable to store size
 
-    DLL1() {       //
-        this.size = 0;
+    DLL1() {       // Creating a default constructor
+        this.size = 0;      // Initializing the size to 0
     }
 
-    public void insertFirst(int value) {     // inset node
-        Node newNode = new Node(value);     //
-        if(tail == null){       //
-            head = newNode;
-            tail = head;
-        } else {
-            //
-            head.prev = newNode;//
-            newNode.next = head;//
-            head = newNode;//
+    class Node {     // Creating a class for node
+        // Creating instance variables for the class
+        private int value;      // Creating an instance variable to store a value of the node
+        private Node next;      // Creating a reference variable, pointing towards the next node
+        private Node prev;      // Creating a reference variable, pointing towards the previous node
+
+        Node(int value){        // Creating a parameter constructor by passing the value
+            this.value = value;       // Assigning the parameter value to the instance variable
         }
-        size++;//
+    }
+
+    public void insertFirst(int value) {     // Method to insert node at first in the doubly linked list
+        Node newNode = new Node(value);     // Creating a node by passing the value
+
+        // Checking if the tail is null. If it's null, then the list contains only one node
+        if(tail == null){
+            head = newNode;     // Assigning value to head
+            tail = head;        // updating tail as head
+        } else {
+            // If the tail is not null, then there's more than one node present in the linked list
+            head.prev = newNode;        // Setting the head previous pointer to the new node
+            newNode.next = head;        // Assigning the new node's next pointer to 'head'
+            head = newNode;     // Updating new node as head
+        }
+        size++;     // Incrementing size by 1
     }
 
     public void insertLast(int value){      //
@@ -93,14 +107,7 @@ public class DLL1 {     //
             System.out.println("END");
         }
     }
-    class Node{     //
-        int value;
-        Node next;
-        Node prev;
-        Node(int value){    //
-            this.value = value;
-        }
-    }
+
     public static void main(String[] args) {
         DLL1 DoublyLinkedList = new DLL1();
 
