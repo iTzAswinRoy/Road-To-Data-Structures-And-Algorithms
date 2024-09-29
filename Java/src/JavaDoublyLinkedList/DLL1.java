@@ -37,11 +37,11 @@ public class DLL1 {     // Creating a class for doubly linked list
         size++;     // Incrementing size by 1
     }
 
-    public void insertLast(int value){      // Method to insert node at last
+    public void insertLast(int value) {      // Method to insert node at last
         Node newNode = new Node(value);     // Creating a node by passing the value
 
         // Checking if the tail is null. If it's null, then the list contains only one node
-        if(tail == null) {
+        if (tail == null) {
             insertFirst(value);     // Calling the insertFirst method again
 
         } else {
@@ -53,10 +53,11 @@ public class DLL1 {     // Creating a class for doubly linked list
         size++;     // Incrementing size by 1
     }
 
-    public void deleteFirst() {      //
-        if(head == null){//
+    public void deleteFirst() {      // Method to delete the first node
+        if (head == null) {     // Checking if the head is empty
             System.out.println("List is empty.");
-            return;
+            return;     // If yes, it exits with the display message
+
         } else {
             //
             head = head.next;
