@@ -71,10 +71,10 @@ public class DLL1 {     // Creating a class for doubly linked list
             return;     // Exits the method with display message
 
         } else {
-            tail = tail .prev;      //
-            tail.next = null;
+            tail = tail.prev;      // Updating the tail by pointing the tail's previous pointer to last's previous node
+            tail.next = null;       // Assigning the next of tail to null
         }
-        size--;
+        size--;     // Decrementing size by 1
     }
 
     public void searchNode(int index) {      //
