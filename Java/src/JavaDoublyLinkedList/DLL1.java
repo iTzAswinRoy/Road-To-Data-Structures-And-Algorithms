@@ -37,11 +37,12 @@ public class DLL1 {     // Creating a class for doubly linked list
         size++;     // Incrementing size by 1
     }
 
-    public void insertLast(int value){      //
-        Node newNode = new Node(value);     //
-        //
-        if(tail == null){       //
-            insertFirst(value);//
+    public void insertLast(int value){      // Method to insert node at last
+        Node newNode = new Node(value);     // Creating a node by passing the value
+
+        // Checking if the tail is null. If it's null, then the list contains only one node
+        if(tail == null){
+            insertFirst(value);     // Calling the insertFirst method again
         } else {
             //
             tail.next = newNode;//
