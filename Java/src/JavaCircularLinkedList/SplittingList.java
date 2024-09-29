@@ -3,12 +3,23 @@ package JavaCircularLinkedList;
 // Given a circular linked list, split it into two halves.
 // If the list has an odd number of nodes, one half should have one more node than the other.
 public class SplittingList {      // Circular linked list class
+    // Creating instance variables for the class
     private int size;       // Creating instance variable for size
     private Node head;      // Creating head pointer
     private Node tail;      // Creating tail pointer
 
     SplittingList(){      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
+    }
+
+    class Node {     // Creating a node class
+        // Creating instance variables for the class
+        private int value;      // Creating an instance variable to store a value of the node
+        private Node next;      // Creating a reference variable, pointing towards the next node
+
+        Node(int value) {      // Creating a parameter constructor by passing the value
+            this.value = value;      // Assigning the parameter value to the instance variable
+        }
     }
 
     public void insertNode(int value) {      // Method to insert node in the circular linked list
@@ -73,15 +84,6 @@ public class SplittingList {      // Circular linked list class
         } while (temp != head);     // Condition keeps going until the pointer reaches the tail node
 
         System.out.println("HEAD");     // Displaying 'head' for reference
-    }
-
-    class Node {     // Creating a node class
-        private int value;      // Creating an instance variable to store a value for the node
-        private Node next;      // Creating a reference, pointing towards the next node
-
-        Node(int value) {      // Creating a parameter constructor by passing the value
-            this.value = value;      // Assigning the parameter value to the instance variable
-        }
     }
 
     public static void main(String[] args) {        // Main method
