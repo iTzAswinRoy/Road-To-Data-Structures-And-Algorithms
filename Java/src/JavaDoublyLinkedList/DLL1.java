@@ -56,7 +56,7 @@ public class DLL1 {     // Creating a class for doubly linked list
     public void deleteFirst() {      // Method to delete the first node
         if (head == null) {     // Checking if the head is empty
             System.out.println("List is empty.");
-            return;     // If yes, it exits with the display message
+            return;     // Exits the method with display message
 
         } else {
             head = head.next;       // Moving the head to next node
@@ -66,12 +66,12 @@ public class DLL1 {     // Creating a class for doubly linked list
     }
 
     public void deleteLast() {       // Method to delete a node at last
-        if (head == null) {       //
+        if (head == null) {       // Checking if the head is null
             System.out.println("List is empty.");
-            return;
+            return;     // Exits the method with display message
 
         } else {
-            tail = tail .prev;
+            tail = tail .prev;      //
             tail.next = null;
         }
         size--;
