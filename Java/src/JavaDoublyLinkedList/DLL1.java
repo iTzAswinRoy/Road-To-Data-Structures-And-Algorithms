@@ -65,7 +65,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         size--;
     }
 
-    public void deleteLast() {       //
+    public void deleteLast() {       // Method to delete a node at last
         if (head == null) {       //
             System.out.println("List is empty.");
             return;
