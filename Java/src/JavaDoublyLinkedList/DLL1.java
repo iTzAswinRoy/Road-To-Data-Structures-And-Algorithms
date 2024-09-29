@@ -41,18 +41,19 @@ public class DLL1 {     // Creating a class for doubly linked list
         Node newNode = new Node(value);     // Creating a node by passing the value
 
         // Checking if the tail is null. If it's null, then the list contains only one node
-        if(tail == null){
+        if(tail == null) {
             insertFirst(value);     // Calling the insertFirst method again
+
         } else {
-            //
-            tail.next = newNode;//
-            newNode.prev = tail;//
-            tail = newNode;//
+            // If the tail is not null, then there's more than one node present in the linked list
+            tail.next = newNode;        // Setting the next pointer of the tail pointing towards the new node
+            newNode.prev = tail;        // Setting the previous pointer of the new node pointing towards the tail
+            tail = newNode;     // Updating tail as new node
         }
-        size++;//
+        size++;     // Incrementing size by 1
     }
 
-    public void deleteFirst(){      //
+    public void deleteFirst() {      //
         if(head == null){//
             System.out.println("List is empty.");
             return;
