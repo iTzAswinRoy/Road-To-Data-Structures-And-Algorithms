@@ -78,7 +78,7 @@ public class DLL1 {     // Creating a class for doubly linked list
     }
 
     public void searchNode(int index) {      // Method to search a node at specific index
-        if (index > size) {
+        if (index > size) {     // Checking if the index is less than its size
             System.out.println("\nIndex out of bound!");
             return;
         }
