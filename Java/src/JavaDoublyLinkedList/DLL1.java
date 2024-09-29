@@ -59,17 +59,17 @@ public class DLL1 {     // Creating a class for doubly linked list
             return;     // If yes, it exits with the display message
 
         } else {
-            //
-            head = head.next;
-            head.prev = null;
+            head = head.next;       // Moving the head to next node
+            head.prev = null;       // Assigning the previous pointer of head to null
         }
         size--;
     }
 
-    public void deleteLast(){       //
-        if(head == null){       //
+    public void deleteLast() {       //
+        if (head == null) {       //
             System.out.println("List is empty.");
             return;
+
         } else {
             tail = tail .prev;
             tail.next = null;
@@ -77,8 +77,8 @@ public class DLL1 {     // Creating a class for doubly linked list
         size--;
     }
 
-    public void searchNode(int index){      //
-        if(index > size){
+    public void searchNode(int index) {      //
+        if (index > size) {
             System.out.println("\nIndex out of bound!");
             return;
         }
@@ -95,18 +95,20 @@ public class DLL1 {     // Creating a class for doubly linked list
             System.out.print(temp.value + "->");
             temp = temp.next;
         }
-        if(temp == null){
+        if (temp == null) {
             System.out.println("END");
         }
     }
 
-    public void reverseDoublyLinkedList(){      //
+    public void reverseDoublyLinkedList() {      //
         Node temp = tail;
+
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+"->");
             temp = temp.prev;
         }
-        if(temp == null){
+
+        if (temp == null) {
             System.out.println("END");
         }
     }
