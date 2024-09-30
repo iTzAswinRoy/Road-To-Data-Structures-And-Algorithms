@@ -1,4 +1,5 @@
 package JavaDoublyLinkedList;
+
 // Create a class that implements a doubly linked list with operations such as insert, delete, search, and display (both forward and backward).
 public class DLL1 {     // Creating a class for doubly linked list
     // Creating instance variables for the class
@@ -16,7 +17,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         private Node next;      // Creating a reference variable, pointing towards the next node
         private Node prev;      // Creating a reference variable, pointing towards the previous node
 
-        Node(int value){        // Creating a parameter constructor by passing the value
+        Node(int value) {        // Creating a parameter constructor by passing the value
             this.value = value;       // Assigning the parameter value to the instance variable
         }
     }
@@ -25,9 +26,10 @@ public class DLL1 {     // Creating a class for doubly linked list
         Node newNode = new Node(value);     // Creating a node by passing the value
 
         // Checking if the tail is null. If it's null, then the list contains only one node
-        if(tail == null){
+        if(tail == null) {
             head = newNode;     // Assigning value to head
             tail = head;        // updating tail as head
+
         } else {
             // If the tail is not null, then there's more than one node present in the linked list
             head.prev = newNode;        // Setting the head previous pointer to the new node
@@ -80,42 +82,46 @@ public class DLL1 {     // Creating a class for doubly linked list
     public void searchNode(int index) {      // Method to search a node at specific index
         if (index > size) {     // Checking if the index is less than its size
             System.out.println("\nIndex out of bound!");
-            return;
+            return;     // Exits the method with display message
         }
-        Node temp = head;
-        for (int i = 0; i < index; i++) {
-            temp = temp.next;
+        Node temp = head;       // Creating a 'temp' node pointing at head
+
+        for (int i = 0; i < index; i++) {       // Iterating through the linked list
+            temp = temp.next;       // Moving the temp pointer to the required index
         }
-        System.out.println("Node at index "+index+" is "+temp.value);
+        System.out.println("Node at index " + index + " is " + temp.value);     // Displaying the node at specific index
     }
 
-    public void display() {     //
-        Node temp = head;
-        for (int i = 0; i < size; i++) {
-            System.out.print(temp.value + "->");
-            temp = temp.next;
+    public void reverseDoublyLinkedList() {      // Method to reverse the doubly linked list
+        Node temp = tail;       // Creating a 'temp' node pointing at tail
+
+        for (int i = 0; i < size; i++) {        // Iterating through the linked list
+            System.out.print(temp.value + "->");      // Displaying the value of each node
+            temp = temp.prev;       // Moving the 'temp' node backwards
         }
+        // Checking if the 'temp' reaches the end
         if (temp == null) {
-            System.out.println("END");
+            System.out.println("END");      // Displaying 'END' for reference
         }
     }
 
-    public void reverseDoublyLinkedList() {      //
-        Node temp = tail;
+    public void display() {     // Method to display the doubly linked list
+        Node temp = head;       // Creating a 'temp' node pointing at head
 
-        for (int i = 0; i < size; i++) {
-            System.out.print(temp.value+"->");
-            temp = temp.prev;
+        for (int i = 0; i < size; i++) {        // Iterating through the linked list
+            System.out.print(temp.value + "->");        // Displaying the value of each node
+            temp = temp.next;       // Moving the pointer to the next node
         }
-
+        // Checking if the 'temp' reaches the end
         if (temp == null) {
-            System.out.println("END");
+            System.out.println("END");      // Displaying 'END' for reference
         }
     }
 
-    public static void main(String[] args) {
-        DLL1 DoublyLinkedList = new DLL1();
+    public static void main(String[] args) {        // Main method
+        DLL1 DoublyLinkedList = new DLL1();     // Creating an object of class type
 
+        // Calling the method to insert the node at first
         DoublyLinkedList.insertFirst(1);
         DoublyLinkedList.insertFirst(2);
         DoublyLinkedList.insertFirst(3);
@@ -125,6 +131,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         System.out.println("Inserting Node at first");
         DoublyLinkedList.display();
 
+        // Calling the method to insert the node at last
         DoublyLinkedList.insertLast(10);
         DoublyLinkedList.insertLast(20);
         DoublyLinkedList.insertLast(30);
@@ -134,21 +141,25 @@ public class DLL1 {     // Creating a class for doubly linked list
         System.out.println("\nInserting node at last");
         DoublyLinkedList.display();
 
+        // Calling the method to delete the node at first
         DoublyLinkedList.deleteFirst();
         System.out.println("\nDeleting Node at first");
         DoublyLinkedList.display();
 
+        // Calling the method to delete the node at last
         DoublyLinkedList.deleteLast();
         System.out.println("\nDeleting node at last");
         DoublyLinkedList.display();
 
-
+        // Calling the method to reverse the doubly linked list
         System.out.println("\nReversing doubly linked list:");
         DoublyLinkedList.reverseDoublyLinkedList();
 
+        // Calling the method to display the original doubly linked list
         System.out.println("\nOriginal doubly linked list:");
         DoublyLinkedList.display();
 
+        // Calling the method to search the node at specific index
         System.out.println("\nSearching Node:");
         DoublyLinkedList.searchNode(5);
     }
