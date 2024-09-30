@@ -3,9 +3,9 @@ package JavaDoublyLinkedList;
 //Given a doubly linked list, remove all duplicate nodes.
 public class DLL3 {     // Main class
     // Creating instance variables for the class
-    Node head;      // Crating a reference variable 'head' of class Node type
-    Node tail;      // Crating a reference variable 'tail' of class Node type
-    int size;       // Creating a variable to store size
+    private Node head;      // Crating a reference variable 'head' of class Node type
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
+    private int size;       // Creating a variable to store size
 
     DLL3() {         // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
@@ -13,11 +13,12 @@ public class DLL3 {     // Main class
 
     class Node {        // Creating a 'Node' class
         // Creating instance variables for the class Node
-        int value;
-        Node next;
-        Node prev;
-        Node(int value) {
-            this.value = value;
+        private int value;      // Creating an instance variable to store a value of the node
+        private Node next;      // Creating a reference variable, pointing towards the next node
+        private Node prev;      // Creating a reference variable, pointing towards the previous node
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
         }
     }
 
@@ -38,9 +39,10 @@ public class DLL3 {     // Main class
 
     public void sortNode() {     // Method to sort the doubly linked list
         Node temp = head;       // Creating a reference variable pointing at head
+
         // Using bubble sort to doubly linked list
         for (int i = 0; i < size - 1; i++) {
-            for (int j = 0; j < size -1 -i; j++) {
+            for (int j = 0; j < size - 1 - i; j++) {
 
                 if (temp.value > temp.next.value) {       // Checking if the node is greater than the next node
 
@@ -57,12 +59,13 @@ public class DLL3 {     // Main class
 
     public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
         DLL3 result = new DLL3();       // Creating an object to store the results
+
         Node temp = head;       // Creating a reference variable pointing at head
         result.insertNode(temp.value);      // Always first value is unique
 
         for (int i = 0; i < size-1; i++) {      // Iterating through the doubly linked list
-            if (temp.value != temp.next.value) {      // Checking if both the is not equal
 
+            if (temp.value != temp.next.value) {      // Checking if both the is not equal
                 result.insertNode(temp.next.value);         // Calling the insert method to insert the node
             }
             temp = temp.next;       // Moving the temp 'pointer' to next node
@@ -83,9 +86,10 @@ public class DLL3 {     // Main class
         }
     }
 
-    public static void main(String[] args) {
-        DLL3 DoublyLinkedList = new DLL3();
+    public static void main(String[] args) {        // Main method
+        DLL3 DoublyLinkedList = new DLL3();     // Creating an object of class type
 
+        // Calling the method to insert the node in doubly linked list
         DoublyLinkedList.insertNode(10);
         DoublyLinkedList.insertNode(85);
         DoublyLinkedList.insertNode(25);
@@ -95,15 +99,16 @@ public class DLL3 {     // Main class
         DoublyLinkedList.insertNode(25);
         DoublyLinkedList.insertNode(60);
 
+        // Displaying the doubly linked list
         System.out.println("Original doubly linked list:");
         DoublyLinkedList.display();
 
         System.out.println("\nSorted doubly linked list:");
-        DoublyLinkedList.sortNode();
-        DoublyLinkedList.display();
+        DoublyLinkedList.sortNode();        // Calling the method to sort the doubly linked list
+        DoublyLinkedList.display();     // Displaying the sorted doubly linked list
 
         System.out.println("\nRemoving duplicate nodes:");
-        DLL3 removedDuplicateNode = DoublyLinkedList.removeDuplicates();
-        removedDuplicateNode.display();
+        DLL3 removedDuplicateNode = DoublyLinkedList.removeDuplicates();        // Calling the method to remove duplicate elements
+        removedDuplicateNode.display();         // Displaying the doubly linked list without duplicate elements
     }
 }
