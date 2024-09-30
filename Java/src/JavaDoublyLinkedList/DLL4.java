@@ -2,18 +2,19 @@ package JavaDoublyLinkedList;
 // Implement a function to find the middle node of a doubly linked list.
 public class DLL4 {     // Creating a class for doubly linked list
     // Creating instance variables for the class
-    Node head;
-    Node tail;
-    int size;
+    private Node head;
+    private Node tail;
+    private int size;
 
     DLL4(){     //
         this.size = 0;
     }
 
     class Node{     //
-        Node prev;
-        Node next;
-        int value;
+        private Node prev;
+        private Node next;
+        private int value;
+
         Node(int value){        //
             this.value = value; //
         }
