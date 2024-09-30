@@ -3,7 +3,7 @@ package JavaDoublyLinkedList;
 public class DLL4 {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
-    private Node tail;
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;
 
     DLL4(){     //
