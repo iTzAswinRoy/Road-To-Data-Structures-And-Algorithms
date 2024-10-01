@@ -75,6 +75,7 @@ public class DLL2 {     // Creating a class for doubly linked list
         DoublyLinkedList.insertNode(4);
         DoublyLinkedList.insertNode(5);
 
+        // Displaying the original doubly linked list
         System.out.println("Original doubly linked list:");
         DoublyLinkedList.display();
 
