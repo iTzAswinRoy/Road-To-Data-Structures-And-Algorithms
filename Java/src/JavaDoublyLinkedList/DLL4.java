@@ -14,7 +14,7 @@ public class DLL4 {     // Creating a class for doubly linked list
         // Creating instance variables for the class Node
         private Node prev; //
         private Node next;//
-        private int value;
+        private int value;//
 
         Node(int value){        //
             this.value = value; //
