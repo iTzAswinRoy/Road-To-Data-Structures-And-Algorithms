@@ -6,7 +6,7 @@ public class DLL4 {     // Creating a class for doubly linked list
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;
 
-    DLL4(){     //
+    DLL4(){     // class
         this.size = 0;
     }
 
