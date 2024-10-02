@@ -24,7 +24,7 @@ public class DLL4 {     // Creating a class for doubly linked list
     public void insertNode(int value){      //
         Node newNode = new Node(value);
 
-        if (tail == null) {
+        if (tail == null) {//
             head = newNode;
             tail = head;
         } else {
