@@ -30,7 +30,7 @@ public class DLL4 {     // Creating a class for doubly linked list
         } else {
             //
             tail.next = newNode;//
-            newNode.prev = tail;
+            newNode.prev = tail;//
             tail = newNode;
         }
         size++;
