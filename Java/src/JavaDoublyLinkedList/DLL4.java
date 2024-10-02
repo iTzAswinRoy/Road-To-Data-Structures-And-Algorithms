@@ -26,7 +26,7 @@ public class DLL4 {     // Creating a class for doubly linked list
 
         if (tail == null) {//
             head = newNode;//
-            tail = head;
+            tail = head;//
         } else {
             //
             tail.next = newNode;
