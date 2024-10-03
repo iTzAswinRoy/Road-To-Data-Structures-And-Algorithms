@@ -29,7 +29,7 @@ public class DLL6 {
             return;
         }
 
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i < index; i++) {//
             head = head.next;
         }
 
