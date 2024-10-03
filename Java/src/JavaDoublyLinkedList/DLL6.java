@@ -30,7 +30,7 @@ public class DLL6 {
         }
 
         for (int i = 0; i < index; i++) {//
-            head = head.next;
+            head = head.next;//
         }
 
         while (head != null){
