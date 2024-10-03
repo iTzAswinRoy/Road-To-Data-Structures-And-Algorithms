@@ -37,7 +37,7 @@ public class DLL6 {
             System.out.print(head.value+" -> ");
             head = head.next;//
         }
-        tail = temp;
+        tail = temp;//
         for (int i = 0; i < index; i++) {
             System.out.print(tail.value+" -> ");
             tail = tail.next;
