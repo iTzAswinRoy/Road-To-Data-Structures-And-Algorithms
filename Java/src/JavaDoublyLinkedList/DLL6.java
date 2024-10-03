@@ -20,7 +20,7 @@ public class DLL6 {
         }
         size++;//
     }
-    public void rotateDoublyLinkedList(int index){
+    public void rotateDoublyLinkedList(int index){//
         System.out.println("\nRotating doubly linked list at index "+index);
         Node temp = head;
 
