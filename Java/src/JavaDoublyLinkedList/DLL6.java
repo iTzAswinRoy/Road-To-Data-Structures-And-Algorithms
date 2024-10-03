@@ -18,7 +18,7 @@ public class DLL6 {
             newNode.prev = tail;
             tail = newNode;//
         }
-        size++;
+        size++;//
     }
     public void rotateDoublyLinkedList(int index){
         System.out.println("\nRotating doubly linked list at index "+index);
