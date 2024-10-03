@@ -35,7 +35,7 @@ public class DLL6 {
 
         while (head != null){
             System.out.print(head.value+" -> ");
-            head = head.next;
+            head = head.next;//
         }
         tail = temp;
         for (int i = 0; i < index; i++) {
