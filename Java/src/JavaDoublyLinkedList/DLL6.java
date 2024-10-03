@@ -26,7 +26,7 @@ public class DLL6 {
 
         if(index > size){//
             System.out.println("Index out of bound!");
-            return;
+            return;//
         }
 
         for (int i = 0; i < index; i++) {//
