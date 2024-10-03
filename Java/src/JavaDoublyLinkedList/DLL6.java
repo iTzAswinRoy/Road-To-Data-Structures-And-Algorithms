@@ -22,7 +22,7 @@ public class DLL6 {
     }
     public void rotateDoublyLinkedList(int index){//
         System.out.println("\nRotating doubly linked list at index "+index);
-        Node temp = head;
+        Node temp = head;//
 
         if(index > size){
             System.out.println("Index out of bound!");
