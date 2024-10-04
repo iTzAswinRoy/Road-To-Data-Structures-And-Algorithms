@@ -39,9 +39,9 @@ public class DLL6 {     // Creating a class for doubly linked list
         System.out.println("\nRotating doubly linked list at index " + index);
         Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
-        if (index > size) {
-            System.out.println("Index out of bound!");
-            return;
+        if (index > size) {     // Checking if the index is greater than the size of the list
+            System.out.println("Index out of bound!");      // Displaying the error message
+            return;     // Exits the method
         }
 
         for (int i = 0; i < index; i++) {
