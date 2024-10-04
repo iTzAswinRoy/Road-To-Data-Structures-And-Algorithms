@@ -35,7 +35,7 @@ public class DLL6 {     // Creating a class for doubly linked list
         size++;       // Incrementing size by 1
     }
 
-    public void rotateDoublyLinkedList(int index) {
+    public void rotateDoublyLinkedList(int index) {     // Method to rotate the doubly linked list
         System.out.println("\nRotating doubly linked list at index " + index);
         Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
