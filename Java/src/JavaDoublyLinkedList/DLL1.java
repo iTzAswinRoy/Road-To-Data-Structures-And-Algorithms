@@ -96,7 +96,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         Node temp = tail;       // Creating a 'temp' node pointing at tail
 
         for (int i = 0; i < size; i++) {        // Iterating through the linked list
-            System.out.print(temp.value + "->");      // Displaying the value of each node
+            System.out.print(temp.value + " -> ");      // Displaying the value of each node
             temp = temp.prev;       // Moving the 'temp' node backwards
         }
         // Checking if the 'temp' reaches the end
@@ -109,7 +109,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         Node temp = head;       // Creating a 'temp' node pointing at head
 
         for (int i = 0; i < size; i++) {        // Iterating through the linked list
-            System.out.print(temp.value + "->");        // Displaying the value of each node
+            System.out.print(temp.value + " -> ");        // Displaying the value of each node
             temp = temp.next;       // Moving the pointer to the next node
         }
         // Checking if the 'temp' reaches the end
