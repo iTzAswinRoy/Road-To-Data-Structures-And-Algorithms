@@ -60,31 +60,35 @@ public class DLL6 {     // Creating a class for doubly linked list
         System.out.println("END");
     }
 
-    public void display() {
-        Node temp = head;
+    public void display() {         // Method to display the list
+        Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
-        for (int i = 0; i < size; i++) {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+        for (int i = 0; i < size; i++) {        // Iterating through linked list
+            System.out.print(temp.value + " -> ");      // Displaying the node
+            temp = temp.next;       // Moving the 'tmp' pointer to the next node
         }
 
-        if (temp == null) {
-            System.out.println("END");
+        if (temp == null) {        // Checking if 'temp' is null
+            System.out.println("END");       // Displaying 'END' for reference
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
+        // Creating an object to store the doubly linked list
         DLL6 doublyLinkedList = new DLL6();
 
+        // Calling the method to insert the node in doubly linked list
         doublyLinkedList.insertNode(1);
         doublyLinkedList.insertNode(2);
         doublyLinkedList.insertNode(3);
         doublyLinkedList.insertNode(4);
         doublyLinkedList.insertNode(5);
 
+        // Displaying the doubly linked list
         System.out.println("Original doubly linked list:");
         doublyLinkedList.display();
 
+        // Calling the method to rotate the doubly linked list
         doublyLinkedList.rotateDoublyLinkedList(4);
     }
 }
