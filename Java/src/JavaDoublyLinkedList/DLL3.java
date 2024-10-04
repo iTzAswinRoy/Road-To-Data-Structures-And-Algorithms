@@ -51,7 +51,7 @@ public class DLL3 {     // Main class
                     temp.next.value = temp.value;
                     temp.value = swap;
                 }
-                temp = temp.next;       // For each iteration the temp is pointing towards the next node
+                temp = temp.next;       // Moving the 'tmp' pointer to the next node
             }
             temp = head;       // Reassigning the new head
         }
@@ -81,8 +81,8 @@ public class DLL3 {     // Main class
             temp = temp.next;       // Moving the temp point to its next node
         }
 
-        if (temp == null) {     // Checking if 'temp' is null
-            System.out.println("END");      // Which means it reaches the end of the list
+        if (temp == null) {     // Checking if 'temp' is null, which means it reaches the end of the list
+            System.out.println("END");      // Displaying 'END' for reference
         }
     }
 
