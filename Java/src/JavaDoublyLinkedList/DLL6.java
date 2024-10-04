@@ -44,8 +44,8 @@ public class DLL6 {     // Creating a class for doubly linked list
             return;     // Exits the method
         }
 
-        for (int i = 0; i < index; i++) {
-            head = head.next;
+        for (int i = 0; i < index; i++) {       // Iterating through the doubly linked list till we reach the required index
+            head = head.next;       // Moving the head pointer to the next node
         }
 
         while (head != null) {
