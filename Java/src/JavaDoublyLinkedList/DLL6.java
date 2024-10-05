@@ -16,7 +16,7 @@ public class DLL6 {     // Creating a class for doubly linked list
         private int value;      // Creating an instance variable to store a value of the node
 
         Node(int value) {       // Creating a parameter constructor by passing the value
-            this.value = value;
+            this.value = value;     // Assigning the parameter value to the instance variable
         }
     }
 
