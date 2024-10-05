@@ -10,8 +10,8 @@ public class DLL8 {     // Creating a class for doubly linked list
         this.size = 0;      // Initializing size to the instance variable
     }
 
-    class Node {
-        private Node prev;
+    class Node {        // Creating a 'Node' class
+        private Node prev;      // Creating a reference variable, pointing towards the next node
         private Node next;
         private int value;
 
