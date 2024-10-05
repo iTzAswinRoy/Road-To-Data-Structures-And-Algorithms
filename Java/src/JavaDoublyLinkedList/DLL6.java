@@ -59,7 +59,7 @@ public class DLL6 {     // Creating a class for doubly linked list
             System.out.print(tail.value + " -> ");      // Displaying the current each node
             tail = tail.next;       // Moving the tail to the next node
         }
-        System.out.println("END");
+        System.out.println("END");      // Displaying 'END' for reference
     }
 
     public void display() {         // Method to display the list
