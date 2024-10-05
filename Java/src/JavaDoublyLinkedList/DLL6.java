@@ -50,7 +50,7 @@ public class DLL6 {     // Creating a class for doubly linked list
 
         while (head != null) {      // Iterating through the linked list until the head is null
             System.out.print(head.value + " -> ");      // Displaying the current head
-            head = head.next;       // M
+            head = head.next;       // Moving the head to the next node
         }
         tail = temp;
         for (int i = 0; i < index; i++) {
