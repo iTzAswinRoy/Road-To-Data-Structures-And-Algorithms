@@ -15,7 +15,7 @@ public class DLL6 {     // Creating a class for doubly linked list
         private Node prev;      // Creating a reference variable, pointing towards the previous node
         private int value;      // Creating an instance variable to store a value of the node
 
-        Node(int value) {
+        Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;
         }
     }
@@ -48,9 +48,9 @@ public class DLL6 {     // Creating a class for doubly linked list
             head = head.next;       // Moving the head pointer to the next node
         }
 
-        while (head != null) {
-            System.out.print(head.value + " -> ");
-            head = head.next;
+        while (head != null) {      // Iterating through the linked list until the head is null
+            System.out.print(head.value + " -> ");      // Displaying the current head
+            head = head.next;       // M
         }
         tail = temp;
         for (int i = 0; i < index; i++) {
