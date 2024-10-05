@@ -1,9 +1,10 @@
 package JavaDoublyLinkedList;
+
 // Given a doubly linked list, determine if the list is a palindrome.
-public class DLL8 {
-    private Node head;
-    private Node tail;
-    private int size;
+public class DLL8 {     // Creating a class for doubly linked list
+    private Node head;      // Crating a reference variable 'head' of class Node type
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
+    private int size;       // Creating a variable to store the size
 
     DLL8() {
         this.size = 0;
@@ -21,6 +22,7 @@ public class DLL8 {
 
     public void insertNode(int value) {
         Node newNode = new Node(value);
+
         if (tail == null) {
             head = newNode;
             tail = head;
