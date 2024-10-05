@@ -6,8 +6,8 @@ public class DLL8 {     // Creating a class for doubly linked list
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
 
-    DLL8() {
-        this.size = 0;
+    DLL8() {        // Creating a default constructor
+        this.size = 0;      // Initializing size to the instance variable
     }
 
     class Node {
