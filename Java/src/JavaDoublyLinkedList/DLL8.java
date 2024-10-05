@@ -4,10 +4,21 @@ public class DLL8 {
     Node head;
     Node tail;
     int size;
-    DLL8(){
+
+    DLL8() {
         this.size = 0;
     }
-    public void insertNode(int value){
+
+    class Node {
+        Node prev;
+        Node next;
+        int value;
+        Node(int value){
+            this.value = value;
+        }
+    }
+
+    public void insertNode(int value) {
         Node newNode = new Node(value);
         if(tail == null){
             head = newNode;
@@ -19,7 +30,8 @@ public class DLL8 {
         }
         size++;
     }
-    public void findPalindrome(){
+
+    public void findPalindrome() {
         Node left = head;
         Node right = tail;
         boolean isSame = false;
@@ -50,11 +62,11 @@ public class DLL8 {
                 }
             }
         }
-        if(isSame){
+        if(isSame) {
             System.out.println("\nIt's a palindrome.");
         }
     }
-    public void display(){
+    public void display() {
         Node temp = head;
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+" -> ");
@@ -62,14 +74,6 @@ public class DLL8 {
         }
         if(temp == null){
             System.out.println("END");
-        }
-    }
-    class Node {
-        Node prev;
-        Node next;
-        int value;
-        Node(int value){
-            this.value = value;
         }
     }
 
