@@ -1,28 +1,30 @@
 package JavaDoublyLinkedList;
 // Given a doubly linked list, determine if the list is a palindrome.
 public class DLL8 {
-    Node head;
-    Node tail;
-    int size;
+    private Node head;
+    private Node tail;
+    private int size;
 
     DLL8() {
         this.size = 0;
     }
 
     class Node {
-        Node prev;
-        Node next;
-        int value;
-        Node(int value){
+        private Node prev;
+        private Node next;
+        private int value;
+
+        Node(int value) {
             this.value = value;
         }
     }
 
     public void insertNode(int value) {
         Node newNode = new Node(value);
-        if(tail == null){
+        if (tail == null) {
             head = newNode;
             tail = head;
+
         } else {
             tail.next = newNode;
             newNode.prev = tail;
@@ -35,44 +37,54 @@ public class DLL8 {
         Node left = head;
         Node right = tail;
         boolean isSame = false;
-        if(size % 2 == 0){
-            while(left != right & right != left){
-                if(left.value == right.value){
+
+        if (size % 2 == 0) {
+            while (left != right && right != left) {
+                if (left.value == right.value) {
+
                     left = left.next;
                     right = right.prev;
                     isSame = true;
+
                 } else {
                     System.out.println("\nIt's not a palindrome!");
                     return;
                 }
             }
+
         } else {
             Node middle = head;
+
             for (int i = 0; i < size / 2; i++) {
                 middle = middle.next;
             }
+
             while (left != middle && right != middle){
-                if(left.value == right.value){
+                if (left.value == right.value) {
+
                     left = left.next;
                     right = right.prev;
                     isSame = true;
+
                 } else {
                     System.out.println("\nIt's not a palindrome!");
                     return;
                 }
             }
         }
-        if(isSame) {
+        if (isSame) {
             System.out.println("\nIt's a palindrome.");
         }
     }
     public void display() {
         Node temp = head;
+
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+" -> ");
             temp = temp.next;
         }
-        if(temp == null){
+
+        if (temp == null) {
             System.out.println("END");
         }
     }
@@ -92,4 +104,3 @@ public class DLL8 {
         doublyLinkedList.findPalindrome();
     }
 }
-
