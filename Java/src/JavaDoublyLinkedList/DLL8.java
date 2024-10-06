@@ -78,7 +78,7 @@ public class DLL8 {     // Creating a class for doubly linked list
             System.out.println("\nIt's a palindrome.");
         }
     }
-    public void display() {
+    public void display() {     // Method to display the list
         Node temp = head;
 
         for (int i = 0; i < size; i++) {
