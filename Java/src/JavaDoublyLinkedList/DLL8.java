@@ -94,6 +94,8 @@ public class DLL8 {     // Creating a class for doubly linked list
     public static void main(String[] args) {        // Main method
         // Creating an object to store the doubly linked list
         DLL8 doublyLinkedList = new DLL8();
+
+        // Calling the method to insert the node in doubly linked list
         doublyLinkedList.insertNode(1);
         doublyLinkedList.insertNode(2);
         doublyLinkedList.insertNode(3);
