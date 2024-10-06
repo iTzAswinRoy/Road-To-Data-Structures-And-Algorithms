@@ -23,7 +23,7 @@ public class DLL8 {     // Creating a class for doubly linked list
     public void insertNode(int value) {         // Method to insert node to the doubly linked list
         Node newNode = new Node(value);     // Creating a new node by passing a value
 
-        if (tail == null) {
+        if (tail == null) {     // Checking if the tail is null
             head = newNode;
             tail = head;
 
