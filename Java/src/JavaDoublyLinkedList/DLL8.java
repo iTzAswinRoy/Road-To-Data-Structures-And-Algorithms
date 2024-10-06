@@ -24,15 +24,15 @@ public class DLL8 {     // Creating a class for doubly linked list
         Node newNode = new Node(value);     // Creating a new node by passing a value
 
         if (tail == null) {     // Checking if the tail is null
-            head = newNode;
-            tail = head;
+            head = newNode;     // Assigning the head to new node
+            tail = head;        // Updating the tail to head since there's only one node
 
         } else {
-            tail.next = newNode;
-            newNode.prev = tail;
-            tail = newNode;
+            tail.next = newNode;        // Updating the tail with the new node
+            newNode.prev = tail;        // Assigning the previous pointer of the node to tail
+            tail = newNode;     // Now updating the tail as new node
         }
-        size++;
+        size++;        // Incrementing size by 1
     }
 
     public void findPalindrome() {
