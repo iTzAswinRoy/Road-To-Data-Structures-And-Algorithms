@@ -82,12 +82,12 @@ public class DLL8 {     // Creating a class for doubly linked list
         Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
         for (int i = 0; i < size; i++) {        // Iterating through linked list
-            System.out.print(temp.value+" -> ");
-            temp = temp.next;
+            System.out.print(temp.value+" -> ");        // Displaying the node
+            temp = temp.next;       // Moving the 'tmp' pointer to the next node
         }
 
-        if (temp == null) {
-            System.out.println("END");
+        if (temp == null) {     // Checking if 'temp' is null
+            System.out.println("END");      // Displaying 'END' for reference
         }
     }
 
