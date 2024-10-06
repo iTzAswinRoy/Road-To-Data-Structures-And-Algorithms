@@ -11,17 +11,17 @@ public class DLL8 {     // Creating a class for doubly linked list
     }
 
     class Node {        // Creating a 'Node' class
-        private Node prev;      // Creating a reference variable, pointing towards the next node
-        private Node next;
-        private int value;
+        private Node prev;      // Creating a reference variable, pointing towards the previous node
+        private Node next;      // Creating a reference variable, pointing towards the next node
+        private int value;      // Creating an instance variable to store a value of the node
 
-        Node(int value) {
-            this.value = value;
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
         }
     }
 
-    public void insertNode(int value) {
-        Node newNode = new Node(value);
+    public void insertNode(int value) {         // Method to insert node to the doubly linked list
+        Node newNode = new Node(value);     // Creating a new node by passing a value
 
         if (tail == null) {
             head = newNode;
