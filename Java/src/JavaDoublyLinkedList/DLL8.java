@@ -102,6 +102,7 @@ public class DLL8 {     // Creating a class for doubly linked list
         doublyLinkedList.insertNode(2);
         doublyLinkedList.insertNode(1);
 
+        // Displaying the doubly linked list
         System.out.println("Original doubly linked list:");
         doublyLinkedList.display();
 
