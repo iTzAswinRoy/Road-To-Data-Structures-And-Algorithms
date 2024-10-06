@@ -79,7 +79,7 @@ public class DLL8 {     // Creating a class for doubly linked list
         }
     }
     public void display() {     // Method to display the list
-        Node temp = head;
+        Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+" -> ");
