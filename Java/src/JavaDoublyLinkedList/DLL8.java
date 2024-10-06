@@ -81,7 +81,7 @@ public class DLL8 {     // Creating a class for doubly linked list
     public void display() {     // Method to display the list
         Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {        // Iterating through linked list
             System.out.print(temp.value+" -> ");
             temp = temp.next;
         }
