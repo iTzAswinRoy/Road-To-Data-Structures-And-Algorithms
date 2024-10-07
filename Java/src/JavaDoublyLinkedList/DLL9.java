@@ -4,7 +4,7 @@ public class DLL9 {
     Node head;//
     Node tail;//
     int size;//
-    DLL9() {
+    DLL9() {//
         this.size = 0;
     }
     public void insertNode(int value){
