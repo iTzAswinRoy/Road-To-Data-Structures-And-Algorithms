@@ -3,7 +3,7 @@ package JavaDoublyLinkedList;
 public class DLL9 {
     Node head;//
     Node tail;//
-    int size;
+    int size;//
     DLL9() {
         this.size = 0;
     }
