@@ -2,6 +2,7 @@ package JavaDoublyLinkedList;
 
 // Given a doubly linked list, determine if the list is a palindrome.
 public class DLL8 {     // Creating a class for doubly linked list
+    // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
@@ -11,6 +12,7 @@ public class DLL8 {     // Creating a class for doubly linked list
     }
 
     class Node {        // Creating a 'Node' class
+        // Creating instance variables for the class
         private Node prev;      // Creating a reference variable, pointing towards the previous node
         private Node next;      // Creating a reference variable, pointing towards the next node
         private int value;      // Creating an instance variable to store a value of the node
@@ -35,55 +37,60 @@ public class DLL8 {     // Creating a class for doubly linked list
         size++;        // Incrementing size by 1
     }
 
-    public void findPalindrome() {
-        Node left = head;
-        Node right = tail;
-        boolean isSame = false;
+    public void findPalindrome() {      // Method to find a palindrome
+        boolean isSame = false;     // Creating a boolean variable to false
+        Node left = head;       // Creating a 'left' variable pointing at the head
+        Node right = tail;      // Creating a 'right' variable pointing at the tail
 
-        if (size % 2 == 0) {
-            while (left != right && right != left) {
-                if (left.value == right.value) {
+        if (size % 2 == 0) {        // Checking if the size of the linked list is even
 
-                    left = left.next;
-                    right = right.prev;
-                    isSame = true;
+            while (left != right) {        // Iterating through the linked list util the 'left' meets the 'right'
+                if (left.value == right.value) {        // Checking if the 'left' pointer is same as the 'right' pointer
+
+                    left = left.next;       // Moving the 'left' pointer forward next node
+                    right = right.prev;     // Moving the 'right' pointer backward next node
+                    isSame = true;      // Assigning it variable to 'true' if the pointers are same
 
                 } else {
-                    System.out.println("\nIt's not a palindrome!");
-                    return;
+                    isSame = false;    // Assigning it variable to 'false' if the pointers are not same
+                    break;     // Exits the loop
                 }
             }
 
-        } else {
-            Node middle = head;
+        } else {        // Odd sized linked list
+            Node middle = head;     // Creating a 'middle' variable pointing at the middle of the lined list
 
+            // Moving 'middle' pointer to the middle of the linked list
             for (int i = 0; i < size / 2; i++) {
                 middle = middle.next;
             }
 
-            while (left != middle && right != middle){
-                if (left.value == right.value) {
+            while (left != middle && right != middle) {     // Iterating through the linked list util the 'left' meets the 'right'
+                if (left.value == right.value) {        // Checking if the 'left' pointer is same as the 'right' pointer
 
-                    left = left.next;
-                    right = right.prev;
-                    isSame = true;
+                    left = left.next;       // Moving the 'left' pointer forward next node
+                    right = right.prev;     // Moving the 'right' pointer backward next node
+                    isSame = true;      // Assigning it variable to 'true' if the pointers are same
 
                 } else {
-                    System.out.println("\nIt's not a palindrome!");
-                    return;
+                    isSame = false;       // Assigning it variable to 'false' if the pointers are not same
+                    break;     // Exits the loop
                 }
             }
         }
-        if (isSame) {
-            System.out.println("\nIt's a palindrome.");
+        if (isSame) {       // Checking if the 'isSame' is true
+            System.out.println(isSame + "\nIt's a palindrome.");       // Displays the message
+        } else {
+            System.out.println(isSame + "\nIt's not a palindrome!");     // Displays error the message
         }
     }
-    public void display() {     // Method to display the list
+
+    public void display() {     // Method to display the linked list
         Node temp = head;       // Creating a reference variable 'temp' pointing at head
 
         for (int i = 0; i < size; i++) {        // Iterating through linked list
-            System.out.print(temp.value+" -> ");        // Displaying the node
-            temp = temp.next;       // Moving the 'tmp' pointer to the next node
+            System.out.print(temp.value + " -> ");        // Displaying the node
+            temp = temp.next;       // Moving the 'temp' pointer to the next node
         }
 
         if (temp == null) {     // Checking if 'temp' is null
@@ -106,6 +113,7 @@ public class DLL8 {     // Creating a class for doubly linked list
         System.out.println("Original doubly linked list:");
         doublyLinkedList.display();
 
+        // Calling the method to find the palindrome
         System.out.println("\nChecking if the linked list is palindrome:");
         doublyLinkedList.findPalindrome();
     }
