@@ -12,6 +12,7 @@ public class DLL5 {     // Creating a class for doubly linked list
     }
 
     class Node {        // Creating a 'Node' class
+        // Creating instance variables for the class
         private Node next;      // Creating a reference variable, pointing towards the next node
         private Node prev;      // Creating a reference variable, pointing towards the previous node
         private int value;      // Creating an instance variable to store a value of the node
@@ -80,7 +81,7 @@ public class DLL5 {     // Creating a class for doubly linked list
 
         for (int i = 0; i < size; i++) {        // Iterating through linked list
             System.out.print(temp.value + " -> ");      // Displaying the node
-            temp = temp.next;        // Moving the 'tmp' pointer to the next node
+            temp = temp.next;        // Moving the 'temp' pointer to the next node
         }
 
         if (temp == null) {     // Checking if 'temp' is null
