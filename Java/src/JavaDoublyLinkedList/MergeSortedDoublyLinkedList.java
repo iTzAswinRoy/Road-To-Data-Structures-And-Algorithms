@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 // Given two sorted doubly linked lists, merge them into a single sorted doubly linked list.
-public class DLL5 {     // Creating a class for doubly linked list
+public class MergeSortedDoublyLinkedList {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
 
-    DLL5() {        // Creating a default constructor
+    MergeSortedDoublyLinkedList() {        // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
     }
 
@@ -58,8 +58,8 @@ public class DLL5 {     // Creating a class for doubly linked list
         }
     }
 
-    static DLL5 mergeDoublyLinkedList(DLL5 list1, DLL5 list2) {     // Method to merge a double linked list
-        DLL5 newDoublyLinkedList = new DLL5();      // Creating a new list to store the merged linked list
+    static MergeSortedDoublyLinkedList mergingLinkedList(MergeSortedDoublyLinkedList list1, MergeSortedDoublyLinkedList list2) {     // Method to merge a double linked list
+        MergeSortedDoublyLinkedList newDoublyLinkedList = new MergeSortedDoublyLinkedList();      // Creating a new list to store the merged linked list
 
         Node temp1 = list1.head;        // Creating a reference variable 'temp1' pointing at head for list 1
         Node temp2 = list2.head;        // Creating a reference variable 'temp2' pointing at head for list 2
@@ -90,8 +90,8 @@ public class DLL5 {     // Creating a class for doubly linked list
     }
     public static void main(String[] args) {        // Main method
         // Creating an object to store the doubly linked list
-        DLL5 doublyLinkedList1 = new DLL5();
-        DLL5 doublyLinkedList2 = new DLL5();
+        MergeSortedDoublyLinkedList doublyLinkedList1 = new MergeSortedDoublyLinkedList();
+        MergeSortedDoublyLinkedList doublyLinkedList2 = new MergeSortedDoublyLinkedList();
 
         // Calling the method to insert the node in doubly linked list
         doublyLinkedList1.insertNode(65);
@@ -124,7 +124,7 @@ public class DLL5 {     // Creating a class for doubly linked list
         doublyLinkedList2.display();        // Displaying the sorted doubly linked list
 
         // Creating a new doubly linked list to store the merged list
-        DLL5 result = mergeDoublyLinkedList(doublyLinkedList1, doublyLinkedList2);
+        MergeSortedDoublyLinkedList result = mergingLinkedList(doublyLinkedList1, doublyLinkedList2);
 
         // Displaying the merged doubly lined list
         System.out.println("\nMerged doubly linked list:");
