@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 // Find the kth node from the end of the doubly linked list.
-public class DLL9 {     // Creating a class for doubly linked list
+public class FindKthNode {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
 
-    DLL9() {        // Creating a default constructor
+    FindKthNode() {        // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
     }
 
@@ -74,7 +74,7 @@ public class DLL9 {     // Creating a class for doubly linked list
 
     public static void main(String[] args) {         // Main method
         // Creating an object to store the doubly linked list
-        DLL9 doublyLinkedList = new DLL9();
+        FindKthNode doublyLinkedList = new FindKthNode();
 
         // Calling the method to insert the node in doubly linked list
         doublyLinkedList.insertNode(1);
