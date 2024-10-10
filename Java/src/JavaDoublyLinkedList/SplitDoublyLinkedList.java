@@ -1,12 +1,13 @@
 package JavaDoublyLinkedList;
+
 // Split a doubly linked list into two equal halves. If the list has an odd number of nodes, the first half should have one more node than the second.
-public class DLL10 {        // Creating a class for doubly linked list
+public class SplitDoublyLinkedList {        // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
 
-    DLL10() {       // Creating a default constructor
+    SplitDoublyLinkedList() {       // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
     }
 
@@ -36,10 +37,10 @@ public class DLL10 {        // Creating a class for doubly linked list
         size++;     // Incrementing size by 1
     }
 
-    public void splittingList() {       // Method to split the doubly linked list
+    public void split() {       // Method to split the doubly linked list
         // Creating a separate doubly linked list
-        DLL10 list1 = new DLL10();
-        DLL10 list2 = new DLL10();
+        SplitDoublyLinkedList list1 = new SplitDoublyLinkedList();
+        SplitDoublyLinkedList list2 = new SplitDoublyLinkedList();
 
         Node temp = head;       // Creating a reference variable 'temp' pointing at the head
 
@@ -86,7 +87,7 @@ public class DLL10 {        // Creating a class for doubly linked list
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the doubly linked list
-        DLL10 doublyLinkedList = new DLL10();
+        SplitDoublyLinkedList doublyLinkedList = new SplitDoublyLinkedList();
 
         // Calling the method to insert the node in doubly linked list
         doublyLinkedList.insertNode(1);
@@ -101,6 +102,6 @@ public class DLL10 {        // Creating a class for doubly linked list
 
         // Calling the method to split the doubly linked list
         System.out.println("\nSplitting the the doubly linked list:");
-        doublyLinkedList.splittingList();
+        doublyLinkedList.split();
     }
 }
