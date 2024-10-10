@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 // Write a function to reverse the nodes of a doubly linked list in place.
-public class DLL2 {     // Creating a class for doubly linked list
+public class Reverse {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store size
 
-    DLL2() {        // Creating a default constructor
+    Reverse() {        // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -66,7 +66,7 @@ public class DLL2 {     // Creating a class for doubly linked list
     }
 
     public static void main(String[] args) {        // Main method
-        DLL2 DoublyLinkedList = new DLL2();     // Creating an object of class type
+        Reverse DoublyLinkedList = new Reverse();     // Creating an object of class type
 
         // Calling the method to insert the node in doubly linked list
         DoublyLinkedList.insertNode(1);
