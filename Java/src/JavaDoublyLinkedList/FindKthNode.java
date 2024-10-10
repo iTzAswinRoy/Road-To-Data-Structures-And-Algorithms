@@ -51,7 +51,6 @@ public class FindKthNode {     // Creating a class for doubly linked list
             first = first.next;
         }
 
-
         while (first != null) {
             first = first.next;     // Moving the 'first' reference variable to the end of the linked list
             second = second.next;       // Moving the 'second' reference variable from the start of the linked list till the 'first' reaches the end
