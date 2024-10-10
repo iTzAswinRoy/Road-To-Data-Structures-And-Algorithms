@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 //Given a doubly linked list, remove all duplicate nodes.
-public class DLL3 {     // Main class
+public class RemoveDuplicates {     // Main class
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store size
 
-    DLL3() {         // Creating a default constructor
+    RemoveDuplicates() {         // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
     }
 
@@ -57,8 +57,8 @@ public class DLL3 {     // Main class
         }
     }
 
-    public DLL3 removeDuplicates() {    // Method to remove duplicate nodes in a doubly linked list
-        DLL3 result = new DLL3();       // Creating an object to store the results
+    public RemoveDuplicates removeDuplicateNodes() {    // Method to remove duplicate nodes in a doubly linked list
+        RemoveDuplicates result = new RemoveDuplicates();       // Creating an object to store the results
 
         Node temp = head;       // Creating a reference variable pointing at head
         result.insertNode(temp.value);      // Always first value is unique
@@ -87,7 +87,7 @@ public class DLL3 {     // Main class
     }
 
     public static void main(String[] args) {        // Main method
-        DLL3 DoublyLinkedList = new DLL3();     // Creating an object of class type
+        RemoveDuplicates DoublyLinkedList = new RemoveDuplicates();     // Creating an object of class type
 
         // Calling the method to insert the node in doubly linked list
         DoublyLinkedList.insertNode(10);
@@ -108,7 +108,7 @@ public class DLL3 {     // Main class
         DoublyLinkedList.display();     // Displaying the sorted doubly linked list
 
         System.out.println("\nRemoving duplicate nodes:");
-        DLL3 removedDuplicateNode = DoublyLinkedList.removeDuplicates();        // Calling the method to remove duplicate elements
+        RemoveDuplicates removedDuplicateNode = DoublyLinkedList.removeDuplicateNodes();        // Calling the method to remove duplicate elements
         removedDuplicateNode.display();         // Displaying the doubly linked list without duplicate elements
     }
 }
