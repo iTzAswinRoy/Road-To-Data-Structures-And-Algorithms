@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 // Create a class that implements a doubly linked list with operations such as insert, delete, search, and display (both forward and backward).
-public class DLL1 {     // Creating a class for doubly linked list
+public class CreateDoublyLinkedList {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store size
 
-    DLL1() {       // Creating a default constructor
+    CreateDoublyLinkedList() {       // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -119,7 +119,8 @@ public class DLL1 {     // Creating a class for doubly linked list
     }
 
     public static void main(String[] args) {        // Main method
-        DLL1 DoublyLinkedList = new DLL1();     // Creating an object of class type
+        // Creating an object to store the doubly linked list
+        CreateDoublyLinkedList DoublyLinkedList = new CreateDoublyLinkedList();
 
         // Calling the method to insert the node at first
         DoublyLinkedList.insertFirst(1);
@@ -128,6 +129,7 @@ public class DLL1 {     // Creating a class for doubly linked list
         DoublyLinkedList.insertFirst(4);
         DoublyLinkedList.insertFirst(5);
 
+        // Displaying the doubly linked list
         System.out.println("Inserting Node at first");
         DoublyLinkedList.display();
 
@@ -138,17 +140,22 @@ public class DLL1 {     // Creating a class for doubly linked list
         DoublyLinkedList.insertLast(40);
         DoublyLinkedList.insertLast(50);
 
+        // Displaying the doubly linked list
         System.out.println("\nInserting node at last");
         DoublyLinkedList.display();
 
         // Calling the method to delete the node at first
         DoublyLinkedList.deleteFirst();
         System.out.println("\nDeleting Node at first");
+
+        // Displaying the doubly linked list
         DoublyLinkedList.display();
 
         // Calling the method to delete the node at last
         DoublyLinkedList.deleteLast();
         System.out.println("\nDeleting node at last");
+
+        // Displaying the doubly linked list
         DoublyLinkedList.display();
 
         // Calling the method to reverse the doubly linked list
@@ -164,5 +171,3 @@ public class DLL1 {     // Creating a class for doubly linked list
         DoublyLinkedList.searchNode(5);
     }
 }
-
-
