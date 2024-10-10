@@ -1,13 +1,13 @@
 package JavaDoublyLinkedList;
 
 // Rotate a doubly linked list by k nodes (where k can be positive or negative).
-public class DLL6 {     // Creating a class for doubly linked list
+public class RotateDoublyLinkedList {     // Creating a class for doubly linked list
     // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
     private int size;       // Creating a variable to store the size
 
-    DLL6() {        // Creating a default constructor
+    RotateDoublyLinkedList() {        // Creating a default constructor
         this.size = 0;      // Initializing size to the instance variable
     }
 
@@ -37,7 +37,7 @@ public class DLL6 {     // Creating a class for doubly linked list
         size++;       // Incrementing size by 1
     }
 
-    public void rotateDoublyLinkedList(int index) {     // Method to rotate the doubly linked list
+    public void rotate(int index) {     // Method to rotate the doubly linked list
         System.out.println("\nRotating doubly linked list at index " + index);
         Node firstNode = head;       // Creating a reference variable 'firstNode' pointing at head
 
@@ -79,7 +79,7 @@ public class DLL6 {     // Creating a class for doubly linked list
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the doubly linked list
-        DLL6 doublyLinkedList = new DLL6();
+        RotateDoublyLinkedList doublyLinkedList = new RotateDoublyLinkedList();
 
         // Calling the method to insert the node in doubly linked list
         doublyLinkedList.insertNode(1);
@@ -93,6 +93,6 @@ public class DLL6 {     // Creating a class for doubly linked list
         doublyLinkedList.display();
 
         // Calling the method to rotate the doubly linked list
-        doublyLinkedList.rotateDoublyLinkedList(2);
+        doublyLinkedList.rotate(2);
     }
 }
