@@ -6,7 +6,7 @@ class Vehicle {      // Vehicle class
     private String brand;       //
 
     Vehicle(String brand) {     //
-        this.brand = brand;
+        this.brand = brand;//
     }
 
     public String getBrand() {
