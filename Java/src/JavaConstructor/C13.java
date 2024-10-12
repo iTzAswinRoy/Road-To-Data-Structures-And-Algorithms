@@ -22,7 +22,7 @@ class Bike extends Vehicle {//
             this.year = year;//
         }
 
-        public int getYear() {
+        public int getYear() {//
             return year;//
         }
 }
