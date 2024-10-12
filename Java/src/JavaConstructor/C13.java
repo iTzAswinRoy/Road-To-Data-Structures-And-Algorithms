@@ -10,7 +10,7 @@ class Vehicle {      // Vehicle class
     }
 
     public String getBrand() {
-        return brand;
+        return brand;//
     }
 }
 
