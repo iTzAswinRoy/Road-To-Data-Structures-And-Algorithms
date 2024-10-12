@@ -27,7 +27,7 @@ class Bike extends Vehicle {//
         }
 }
 
-public class C13 {
+public class C13 {//
     public static void main(String[] args) {
         Bike obj = new Bike("Yamaha", 2020);
 
