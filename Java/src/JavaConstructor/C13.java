@@ -19,7 +19,7 @@ class Bike extends Vehicle {//
 
         public Bike(String brand, int year){//
             super(brand);
-            this.year = year;
+            this.year = year;//
         }
 
         public int getYear() {
