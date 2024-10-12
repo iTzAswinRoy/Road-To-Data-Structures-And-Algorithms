@@ -9,7 +9,7 @@ class Vehicle {      // Vehicle class
         this.brand = brand;//
     }
 
-    public String getBrand() {
+    public String getBrand() {//
         return brand;//
     }
 }
