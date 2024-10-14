@@ -4,7 +4,7 @@ package JavaInheritance;
 //  Each subclass should have properties such as name, address, salary, and job title.
 //  Implement methods for calculating bonuses, generating performance reports, and managing projects.
 class CompanyEmployee {
-    private String name;
+    private String name;//
     private String address;
     private int salary;
     private String jobTitle;
