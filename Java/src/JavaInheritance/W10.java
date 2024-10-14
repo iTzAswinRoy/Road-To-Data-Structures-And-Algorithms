@@ -6,7 +6,7 @@ package JavaInheritance;
 class CompanyEmployee {
     private String name;//
     private String address;
-    private int salary;
+    private int salary;//
     private String jobTitle;
     CompanyEmployee(String name, String address, int salary, String jobTitle){
         this.name = name;
