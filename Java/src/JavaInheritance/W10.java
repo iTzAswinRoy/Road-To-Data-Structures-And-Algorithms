@@ -5,7 +5,7 @@ package JavaInheritance;
 //  Implement methods for calculating bonuses, generating performance reports, and managing projects.
 class CompanyEmployee {
     private String name;//
-    private String address;
+    private String address;//
     private int salary;//
     private String jobTitle;
     CompanyEmployee(String name, String address, int salary, String jobTitle){
