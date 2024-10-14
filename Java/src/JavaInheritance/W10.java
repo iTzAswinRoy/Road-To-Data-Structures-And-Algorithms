@@ -18,7 +18,7 @@ class CompanyEmployee {
         return name;
     }
     public String getAddress() {
-        return address;
+        return address;//
     }
     public int getSalary() {
         return salary;
