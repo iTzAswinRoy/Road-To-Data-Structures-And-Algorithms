@@ -9,7 +9,7 @@ import java.util.Queue;//
 public class BT10 {
     private Node root;//
 
-    static class Node {
+    static class Node {//
         int data;
         Node left;
         Node right;
