@@ -7,7 +7,7 @@ import java.util.Queue;//
 
 // Populating next right pointers in each node
 public class BT10 {
-    private Node root;
+    private Node root;//
 
     static class Node {
         int data;
