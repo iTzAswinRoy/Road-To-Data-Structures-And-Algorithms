@@ -11,7 +11,7 @@ public class BT10 {
 
     static class Node {//
         int data;//
-        Node left;
+        Node left;//
         Node right;
         Node next;
 
