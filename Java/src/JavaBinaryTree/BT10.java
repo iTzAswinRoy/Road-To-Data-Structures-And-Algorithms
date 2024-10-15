@@ -13,7 +13,7 @@ public class BT10 {
         int data;//
         Node left;//
         Node right;//
-        Node next;
+        Node next;//
 
         Node(int value) {
             this.data = value;
