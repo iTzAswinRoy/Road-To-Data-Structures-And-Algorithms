@@ -12,7 +12,7 @@ public class BT10 {
     static class Node {//
         int data;//
         Node left;//
-        Node right;
+        Node right;//
         Node next;
 
         Node(int value) {
