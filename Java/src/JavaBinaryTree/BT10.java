@@ -10,7 +10,7 @@ public class BT10 {
     private Node root;//
 
     static class Node {//
-        int data;
+        int data;//
         Node left;
         Node right;
         Node next;
