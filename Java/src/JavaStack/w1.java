@@ -12,8 +12,8 @@ package JavaStack;
         if(top == arr.length-1){//
             System.out.println("Stack is full");//
         } else {
-            top++;
-            arr[top] = num;
+            top++;//
+            arr[top] = num;//
         }
     }
     public int pop() {
