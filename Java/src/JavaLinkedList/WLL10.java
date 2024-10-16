@@ -1,21 +1,21 @@
 package JavaLinkedList;
 // Write a Java program to get the first and last occurrence of the specified elements in a linked list.
 public class WLL10 {
-    Node head;
-    Node tail;
-    int size;
+    Node head;//
+    Node tail;//
+    int size;//
     WLL10(){
-        this.size = 0;
+        this.size = 0;//
     }
     public void insert(int value){
-        Node newNode = new Node(value);
-        if(tail == null){
-            newNode.next = head;
+        Node newNode = new Node(value);//
+        if(tail == null){//
+            newNode.next = head;//
             head = newNode;
-            tail = head;
+            tail = head;//
         } else {
-            tail.next = newNode;
-            tail = newNode;
+            tail.next = newNode;//
+            tail = newNode;//
         }
         size++;
 
