@@ -3,7 +3,7 @@ package JavaStack;
 // Find the top element of the stack and check if the stack is empty or not.
  public class w1 {   // Stack class
     private int[] arr;//
-    private int top;
+    private int top;//
     w1(int size) {
         arr = new int[size];
         top = -1;
