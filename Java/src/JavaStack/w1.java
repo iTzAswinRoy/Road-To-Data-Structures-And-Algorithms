@@ -17,7 +17,7 @@ package JavaStack;
         }
     }
     public int pop() {//
-        if(top == -1){
+        if(top == -1){//
             System.out.println("Stack is empty");
             return -1;
         } else {
