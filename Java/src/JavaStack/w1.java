@@ -16,7 +16,7 @@ package JavaStack;
             arr[top] = num;//
         }
     }
-    public int pop() {
+    public int pop() {//
         if(top == -1){
             System.out.println("Stack is empty");
             return -1;
