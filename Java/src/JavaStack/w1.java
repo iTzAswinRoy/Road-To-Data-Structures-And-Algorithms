@@ -8,7 +8,7 @@ package JavaStack;
         arr = new int[size];
         top = -1;//
     }
-    public void push(int num){
+    public void push(int num){//
         if(top == arr.length-1){
             System.out.println("Stack is full");
         } else {
