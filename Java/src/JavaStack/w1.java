@@ -4,7 +4,7 @@ package JavaStack;
  public class w1 {   // Stack class
     private int[] arr;//
     private int top;//
-    w1(int size) {
+    w1(int size) {//
         arr = new int[size];
         top = -1;
     }
