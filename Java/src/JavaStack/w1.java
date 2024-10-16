@@ -6,7 +6,7 @@ package JavaStack;
     private int top;//
     w1(int size) {//
         arr = new int[size];
-        top = -1;
+        top = -1;//
     }
     public void push(int num){
         if(top == arr.length-1){
