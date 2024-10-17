@@ -16,7 +16,7 @@ public class BT10 {
         Node next;//
 
         Node(int value) {//
-            this.data = value;
+            this.data = value;//
             left = null;
             right = null;
             next = null;
