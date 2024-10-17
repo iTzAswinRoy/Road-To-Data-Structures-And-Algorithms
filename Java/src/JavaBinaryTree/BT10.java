@@ -29,7 +29,7 @@ public class BT10 {
         while (leftNode.left != null) {//
             Node currentNode = leftNode;
 
-            while (currentNode != null) {
+            while (currentNode != null) {//
                 // Connect the left child to the right child
                 currentNode.left.next = currentNode.right;
 
