@@ -23,7 +23,7 @@ public class BT10 {
         }
     }
 
-    public void connect(Node root){
+    public void connect(Node root){//
         Node leftNode = root;
 
         while (leftNode.left != null) {
