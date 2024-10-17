@@ -42,7 +42,7 @@ public class BT10 {
                 currentNode = currentNode.next;
             }
             // Move to the next level (leftmost node of the next level)
-            leftNode = leftNode.left;
+            leftNode = leftNode.left;//
         }
     }
 
