@@ -19,7 +19,7 @@ public class BT10 {
             this.data = value;//
             left = null;//
             right = null;//
-            next = null;
+            next = null;//
         }
     }
 
