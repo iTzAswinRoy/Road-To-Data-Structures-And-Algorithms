@@ -24,7 +24,7 @@ public class BT10 {
     }
 
     public void connect(Node root){//
-        Node leftNode = root;
+        Node leftNode = root;//
 
         while (leftNode.left != null) {
             Node currentNode = leftNode;
