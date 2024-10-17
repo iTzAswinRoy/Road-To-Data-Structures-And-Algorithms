@@ -34,7 +34,7 @@ public class BT10 {
                 currentNode.left.next = currentNode.right;
 
                 // Connect the right child to the next node's left child (if any)
-                if(currentNode.next != null) {
+                if(currentNode.next != null) {//
                     currentNode.right.next = currentNode.next.left;
                 }
 
