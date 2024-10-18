@@ -1,5 +1,7 @@
 package JavaSegmentTree;
 
+import java.util.Arrays;
+
 // Build a segment tree that supports:
 // Update: Change the value of a particular index.
 //        Query: Count how many even and odd numbers exist in a given range [L, R].
@@ -48,10 +50,24 @@ public class T5 {
     }
 
     public int queryCount(Node root, int start, int end){
+        if(root.startIndex < start || root.endIndex > end){
+            return 0;
+        }
+
+        if(root.startIndex <= end && root.endIndex >= start){
+
+            int left = queryCount(root.left, start, end);
+            int right = update(root.right, start, end);
+
+
+        }
+    }
+
+    public boolean check(int value){
 
     }
 
-    public int update(int index, int value){
+    public void update(int index, int value){
         update(root, index, value);
     }
 
@@ -69,5 +85,33 @@ public class T5 {
         int right = update(root.right, index, value);
 
         return root.data;
+    }
+
+    public void display(Node root){
+        if(root == null){
+            return;
+        }
+        display(root.left);
+        display(root.right);
+        System.out.print(root.data+ " ");
+    }
+
+    public static void main(String[] args) {
+        T5 obj = new T5();
+
+        int[] arr = {1, 3, 2, 7, 9, 11};
+        System.out.println(Arrays.toString(arr));
+
+        obj.segmentTree(arr);
+        obj.display(obj.root);
+
+        System.out.println();
+        obj.queryCount(0,2);
+
+        obj.update(2,6);
+        obj.display(obj.root);
+
+        System.out.println();
+        obj.queryCount(0,2);
     }
 }
