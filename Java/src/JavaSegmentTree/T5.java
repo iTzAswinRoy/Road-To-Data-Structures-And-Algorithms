@@ -50,4 +50,24 @@ public class T5 {
     public int queryCount(Node root, int start, int end){
 
     }
+
+    public int update(int index, int value){
+        update(root, index, value);
+    }
+
+    private int update(Node root, int index, int value) {
+        if(index < root.startIndex || index > root.endIndex) {
+            return root.data;
+        }
+
+        if(index == root.startIndex  && index == root.endIndex){
+            root.data = value;
+            return root.data;
+        }
+
+        int left = update(root.left, index, value);
+        int right = update(root.right, index, value);
+
+        return root.data;
+    }
 }
