@@ -28,9 +28,26 @@ public class T5 {
         root = segmentTree(arr, 0, arr.length-1);
     }
 
-    public Node segmentTree(int[] arr, int start, int end){
-        if(start == end){
-
+    public Node segmentTree(int[] arr, int start, int end) {
+        if(start == end) {
+            Node leaf = new Node(start, end);
+            leaf.data = arr[start];
         }
+
+        int mid = (start+end)/2;
+        Node newNode = new Node(start, end);
+
+        newNode.left = segmentTree(arr, start, mid);
+        newNode.right = segmentTree(arr, mid+1, end);
+
+        return newNode;
+    }
+
+    public int queryCount(int startIndex, int endIndex){
+        queryCount(root, startIndex, endIndex);
+    }
+
+    public int queryCount(Node root, int start, int end){
+
     }
 }
