@@ -15,26 +15,26 @@ public class BT10 {
         Node right;//
         Node next;//
 
-        Node(int value) {
-            this.data = value;
-            left = null;
-            right = null;
-            next = null;
+        Node(int value) {//
+            this.data = value;//
+            left = null;//
+            right = null;//
+            next = null;//
         }
     }
 
-    public void connect(Node root){
-        Node leftNode = root;
+    public void connect(Node root){//
+        Node leftNode = root;//
 
-        while (leftNode.left != null) {
+        while (leftNode.left != null) {//
             Node currentNode = leftNode;
 
-            while (currentNode != null) {
+            while (currentNode != null) {//
                 // Connect the left child to the right child
                 currentNode.left.next = currentNode.right;
 
                 // Connect the right child to the next node's left child (if any)
-                if(currentNode.next != null) {
+                if(currentNode.next != null) {//
                     currentNode.right.next = currentNode.next.left;
                 }
 
@@ -42,7 +42,7 @@ public class BT10 {
                 currentNode = currentNode.next;
             }
             // Move to the next level (leftmost node of the next level)
-            leftNode = leftNode.left;
+            leftNode = leftNode.left;//
         }
     }
 
