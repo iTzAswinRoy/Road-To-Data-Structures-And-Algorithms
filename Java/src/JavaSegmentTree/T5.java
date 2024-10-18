@@ -11,17 +11,26 @@ package JavaSegmentTree;
 public class T5 {
     Node root;
 
-    class Node{
+    class Node {
         int data;
         Node left;
         Node right;
         int startIndex;
         int endIndex;
 
-     Node(int startIndex, int endIndex){
-         this.startIndex = startIndex;
-         this.endIndex = endIndex;
-     }
+        Node(int startIndex, int endIndex) {
+            this.startIndex = startIndex;
+            this.endIndex = endIndex;
+        }
+    }
 
+    public void segmentTree(int[] arr) {
+        root = segmentTree(arr, 0, arr.length-1);
+    }
+
+    public Node segmentTree(int[] arr, int start, int end){
+        if(start == end){
+
+        }
     }
 }
