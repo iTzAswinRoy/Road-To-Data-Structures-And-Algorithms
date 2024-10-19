@@ -23,7 +23,7 @@ class CompanyEmployee {
     public int getSalary() {//
         return salary;//
     }
-    public String getJobTitle() {
+    public String getJobTitle() {//
         return jobTitle;
     }
 }
