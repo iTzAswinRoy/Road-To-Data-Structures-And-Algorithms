@@ -20,7 +20,7 @@ class CompanyEmployee {
     public String getAddress() {//
         return address;//
     }
-    public int getSalary() {
+    public int getSalary() {//
         return salary;
     }
     public String getJobTitle() {
