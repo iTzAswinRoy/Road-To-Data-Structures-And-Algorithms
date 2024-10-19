@@ -21,7 +21,7 @@ class CompanyEmployee {
         return address;//
     }
     public int getSalary() {//
-        return salary;
+        return salary;//
     }
     public String getJobTitle() {
         return jobTitle;
