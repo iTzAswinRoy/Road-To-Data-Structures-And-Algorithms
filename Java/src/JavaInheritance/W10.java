@@ -24,7 +24,7 @@ class CompanyEmployee {
         return salary;//
     }
     public String getJobTitle() {//
-        return jobTitle;
+        return jobTitle;//
     }
 }
 class Manager extends CompanyEmployee{
