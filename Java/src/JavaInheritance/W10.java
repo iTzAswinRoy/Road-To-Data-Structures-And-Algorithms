@@ -29,7 +29,7 @@ class CompanyEmployee {
 }
 class Manager extends CompanyEmployee{//
     Manager(String name, String address, int salary, String jobTitle){
-        super(name, address, salary, jobTitle);
+        super(name, address, salary, jobTitle);//
     }
     public void calculatingBonus(){
         System.out.println("Salary bonus for "+ getJobTitle()+ "is " + (getSalary() * 0.5));
