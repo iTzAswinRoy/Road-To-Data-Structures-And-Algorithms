@@ -33,7 +33,7 @@ class Manager extends CompanyEmployee{//
     }
     public void calculatingBonus(){//
         System.out.println("Salary bonus for "+ getJobTitle()+ "is " + (getSalary() * 0.5));
-    }
+    }//
     public void performanceReport(){
         System.out.println("Performance report for "+ getJobTitle() + " " + getName() + ": Excellent");
     }
