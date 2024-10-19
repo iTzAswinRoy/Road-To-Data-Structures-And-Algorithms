@@ -27,7 +27,7 @@ class CompanyEmployee {
         return jobTitle;//
     }
 }
-class Manager extends CompanyEmployee{
+class Manager extends CompanyEmployee{//
     Manager(String name, String address, int salary, String jobTitle){
         super(name, address, salary, jobTitle);
     }
