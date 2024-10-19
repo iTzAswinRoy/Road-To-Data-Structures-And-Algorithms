@@ -37,7 +37,7 @@ class Manager extends CompanyEmployee{//
     public void performanceReport(){
         System.out.println("Performance report for "+ getJobTitle() + " " + getName() + ": Excellent");
     }
-    public void managingProjects() {
+    public void managingProjects() {//
         System.out.println("Manager " + getName() + " is managing a project.");
     }
 }
