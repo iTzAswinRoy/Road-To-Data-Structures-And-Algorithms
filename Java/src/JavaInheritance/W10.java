@@ -14,7 +14,7 @@ class CompanyEmployee {
         this.salary = salary;//
         this.jobTitle = jobTitle;
     }
-    public String getName() {
+    public String getName() {//
         return name;
     }
     public String getAddress() {
