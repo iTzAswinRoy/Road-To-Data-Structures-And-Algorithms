@@ -4,7 +4,7 @@ import java.util.ArrayList;//
 import java.util.HashMap;//
 
 // Given two arrays, return their intersection. Use hash maps to count occurrences of elements.
-public class H3 {
+public class H3 {//
     public ArrayList<Integer> intersectionElements(int[] data1, int[] data2) {
         HashMap<Integer, Integer> mapCount = new HashMap<>();
 
