@@ -24,7 +24,7 @@ public class H3 {//
             }
         }
 
-        return intersection;
+        return intersection;//
     }
     public static void main(String[] args) {
         H3 obj = new H3();
