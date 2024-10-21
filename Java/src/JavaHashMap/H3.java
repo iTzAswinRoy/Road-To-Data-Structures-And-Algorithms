@@ -16,7 +16,7 @@ public class H3 {//
 
         }
 
-        for (int i = 0; i < data2.length; i++) {
+        for (int i = 0; i < data2.length; i++) {//
 
             if(mapCount.containsKey(data2[i]) && mapCount.get(data2[i]) > 0) {
                 intersection.add(data2[i]);
