@@ -1,7 +1,7 @@
 package JavaHashMap;
 
 import java.util.ArrayList;//
-import java.util.HashMap;
+import java.util.HashMap;//
 
 // Given two arrays, return their intersection. Use hash maps to count occurrences of elements.
 public class H3 {
