@@ -10,7 +10,7 @@ public class H3 {//
 
         ArrayList<Integer> intersection = new ArrayList<>();
 
-        for (int i = 0; i < data1.length; i++) {
+        for (int i = 0; i < data1.length; i++) {//
 
             mapCount.put(data1[i], mapCount.getOrDefault(data1[i], 0) + 1);
 
