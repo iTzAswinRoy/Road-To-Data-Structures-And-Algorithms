@@ -12,13 +12,15 @@ import java.util.Arrays;
 //        - Count even and odd numbers from index 1 to 4.
 public class T5 {
     Node root;
-
     class Node {
+
         int data;
         Node left;
         Node right;
         int startIndex;
         int endIndex;
+        int countOdd;
+        int countEven;
 
         Node(int startIndex, int endIndex) {
             this.startIndex = startIndex;
@@ -33,7 +35,15 @@ public class T5 {
     public Node segmentTree(int[] arr, int start, int end) {
         if(start == end) {
             Node leaf = new Node(start, end);
+
             leaf.data = arr[start];
+
+            if(leaf.data % 2 == 0) {
+                leaf.countEven ++;
+            } else{
+                leaf.countOdd++;
+            }
+            return leaf;
         }
 
         int mid = (start+end)/2;
@@ -42,29 +52,38 @@ public class T5 {
         newNode.left = segmentTree(arr, start, mid);
         newNode.right = segmentTree(arr, mid+1, end);
 
+        newNode.data = newNode.left.data + newNode.right.data;
+        newNode.countEven = newNode.left.countEven + newNode.right.countEven;
+        newNode.countOdd = newNode.left.countOdd + newNode.right.countOdd;
+
         return newNode;
     }
 
-    public int queryCount(int startIndex, int endIndex){
-        queryCount(root, startIndex, endIndex);
+    public void queryCount(int startIndex, int endIndex){
+        Node result = queryCount(root, startIndex, endIndex);
+        System.out.println("Even:"+ result.countEven);
+        System.out.println("Odd:"+ result.countOdd);
     }
 
-    public int queryCount(Node root, int start, int end){
-        if(root.startIndex < start || root.endIndex > end){
-            return 0;
+    public Node queryCount(Node root, int start, int end){
+        if(root.startIndex > end || root.endIndex < start){
+
+            root.countOdd=0;
+            root.countEven=0;
+            return root;
+//            return new Node(0,0);
         }
 
-        if(root.startIndex <= end && root.endIndex >= start){
-
-            int left = queryCount(root.left, start, end);
-            int right = update(root.right, start, end);
-
-
+        if(root.startIndex >= start && root.endIndex <= end) {
+            return root;
         }
-    }
+        Node left = queryCount(root.left, start, end);
+        Node right = queryCount(root.right, start, end);
 
-    public boolean check(int value){
+        root.countEven = left.countEven + right.countEven;
+        root.countOdd = left.countOdd + right.countOdd;
 
+        return root;
     }
 
     public void update(int index, int value){
@@ -77,15 +96,32 @@ public class T5 {
         }
 
         if(index == root.startIndex  && index == root.endIndex){
+            // Adjust counts based on the previous value before the update
+            if (root.data % 2 == 0) {
+                root.countEven--; // Remove old value's contribution to even count
+            } else {
+                root.countOdd--; // Remove old value's contribution to odd count
+            }
+
             root.data = value;
+
+            if(root.data % 2 == 0){
+                root.countEven++;
+            } else {
+                root.countOdd++;
+            }
             return root.data;
         }
 
         int left = update(root.left, index, value);
         int right = update(root.right, index, value);
 
+        root.countEven = root.left.countEven + root.right.countEven;
+        root.countOdd = root.left.countOdd + root.right.countOdd;
+
         return root.data;
     }
+
 
     public void display(Node root){
         if(root == null){
@@ -106,12 +142,12 @@ public class T5 {
         obj.display(obj.root);
 
         System.out.println();
-        obj.queryCount(0,2);
+        obj.queryCount(0,3);
 
-        obj.update(2,6);
+        obj.update(3,6);
         obj.display(obj.root);
 
         System.out.println();
-        obj.queryCount(0,2);
+        obj.queryCount(0,3);
     }
 }
