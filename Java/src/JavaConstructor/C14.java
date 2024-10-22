@@ -36,7 +36,7 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
             return ram;
         }
 
-        public int getStorage() {
+        public int getStorage() {//
             return storage;
         }
 
