@@ -4,9 +4,11 @@ public class WLL1 {
     Node head;
     Node tail;
     int size;
+
     public WLL1(){
         this.size = 0;
     }
+
     public void insertFirst(int value){
         Node newNode = new Node(value);
         newNode.next = head;
@@ -17,6 +19,7 @@ public class WLL1 {
         }
         size++;
     }
+
     public void insertLast(int value){
         if(tail == null){
             insertFirst(value);
@@ -27,11 +30,13 @@ public class WLL1 {
         tail = newNode;
         size++;
     }
+
     public void deleteFirst(){
         Node temp = head;
         head = temp.next;
         size--;
     }
+
     public void deleteLast() {
         Node current = head;
         Node previous = null;
@@ -45,6 +50,7 @@ public class WLL1 {
         }
         size--;
     }
+
     public void deleteNode(int index){
         if(index > size){
             System.out.println("Index out of bound!");
@@ -60,6 +66,7 @@ public class WLL1 {
         }
         size--;
     }
+
     public void display(){
         Node temp = head;
         while (temp != null){
@@ -70,6 +77,7 @@ public class WLL1 {
             }
         }
     }
+
     public class Node{
         int value;
         Node next;
