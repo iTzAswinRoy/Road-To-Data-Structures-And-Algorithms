@@ -3,9 +3,8 @@ package JavaConstructor;
 // Write a class Computer with an inner class Processor. Initialize the Processor using the outer class's constructor.
 public class C14 {      // Creating a class named 'Computer' that contains 'database'
     // Creating instance variables for the class
-
-    private String brand;       // Crating a variable to store the brand
-    private Processor processor;        // Crating a reference variable of class processor
+    private String brand;       // Crating a variable to store the 'brand'
+    private Processor processor;        // Crating a reference variable of class 'processor'
 
     C14(String brand, int ram, int storage, int graphicsCard) {         // Creating a parameterized constructor that takes 3 arguments
         // Initialing values to the instance variables
@@ -24,7 +23,7 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
 
     class Processor {       //
         int ram;        //
-        int storage;
+        int storage;//
         int graphicsCard;
 
         Processor(int ram, int storage, int graphicsCard) {     //
@@ -45,13 +44,12 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
             return graphicsCard;
         }
 
-        public void getProcessorDetails(){
+        public void getProcessorDetails() {
             System.out.println("Processor details:");
             System.out.println("Ram: " + getRam());
             System.out.println("Storage: " + getStorage());
             System.out.println("Graphics card: " + getGraphicsCard());
         }
-
     }
 
     public static void main(String[] args) {
