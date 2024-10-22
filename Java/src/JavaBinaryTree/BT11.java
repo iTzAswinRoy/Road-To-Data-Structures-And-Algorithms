@@ -37,8 +37,10 @@ public class BT11 {
 
     public ArrayList<Integer> rightNode(Node root){
         Queue<Node> queue = new LinkedList<>();
+
         ArrayList<Integer> result = new ArrayList<>();
         queue.offer(root);
+
         while (!queue.isEmpty()) {
             int size = queue.size();
 
