@@ -40,7 +40,7 @@ public class C14 {      // Creating a class named 'Computer' that contains 'data
             return storage;
         }
 
-        public int getGraphicsCard() {
+        public int getGraphicsCard() {//
             return graphicsCard;
         }
 
