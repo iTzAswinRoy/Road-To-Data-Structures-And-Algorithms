@@ -45,12 +45,12 @@ class SavingsAccount extends BankAccount {
 
         bank.deposit(10);
         bank.withdraw(100);
-        System.out.println("Bank account balance is "+bank.getBalance());
+        System.out.println("Bank account balance is " + bank.getBalance());
         System.out.println();
 
         SavingsAccount savings = new SavingsAccount(200);
         savings.deposit(500);
         savings.withdraw(100);
-        System.out.println("Saving's account balance is "+savings.getBalance());
+        System.out.println("Saving's account balance is " + savings.getBalance());
     }
 }
