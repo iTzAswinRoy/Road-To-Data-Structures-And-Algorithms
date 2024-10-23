@@ -9,7 +9,7 @@ package JavaInheritance;
     public void deposit(int amount) {   // Method to deposit the money
         if (amount > 0) {    // Checking if the given money is greater than 0
             balance += amount;      // Adding up the balance the given amount
-            System.out.println("Amount deposited: "+amount);    // Displaying the amount
+            System.out.println("Amount deposited: " + amount);    // Displaying the amount
         } else {
             System.out.println("Invalid amount");   // Condition if the amount doesn't contain any negative value
         }
@@ -25,10 +25,11 @@ package JavaInheritance;
     }
 }
 
-class SavingsAccount extends BankAccount{
+class SavingsAccount extends BankAccount {
     SavingsAccount(int initialBalance) {
         super(initialBalance);
     }
+
     public void withdraw(int amount) {
         if(getBalance() - amount >= 100) {
             super.withdraw(amount);
