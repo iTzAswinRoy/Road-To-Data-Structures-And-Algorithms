@@ -24,6 +24,7 @@ package JavaInheritance;
         return balance;
     }
 }
+
 class SavingsAccount extends BankAccount{
     SavingsAccount(int initialBalance) {
         super(initialBalance);
@@ -36,9 +37,11 @@ class SavingsAccount extends BankAccount{
         }
     }
 }
+
  public class w5 {
     public static void main(String[] args) {
         BankAccount bank = new BankAccount(100);
+
         bank.deposit(10);
         bank.withdraw(100);
         System.out.println("Bank account balance is "+bank.getBalance());
