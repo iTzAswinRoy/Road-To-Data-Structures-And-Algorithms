@@ -13,11 +13,11 @@ public class ImmutablePerson {      // Creating a class named 'ImmutablePerson'
     }
 
     public String getName() {       // Creating a getter method to get the instance variable 'Name'
-        return name;        //
+        return name;
     }
 
     public int getAge() {       // Creating a getter method to get the instance variable 'age'
-        return age;     //
+        return age;
     }
 
     public static void main(String[] args) {        // Main method
