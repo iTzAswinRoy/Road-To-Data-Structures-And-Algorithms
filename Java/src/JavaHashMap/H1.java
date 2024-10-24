@@ -4,7 +4,7 @@ import java.util.HashMap;//
 // Given an array of integers, return the indices of the two numbers that add up to a specific target.
 // Use a hash map to store numbers and their indices.
 public class H1 {       //
-    public static int[] twoSum(int[] array, int target) {        //
+    public static int[] twoSum(int[] array, int target)// {        //
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i <= array.length; i++){
