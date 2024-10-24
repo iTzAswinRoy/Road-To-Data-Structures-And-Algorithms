@@ -14,7 +14,7 @@ public class H1 {       //
                 return new int[]{map.get(complement), i};
             }
             map.put(array[i], i);
-        }
+        }//
         return new int[]{};
     }
 
