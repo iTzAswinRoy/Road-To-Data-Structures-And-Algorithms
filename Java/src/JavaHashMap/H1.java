@@ -15,7 +15,7 @@ public class H1 {       //
             }
             map.put(array[i], i);
         }//
-        return new int[]{};
+        return new int[]{};//
     }
 
     public static void main(String[] args) {
