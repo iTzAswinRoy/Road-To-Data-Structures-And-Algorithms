@@ -9,7 +9,7 @@ public class P1 {//
             for (int j = 0; j < n; j++) {//
                 System.out.print("*");//
             }
-            System.out.println();//
+            System.out.println();       // Giving a new line for each rows
         }
     }
 }
