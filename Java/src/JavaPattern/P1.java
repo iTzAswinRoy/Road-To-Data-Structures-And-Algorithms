@@ -7,7 +7,7 @@ public class P1 {//
         // Creating a nested for loop
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print("*");      //
+                System.out.print("*");      // Printing '*' for each line
             }
             System.out.println();       // Giving a new line for each rows
         }
