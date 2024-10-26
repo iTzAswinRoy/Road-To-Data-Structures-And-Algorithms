@@ -3,7 +3,7 @@ package JavaRecursion.ArrayList;//
 import java.util.ArrayList;//
 
 // Write a recursive function to check if an ArrayList of integers is sorted in ascending order.
-public class CheckSorted {
+public class CheckSorted {//
     public static void main(String[] args) {
         CheckSorted obj = new CheckSorted();
 
