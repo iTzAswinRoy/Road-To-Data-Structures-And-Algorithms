@@ -1,7 +1,7 @@
 package JavaHashMap;
 
 import java.util.ArrayList;//
-import java.util.Arrays;
+import java.util.Arrays;//
 import java.util.HashMap;
 
 // Given an array of strings, group the anagrams together. Use a hash map where the key is a sorted version of the string.
