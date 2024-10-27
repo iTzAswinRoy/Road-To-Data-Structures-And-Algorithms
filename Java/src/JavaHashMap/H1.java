@@ -23,7 +23,7 @@ public class H1 {       //
         int target = 16;//
         int[] result = twoSum(numbArray, target);//
 
-        System.out.println("Indices: " + result[0] + ", " + result[1]);
+        System.out.println("Indices: " + result[0] + ", " + result[1]);//
     }
 }
 
