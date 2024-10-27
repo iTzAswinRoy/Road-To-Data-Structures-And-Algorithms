@@ -19,7 +19,7 @@ public class H1 {       //
     }//
 
     public static void main(String[] args) {//
-        int[] numbArray = {2, 7, 11, 5};
+        int[] numbArray = {2, 7, 11, 5};//
         int target = 16;
         int[] result = twoSum(numbArray, target);
 
