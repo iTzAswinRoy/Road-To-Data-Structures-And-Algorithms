@@ -31,7 +31,7 @@ public class H3 {//
         int[] num1 = {1, 5, 3, 9};//
         int[] num2 = {3, 3, 9, 7, 2, 9, 1};//
 
-        ArrayList<Integer> result = obj.intersectionElements(num1, num2);
+        ArrayList<Integer> result = obj.intersectionElements(num1, num2);//
         System.out.println(result);
     }
 }
