@@ -27,7 +27,7 @@ public class H3 {//
         return intersection;//
     }
     public static void main(String[] args) {//
-        H3 obj = new H3();
+        H3 obj = new H3();//
         int[] num1 = {1, 5, 3, 9};
         int[] num2 = {3, 3, 9, 7, 2, 9, 1};
 
