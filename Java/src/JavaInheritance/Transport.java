@@ -8,6 +8,7 @@ class Vehicle {
     private int year;
     private String fuelType;
     private int fuelEfficiency;
+
     Vehicle(String company, String model, int year, String fuelType, int fuelEfficiency) {
         this.company = company;
         this.model = model;
@@ -15,21 +16,25 @@ class Vehicle {
         this.fuelType = fuelType;
         this.fuelEfficiency = fuelEfficiency;
     }
+
     public String getCompany() {
         return company;
     }
+
     public String getModel() {
         return model;
     }
+
     public String getFuelType() {
         return fuelType;
     }
-    public int getFuelEfficiency(){
+
+    public int getFuelEfficiency() {
         return fuelEfficiency;
     }
 }
 
-class Truck extends Vehicle{
+class Truck extends Vehicle {
     private int distance;
     private int maxSpeed;
 
@@ -38,12 +43,15 @@ class Truck extends Vehicle{
         this.distance = distance;
         this.maxSpeed = maxSpeed;
     }
+
     public int calculatingFuelEfficiency() {
         return getFuelEfficiency();
     }
+
     public int distanceTraveled() {
         return distance;
     }
+
     public int maximumSpeed() {
         return maxSpeed;
     }
@@ -58,12 +66,15 @@ class Car extends Vehicle {
         this.distance = distance;
         this.maxSpeed = maxSpeed;
     }
+
     public int calculatingFuelEfficiency() {
         return getFuelEfficiency();
     }
+
     public int distanceTraveled() {
         return distance;
     }
+
     public int maximumSpeed() {
         return maxSpeed;
     }
@@ -81,9 +92,11 @@ class Motorcycle extends Vehicle {
     public int calculatingFuelEfficiency() {
         return getFuelEfficiency();
     }
+
     public int distanceTraveled() {
         return distance;
     }
+
     public int maximumSpeed() {
         return maxSpeed;
     }
@@ -91,6 +104,7 @@ class Motorcycle extends Vehicle {
 
 public class Transport {
     public static void main(String[] args) {
+
         Car car = new Car("Ford","GT", 1995, "Petrol", 20, 15000, 240);
         Motorcycle bike = new Motorcycle("Ducati", "Panigale",2019 ,"Petrol", 35, 20000, 260);
         Truck truck = new Truck("Ford","L&T", 1998, "Diesel", 12, 600000, 160);
