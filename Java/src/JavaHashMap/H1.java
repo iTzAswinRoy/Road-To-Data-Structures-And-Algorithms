@@ -14,9 +14,9 @@ public class H1 {
                 return new int[]{map.get(complement), i};
             }
             map.put(array[i], i);
-        }//
-        return new int[]{};//
-    }//
+        }
+        return new int[]{};
+    }
 
     public static void main(String[] args) {
         int[] numbArray = {2, 7, 11, 5};
