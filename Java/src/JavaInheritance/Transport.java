@@ -1,8 +1,10 @@
 package JavaInheritance;
+
 // Write a Java program to create a vehicle class hierarchy. The base class should be Vehicle, with subclasses Truck, Car and Motorcycle.
 // Each subclass should have properties such as company, model, year, and fuel type.
 // Implement methods for calculating fuel efficiency, distance traveled, and maximum speed.
 class Vehicle {
+    // Creating instance variables for the class
     private String company;
     private String model;
     private int year;
@@ -35,6 +37,7 @@ class Vehicle {
 }
 
 class Truck extends Vehicle {
+    // Creating instance variables for the class
     private int distance;
     private int maxSpeed;
 
@@ -58,6 +61,7 @@ class Truck extends Vehicle {
 }
 
 class Car extends Vehicle {
+    // Creating instance variables for the class
     private int distance;
     private int maxSpeed;
 
@@ -81,6 +85,7 @@ class Car extends Vehicle {
 }
 
 class Motorcycle extends Vehicle {
+    // Creating instance variables for the class
     private int distance;
     private int maxSpeed;
 
@@ -89,6 +94,7 @@ class Motorcycle extends Vehicle {
         this.distance = distance;
         this.maxSpeed = maxSpeed;
     }
+
     public int calculatingFuelEfficiency() {
         return getFuelEfficiency();
     }
