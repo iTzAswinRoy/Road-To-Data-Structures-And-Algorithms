@@ -1,15 +1,15 @@
 package JavaHashMap;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.ArrayList;//
+import java.util.Arrays;//
+import java.util.HashMap;//
 
 // Given an array of strings, group the anagrams together. Use a hash map where the key is a sorted version of the string.
-public class H2 {
-    public ArrayList<ArrayList<String>> anagramString(String[] str){
-        HashMap<String, ArrayList<String>> map = new HashMap<>();
+public class H2 {//
+    public ArrayList<ArrayList<String>> anagramString(String[] str){//
+        HashMap<String, ArrayList<String>> map = new HashMap<>();//
 
-        for (int i = 0; i < str.length; i++) {
+        for (int i = 0; i < str.length; i++) {//
             char[] ch = str[i].toCharArray();
 
             char[] sortedChar = bubbleSort(ch);
