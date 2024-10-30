@@ -105,6 +105,8 @@ public class WLL1 {
         obj.insertLast(4);
         obj.insertLast(5);
         obj.insertLast(6);
+
+
         System.out.println("Linked list after appending the elements:");
         obj.display();
 
