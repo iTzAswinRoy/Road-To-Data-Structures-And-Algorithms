@@ -36,7 +36,7 @@ public class WLL1 {
         size++;
     }
 
-    public void insertLast(int value){
+    public void insertLast(int value) {     //
         if(tail == null){
             insertFirst(value);
             return;
