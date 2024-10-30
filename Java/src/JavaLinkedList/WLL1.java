@@ -86,10 +86,11 @@ public class WLL1 {
     public void display() {      // Method to display the linked list
         Node temp = head;        // Creating a 'temp' node pointing at head
 
-        while (temp != null){
-            System.out.print(temp.value+"->");
+        while (temp != null) {
+            System.out.print(temp.value + "->");
             temp = temp.next;
-            if (temp == null){
+
+            if (temp == null) {
                 System.out.println("END");
             }
         }
