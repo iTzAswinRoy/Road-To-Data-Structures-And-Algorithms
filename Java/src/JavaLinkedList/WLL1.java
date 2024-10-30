@@ -37,7 +37,7 @@ public class WLL1 {
     }
 
     public void insertLast(int value) {     //
-        if(tail == null){
+        if (tail == null) {
             insertFirst(value);
             return;
         }
@@ -94,7 +94,7 @@ public class WLL1 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         WLL1 obj = new WLL1();
         obj.insertLast(1);
         obj.insertLast(2);
