@@ -23,28 +23,26 @@ public class WLL1 {
 
     public void insertFirst(int value) {        // Method to insert node at first in the doubly linked list
         Node newNode = new Node(value);         // Creating a node by passing the value
+        newNode.next = head;
+        head = newNode;
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            newNode.next = head;
-            head = newNode;     // Assigning value to head
-            tail = head;        // Updating tail as head
-        } else {
-            tail.next = newNode;
-            tail = newNode;
+            tail = head;
         }
         size++;
     }
 
-    public void insertLast(int value) {     //
-        if (tail == null) {
+    public void insertLast(int value) {        // Method to insert node at last
+        // Checking if the tail is not assigned which means linked list is empty
+        if(tail== null){
             insertFirst(value);
-            return;
+        } else{
+            Node newNode = new Node(value);
+            tail.next = newNode;
+            tail = newNode;
+            size++;
         }
-        Node newNode = new Node(value);
-        tail.next = newNode;
-        tail = newNode;
-        size++;
     }
 
     public void deleteFirst(){
