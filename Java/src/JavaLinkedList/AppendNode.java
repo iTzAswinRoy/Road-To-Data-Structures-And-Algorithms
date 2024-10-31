@@ -49,7 +49,7 @@ public class AppendNode {
         Node temp = head;        // Creating a 'temp' node pointing at head
 
         while (temp != null) {
-            System.out.print(temp.value + "->");
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
 
             if (temp == null) {
@@ -62,6 +62,7 @@ public class AppendNode {
         // Creating an object to store the linked list
         AppendNode obj = new AppendNode();
 
+        System.out.println("Original linked list:");
         // Calling the method to insert the node at first
         obj.insertFirst(1);
         obj.insertFirst(2);
