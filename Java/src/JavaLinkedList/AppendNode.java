@@ -74,7 +74,7 @@ public class AppendNode {
 
         // Calling the method to display the linked list
         System.out.println("\nLinked list after appending the elements:");
-        obj.insertLast(0);
+        obj.insertLast(0);      // Calling the method to insert node at last
         obj.display();
 
     }
