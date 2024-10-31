@@ -112,22 +112,6 @@ public class WLL1 {
     }
 
     public static void main(String[] args) {        // Main method
-//        // Creating an object to store the linked list
-//        WLL1 obj = new WLL1();
-//
-//        // Calling the method to insert the node at first
-//        obj.insertLast(1);
-//        obj.insertLast(2);
-//        obj.insertLast(3);
-//        obj.insertLast(4);
-//        obj.insertLast(5);
-//        obj.insertLast(6);
-//
-//        // Calling the method to display the linked list
-//        System.out.println("Linked list after appending the elements:");
-//        obj.display();
-
-
         WLL1 list = new WLL1();
 
         list.insertFirst(10);
