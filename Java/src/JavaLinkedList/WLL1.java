@@ -46,36 +46,53 @@ public class WLL1 {
     }
 
     public void deleteFirst(){
-        Node temp = head;
-        head = temp.next;
-        size--;
+        if (head == null) {
+            System.out.println("List is empty, nothing to delete.");
+        } else {
+            head = head.next;
+        }
     }
 
+    // Method to delete the last node using the tail pointer
     public void deleteLast() {
+        if (head == null) {
+            System.out.println("List is empty, nothing to delete.");
+            return;
+        }
+        // Traverse to the second-last node
         Node current = head;
-        Node previous = null;
-        for (int i = 0; i < size-1; i++) {
-            previous = current;
+
+        while (current.next != tail) {
             current = current.next;
         }
-        if(previous != null) {
-            previous.next = null;
-            tail = previous;
-        }
+        current.next = null;
         size--;
     }
 
-    public void deleteNode(int index){
-        if(index > size){
-            System.out.println("Index out of bound!");
+    public void deleteNode(int index) {
+        if (index < 0 || index >= size) {
+            System.out.println("Index out of bounds!");
+            return;
         }
+
+        if (head == null) {
+            System.out.println("List is empty, nothing to delete.");
+            return;
+        }
+
         Node current = head;
-        Node previous = null;
-        for (int i = 0; i < index; i++) {
-            previous = current;
-            current = current.next;
-        }
-        if(previous!= null){
+
+        // If deleting the head node
+        if (index == 0) {
+            head = head.next;
+        } else {
+            // Traverse to the node just before the one to delete
+            Node previous = null;
+            for (int i = 0; i < index; i++) {
+                previous = current;
+                current = current.next;
+            }
+            // Update the next pointer to skip over the node to delete
             previous.next = current.next;
         }
         size--;
@@ -95,21 +112,41 @@ public class WLL1 {
     }
 
     public static void main(String[] args) {        // Main method
-        // Creating an object to store the linked list
-        WLL1 obj = new WLL1();
+//        // Creating an object to store the linked list
+//        WLL1 obj = new WLL1();
+//
+//        // Calling the method to insert the node at first
+//        obj.insertLast(1);
+//        obj.insertLast(2);
+//        obj.insertLast(3);
+//        obj.insertLast(4);
+//        obj.insertLast(5);
+//        obj.insertLast(6);
+//
+//        // Calling the method to display the linked list
+//        System.out.println("Linked list after appending the elements:");
+//        obj.display();
 
-        // Calling the method to insert the node at first
-        obj.insertLast(1);
-        obj.insertLast(2);
-        obj.insertLast(3);
-        obj.insertLast(4);
-        obj.insertLast(5);
-        obj.insertLast(6);
 
-        // Calling the method to display the linked list
-        System.out.println("Linked list after appending the elements:");
-        obj.display();
+        WLL1 list = new WLL1();
 
+        list.insertFirst(10);
+        list.insertLast(20);
+        list.insertLast(30);
+        list.display(); // Output: 10 -> 20 -> 30 -> null
 
+        list.insertFirst(5);
+        list.display(); // Output: 5 -> 10 -> 20 -> 30 -> null
+
+        list.deleteFirst();
+        list.display(); // Output: 10 -> 20 -> 30 -> null
+
+        list.deleteLast();
+        list.display(); // Output: 10 -> 20 -> null
+
+        list.deleteNode(20);
+        list.display(); // Output: 10 -> null
+
+        list.deleteNode(50); // Node with value 50 not found.
     }
 }
