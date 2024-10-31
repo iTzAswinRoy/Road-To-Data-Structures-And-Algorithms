@@ -17,6 +17,7 @@ public class WLL2 {
         Node newNode = new Node(value);
         newNode.next = head;
         head = newNode;
+
         if(tail == null){
             tail = head;
         }
