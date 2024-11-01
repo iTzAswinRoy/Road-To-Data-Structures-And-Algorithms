@@ -28,7 +28,7 @@ public class AppendNode {
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            tail = head;        // Updating tail as head
+            tail = head;        // Updating the tail as head
         }
         size++;       // Incrementing size by 1
     }
@@ -39,7 +39,7 @@ public class AppendNode {
             insertFirst(value);     // Calling the insert first method to assign the tail
         } else{
             // If the linked list is not empty
-            Node newNode = new Node(value);     // Creating a node by passing the value
+            Node newNode = new Node(value);        // Creating a node by passing the value
             tail.next = newNode;        // Assigning the tail's next pointer to new node
             tail = newNode;         // Updating the tail as new node
             size++;         // Incrementing size by 1
@@ -50,7 +50,7 @@ public class AppendNode {
         Node temp = head;        // Creating a 'temp' node pointing at head
 
         while (temp != null) {      // Iterating the linked list till the 'temp' reaches null
-            System.out.print(temp.value + " -> ");
+            System.out.print(temp.value + " -> ");      // Displaying the current node
             temp = temp.next;       // Moving the pointer to the next node
 
             // Checking if the 'temp' reaches the end
@@ -62,21 +62,23 @@ public class AppendNode {
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
-        AppendNode obj = new AppendNode();
+        AppendNode list = new AppendNode();
 
+        // Calling the method to insert the node in the linked list
+        list.insertFirst(1);
+        list.insertFirst(2);
+        list.insertFirst(3);
+        list.insertFirst(4);
+        list.insertFirst(5);
+        list.insertFirst(6);
+
+        // Displaying the linked list
         System.out.println("Original linked list:");
-        // Calling the method to insert the node at first
-        obj.insertFirst(1);
-        obj.insertFirst(2);
-        obj.insertFirst(3);
-        obj.insertFirst(4);
-        obj.insertFirst(5);
-        obj.insertFirst(6);
-        obj.display();
+        list.display();
 
         // Calling the method to display the linked list
         System.out.println("\nLinked list after appending the elements:");
-        obj.insertLast(0);      // Calling the method to insert node at last
-        obj.display();
+        list.insertLast(0);      // Calling the method to insert node at last
+        list.display();
     }
 }
