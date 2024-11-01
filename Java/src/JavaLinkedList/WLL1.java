@@ -23,114 +23,131 @@ public class WLL1 {
 
     public void insertFirst(int value) {        // Method to insert node at first in the doubly linked list
         Node newNode = new Node(value);         // Creating a node by passing the value
-        newNode.next = head;
-        head = newNode;
+        newNode.next = head;        // Assigning the new node's next pointer to 'head'
+        head = newNode;         // Updating the head as new node
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            tail = head;
+            tail = head;        // Updating the tail as head
         }
-        size++;
+        size++;     // Incrementing size by 1
     }
 
     public void insertLast(int value) {        // Method to insert node at last
         // Checking if the tail is not assigned which means linked list is empty
-        if(tail== null){
-            insertFirst(value);
+        if (tail== null) {
+            insertFirst(value);      // Calling the insert first method to assign the tail
         } else{
-            Node newNode = new Node(value);
-            tail.next = newNode;
-            tail = newNode;
-            size++;
+            // If the linked list is not empty
+            Node newNode = new Node(value);         // Creating a node by passing the value
+            tail.next = newNode;        // Assigning the tail's next pointer to new node
+            tail = newNode;         // Updating the tail as new node
+            size++;         // Incrementing size by 1
         }
     }
 
-    public void deleteFirst(){
+    public void deleteFirst() {         // Method to delete node at first
+        // Checking if the head is null which means the linked list is empty
         if (head == null) {
-            System.out.println("List is empty, nothing to delete.");
+            System.out.println("List is empty, nothing to delete.");        // Displaying the error message
         } else {
-            head = head.next;
+            head = head.next;       // Moving the head pointer to its next node
         }
     }
 
-    // Method to delete the last node using the tail pointer
-    public void deleteLast() {
+
+    public void deleteLast() {         // Method to delete the last node
+        // Checking if the head is null which means the linked list is empty
         if (head == null) {
-            System.out.println("List is empty, nothing to delete.");
-            return;
+            System.out.println("List is empty, nothing to delete.");        // Displaying the error message
+            return;         // Exits the method
         }
         // Traverse to the second-last node
-        Node current = head;
+        Node current = head;        // Creating 'current' pointing at head
 
-        while (current.next != tail) {
+        while (current.next != tail) {          // Iterating the linked list till the 'current' pointer reaches the tail
             current = current.next;
         }
-        current.next = null;
-        size--;
+        current.next = null;        // Here, we're assigning the last node as null
+        size--;         // Decrementing the size by 1
     }
 
-    public void deleteNode(int index) {
-        if (index < 0 || index >= size) {
-            System.out.println("Index out of bounds!");
-            return;
+    public void deleteNode(int index) {         // Method to delete a node at specific index
+        if (index < 0 || index >= size) {       // Checking if the index is in bound
+            System.out.println("Index out of bounds!");     // Displays the error message
+            return;         // Exits the method
         }
 
+        // Checking if the head is null which means the linked list is empty
         if (head == null) {
-            System.out.println("List is empty, nothing to delete.");
-            return;
+            System.out.println("List is empty, nothing to delete.");        // Displays the error message
+            return;       // Exits the method
         }
 
-        Node current = head;
 
         // If deleting the head node
         if (index == 0) {
             head = head.next;
         } else {
             // Traverse to the node just before the one to delete
-            Node previous = null;
-            for (int i = 0; i < index; i++) {
-                previous = current;
-                current = current.next;
+            Node current = head;        // Creating 'current' pointing at head
+            Node previous = null;       // Creating 'previous' pointing at null
+
+            for (int i = 0; i < index; i++) {       // Iterating through the linked list till it reaches the specific index
+                previous = current;      // Updating th previous pointer as current
+                current = current.next;         // Moving the current pointer to the next node
             }
             // Update the next pointer to skip over the node to delete
             previous.next = current.next;
         }
-        size--;
+        size--;         // Decrementing the size by 1
     }
 
     public void display() {      // Method to display the linked list
         Node temp = head;        // Creating a 'temp' node pointing at head
 
-        while (temp != null) {
-            System.out.print(temp.value + "->");
-            temp = temp.next;
+        while (temp != null) {      // Iterating the linked list till the 'temp' reaches null
+            System.out.print(temp.value + " -> ");        // Displaying the current node
+            temp = temp.next;           // Moving the pointer to the next node
 
+            // Checking if the 'temp' reaches the end
             if (temp == null) {
-                System.out.println("END");
+                System.out.println("END");      // Displaying 'END' for reference
             }
         }
     }
 
     public static void main(String[] args) {        // Main method
+        // Creating an object to store the linked list
         WLL1 list = new WLL1();
 
+        // Calling the method to insert the node in the linked list
         list.insertFirst(10);
         list.insertLast(20);
         list.insertLast(30);
-        list.display(); // Output: 10 -> 20 -> 30 -> null
+        list.insertLast(40);
+        list.insertLast(50);
 
+        // Calling the method to display the linked list
+        System.out.println("\nOriginal linked list:");
+        list.display();
+
+        // Calling the method to insert the node in the linked list
+
+        System.out.println("\nInserting a node at first:");
         list.insertFirst(5);
-        list.display(); // Output: 5 -> 10 -> 20 -> 30 -> null
+        list.display();
 
+        System.out.println("\nDeleting a node at first:");
         list.deleteFirst();
-        list.display(); // Output: 10 -> 20 -> 30 -> null
+        list.display();
 
+        System.out.println("\nDeleting the node at last:");
         list.deleteLast();
-        list.display(); // Output: 10 -> 20 -> null
+        list.display();
 
-        list.deleteNode(20);
-        list.display(); // Output: 10 -> null
-
-        list.deleteNode(50); // Node with value 50 not found.
+        System.out.println("\nDeleting a node at specific index at 2:");
+        list.deleteNode(2);
+        list.display();
     }
 }
