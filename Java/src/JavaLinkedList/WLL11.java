@@ -7,7 +7,7 @@ public class WLL11 {//
     WLL11(){//
         this.size = 0;//
     }
-    public void insertNode(int value){
+    public void insertNode(int value){//
         Node newNode = new Node(value);
         if(tail == null){
             newNode.next = head;
