@@ -2,7 +2,7 @@ package JavaLinkedList;
 // Write a Java program to display elements and their positions in a linked list.
 public class WLL11 {//
     Node head;//
-    Node tail;
+    Node tail;//
     int size;//
     WLL11(){
         this.size = 0;
