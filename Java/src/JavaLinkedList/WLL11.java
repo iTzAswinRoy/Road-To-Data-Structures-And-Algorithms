@@ -4,7 +4,7 @@ public class WLL11 {//
     Node head;//
     Node tail;//
     int size;//
-    WLL11(){
+    WLL11(){//
         this.size = 0;
     }
     public void insertNode(int value){
