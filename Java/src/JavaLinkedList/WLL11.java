@@ -5,7 +5,7 @@ public class WLL11 {//
     Node tail;//
     int size;//
     WLL11(){//
-        this.size = 0;
+        this.size = 0;//
     }
     public void insertNode(int value){
         Node newNode = new Node(value);
