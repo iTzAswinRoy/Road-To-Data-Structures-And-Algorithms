@@ -3,7 +3,7 @@ package JavaHashSet;
 import java.util.HashSet;//
 
 // Write a program to check if one HashSet is a subset of another.
-public class HS10 {
+public class HS10 {//
     public static void main(String[] args) {
         // Create two HashSet objects
         HashSet<Integer> set1 = new HashSet<>();
