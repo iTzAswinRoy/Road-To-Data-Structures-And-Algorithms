@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program to check if one HashSet is a subset of another.
 public class HS10 {
