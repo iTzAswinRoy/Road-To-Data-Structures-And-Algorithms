@@ -15,7 +15,7 @@ public class HS10 {//
         set1.add(3);//
 
         // Add elements to set2
-        set2.add(1);
+        set2.add(1);//
         set2.add(2);
 
         if(set1.containsAll(set2)){
