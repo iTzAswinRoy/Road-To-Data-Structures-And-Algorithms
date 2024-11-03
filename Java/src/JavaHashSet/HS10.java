@@ -4,7 +4,7 @@ import java.util.HashSet;//
 
 // Write a program to check if one HashSet is a subset of another.
 public class HS10 {//
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         // Create two HashSet objects
         HashSet<Integer> set1 = new HashSet<>();
         HashSet<Integer> set2 = new HashSet<>();
