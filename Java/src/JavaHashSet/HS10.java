@@ -16,7 +16,7 @@ public class HS10 {//
 
         // Add elements to set2
         set2.add(1);//
-        set2.add(2);
+        set2.add(2);//
 
         if(set1.containsAll(set2)){
             System.out.println("set-2 is a subset of set-1.");
