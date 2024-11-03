@@ -12,7 +12,7 @@ public class HS10 {//
         // Add elements to set1
         set1.add(1);//
         set1.add(2);
-        set1.add(3);
+        set1.add(3);//
 
         // Add elements to set2
         set2.add(1);
