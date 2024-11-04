@@ -62,7 +62,7 @@ public class BT10 {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         BT10 obj = new BT10();
 
         Node root = new Node(1);
