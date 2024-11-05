@@ -41,20 +41,6 @@ public class LinkedListUsingStack {
         size++;      // Incrementing size by 1
     }
 
-    public void display() {      // Method to display the linked list
-        Node temp = head;        // Creating a 'temp' node pointing at head
-
-        while (temp != null) {      // Iterating the linked list till the 'temp' reaches null
-            System.out.print(temp.value + " -> ");        // Displaying the current node
-            temp = temp.next;           // Moving the pointer to the next node
-
-            // Checking if the 'temp' reaches the end
-            if (temp == null) {
-                System.out.println("END");      // Displaying 'END' for reference
-            }
-        }
-    }
-
     public void push(int num) {         // Method to insert element in the stack
         // Checking if the stack is full by comparing the size of the array
         if(top == arr.length) {
@@ -78,8 +64,9 @@ public class LinkedListUsingStack {
     }
 
     public void reverseLinkedListUsingStack() {        // Method to reverse the linked list using stack
-        LinkedListUsingStack Stack = new LinkedListUsingStack(size);
+        LinkedListUsingStack Stack = new LinkedListUsingStack(size);        // Creating a stack by passing the size
         Node temp = head;
+
         for (int i = 0; i < size; i++) {
             Stack.push(temp.value);
             temp = temp.next;
@@ -88,6 +75,20 @@ public class LinkedListUsingStack {
         for (int i = 0; i < size; i++) {
             temp.value = Stack.pop();   // Here it's replacing the values with the linked list and stack
             temp = temp.next;
+        }
+    }
+
+    public void display() {      // Method to display the linked list
+        Node temp = head;        // Creating a 'temp' node pointing at head
+
+        while (temp != null) {      // Iterating the linked list till the 'temp' reaches null
+            System.out.print(temp.value + " -> ");        // Displaying the current node
+            temp = temp.next;           // Moving the pointer to the next node
+
+            // Checking if the 'temp' reaches the end
+            if (temp == null) {
+                System.out.println("END");      // Displaying 'END' for reference
+            }
         }
     }
 
