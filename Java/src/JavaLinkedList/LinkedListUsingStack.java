@@ -65,7 +65,7 @@ public class LinkedListUsingStack {
 
     public void reverseLinkedListUsingStack() {        // Method to reverse the linked list using stack
         LinkedListUsingStack Stack = new LinkedListUsingStack(size);        // Creating a stack by passing the size
-        Node temp = head;
+        Node temp = head;       // Creating a 'temp' node pointing at head
 
         for (int i = 0; i < size; i++) {
             Stack.push(temp.value);
