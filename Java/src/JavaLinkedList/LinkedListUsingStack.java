@@ -56,16 +56,16 @@ public class LinkedListUsingStack {
     }
 
     public void push(int num) {         // Method to insert element in the stack
-        // Checking if the
+        // Checking if the stack is full by comparing the size of the array
         if(top == arr.length) {
             System.out.println("Stack is full");
         } else {
-            top++;
-            arr[top] = num;
+            top++;      // Incrementing 'top' by 1
+            arr[top] = num;     // Assigning the value in the stack
         }
     }
 
-    public int pop() {
+    public int pop() {      //
         if(top == -1) {
             System.out.println("Stack is empty");
             return -1;
