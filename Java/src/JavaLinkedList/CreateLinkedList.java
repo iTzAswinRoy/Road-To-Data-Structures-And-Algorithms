@@ -1,13 +1,13 @@
 package JavaLinkedList;
 
 // Write a Java program to append the specified element to the end of a linked list.
-public class WLL1 {
+public class CreateLinkedList {
     // Creating instance variables for the class
     private int size;       // Creating a variable to store size
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
 
-    public WLL1() {      // Creating a default constructor
+    public CreateLinkedList() {      // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -21,7 +21,7 @@ public class WLL1 {
         }
     }
 
-    public void insertFirst(int value) {        // Method to insert node at first in the doubly linked list
+    public void insertFirst(int value) {        // Method to insert node at first in the linked list
         Node newNode = new Node(value);         // Creating a node by passing the value
         newNode.next = head;        // Assigning the new node's next pointer to 'head'
         head = newNode;         // Updating the head as new node
@@ -84,7 +84,6 @@ public class WLL1 {
             return;       // Exits the method
         }
 
-
         // If deleting the head node
         if (index == 0) {
             head = head.next;
@@ -119,7 +118,7 @@ public class WLL1 {
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
-        WLL1 list = new WLL1();
+        CreateLinkedList list = new CreateLinkedList();
 
         // Calling the method to insert the node in the linked list
         list.insertFirst(10);
@@ -133,19 +132,21 @@ public class WLL1 {
         list.display();
 
         // Calling the method to insert the node in the linked list
-
         System.out.println("\nInserting a node at first:");
         list.insertFirst(5);
         list.display();
 
+        // Calling the method to delete the node at first
         System.out.println("\nDeleting a node at first:");
         list.deleteFirst();
         list.display();
 
+        // Calling the method to delete the node at last
         System.out.println("\nDeleting the node at last:");
         list.deleteLast();
         list.display();
 
+        // Calling the method to delete the node at specific index
         System.out.println("\nDeleting a node at specific index at 2:");
         list.deleteNode(2);
         list.display();
