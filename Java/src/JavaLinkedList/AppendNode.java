@@ -21,7 +21,7 @@ public class AppendNode {
         }
     }
 
-    public void insertFirst(int value) {        // Method to insert node at first in the doubly linked list
+    public void insertFirst(int value) {        // Method to insert node at first in the linked list
         Node newNode = new Node(value);         // Creating a node by passing the value
         newNode.next = head;        // Assigning the new node's next pointer to 'head'
         head = newNode;         // Updating the head as new node
