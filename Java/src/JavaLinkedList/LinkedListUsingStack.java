@@ -65,12 +65,16 @@ public class LinkedListUsingStack {
         }
     }
 
-    public int pop() {      //
+    public int pop() {      // Method to remove element at the top of the stack
+        // Checking if the stack is empty
         if(top == -1) {
             System.out.println("Stack is empty");
             return -1;
+
+        } else {
+            // Removing the top element in the stack
+            return arr[top--];      // Reducing the size by 1
         }
-        return arr[top--];
     }
 
     public void reverseLinkedListUsingStack() {
