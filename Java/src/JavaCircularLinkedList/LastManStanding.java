@@ -11,7 +11,8 @@ public class LastManStanding {     // Circular linked list class
         this.size = 0;      // Initializing the size to 0
     }
 
-    class Node {      // Creating a Node class
+    class Node {      // Creating a Node class    // Creating instance variables for the class
+
         private int value;      // Creating an instance variable to store a value for the node
         private Node next;      // Creating a reference, pointing towards the next node
 
