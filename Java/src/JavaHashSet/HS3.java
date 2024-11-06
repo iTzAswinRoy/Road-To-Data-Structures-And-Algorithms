@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a method to check whether a given element exists in a HashSet.
 public class HS3 {
