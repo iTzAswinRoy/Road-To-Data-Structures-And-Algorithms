@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program to remove a specified element from a HashSet.
 public class HS2 {//
