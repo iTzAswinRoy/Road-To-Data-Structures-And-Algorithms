@@ -4,7 +4,7 @@ import java.util.HashSet;
 
 // Write a program to remove a specified element from a HashSet.
 public class HS2 {//
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         HashSet<Integer> set = new HashSet<>();//
 
         set.add(1);
