@@ -28,7 +28,7 @@ public class CreateLinkedList {
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if (tail == null) {
-            tail = head;        // Updating the tail as head
+            tail = head;        // Updating the head as tail
         }
         size++;     // Incrementing size by 1
     }
