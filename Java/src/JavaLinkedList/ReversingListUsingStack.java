@@ -1,7 +1,7 @@
 package JavaLinkedList;
 
 // Reverse a singly linked list using stack.
-public class LinkedListUsingStack {
+public class ReversingListUsingStack {
     // Creating instance variables for the class
     private int size;       // Creating a variable to store size
     private Node head;      // Crating a reference variable 'head' of class Node type
@@ -9,11 +9,11 @@ public class LinkedListUsingStack {
     private int[] arr;      // Creating an array representing the stack
     private int top;        // Creating a 'top' index for stack operating
 
-    LinkedListUsingStack() {         // Creating a default constructor
+    ReversingListUsingStack() {         // Creating a default constructor
         this.size = 0;          // Initializing the size to 0
     }
 
-    LinkedListUsingStack(int size) {        // Creating a parameter constructor by passing the value
+    ReversingListUsingStack(int size) {        // Creating a parameter constructor by passing the value
         arr = new int[size];        // Initializing the size of the array
         top = -1;       // Initializing 'top' index for stack operating
     }
@@ -36,7 +36,7 @@ public class LinkedListUsingStack {
 
         // Checking if the tail is null. If it's null, then the list contains only one node
         if(tail == null) {
-            tail = head;        // Updating the tail as head
+            tail = head;        // Updating the head as tail
         }
         size++;      // Incrementing size by 1
     }
@@ -45,6 +45,7 @@ public class LinkedListUsingStack {
         // Checking if the stack is full by comparing the size of the array
         if(top == arr.length) {
             System.out.println("Stack is full");
+
         } else {
             top++;      // Incrementing 'top' by 1
             arr[top] = num;     // Assigning the value in the stack
@@ -64,17 +65,19 @@ public class LinkedListUsingStack {
     }
 
     public void reverseLinkedListUsingStack() {        // Method to reverse the linked list using stack
-        LinkedListUsingStack Stack = new LinkedListUsingStack(size);        // Creating a stack by passing the size
+        ReversingListUsingStack Stack = new ReversingListUsingStack(size);        // Creating a stack by passing the size
         Node temp = head;       // Creating a 'temp' node pointing at head
 
-        for (int i = 0; i < size; i++) {
-            Stack.push(temp.value);
-            temp = temp.next;
+        for (int i = 0; i < size; i++) {        // Iterating through the linked list
+            Stack.push(temp.value);         // Pushing the elements on to the stack
+            temp = temp.next;       // Moving the pointer to the next node
         }
         temp = head;    // Reassigning the temp pointing to head. Otherwise, temp will be at tail and will show null
-        for (int i = 0; i < size; i++) {
-            temp.value = Stack.pop();   // Here it's replacing the values with the linked list and stack
-            temp = temp.next;
+
+
+        for (int i = 0; i < size; i++) {        // Iterating through the linked list
+            temp.value = Stack.pop();       // Here it's replacing the values with the linked list and stack
+            temp = temp.next;       // Moving the pointer to the next node
         }
     }
 
@@ -93,19 +96,25 @@ public class LinkedListUsingStack {
     }
 
     public static void main(String[] args) {
-        LinkedListUsingStack linkedList = new LinkedListUsingStack();
+        // Creating an object to store the linked list
+        ReversingListUsingStack linkedList = new ReversingListUsingStack();
 
+        // Calling the method to insert the node in the linked list
         linkedList.insertFirst(1);
         linkedList.insertFirst(2);
         linkedList.insertFirst(3);
         linkedList.insertFirst(4);
         linkedList.insertFirst(5);
 
+        // Calling the method to display the linked list
         System.out.println("Original linked list:");
         linkedList.display();
 
-        System.out.println("\nLinked list after reversing using stack:");
+        // Calling the method to reverse the linked list using stack
         linkedList.reverseLinkedListUsingStack();
+
+        // Calling the method to display the linked list
+        System.out.println("\nLinked list after reversing using stack:");
         linkedList.display();
     }
 }
