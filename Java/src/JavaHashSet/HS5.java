@@ -3,7 +3,7 @@ package JavaHashSet;
 import java.util.HashSet;//
 
 // Write a program that clears all elements from a HashSet.
-public class HS5 {
+public class HS5 {//
     public static void main(String[] args) {
         HS5 obj = new HS5();
         HashSet<Integer> set = new HashSet<>();
