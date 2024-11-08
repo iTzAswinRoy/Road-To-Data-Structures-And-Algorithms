@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program that clears all elements from a HashSet.
 public class HS5 {
