@@ -18,7 +18,7 @@ public class HS3 {//
         System.out.println(obj.checkingElement(set, 5));//
     }
 
-    public boolean checkingElement(HashSet<Integer> set, int data){
+    public boolean checkingElement(HashSet<Integer> set, int data){//
         System.out.println("\nChecking if the element " + data + " is preset in the hash set:");
         return set.contains(data);
     }
