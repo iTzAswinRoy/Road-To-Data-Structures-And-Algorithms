@@ -8,7 +8,7 @@ public class HS3 {//
         HS3 obj = new HS3();//
         HashSet<Integer> set = new HashSet<>();//
 
-        set.add(1);
+        set.add(1);//
         set.add(2);
         set.add(3);//
         set.add(4);
