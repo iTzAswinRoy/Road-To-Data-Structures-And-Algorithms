@@ -11,7 +11,7 @@ public class HS3 {//
         set.add(1);//
         set.add(2);//
         set.add(3);//
-        set.add(4);
+        set.add(4);//
         set.add(5);//
 
         System.out.println("Original hash set:\n"+ set);
