@@ -3,7 +3,7 @@ package JavaHashSet;
 import java.util.HashSet;//
 
 //Write a program to find the union of two HashSets (i.e., all unique elements from both sets).
-public class HS8 {
+public class HS8 {//
     public static void main(String[] args) {
     HS8 obj = new HS8();
     HashSet<Integer> set1 = new HashSet<>();
