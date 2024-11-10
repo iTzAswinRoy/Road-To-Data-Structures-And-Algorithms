@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 //Write a program to find the union of two HashSets (i.e., all unique elements from both sets).
 public class HS8 {
