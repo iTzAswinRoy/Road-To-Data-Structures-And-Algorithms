@@ -14,7 +14,7 @@ public class HS4 {//
         set.add(4);//
         set.add(5);//
 
-        obj.iterator(set);
+        obj.iterator(set);//
     }
 
     public void iterator(HashSet<Integer> data){
