@@ -3,7 +3,7 @@ package JavaHashSet;
 import java.util.HashSet;//
 
 // Write a program that iterates over a HashSet and prints each element.
-public class HS4 {
+public class HS4 {//
     public static void main(String[] args) {
         HS4 obj = new HS4();
         HashSet<Integer> set = new HashSet<>();
