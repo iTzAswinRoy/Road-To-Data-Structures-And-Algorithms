@@ -6,7 +6,7 @@ import java.util.HashSet;//
 public class HS4 {//
     public static void main(String[] args) {
         HS4 obj = new HS4();//
-        HashSet<Integer> set = new HashSet<>();
+        HashSet<Integer> set = new HashSet<>();//
 
         set.add(1);
         set.add(2);
