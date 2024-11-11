@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program that iterates over a HashSet and prints each element.
 public class HS4 {
