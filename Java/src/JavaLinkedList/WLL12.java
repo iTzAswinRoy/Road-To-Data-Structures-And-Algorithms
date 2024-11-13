@@ -14,7 +14,8 @@ public class WLL12 {
         // Creating instance variables for the class
         int value;      // Creating an instance variable to store a value of the node
         Node next;      // Creating a reference variable, pointing towards the next node
-        Node(int value){
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
             this.value = value;
         }
     }
