@@ -12,7 +12,7 @@ public class WLL12 {
 
     public class Node {      // Creating a class for node
         // Creating instance variables for the class
-        int value;
+        int value;       // Creating an instance variable to store a value of the node
         Node next;
         Node(int value){
             this.value = value;
