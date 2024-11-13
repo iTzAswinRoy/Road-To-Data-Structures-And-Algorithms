@@ -11,6 +11,7 @@ public class WLL12 {
     }
 
     public class Node {      // Creating a class for node
+        // Creating instance variables for the class
         int value;
         Node next;
         Node(int value){
