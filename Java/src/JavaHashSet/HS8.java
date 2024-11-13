@@ -1,18 +1,18 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 //Write a program to find the union of two HashSets (i.e., all unique elements from both sets).
-public class HS8 {
-    public static void main(String[] args) {
-    HS8 obj = new HS8();
-    HashSet<Integer> set1 = new HashSet<>();
+public class HS8 {//
+    public static void main(String[] args) {//
+    HS8 obj = new HS8();//
+    HashSet<Integer> set1 = new HashSet<>();//
 
-        set1.add(1);
-        set1.add(2);
-        set1.add(3);
-        set1.add(4);
-        set1.add(5);
+        set1.add(1);//
+        set1.add(2);//
+        set1.add(3);//
+        set1.add(4);//
+        set1.add(5);//
 
     HashSet<Integer> set2 = new HashSet<>();
 
