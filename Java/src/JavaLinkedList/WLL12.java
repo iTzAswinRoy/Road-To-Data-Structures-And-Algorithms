@@ -1,6 +1,7 @@
 package JavaLinkedList;
 // Write a Java program to remove a specified element from a linked list.
 public class WLL12 {
+    // Creating instance variables for the class
     Node head;
     Node tail;
     int size;
