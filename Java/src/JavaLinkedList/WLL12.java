@@ -10,6 +10,14 @@ public class WLL12 {
         this.size = 0;      // Initializing the size to 0
     }
 
+    public class Node {      // Creating a class for node
+        int value;
+        Node next;
+        Node(int value){
+            this.value = value;
+        }
+    }
+
     public void insertNode(int value){
         Node newNode = new Node(value);
         if(tail == null){
@@ -49,13 +57,6 @@ public class WLL12 {
             }
             prev = curr;
             curr = curr.next;
-        }
-    }
-    public class Node{
-        int value;
-        Node next;
-        Node(int value){
-            this.value = value;
         }
     }
     public static void main(String[] args) {
