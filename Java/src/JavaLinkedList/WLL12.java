@@ -38,7 +38,7 @@ public class WLL12 {
             System.out.print(temp.value+"->");//
             temp = temp.next;//
         }
-        if(temp == null){
+        if(temp == null){//
             System.out.println("END");
         }
     }
