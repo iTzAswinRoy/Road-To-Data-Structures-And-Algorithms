@@ -31,7 +31,7 @@ public class WLL12 {
             tail = newNode;
         }
         size++;
-    }
+    }//
     public void display(){//
         Node temp = head;//
         for (int i = 0; i < size; i++) {//
