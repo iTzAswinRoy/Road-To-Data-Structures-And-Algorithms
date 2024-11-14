@@ -39,7 +39,7 @@ public class WLL12 {
             temp = temp.next;//
         }
         if(temp == null){//
-            System.out.println("END");
+            System.out.println("END");//
         }
     }
     public void removeElement(int index){
