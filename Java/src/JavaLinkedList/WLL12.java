@@ -33,7 +33,7 @@ public class WLL12 {
         size++;
     }
     public void display(){//
-        Node temp = head;
+        Node temp = head;//
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+"->");
             temp = temp.next;
