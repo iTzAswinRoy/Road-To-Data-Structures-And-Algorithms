@@ -11,7 +11,7 @@ public class WLL16 {
     }
     public void insertNode(int value){//
         Node newNode = new Node(value);//
-        if(tail == null){
+        if(tail == null){//
             newNode.next = head;
             head = newNode;
             tail = head;
