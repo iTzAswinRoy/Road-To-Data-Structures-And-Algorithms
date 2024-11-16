@@ -6,7 +6,7 @@ public class WLL16 {
     Node head;//
     Node tail;//
     int size;//
-    WLL16(){
+    WLL16(){//
         this.size = 0;
     }
     public void insertNode(int value){
