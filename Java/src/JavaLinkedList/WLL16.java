@@ -7,7 +7,7 @@ public class WLL16 {
     Node tail;//
     int size;//
     WLL16(){//
-        this.size = 0;
+        this.size = 0;//
     }
     public void insertNode(int value){
         Node newNode = new Node(value);
