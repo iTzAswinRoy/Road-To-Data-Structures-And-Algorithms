@@ -4,7 +4,7 @@ import java.util.Random;
 // Write a Java program to shuffle elements in a linked list.
 public class WLL16 {
     Node head;//
-    Node tail;
+    Node tail;//
     int size;
     WLL16(){
         this.size = 0;
