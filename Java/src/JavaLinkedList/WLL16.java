@@ -5,7 +5,7 @@ import java.util.Random;
 public class WLL16 {
     Node head;//
     Node tail;//
-    int size;
+    int size;//
     WLL16(){
         this.size = 0;
     }
