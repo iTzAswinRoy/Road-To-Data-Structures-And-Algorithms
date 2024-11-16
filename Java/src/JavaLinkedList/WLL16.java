@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.Random;
 // Write a Java program to shuffle elements in a linked list.
 public class WLL16 {
-    Node head;
+    Node head;//
     Node tail;
     int size;
     WLL16(){
