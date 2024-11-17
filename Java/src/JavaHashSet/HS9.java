@@ -14,7 +14,7 @@ public class HS9 {//
         set1.add(3);//
 
         // Add elements to set2
-        set2.add(3);
+        set2.add(3);//
         set2.add(4);
         set2.add(5);
 
