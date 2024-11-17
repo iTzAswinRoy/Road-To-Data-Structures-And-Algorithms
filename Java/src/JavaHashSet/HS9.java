@@ -1,6 +1,6 @@
 package JavaHashSet;
 
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program that finds the difference between two HashSets (i.e., elements present in one set but not the other).
 public class HS9 {
