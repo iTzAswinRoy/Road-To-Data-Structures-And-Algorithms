@@ -15,7 +15,7 @@ public class HS9 {//
 
         // Add elements to set2
         set2.add(3);//
-        set2.add(4);
+        set2.add(4);//
         set2.add(5);
 
         HashSet<Integer> difference = new HashSet<>(set1);
