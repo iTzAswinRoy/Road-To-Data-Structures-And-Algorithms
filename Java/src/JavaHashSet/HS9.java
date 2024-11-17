@@ -6,7 +6,7 @@ import java.util.HashSet;//
 public class HS9 {//
     public static void main(String[] args) {//
         // Create two HashSet objects
-        HashSet<Integer> set1 = new HashSet<>();
+        HashSet<Integer> set1 = new HashSet<>();//
         HashSet<Integer> set2 = new HashSet<>();
 
         set1.add(1);
