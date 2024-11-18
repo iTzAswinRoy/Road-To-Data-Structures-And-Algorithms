@@ -28,7 +28,7 @@ public class WLL16 {
             temp = temp.next;//
         }
         if(temp == null){//
-            System.out.println("END");
+            System.out.println("END");//
         }
     }
     public ArrayList<Integer> convertToArrayList(){
