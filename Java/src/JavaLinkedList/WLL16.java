@@ -19,7 +19,7 @@ public class WLL16 {
             tail.next = newNode;//
             tail = newNode;//
         }
-        size++;
+        size++;//
     }
     public void display(){
         Node temp = head;
