@@ -16,7 +16,7 @@ public class WLL16 {
             head = newNode;//
             tail = head;//
         }else {
-            tail.next = newNode;
+            tail.next = newNode;//
             tail = newNode;//
         }
         size++;
