@@ -21,8 +21,8 @@ public class WLL16 {
         }
         size++;//
     }
-    public void display(){
-        Node temp = head;
+    public void display(){//
+        Node temp = head;//
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+"->");
             temp = temp.next;
