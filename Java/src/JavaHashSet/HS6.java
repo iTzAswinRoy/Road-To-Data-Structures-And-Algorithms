@@ -1,7 +1,7 @@
 package JavaHashSet;
 
 import java.util.Arrays;//
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program that converts an array of strings into a HashSet to remove duplicates.
 public class HS6 {
