@@ -12,7 +12,7 @@ public class HS6 {//
         System.out.println("Given array:\n"+ Arrays.toString(array));//
 
         for (int i = 0; i < array.length; i++) {
-            set.add(array[i]);
+            set.add(array[i]);//
         }
         System.out.println("\nConverting arrays into hash map:\n"+set);
     }
