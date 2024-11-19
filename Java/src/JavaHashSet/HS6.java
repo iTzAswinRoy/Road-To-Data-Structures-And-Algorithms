@@ -14,6 +14,6 @@ public class HS6 {//
         for (int i = 0; i < array.length; i++) {
             set.add(array[i]);//
         }
-        System.out.println("\nConverting arrays into hash map:\n"+set);
+        System.out.println("\nConverting arrays into hash map:\n"+set);//
     }
 }
