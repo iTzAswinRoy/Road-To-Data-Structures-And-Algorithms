@@ -9,7 +9,7 @@ public class HS6 {//
         HashSet<Integer> set = new HashSet<>();//
 
         int[] array = {1,5,2,7,2,5,1};//
-        System.out.println("Given array:\n"+ Arrays.toString(array));
+        System.out.println("Given array:\n"+ Arrays.toString(array));//
 
         for (int i = 0; i < array.length; i++) {
             set.add(array[i]);
