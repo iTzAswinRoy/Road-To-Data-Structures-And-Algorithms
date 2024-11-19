@@ -5,7 +5,7 @@ import java.util.HashSet;//
 
 // Write a program that converts an array of strings into a HashSet to remove duplicates.
 public class HS6 {//
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         HashSet<Integer> set = new HashSet<>();
 
         int[] array = {1,5,2,7,2,5,1};
