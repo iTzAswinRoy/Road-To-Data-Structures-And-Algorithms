@@ -1,13 +1,13 @@
 package JavaLinkedList;
 
 // Write a Java program to get the first and last occurrence of the specified elements in a linked list.
-public class WLL10 {
+public class RetrievingFirstAAndLastElement {
     // Creating instance variables for the class
     int size;       // Creating a variable to store size
     Node head;      // Crating a reference variable 'head' of class Node type
     Node tail;      // Crating a reference variable 'tail' of class Node type
 
-    WLL10() {       // Creating a default constructor
+    RetrievingFirstAAndLastElement() {       // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -28,7 +28,6 @@ public class WLL10 {
         // Checking if the tail is null, then the linked list is empty
         if(tail == null) {
             // Updating the head
-
             newNode.next = head;        // Assigning the new node's next pointer to 'head'
             head = newNode;         // Updating the head as new node
             tail = head;        // Updating the head as tail
@@ -64,7 +63,7 @@ public class WLL10 {
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
-        WLL10 linkedList = new WLL10();
+        RetrievingFirstAAndLastElement linkedList = new RetrievingFirstAAndLastElement();
 
         // Calling the method to insert the node in the linked list
         linkedList.insert(1);
