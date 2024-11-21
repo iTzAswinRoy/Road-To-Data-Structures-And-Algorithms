@@ -1,4 +1,5 @@
 package JavaLinkedList;
+
 // Write a Java program to display elements and their positions in a linked list.
 public class WLL11 {
     // Creating instance variables for the class
@@ -38,10 +39,11 @@ public class WLL11 {
         size++;      // Incrementing size by 1
     }
 
-    public void elementPosition(int index) {
-        if(index > size) {
+    public void elementPosition(int index) {        // Method to find the position of the node
+        // Checking if the index is out of bound or not
+        if (index > size) {
             System.out.println("Index out of bound!");
-            return;
+            return;         // Exits the method
         }
 
         Node temp = head;
@@ -85,6 +87,12 @@ public class WLL11 {
 
         // Calling the method to find the elements position
         System.out.println("\nFinding elements position:");
-        linkedList.elementPosition(2);
+
+
+
+
+
+
+        linkedList.elementPosition(2);          // rewrite
     }
 }
