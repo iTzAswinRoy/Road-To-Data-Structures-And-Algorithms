@@ -35,7 +35,7 @@ public class CreateLinkedList {
 
     public void insertLast(int value) {        // Method to insert node at last
         // Checking if the tail is not assigned which means linked list is empty
-        if (tail== null) {
+        if (tail == null) {
             insertFirst(value);      // Calling the insert first method to assign the tail
         } else{
             // If the linked list is not empty
