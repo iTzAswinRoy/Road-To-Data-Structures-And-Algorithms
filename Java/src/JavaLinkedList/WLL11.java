@@ -48,6 +48,7 @@ public class WLL11 {
 
         Node temp = head;       // Creating a 'temp' node pointing at head
         for (int i = 0; i < size; i++) {        // Iterating through the linked list
+            // Checking if the required index
             if (i == index) {
                 System.out.println("The element " + temp.value + " is at position " + i + " in the linked list.");
                 break;
