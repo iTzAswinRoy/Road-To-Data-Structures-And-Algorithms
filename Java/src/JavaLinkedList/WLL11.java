@@ -42,7 +42,7 @@ public class WLL11 {
     public void elementPosition(int index) {        // Method to find the position of the node
         // Checking if the index is out of bound or not
         if (index > size) {
-            System.out.println("Index out of bound!");
+            System.out.println("Index out of bound!");      // Displaying the error message
             return;         // Exits the method
         }
 
