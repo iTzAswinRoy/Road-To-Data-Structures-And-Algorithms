@@ -51,7 +51,7 @@ public class WLL11 {
             // Checking if the required index
             if (i == index) {
                 System.out.println("The element " + temp.value + " is at position " + i + " in the linked list.");      // Displaying the elements positions
-                break;
+                break;      // Exits the loop
             }
             temp = temp.next;
         }
