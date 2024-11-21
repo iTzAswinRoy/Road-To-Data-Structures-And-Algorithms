@@ -50,7 +50,7 @@ public class WLL11 {
         for (int i = 0; i < size; i++) {        // Iterating through the linked list
             // Checking if the required index
             if (i == index) {
-                System.out.println("The element " + temp.value + " is at position " + i + " in the linked list.");
+                System.out.println("The element " + temp.value + " is at position " + i + " in the linked list.");      // Displaying the elements positions
                 break;
             }
             temp = temp.next;
