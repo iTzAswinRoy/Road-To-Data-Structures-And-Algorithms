@@ -7,7 +7,7 @@ import java.util.HashSet;//
 public class HS7 {
     public static void main(String[] args) {//
         HS7 obj = new HS7();//
-        HashSet<Integer> set1 = new HashSet<>();
+        HashSet<Integer> set1 = new HashSet<>();//
 
         set1.add(1);
         set1.add(3);
