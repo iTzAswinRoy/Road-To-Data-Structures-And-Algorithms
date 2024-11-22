@@ -5,7 +5,7 @@ import java.util.HashSet;//
 
 // Write a program to find the intersection of two HashSets (i.e., common elements).
 public class HS7 {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         HS7 obj = new HS7();
         HashSet<Integer> set1 = new HashSet<>();
 
