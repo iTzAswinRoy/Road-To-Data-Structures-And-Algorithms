@@ -1,7 +1,7 @@
 package JavaHashSet;
 
 import java.util.HashMap;
-import java.util.HashSet;
+import java.util.HashSet;//
 
 // Write a program to find the intersection of two HashSets (i.e., common elements).
 public class HS7 {
