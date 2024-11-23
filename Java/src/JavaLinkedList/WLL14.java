@@ -21,7 +21,7 @@ public class WLL14 {
     }
     public void display(){//
         Node temp = head;//
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {//
             System.out.print(temp.value+"->");
             temp = temp.next;
         }
