@@ -15,11 +15,11 @@ public class WLL14 {
             tail = head;//
         }else {
             tail.next = newNode;//
-            tail = newNode;
+            tail = newNode;//
         }
         size++;//
     }
-    public void display(){
+    public void display(){//
         Node temp = head;
         for (int i = 0; i < size; i++) {
             System.out.print(temp.value+"->");
