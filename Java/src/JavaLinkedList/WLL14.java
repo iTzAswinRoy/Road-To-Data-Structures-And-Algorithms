@@ -17,7 +17,7 @@ public class WLL14 {
             tail.next = newNode;//
             tail = newNode;
         }
-        size++;
+        size++;//
     }
     public void display(){
         Node temp = head;
