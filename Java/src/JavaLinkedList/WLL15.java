@@ -1,12 +1,22 @@
 package JavaLinkedList;
 // Write a Java program that swaps two elements in a linked list.
 public class WLL15 {
-    Node head;
-    Node tail;
-    int size;
-    WLL15(){
-        this.size = 0;
+    // Creating instance variables for the class
+    private int size;       // Creating a variable to store size
+    private Node head;      // Crating a reference variable 'head' of class Node type
+    private Node tail;      // Crating a reference variable 'tail' of class Node type
+
+    WLL15(){        // Creating a default constructor
+        this.size = 0;         // Initializing the size to 0
     }
+    public class Node {         // Creating a 'Node' class
+        int value;
+        Node next;
+        Node(int value){
+            this.value = value;
+        }
+    }
+
     public void insertNode(int value){
         Node newNode = new Node(value);
         if(tail == null){
@@ -19,7 +29,6 @@ public class WLL15 {
         }
         size++;
     }
-
     public void display(){
         Node temp = head;
         for (int i = 0; i < size; i++) {
@@ -60,13 +69,6 @@ public class WLL15 {
         Node temp = curr1.next;
         curr1.next = curr2.next;
         curr2.next = temp;
-    }
-    public class Node{
-        int value;
-        Node next;
-        Node(int value){
-            this.value = value;
-        }
     }
     public static void main(String[] args) {
         WLL15 linkedList = new WLL15();
