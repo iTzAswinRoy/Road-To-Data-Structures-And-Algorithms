@@ -1,13 +1,13 @@
 package JavaLinkedList;
 
 // Write a Java program to get the first and last occurrence of the specified elements in a linked list.
-public class RetrievingFirstAAndLastElement {
+public class RetrievingFirstAndLastElement {
     // Creating instance variables for the class
     int size;       // Creating a variable to store size
     Node head;      // Crating a reference variable 'head' of class Node type
     Node tail;      // Crating a reference variable 'tail' of class Node type
 
-    RetrievingFirstAAndLastElement() {       // Creating a default constructor
+    RetrievingFirstAndLastElement() {       // Creating a default constructor
         this.size = 0;      // Initializing the size to 0
     }
 
@@ -63,7 +63,7 @@ public class RetrievingFirstAAndLastElement {
 
     public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
-        RetrievingFirstAAndLastElement linkedList = new RetrievingFirstAAndLastElement();
+        RetrievingFirstAndLastElement linkedList = new RetrievingFirstAndLastElement();
 
         // Calling the method to insert the node in the linked list
         linkedList.insert(1);
