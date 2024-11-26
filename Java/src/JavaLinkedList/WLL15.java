@@ -41,7 +41,7 @@ public class WLL15 {
         Node curr1 = head;//
         for (int i = 0; i < index1; i++) {
             prev1 = curr1;//
-            curr1 = curr1.next;
+            curr1 = curr1.next;//
         }
 
         Node prev2 = null;
