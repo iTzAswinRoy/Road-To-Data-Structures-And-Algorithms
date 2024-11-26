@@ -54,7 +54,7 @@ public class WLL15 {
         if(prev1!=null){
             prev1.next = curr2;//
         } else{
-            head = curr2;
+            head = curr2;//
         }
 
         if(prev2 != null){
