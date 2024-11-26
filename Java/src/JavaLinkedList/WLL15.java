@@ -37,7 +37,7 @@ public class WLL15 {
     }
 
     public void swapNodes(int index1, int index2){
-        Node prev1 = null;
+        Node prev1 = null;//
         Node curr1 = head;
         for (int i = 0; i < index1; i++) {
             prev1 = curr1;
