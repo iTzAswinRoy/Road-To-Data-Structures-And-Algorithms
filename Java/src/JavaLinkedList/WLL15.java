@@ -44,7 +44,7 @@ public class WLL15 {
             curr1 = curr1.next;//
         }
 
-        Node prev2 = null;
+        Node prev2 = null;//
         Node curr2 = head;
         for (int i = 0; i < index2; i++) {
             prev2 = curr2;
