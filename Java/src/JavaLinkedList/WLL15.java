@@ -52,7 +52,7 @@ public class WLL15 {
         }
 
         if(prev1!=null){
-            prev1.next = curr2;
+            prev1.next = curr2;//
         } else{
             head = curr2;
         }
