@@ -15,7 +15,7 @@ public class WLL25 {
             tail = head;//
         } else {
             tail.next = newNode;
-            tail = newNode;
+            tail = newNode;//
         }
         size++;
     }
