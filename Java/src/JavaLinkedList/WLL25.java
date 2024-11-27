@@ -2,7 +2,7 @@ package JavaLinkedList;
 // Write a Java program to check if a linked list is empty or not.
 public class WLL25 {
     Node head;
-    Node tail;
+    Node tail;//
     int size;
     WLL25(){
         this.size = 0;
