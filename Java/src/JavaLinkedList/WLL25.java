@@ -12,7 +12,7 @@ public class WLL25 {
         if(tail == null){//
             newNode.next = head;//
             head = newNode;
-            tail = head;
+            tail = head;//
         } else {
             tail.next = newNode;
             tail = newNode;
