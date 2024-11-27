@@ -3,7 +3,7 @@ package JavaLinkedList;
 public class WLL25 {
     Node head;
     Node tail;//
-    int size;
+    int size;//
     WLL25(){
         this.size = 0;
     }
