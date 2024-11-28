@@ -1,7 +1,7 @@
 package JavaLinkedList;
 // Write a Java program to replace an element in a linked list.
 public class WLL26 {
-    Node head;
+    Node head;//
     Node tail;
     int size;
     WLL26(){
