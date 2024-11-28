@@ -4,7 +4,7 @@ public class WLL26 {
     Node head;//
     Node tail;//
     int size;//
-    WLL26(){
+    WLL26(){//
         this.size = 0;
     }
     public void insertNode(int value){
