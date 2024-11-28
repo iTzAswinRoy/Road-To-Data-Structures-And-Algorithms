@@ -10,7 +10,7 @@ public class WLL26 {
     public void insertNode(int value){
         Node newNode = new Node(value);//
         if(tail == null){
-            newNode.next = head;
+            newNode.next = head;//
             head = newNode;
             tail =head;
         } else {
