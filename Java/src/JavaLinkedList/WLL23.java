@@ -12,7 +12,7 @@ public class WLL23 {
         Node newNode = new Node(value);//
         if(tail == null){//
             newNode.next = head;//
-            head = newNode;
+            head = newNode;//
             tail = head;//
         } else {
             tail.next = newNode;
