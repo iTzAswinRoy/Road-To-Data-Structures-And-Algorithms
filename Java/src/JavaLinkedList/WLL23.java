@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class WLL23 {
     Node head;//
     Node tail;//
-    int size;
+    int size;//
     WLL23(){
         this.size = 0;
     }
