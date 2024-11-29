@@ -3,7 +3,7 @@ import java.util.ArrayList;
 // Write a Java program to convert a linked list to an array list.
 public class WLL23 {
     Node head;//
-    Node tail;
+    Node tail;//
     int size;
     WLL23(){
         this.size = 0;
