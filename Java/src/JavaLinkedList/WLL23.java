@@ -6,7 +6,7 @@ public class WLL23 {
     Node tail;//
     int size;//
     WLL23(){
-        this.size = 0;
+        this.size = 0;//
     }
     public void insertNode(int value){
         Node newNode = new Node(value);
