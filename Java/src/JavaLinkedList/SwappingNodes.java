@@ -1,12 +1,13 @@
 package JavaLinkedList;
+
 // Write a Java program that swaps two elements in a linked list.
-public class WLL15 {
+public class SwappingNodes {
     // Creating instance variables for the class
     private int size;       // Creating a variable to store size
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
 
-    WLL15(){        // Creating a default constructor
+    SwappingNodes(){        // Creating a default constructor
         this.size = 0;         // Initializing the size to 0
     }
     public class Node {         // Creating a 'Node' class
@@ -36,36 +37,47 @@ public class WLL15 {
         size++;         // Incrementing size by 1
     }
 
-    public void swapNodes(int index1, int index2){
-        Node prev1 = null;//
-        Node curr1 = head;//
+    public void swapNodes(int index1, int index2) {         // Method to swap nodes in the linked list
+        Node previous1 = null;          // Assigning a 'previous1' node pointing as null
+        Node current1 = head;       // Creating a 'current1' node pointing at head
+
+        // Iterating through the linked list till we reach the required index
         for (int i = 0; i < index1; i++) {
-            prev1 = curr1;//
-            curr1 = curr1.next;//
+            // Moving the Previous and current pointer's
+            previous1 = current1;
+            current1 = current1.next;
         }
 
-        Node prev2 = null;//
-        Node curr2 = head;//
+        Node prev2 = null;          // Assigning a 'previous2' node pointing as null
+        Node current2 = head;       // Creating a 'current2' node pointing at head
+
+        // Iterating through the linked list till we reach the required index
         for (int i = 0; i < index2; i++) {
-            prev2 = curr2;//
-            curr2 = curr2.next;//
+            // Moving the Previous and current pointer's
+            prev2 = current2;
+            current2 = current2.next;
         }
 
-        if(prev1!=null){
-            prev1.next = curr2;//
-        } else{
-            head = curr2;//
-        }
-
-        if(prev2 != null){
-            prev2.next = curr1;
+        if (previous1 != null) {
+            // Changing the previous 1 reference to current node 2
+            previous1.next = current2;
         } else {
-            head = curr1;
+            // If previous is null, then updating the head
+            head = current2;
         }
 
-        Node temp = curr1.next;
-        curr1.next = curr2.next;
-        curr2.next = temp;
+        if (prev2 != null) {
+            // Changing the previous 2 reference to current node 1
+            prev2.next = current1;
+        } else {
+            // If previous is null, then updating the head
+            head = current1;
+        }
+
+        // Here the swapping process takes place
+        Node temp = current1.next;
+        current1.next = current2.next;
+        current2.next = temp;
     }
 
     public void display() {         // Method to display the linked list
@@ -76,23 +88,32 @@ public class WLL15 {
             temp = temp.next;       // Moving the pointer to the next node
 
             // Checking if the 'temp' reaches the end
-            if(temp == null) {
+            if (temp == null) {
                 System.out.println("END");      // Displaying 'END' for reference
             }
         }
     }
 
     public static void main(String[] args) {
-        WLL15 linkedList = new WLL15();
+        // Creating an object to store the linked list
+        SwappingNodes linkedList = new SwappingNodes();
+
+        // Calling the method to insert the node in the linked list
         linkedList.insertNode(1);
         linkedList.insertNode(2);
         linkedList.insertNode(3);
         linkedList.insertNode(4);
         linkedList.insertNode(5);
-        System.out.println("Given linked list:");
+
+        // Calling the method to display the linked list
+        System.out.println("Original linked list:");
         linkedList.display();
-        System.out.println("\nLinked list after swapping:");
+
+        // Calling the method to swap elements in the linked list
         linkedList.swapNodes(0,4);
+
+        // Displaying the linked list after swapping
+        System.out.println("\nLinked list after swapping:");
         linkedList.display();
     }
 }
