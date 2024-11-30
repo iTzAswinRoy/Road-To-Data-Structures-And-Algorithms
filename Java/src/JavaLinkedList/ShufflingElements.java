@@ -90,7 +90,7 @@ public class ShufflingElements {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
         ShufflingElements linkedList = new ShufflingElements();
 

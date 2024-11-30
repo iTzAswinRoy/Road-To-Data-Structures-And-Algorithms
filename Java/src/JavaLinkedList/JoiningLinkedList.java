@@ -70,7 +70,7 @@ public class JoiningLinkedList {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         // Creating an object of linked list 1
         JoiningLinkedList LL1 = new JoiningLinkedList();
 

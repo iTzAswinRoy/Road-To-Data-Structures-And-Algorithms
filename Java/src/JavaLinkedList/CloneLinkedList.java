@@ -63,7 +63,7 @@ public class CloneLinkedList {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
         CloneLinkedList originalLinkedList = new CloneLinkedList();
 

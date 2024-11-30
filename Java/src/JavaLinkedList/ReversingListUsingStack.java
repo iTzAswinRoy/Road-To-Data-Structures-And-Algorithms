@@ -95,7 +95,7 @@ public class ReversingListUsingStack {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {        // Main method
         // Creating an object to store the linked list
         ReversingListUsingStack linkedList = new ReversingListUsingStack();
 
