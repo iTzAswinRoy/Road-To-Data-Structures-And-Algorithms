@@ -13,6 +13,7 @@ public class ShufflingElements {
     ShufflingElements() {        // Creating a default constructor
         this.size = 0;         // Initializing the size to 0
     }
+
     public class Node {         // Creating a 'Node' class
         // Creating instance variables for the class
         private int value;      // Creating an instance variable to store a value of the node
