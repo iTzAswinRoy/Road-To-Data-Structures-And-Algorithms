@@ -10,7 +10,7 @@ public class P4 {
                 System.out.print(" ");//
             }
 
-            for (int k = i+1; k > 0; k--) {
+            for (int k = i+1; k > 0; k--) {//
                 System.out.print(" *");
 
             }
