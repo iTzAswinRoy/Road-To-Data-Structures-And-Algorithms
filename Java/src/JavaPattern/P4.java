@@ -7,7 +7,7 @@ public class P4 {
         for (int i = 0; i < n; i++) {//
 
             for (int j = i; j < n; j++) {//
-                System.out.print(" ");
+                System.out.print(" ");//
             }
 
             for (int k = i+1; k > 0; k--) {
