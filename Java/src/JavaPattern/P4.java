@@ -11,7 +11,7 @@ public class P4 {
             }
 
             for (int k = i+1; k > 0; k--) {//
-                System.out.print(" *");
+                System.out.print(" *");//
 
             }
             System.out.println();
