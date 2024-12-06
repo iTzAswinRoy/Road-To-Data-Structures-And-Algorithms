@@ -6,7 +6,7 @@ public class P4 {
         int n = 5;          // Initializing as 5
         for (int i = 0; i < n; i++) {//
 
-            for (int j = i; j < n; j++) {
+            for (int j = i; j < n; j++) {//
                 System.out.print(" ");
             }
 
