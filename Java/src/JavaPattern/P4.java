@@ -4,7 +4,7 @@ package JavaPattern;
 public class P4 {
     public static void main(String[] args) {        // Main method
         int n = 5;          // Initializing as 5
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {//
 
             for (int j = i; j < n; j++) {
                 System.out.print(" ");
