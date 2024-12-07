@@ -11,7 +11,7 @@ public class P6 {
                 System.out.print(" ");
             }
 
-            for (int k = i; k >= 0; k--) {
+            for (int k = i; k >= 0; k--) {//
                 System.out.print("* ");
 
             }
