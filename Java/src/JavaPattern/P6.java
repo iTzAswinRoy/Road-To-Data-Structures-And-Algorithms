@@ -28,7 +28,7 @@ public class P6 {
                 System.out.print(" *");
 
             }
-            System.out.println();//
+            System.out.println();
         }
     }
 }
