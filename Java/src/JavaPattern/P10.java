@@ -2,26 +2,28 @@ package JavaPattern;
 
 // Print a butterfly pattern using asterisks (`*`).
 public class P10 {
-    public static void main(String[] args) {//
-        int n = 5;
+    public static void main(String[] args) {        // Main method
+        int n = 5;        // Initializing 'n' as 5
 
-        for (int i = 0; i < n; i++) {//
+        // First half of the butterfly pattern
+        for (int i = 0; i < n; i++) {       // Outer loop for the rows
 
-            for (int j = 0; j <= i; j++) {//
-                System.out.print("*");//
+            // First inner loop: Prints the first set of stars for each row
+            for (int j = 0; j <= i; j++) {
+                System.out.print("*");
             }
 
+            // Second inner loop: Prints spaces between the two halves of the butterfly
             for (int j = 0; j <  2*(n - i -1); j++) {
 
                 System.out.print(" ");
             }
 
+            // Third inner loop: Prints the second set of stars for each row
             for (int j = 0; j <= i; j++) {
                 System.out.print("*");
             }
-            System.out.println();
+            System.out.println();       // Move to the next line after completing the current row
         }
-
-
     }
 }
