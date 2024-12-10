@@ -8,7 +8,7 @@ import java.util.Queue;//
 public class Q1 {
     int[] queue;//
     int size;//
-    int front;
+    int front;//
     int end;
     int capacity;
 
