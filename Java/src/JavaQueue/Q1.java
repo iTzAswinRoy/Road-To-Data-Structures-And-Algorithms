@@ -7,7 +7,7 @@ import java.util.Queue;
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
 public class Q1 {
     int[] queue;//
-    int size;//
+    int size;
     int front;//
     int end;//
     int capacity;//
