@@ -2,7 +2,7 @@ package JavaQueue;
 
 import java.util.Arrays;
 import java.util.LinkedList;//
-import java.util.Queue;//
+import java.util.Queue;
 
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
 public class Q1 {
