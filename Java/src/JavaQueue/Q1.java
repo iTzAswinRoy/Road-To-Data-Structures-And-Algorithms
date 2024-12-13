@@ -10,7 +10,7 @@ public class Q1 {//
     int size;//
     int front;//
     int end;//
-    int capacity;
+    int capacity;//
 
     Q1(int capacity){
         this.queue = new int[capacity];
