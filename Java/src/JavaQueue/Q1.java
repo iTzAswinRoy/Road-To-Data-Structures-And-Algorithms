@@ -12,7 +12,7 @@ public class Q1 {
     int end;
     int capacity;
 
-    Q1(int capacity){//
+    Q1(int capacity){
         this.queue = new int[capacity];
         this.capacity = capacity;
         this.size = 0;
