@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
-public class Q1 {//
+public class Q1 {
     int[] queue;//
     int size;//
     int front;//
