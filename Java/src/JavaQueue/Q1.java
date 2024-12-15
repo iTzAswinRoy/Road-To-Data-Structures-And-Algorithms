@@ -30,7 +30,7 @@ public class Q1 {
         return value;
     }
 
-    public int peek(){
+    public int peek() {          // Method to peek the first element in the queue
         return queue[front];
     }
     @Override
