@@ -17,7 +17,7 @@ public class Q1 {
         this.end = 0;
     }
 
-    public void enqueue(int value) {
+    public void enqueue(int value) {        // Method to insert elements in the queue
         queue[end] = value;
         end = (end + 1) % capacity; // Wrap around end pointer
         size++;
