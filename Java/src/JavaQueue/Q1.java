@@ -1,6 +1,5 @@
 package JavaQueue;
 
-import java.util.Arrays;
 
 
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
