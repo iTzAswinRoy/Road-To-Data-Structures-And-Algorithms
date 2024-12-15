@@ -4,12 +4,12 @@ package JavaQueue;
 public class Q1 {
     // Creating instance variables for the class
     int[] queue;
-    int size;
+    int size;           // Creating a variable to store size
     int front;
     int end;
     int capacity;
 
-    Q1 (int capacity) {
+    Q1 (int capacity) {         // Creating a parameterized constructor
         this.queue = new int[capacity];
         this.capacity = capacity;
         this.size = 0;
