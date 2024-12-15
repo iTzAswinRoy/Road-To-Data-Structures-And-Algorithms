@@ -1,9 +1,8 @@
 package JavaQueue;
 
-
-
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
 public class Q1 {
+    // Creating instance variables for the class
     int[] queue;
     int size;
     int front;
