@@ -2,7 +2,6 @@ package JavaQueue;
 
 import java.util.Arrays;
 import java.util.LinkedList;
-import java.util.Queue;
 
 // Write a program to implement a queue using arrays with basic operations like enqueue, dequeue, and peek.
 public class Q1 {
@@ -12,7 +11,7 @@ public class Q1 {
     int end;
     int capacity;
 
-    Q1(int capacity){
+    Q1 (int capacity) {
         this.queue = new int[capacity];
         this.capacity = capacity;
         this.size = 0;
