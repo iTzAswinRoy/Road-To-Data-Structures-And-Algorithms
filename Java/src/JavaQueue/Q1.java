@@ -45,7 +45,7 @@ public class Q1 {
         return result;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) {         // Main method
         Q1 queue = new Q1(5);
 
         queue.enqueue(1);
