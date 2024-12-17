@@ -7,7 +7,7 @@ public class Q1 {
     int size;           // Creating a variable to store size
     int front;//
     int end;//
-    int capacity;
+    int capacity;//
 
     Q1 (int capacity) {         // Creating a parameterized constructor
         this.queue = new int[capacity];
