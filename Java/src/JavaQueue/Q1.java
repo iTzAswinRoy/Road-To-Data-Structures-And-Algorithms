@@ -6,7 +6,7 @@ public class Q1 {
     int[] queue;
     int size;           // Creating a variable to store size
     int front;
-    int end;
+    int end;//
     int capacity;
 
     Q1 (int capacity) {         // Creating a parameterized constructor
