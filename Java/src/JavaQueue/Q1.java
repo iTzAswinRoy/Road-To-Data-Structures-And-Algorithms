@@ -27,7 +27,7 @@ public class Q1 {
         int value = queue[front];
         front = (front + 1) % capacity;
         size--;//
-        return value;
+        return value;//
     }
 
     public int peek() {          // Method to peek the first element in the queue
