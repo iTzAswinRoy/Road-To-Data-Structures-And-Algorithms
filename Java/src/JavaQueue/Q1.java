@@ -34,7 +34,7 @@ public class Q1 {
         return queue[front];//
     }
     @Override
-    public String toString(){
+    public String toString(){//
         String result = "";//
 
         int current = front;//
