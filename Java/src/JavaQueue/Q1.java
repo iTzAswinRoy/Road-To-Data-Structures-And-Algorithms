@@ -40,7 +40,7 @@ public class Q1 {
         int current = front;//
         for (int i = 0; i < size; i++) {//
             result += queue[current] + " ";
-            current = (current + 1) % capacity;
+            current = (current + 1) % capacity;//
         }
         return result;//
     }
