@@ -42,7 +42,7 @@ public class Q1 {
             result += queue[current] + " ";
             current = (current + 1) % capacity;
         }
-        return result;
+        return result;//
     }
 
     public static void main(String[] args) {         // Main method
