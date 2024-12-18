@@ -25,7 +25,7 @@ public class Q1 {
 
     public int deQueue(){           // Method to remove elements in the queue
         int value = queue[front];//
-        front = (front + 1) % capacity;
+        front = (front + 1) % capacity;//
         size--;//
         return value;//
     }
