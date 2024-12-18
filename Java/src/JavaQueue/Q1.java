@@ -37,7 +37,7 @@ public class Q1 {
     public String toString(){
         String result = "";
 
-        int current = front;
+        int current = front;//
         for (int i = 0; i < size; i++) {
             result += queue[current] + " ";
             current = (current + 1) % capacity;
