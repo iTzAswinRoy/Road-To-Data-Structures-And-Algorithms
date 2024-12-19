@@ -20,7 +20,7 @@ public class Q1 {
     public void enqueue(int value) {        // Method to insert elements in the queue
         queue[end] = value;
         end = (end + 1) % capacity; // Wrap around end pointer
-        size++;//
+        size++;
     }
 
     public int deQueue(){           // Method to remove elements in the queue
