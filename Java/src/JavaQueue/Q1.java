@@ -5,7 +5,7 @@ public class Q1 {
     // Creating instance variables for the class
     int[] queue;
     int size;           // Creating a variable to store size
-    int front;//
+    int front;
     int end;//
     int capacity;//
 
