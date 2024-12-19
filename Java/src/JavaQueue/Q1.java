@@ -31,7 +31,7 @@ public class Q1 {
     }
 
     public int peek() {          // Method to peek the first element in the queue
-        return queue[front];//
+        return queue[front];
     }
     @Override
     public String toString(){//
