@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a right-angled triangle with n rows using asterisks (`*`)
-public class P2 {
+public class RightTriangle {
     public static void main(String[] args) {        // Main method
         int n = 5;      // Initializing 'n' as 5
 
