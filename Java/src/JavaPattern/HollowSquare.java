@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a hollow square of n x n dimensions using asterisks (*).
-public class P7 {
+public class HollowSquare {
     public static void main(String[] args) {        // Main method
         int n = 5;      // Initializing 'n' as 5
 
