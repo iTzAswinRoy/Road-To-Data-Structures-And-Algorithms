@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a butterfly pattern using asterisks (`*`).
-public class P10 {
+public class Butterfly {
     public static void main(String[] args) {        // Main method
         int n = 5;        // Initializing 'n' as 5
 
