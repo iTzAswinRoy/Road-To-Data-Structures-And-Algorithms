@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a diamond shape with n levels using asterisks (*).
-public class P6 {
+public class Diamond {
     public static void main(String[] args) {        // Main method
         int n = 5;      // Initializing 'n' as 5
 
