@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a pyramid with n levels using asterisks (*)
-public class P4 {
+public class Pyramid {
     public static void main(String[] args) {        // Main method
         int n = 5;          // Initializing 'n' as 5
 
