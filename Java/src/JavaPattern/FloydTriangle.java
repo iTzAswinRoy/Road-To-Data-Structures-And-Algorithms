@@ -1,7 +1,7 @@
 package JavaPattern;
 
 //Print Floyd’s triangle of `n` rows. Floyd's triangle is a triangular array of natural numbers.
-public class P9 {
+public class FloydTriangle {
     public static void main(String[] args) {        // Main method
         int n = 5;      // Initializing 'n' as 5
         int count = 1;      // Creating a variable to track the number to print in each row
