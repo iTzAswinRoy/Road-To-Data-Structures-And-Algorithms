@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print an inverted pyramid with n levels using asterisks (*).
-public class P5 {
+public class InvertedPyramid {
     public static void main(String[] args) {         // Main method
         int n = 5;          // Initializing 'n' as 5
 
