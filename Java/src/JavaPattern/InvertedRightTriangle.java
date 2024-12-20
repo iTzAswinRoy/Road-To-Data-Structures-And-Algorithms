@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print an inverted right-angled triangle with n rows using asterisks (*).
-public class P3 {
+public class InvertedRightTriangle {
     public static void main(String[] args) {        // Main method
         int n = 5;         // Initializing 'n' as 5
 
