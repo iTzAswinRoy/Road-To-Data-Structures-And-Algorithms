@@ -19,7 +19,7 @@ public class Q1 {
 
     public void enqueue(int value) {        // Method to add elements to the queue
         if (size == capacity) {//
-            System.out.println("Queue is full. Cannot enqueue " + value);
+            System.out.println("Queue is full. Cannot enqueue " + value);//
             return;
         }
         System.out.println("enter the elements");
