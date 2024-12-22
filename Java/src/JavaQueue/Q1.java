@@ -22,7 +22,7 @@ public class Q1 {
             System.out.println("Queue is full. Cannot enqueue " + value);//
             return;//
         }
-        System.out.println("enter the elements");
+        System.out.println("enter the elements");//
 
         queue[end] = value;
         end = (end + 1) % capacity;         // Wrap around end pointer
