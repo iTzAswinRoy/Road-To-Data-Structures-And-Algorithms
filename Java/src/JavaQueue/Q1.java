@@ -10,7 +10,7 @@ public class Q1 {
     private int capacity;       // Maximum capacity of the queue
 
     Q1 (int capacity) {          // Constructor to initialize the queue
-        this.queue = new int[capacity];
+        this.queue = new int[capacity];//
         this.capacity = capacity;//
         this.size = 0;//
         this.front = 0;//
