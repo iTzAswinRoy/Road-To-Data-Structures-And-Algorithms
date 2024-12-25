@@ -24,7 +24,7 @@ public class Q1 {
         }
         System.out.println("enter the elements");//
 
-        queue[end] = value;
+        queue[end] = value;//
         end = (end + 1) % capacity;         // Wrap around end pointer
         size++;
     }
