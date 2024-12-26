@@ -14,7 +14,7 @@ public class Q1 {
         this.capacity = capacity;
         this.size = 0;
         this.front = 0;//
-        this.end = 0;//
+        this.end = 0;
     }
 
     public void enqueue(int value) {        // Method to add elements to the queue
