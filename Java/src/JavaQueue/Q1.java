@@ -30,7 +30,7 @@ public class Q1 {
     }
 
     public int deQueue() {                  // Method to remove elements from the queue
-        if (size == 0) {//
+        if (size == 0) {
             System.out.println("Queue is empty. Cannot dequeue.");
             return -1;
         }
