@@ -12,7 +12,7 @@ public class Q1 {
     Q1 (int capacity) {          // Constructor to initialize the queue
         this.queue = new int[capacity];//
         this.capacity = capacity;
-        this.size = 0;
+        this.size = 0;//
         this.front = 0;
         this.end = 0;
     }
