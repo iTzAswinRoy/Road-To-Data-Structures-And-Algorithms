@@ -26,7 +26,7 @@ public class Q1 {
 
         queue[end] = value;
         end = (end + 1) % capacity;         // Wrap around end pointer
-        size++;
+        size++;//
     }
 
     public int deQueue() {                  // Method to remove elements from the queue
