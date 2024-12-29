@@ -1,7 +1,7 @@
 package JavaPattern;
 
 // Print a n x n square using asterisks (*).
-public class P1 {
+public class Square {
     public static void main(String[] args) {        // Main method
         int n = 5;      // Initializing 'n' as 5
 
