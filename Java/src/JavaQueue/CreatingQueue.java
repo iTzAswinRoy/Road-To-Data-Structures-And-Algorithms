@@ -28,15 +28,16 @@ public class CreatingQueue {
            newNode.next = head;
            head = newNode;
        }
+        System.out.println("Element added.");
     }
 
     public void deQueue() {       // Method to remove elements from the queue
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
-
             head = head.next;
         }
+        System.out.println("Element removed:");
     }
 
     public void peek() {        // Method to view the first element in the queue
@@ -49,9 +50,14 @@ public class CreatingQueue {
 
     public void view() {
         Node temp = head;
+
         while (temp != null) {
-            System.out.print(temp.value + "->");
+            System.out.print(temp.value + " -> ");
             temp = temp.next;
+
+            if (temp == null) {
+                System.out.println("Null");
+            }
         }
     }
 
