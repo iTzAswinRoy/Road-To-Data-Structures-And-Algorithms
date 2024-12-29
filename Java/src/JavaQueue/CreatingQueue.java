@@ -44,6 +44,7 @@ public class CreatingQueue {
     }
 
     public void peek() {        // Method to view the first element in the queue
+        // Checking if the queue is empty
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
