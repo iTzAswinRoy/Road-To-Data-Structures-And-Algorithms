@@ -19,14 +19,16 @@ public class CreatingQueue {
     }
 
     public void enqueue(int value) {        // Method to add elements to the queue
-        Node newNode = new Node(value);
+        Node newNode = new Node(value);         // Creating a node
 
+        // Checking if the queue is empty
        if (tail == null) {
-          head = newNode;
-          tail = head;
+           head = newNode;     // Assigning value to head
+           tail = head;        // Assigning tail as head
+
        } else {
-           newNode.next = head;
-           head = newNode;
+           newNode.next = head;         // New node pointing at head
+           head = newNode;          // Assigning head as new node
        }
         System.out.println("Element added.");
     }
