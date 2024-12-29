@@ -16,16 +16,16 @@ public class CreatingQueue {
         Node (int value) {
             this.value = value;
         }
-
-
     }
 
     public void enqueue(int value) {        // Method to add elements to the queue
         Node newNode = new Node(value);
+
        if (tail == null) {
           head = newNode;
           tail = head;
        } else {
+           head.next = newNode;
            head = newNode;
        }
     }
