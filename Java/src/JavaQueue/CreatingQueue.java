@@ -44,12 +44,13 @@ public class CreatingQueue {
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
-            System.out.println(head.value);
+            System.out.println("Peaking queue: " + head.value);
         }
     }
 
     public void view() {
         Node temp = head;
+        System.out.println("");
 
         while (temp != null) {
             System.out.print(temp.value + " -> ");
