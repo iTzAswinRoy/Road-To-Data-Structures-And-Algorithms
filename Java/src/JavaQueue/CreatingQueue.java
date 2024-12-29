@@ -34,6 +34,7 @@ public class CreatingQueue {
     }
 
     public void deQueue() {       // Method to remove elements from the queue
+        // Checking if the queue is empty
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
