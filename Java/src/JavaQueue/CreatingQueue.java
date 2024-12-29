@@ -50,7 +50,7 @@ public class CreatingQueue {
 
     public void view() {
         Node temp = head;
-        System.out.println("");
+        System.out.println("Viewing Queue:");
 
         while (temp != null) {
             System.out.print(temp.value + " -> ");
@@ -71,10 +71,12 @@ public class CreatingQueue {
         boolean execution = true;
 
         while (execution) {
-            System.out.println("\n1. Add a value to the queue (enqueue)");
+            System.out.println("\n-------------------------------------------------------------------------------------");
+            System.out.println("1. Add a value to the queue (enqueue)");
             System.out.println("2. Remove the front element from the queue (dequeue)");
             System.out.println("3. Peek the first element in the queue:");
             System.out.println("4. View all the elements in the queue:");
+            System.out.println("-------------------------------------------------------------------------------------");
 
             System.out.println("5. Exit");
 
