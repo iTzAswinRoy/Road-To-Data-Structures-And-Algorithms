@@ -25,7 +25,7 @@ public class CreatingQueue {
           head = newNode;
           tail = head;
        } else {
-           head.next = newNode;
+           newNode.next = head;
            head = newNode;
        }
     }
@@ -50,7 +50,7 @@ public class CreatingQueue {
     public void view() {
         Node temp = head;
         while (temp != null) {
-            System.out.println(temp.value);
+            System.out.print(temp.value + "->");
             temp = temp.next;
         }
     }
