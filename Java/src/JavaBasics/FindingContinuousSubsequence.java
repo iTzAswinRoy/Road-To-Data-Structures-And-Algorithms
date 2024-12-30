@@ -32,7 +32,7 @@ public class FindingContinuousSubsequence {
         int max = 0;        // Initializing max valur to 0
 
         for (int i = 0; i < data.size() - 1; i++) {
-            int count = 1;      // Initializing count to 1
+            int count = 0;      // Initializing count to 1
             int j = i;       // Storing the current iteration value
 
             if (data.get(i + 1) > data.get(i)) {    // Checking the base condition if the number is greater than the next number
