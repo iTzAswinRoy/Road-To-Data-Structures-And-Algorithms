@@ -1,9 +1,11 @@
 package JavaStack;
+
 // Write a Java program to implement a stack with push and pop operations.
 // Find the top element of the stack and check if the stack is empty or not.
- public class w1 {   // Stack class
+ public class w1 {          // Creating a class for doubly linked list
     private int[] arr;//
     private int top;//
+
     w1(int size) {//
         arr = new int[size];
         top = -1;//
