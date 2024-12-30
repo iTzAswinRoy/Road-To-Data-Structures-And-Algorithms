@@ -40,7 +40,7 @@ public class CreatingQueue {
         } else {
             head = head.next;       // Moving the head pointer to the next node
         }
-        System.out.println("Element removed:");
+        System.out.println("First element is removed.");
     }
 
     public void peek() {        // Method to view the first element in the queue
@@ -107,9 +107,9 @@ public class CreatingQueue {
 
                 case 5 -> {
                     System.out.println("Exiting.....");
-                    execution = false;
+                    execution = false;      // Turning the boolean to false, in order to exits the loop
                 }
-                default -> System.out.println("Invalid option!");
+                default -> System.out.println("Invalid option!");       // Error message
             }
         }
     }
