@@ -38,7 +38,7 @@ public class CreatingQueue {
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
-            head = head.next;
+            head = head.next;       // Moving the head pointer to the next node
         }
         System.out.println("Element removed:");
     }
@@ -48,57 +48,62 @@ public class CreatingQueue {
         if (tail == null) {
             System.out.println("Queue is empty!");
         } else {
-            System.out.println("Peaking queue: " + head.value);
+            System.out.println("Peaking queue: " + head.value);         // Displaying the node
         }
     }
 
-    public void view() {
-        Node temp = head;
+    public void view() {        // Method to view the queue
+        Node temp = head;       // Creating a temp node pointing at head
         System.out.println("Viewing Queue:");
 
+        // Iterating till the temp reaches null
         while (temp != null) {
-            System.out.print(temp.value + " -> ");
-            temp = temp.next;
+            System.out.print(temp.value + " -> ");      // Displaying the current node
+            temp = temp.next;       // Moving the temp pointer to the next node
 
+            // Checking if the temp reaches the null
             if (temp == null) {
-                System.out.println("Null");
+                System.out.println("END");
             }
         }
     }
 
-    public static void main(String[] args) { // Main method for command-line interaction
-        CreatingQueue queue = new CreatingQueue();
-        Scanner in = new Scanner(System.in);
+    public static void main(String[] args) {        // Main method
+        CreatingQueue queue = new CreatingQueue();      // Creating an object of the class
+
+        Scanner in = new Scanner(System.in);        // Creating a scanner object
 
         System.out.println("Queue initialized successfully.");
 
-        boolean execution = true;
+        boolean execution = true;       // Creating a boolean variable
 
+        // Iterating util the loop encounters false
         while (execution) {
+            // Display message
             System.out.println("\n-------------------------------------------------------------------------------------");
             System.out.println("1. Add a value to the queue (enqueue)");
             System.out.println("2. Remove the front element from the queue (dequeue)");
             System.out.println("3. Peek the first element in the queue:");
             System.out.println("4. View all the elements in the queue:");
+            System.out.println("5. Exit");
             System.out.println("-------------------------------------------------------------------------------------");
 
-            System.out.println("5. Exit");
-
             System.out.print("\nEnter an option:\n");
-            int option = in.nextInt();
+            int option = in.nextInt();      // Getting input from the user
 
+            // Creating a switch case for various inputs
             switch (option) {
                 case 1 -> {
                     System.out.println("Enter the element to add at first:");
 
                     int value = in.nextInt();
-                    queue.enqueue(value);
+                    queue.enqueue(value);       // Calling enqueue method to add elements at first
                 }
-                case 2 -> queue.deQueue();
+                case 2 -> queue.deQueue();      // Calling enqueue method to remove elements at first
 
-                case 3 -> queue.peek();
+                case 3 -> queue.peek();         // Calling enqueue method
 
-                case 4 -> queue.view();
+                case 4 -> queue.view();         // Calling enqueue method
 
                 case 5 -> {
                     System.out.println("Exiting.....");
