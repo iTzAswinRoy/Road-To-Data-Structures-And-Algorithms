@@ -36,6 +36,7 @@ public class CheckingPrimeNumbersInMatrix {
 
     public void printArray(int[][] data) {   // Method to print the given 2D array
         System.out.println("\nHere's the entered 2D array");
+
         for (int i = 0; i < data.length; i++) {     // Iterating through rows
             System.out.print("[");
 
