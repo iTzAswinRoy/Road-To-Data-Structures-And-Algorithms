@@ -1,8 +1,5 @@
 package JavaQueue;
 
-import JavaCircularLinkedList.FindingLength;
-
-import java.util.ArrayList;
 import java.util.Scanner;       // Importing scanner class
 
 public class CreatingQueue {
