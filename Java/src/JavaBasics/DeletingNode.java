@@ -4,17 +4,17 @@ import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to delete a specified node in the middle of a singly linked list.
 public class DeletingNode {      // Creating a class which handles linked list
-    Node head;      // Creating a reference for head
-    Node tail;      // Creating a reference for tail
-    int size;       // Creating a size
+    private Node head;      // Creating a reference for head
+    private Node tail;      // Creating a reference for tail
+    private int size;       // Creating a size
 
     DeletingNode() {     // Creating a constructor to initialize the size of the linked list
         this.size = 0;     // Initializing the size of the linked list
     }
 
     public class Node {      // Creating the Node class which handles data and its reference of the node
-        int data;       // Creating a data which holds the value of the node
-        Node next;      // Creating the reference of the next node
+        private int data;       // Creating a data which holds the value of the node
+        private Node next;      // Creating the reference of the next node
 
         Node(int data) {     // Creating a constructor to initialize the value of the node
             this.data = data;      // With the help of 'this' keyword, assigning the default value for Node from the user
@@ -38,14 +38,18 @@ public class DeletingNode {      // Creating a class which handles linked list
             System.err.println("Index out of bound!");      // Displaying  an error message
             throw new IllegalArgumentException();     // Throwing an exception
         }
-        Node current = head;    // Creating a current node which is assigned to head
-        Node previous = current.next;     // Creating a previous node which contains the reference of the current's next node
+        if (index == 0) {     // If we are deleting the head node
+            head = head.next;  // Move the head to the next node
+        } else {
+            Node current = head;    // Create a current node that starts at the head
+            Node previous = null;    // Initialize previous as null
 
-        for (int i = 0; i < index; i++) {      // Iteration over the linked list until it reaches the specific index
-            previous = current;     // Moving the previous node to current
-            current = current.next;     // Moving the current node reference to next node
+            for (int i = 0; i < index; i++) {      // Iterate over the linked list until we reach the specified index
+                previous = current;     // Move previous to current
+                current = current.next;     // Move current to the next node
+            }
+            previous.next = current.next;     // Update the previous node's next to skip the current node
         }
-        previous.next = current.next;     // Once the current and previous reference are set to the required index, now we're assigning the reference of the previous to the reference of the current which automatically  deletes the current node and reference to the next node
         size--;     // Incrementing the size by 1
 
         System.out.println("\nLinked list after deleting index at " + index + ":");
@@ -55,7 +59,7 @@ public class DeletingNode {      // Creating a class which handles linked list
         Node temp = head;       // Creating a temp variable which store the head node
 
         while (temp != null) {      // Creating a loop until it reaches the end of the linked list
-            System.out.print(temp.data + "->");     // Receiving the node
+            System.out.print(temp.data + " -> ");     // Receiving the node
             temp = temp.next;       // Setting the temp referencing to next node
         }
         if (tail.next == null) {        // Checking if the next of tail is null
@@ -79,6 +83,7 @@ public class DeletingNode {      // Creating a class which handles linked list
 
         try {
             System.out.println("\nEnter the index to be deleted:");
+
             int indexToBeDeleted = in.nextInt();    // Enter ing the index of the node to be deleted
             obj.deleteIndex(indexToBeDeleted);      // Calling the delete method the remove the specific noe
 
