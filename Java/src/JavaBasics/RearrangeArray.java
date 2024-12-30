@@ -51,7 +51,4 @@ public class RearrangeArray {
         }
         return newArray;      // Returning the rearranged array
     }
-
-    public void printArray(int[] data) {     // Method to display the final result
-    }
 }
