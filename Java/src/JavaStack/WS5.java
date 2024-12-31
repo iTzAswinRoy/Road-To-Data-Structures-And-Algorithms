@@ -42,12 +42,14 @@ public class WS5 {      // Creating a class for stack
         System.out.println("\nPeeking the last element from the stack:");
         return arr[top];        // Restringing the last element
     }
-    
-    public void display(){
+
+    public void display() {         // Method to display elements int the stack
+        // Iterating each element from end to beginning
         for (int i = top; i >= 0; i--) {
-            System.out.println(arr[i]);
+            System.out.println(arr[i]);     // Displaying the element
         }
     }
+    
     public void maxAndMin(){
         int max = Integer.MAX_VALUE;
         int min = Integer.MIN_VALUE;
