@@ -34,13 +34,15 @@ public class WS5 {      // Creating a class for stack
         }
     }
 
-    public void peek(){
-        if(top == -1){
-            System.out.println("Stack is empty");
-        } else {
-            System.out.println(arr[top]);
+    public int peek() {        // Method to get the last element from the stack
+        if (top == -1) {        // Checking if the stack is empty
+            System.out.println("stack is empty");
+            return 0;
         }
+        System.out.println("\nPeeking the last element from the stack:");
+        return arr[top];        // Restringing the last element
     }
+    
     public void display(){
         for (int i = top; i >= 0; i--) {
             System.out.println(arr[i]);
