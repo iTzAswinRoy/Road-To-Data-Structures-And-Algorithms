@@ -1,4 +1,5 @@
 package JavaStack;
+
 //  Write a Java program to find the maximum and minimum elements in a stack.
 public class WS5 {      // Creating a class for stack
     // Creating instance variables for the class
@@ -43,7 +44,7 @@ public class WS5 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    public void maxAndMin() {
+    public void maxAndMin() {       // Method to find the maximum and minimum in the stack
         int max = Integer.MAX_VALUE;
         int min = Integer.MIN_VALUE;
 
@@ -66,18 +67,21 @@ public class WS5 {      // Creating a class for stack
         }
     }
 
-    public static void main(String[] args) {
-        WS5 obj = new WS5(5);
+    public static void main(String[] args) {        // Main method
+        WS5 obj = new WS5(5);       // Creating an object of the class by passing a value
 
+        // Calling the method to insert elements into the stack
         obj.push(15);
         obj.push(20);
         obj.push(99);
         obj.push(35);
         obj.push(50);
 
+        // Displaying all the elements in the stack
         System.out.println("Given stack:");
         obj.display();
 
+        // Calling the method to find the maximum and minimum in the stack
         System.out.println();
         obj.maxAndMin();
     }
