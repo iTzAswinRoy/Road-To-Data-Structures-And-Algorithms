@@ -20,13 +20,20 @@ public class WS5 {      // Creating a class for stack
         }
     }
 
-    public void pop(){
-        if(top == -1){
+    public int pop() {      // Method to remove element from the stack
+        if (top == -1) {        // Checking if the stack is empty
             System.out.println("Stack is empty");
+            return 0;
+
         } else {
-            top--;
+            System.out.println("\nPopping element from the stack:");
+            int popElement = arr[top];      // Accessing the last element from the stack
+            top--;      // Decrementing top by 1
+
+            return popElement;      // Returning the popped element
         }
     }
+
     public void peek(){
         if(top == -1){
             System.out.println("Stack is empty");
