@@ -43,36 +43,41 @@ public class WS5 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
+    public void maxAndMin() {
+        int max = Integer.MAX_VALUE;
+        int min = Integer.MIN_VALUE;
+
+        for (int i = top; i >= 0; i--) {
+            if (arr[i] > min) {
+                min = arr[i];
+            }
+            if (arr[i] < max) {
+                max = arr[i];
+            }
+        }
+        System.out.println("The maximum element in the stack: " + max);
+        System.out.println("The minimum element in the stack: " + min);
+    }
+
     public void display() {         // Method to display elements int the stack
         // Iterating each element from end to beginning
         for (int i = top; i >= 0; i--) {
             System.out.println(arr[i]);     // Displaying the element
         }
     }
-    
-    public void maxAndMin(){
-        int max = Integer.MAX_VALUE;
-        int min = Integer.MIN_VALUE;
-        for (int i = top; i >= 0; i--) {
-            if(arr[i] > min){
-                min = arr[i];
-            }
-            if(arr[i] < max){
-                max = arr[i];
-            }
-        }
-        System.out.println("The maximum element in the stack: "+ max);
-        System.out.println("The minimum element in the stack: "+ min);
-    }
+
     public static void main(String[] args) {
         WS5 obj = new WS5(5);
-        System.out.println("Given stack:");
+
         obj.push(15);
         obj.push(20);
         obj.push(99);
         obj.push(35);
         obj.push(50);
+
+        System.out.println("Given stack:");
         obj.display();
+
         System.out.println();
         obj.maxAndMin();
     }
