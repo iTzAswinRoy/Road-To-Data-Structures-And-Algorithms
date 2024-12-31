@@ -64,21 +64,25 @@ public class WS4 {          // Creating a class for stack
         }
     }
 
-    public static void main(String[] args) {
-        WS4 obj = new WS4(5);
-        System.out.println("Given stack:");
+    public static void main(String[] args) {        // Main method
+        WS4 obj = new WS4(5);       // Creating an object of the class by passing a value
+
+        // Calling the method to insert elements into the stack
         obj.push(1);
         obj.push(2);
         obj.push(3);
         obj.push(4);
         obj.push(5);
 
+        // Displaying all the elements in the stack
+        System.out.println("Given stack:");
         obj.display();
 
+        // Calling the method to reverse all the elements in the stack
         System.out.println("\nReversed stack:");
+        WS4 reversedStack = obj.reverse(obj);           // Creating a new object to store the reversed stack
 
-        WS4 reversedStack = obj.reverse(obj);
-
+        // Displaying the reversed stack
         reversedStack.display();
     }
 }
