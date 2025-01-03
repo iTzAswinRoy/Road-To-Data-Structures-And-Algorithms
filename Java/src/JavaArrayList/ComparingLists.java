@@ -23,7 +23,7 @@ public class ComparingLists {
     public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
         Scanner in = new Scanner(System.in);      // Creating a scanner object
 
-        System.out.println("Enter the size for list "+count+":");
+        System.out.println("Enter the size for list " + count + ":");
         int size = in.nextInt();        // Getting the size from the user
 
         ArrayList<Integer> tempList = new ArrayList<>();        // Creating a temporary array list
@@ -32,7 +32,6 @@ public class ComparingLists {
         for (int i = 0; i < size; i++) {        // Iterating over the array list
             tempList.add(in.nextInt());       // Adding elements for each iteration
         }
-        System.out.println();
         count++;       // Incrementing count by 1
 
         return tempList;        // Returning the array list
