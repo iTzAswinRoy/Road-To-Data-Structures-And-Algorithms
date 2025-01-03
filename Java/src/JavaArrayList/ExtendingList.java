@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to increase an array list size.
+
 public class ExtendingList {
     public static void main(String[] args) {        // Main method
         ExtendingList obj = new ExtendingList();        // Creating an object
