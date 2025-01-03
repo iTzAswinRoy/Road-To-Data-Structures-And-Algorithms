@@ -19,7 +19,7 @@ public class CopyList {
         System.out.println("list - 1: " + list1);
         System.out.println("list - 2: " + list2);
 
-        if(obj.checkIndex(list1, list2)) {      // Checking if the both the list contains same size
+        if (obj.checkIndex(list1, list2)) {      // Checking if the both the list contains same size
 
             System.out.println("\nList 2 after being copied from List 1\n");
             obj.copyList(list1, list2);     // Calling the method to copy the list 2
