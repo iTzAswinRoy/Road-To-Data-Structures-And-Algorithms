@@ -13,6 +13,7 @@ public class ExtractingList {
 
         obj.extractList(list);
     }
+
     public ArrayList<Integer> userInputs() {        // Method to get inputs from the user
         Scanner in = new Scanner(System.in);      // Creating a scanner object
 
@@ -38,20 +39,20 @@ public class ExtractingList {
         System.out.println("Enter index 2:");
         int i2 = in.nextInt();       // Getting user inputs
 
-        if (i1> list.size() || i2 > list.size() ) {      // Condition to check whether the index is not out of bound
+        if (i1 > list.size() || i2 > list.size() ) {      // Condition to check whether the index is not out of bound
             System.out.println("\nIndex out of bound!");      // Error message
 
-        } else if (i1 < i2){        // Checking if the index is within the range of index 2
+        } else if (i1 < i2) {        // Checking if the index is within the range of index 2
             System.out.println("\nList from given index " + i1 + " and " + i2 + ":");
 
             for (int i = i1; i <= i2; i++) {        // Iterating over the array list
-                System.out.print(list.get(i)+" ");      // Displaying the list from given range
+                System.out.print(list.get(i) + " ");      // Displaying the list from given range
             }
         } else {
             System.out.println("\nList from given index " + i1 + " and " + i2 + ":");
 
             for (int i = i2; i <= i1; i++) {        // Iterating over the array list
-                System.out.print(list.get(i)+" ");      // Displaying the list from given range
+                System.out.print(list.get(i) + " ");      // Displaying the list from given range
             }
         }
     }
