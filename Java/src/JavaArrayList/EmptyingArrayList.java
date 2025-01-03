@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to empty an array list.
+
 public class EmptyingArrayList {
     public static void main(String[] args) {       // Main method
         EmptyingArrayList obj = new EmptyingArrayList();     // Creating an object
@@ -27,19 +28,20 @@ public class EmptyingArrayList {
         for (int i = 0; i < size; i++) {        // Iterating over the array list
             tempList.add(in.nextInt());       // Adding elements for each iteration
         }
-        in.close();         // Closing scanner for avoid excess memory storage
 
+        in.close();         // Closing scanner for avoid excess memory storage
         return tempList;        // Returning the array list
     }
 
-    public void emptyList(ArrayList<Integer> list){     // Method to empty the existing list
+    public void emptyList(ArrayList<Integer> list) {     // Method to empty the existing list
         System.out.println("\nEmptying the list!");
 
         for (int i = list.size() - 1; i >= 0; i--) {    // Iterating through the list from the last because after each removal, the elements shifts to its previous index
             list.remove(i);     // Removing elements for eave iteration
         }
     }
-    public boolean isEmpty(ArrayList<Integer> list){       // Method to check if the list is empty
+
+    public boolean isEmpty(ArrayList<Integer> list) {       // Method to check if the list is empty
         System.out.println("\nChecking if the given array list is empty.....");
 
         return list.isEmpty();      // Returning the boolean value to check if the list is empty or not
