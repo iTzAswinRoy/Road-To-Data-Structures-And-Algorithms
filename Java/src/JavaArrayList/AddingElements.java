@@ -17,13 +17,14 @@ public class AddingElements {
 
         System.out.println("Enter the size of the array list:");
         int size = in.nextInt();    // Getting the size
+
         in.nextLine();      // Changing the integer input type to string
 
-        ArrayList<String> temp = new ArrayList<String>(size);       // Creating a temporary list to store elements
+        ArrayList<String> temp = new ArrayList<>(size);       // Creating a temporary list to store elements
         System.out.println("Enter the colour name:");
 
-        for (int i = 0; i < size; i++) {    // Iterating over the list
-            temp.add(in.nextLine());    // Adding elements to the list for each iteration
+        for (int i = 0; i < size; i++) {     // Iterating over the list
+            temp.add(in.nextLine());      // Adding elements to the list for each iteration
         }
         in.close();     // Closing scanner to save memory storage
 
