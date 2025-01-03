@@ -4,11 +4,12 @@ import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to insert an element into the array list at the first position.
+
 public class InsertElementAtFirst {
     public static void main(String[] args) {          // Main method
         InsertElementAtFirst obj = new InsertElementAtFirst();    // Creating an object
-        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
 
+        ArrayList<Integer> list = obj.userInputs();     //  Creating an array list
         System.out.println("Given array list:\n" + list);     // Displaying the arraylist
 
         obj.insertFirst(list);      // Calling the method to insert the element at first
