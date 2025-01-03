@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to print the element of an ArrayList using the elements' position.
+
 public class FindingElementsPosition {
     public static void main(String[] args) {      // Main method
         FindingElementsPosition obj = new FindingElementsPosition();      // Creating an object
