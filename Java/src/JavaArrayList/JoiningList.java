@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to join two array lists.
+
 public class JoiningList {
     private int count = 1;      // Initializing count in main class
 
@@ -44,12 +45,16 @@ public class JoiningList {
         for (int i = 0; i < (list1.size() + list2.size()); i++) {       // Initializing null values to the entire new list.
             newList.add(null);      // Because we can't set values to an empty list. This avoids IndexOutOfBound exception.
         }
+
+
         for (int i = 0; i < list1.size(); i++) {
-            newList.set(i, list1.get(i));
+            newList.set(i, list1.get(i));       // Setting the values the new list by replacing them
         }
+
         for (int i = 0; i < list2.size(); i++) {
-            newList.set(i + list1.size(), list2.get(i));
+            // Adding size with the index
+            newList.set(i + list1.size(), list2.get(i));      // Setting the values the new list by replacing them
         }
-        return newList;
+        return newList;     // Returning the new list
     }
 }
