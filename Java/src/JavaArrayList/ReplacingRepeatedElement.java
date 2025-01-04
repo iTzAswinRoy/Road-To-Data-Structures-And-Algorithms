@@ -4,6 +4,7 @@ import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to update an array element by replacing the repeated elements.
+
 public class ReplacingRepeatedElement {
     public static void main(String[] args) {        // Main method
         ReplacingRepeatedElement obj = new ReplacingRepeatedElement();    // Creating an object
