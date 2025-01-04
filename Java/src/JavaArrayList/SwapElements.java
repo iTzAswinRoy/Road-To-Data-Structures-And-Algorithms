@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program that swaps two elements in an array list
+
 public class SwapElements {
     public static void main(String[] args) {     // Main method
         SwapElements obj = new SwapElements();      // Creating an object
@@ -30,9 +31,9 @@ public class SwapElements {
     }
 
     public void swapList(ArrayList<Integer> list) {      // Method to swap elements in the list
+        System.out.println("\nEnter the elements to be swapped");
         Scanner in = new Scanner(System.in);      // Creating a scanner object
 
-        System.out.println("\nEnter the elements to be swapped");
         System.out.println("Element-1:");
         int e1 = in.nextInt();      // Getting inputs from the user
 
@@ -48,10 +49,12 @@ public class SwapElements {
             if (list.get(i) == e1 && index1 == -1) {
                 index1 = i;     // Storing the index of the specific element
             }
+
             if (list.get(i) == e2 && index2 == -1) {
                 index2 = i;     // Storing the index of the specific element
             }
         }
+
         if (index1 != -1 && index2 != -1) {      // Checking if the index are in bound
 
             // Swapping the elements
