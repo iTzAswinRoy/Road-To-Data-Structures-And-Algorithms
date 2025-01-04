@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program for trimming the capacity of an array list
+
 public class TrimmingElements {
     public static void main(String[] args) {        // Main method
         TrimmingElements obj = new TrimmingElements();      // Creating an object
