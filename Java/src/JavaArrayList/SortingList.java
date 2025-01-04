@@ -4,6 +4,7 @@ import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
 
 //Write a Java program to sort a given array list.
+
 public class SortingList {
     public static void main(String[] args) {        // Main method
         SortingList obj = new SortingList();       // Creating an object
