@@ -4,6 +4,7 @@ import java.util.ArrayList;     // Importing array list class
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to search for an element in an array list.
+
 public class SearchElement {
     public static void main(String[] args) {        // Main method
         SearchElement obj = new SearchElement();      // Creating an object
