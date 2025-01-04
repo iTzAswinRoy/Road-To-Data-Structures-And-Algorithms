@@ -4,6 +4,7 @@ import java.util.ArrayList;         // Importing array list class
 import java.util.Scanner;          // Importing scanner class
 
 // Write a Java program to reverse elements in an array list
+
 public class ReversedList {
     public static void main(String[] args) {    // Main method
         ReversedList obj = new ReversedList();    // Creating an object
