@@ -5,6 +5,7 @@ import java.util.Random;        // Importing random class
 import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to shuffle elements in an array list.
+
 public class ShuffleElements {
     public static void main(String[] args) {        // Main method
         ShuffleElements obj = new ShuffleElements();        //Creating an object
