@@ -4,16 +4,25 @@ import java.util.Scanner;       // Importing scanner class
 
 // Write a Java program to merge two sorted (ascending) linked lists in ascending order.
 public class MergingSortedList {     // Creating a class which handles linked list
-    Node head;      // Creating a reference for head
-    Node tail;      // Creating a reference for tail
-    int size;       // Creating a size
+    private Node head;      // Creating a reference for head
+    private Node tail;      // Creating a reference for tail
+    private int size;       // Creating a size
 
-    static int count = 1;   // Initializing as static to increment the count correctly whenever the instances of the class is called
-    int listCount;
+    private static int count = 1;   // Initializing as static to increment the count correctly whenever the instances of the class is called
+    private int listCount;          // Creating a variable to store the count
 
     MergingSortedList() {        // Creating a default constructor
         this.size = 0;       // Initializing the size to 0
         this.listCount = count++;       // Incrementing count by 1 whenever the object is created
+    }
+
+    static class Node {       // Creating a node class
+        int value;      // Creating an instance variable to store a value for the node
+        Node next;      // Creating a reference, pointing towards the next node
+
+        Node(int value) {       // Creating a parameter constructor by passing the value
+            this.value = value;     // Assigning the parameter value to the instance variable
+        }
     }
 
     public void insertLast(int data) {      // Method to insert node at last
@@ -67,7 +76,7 @@ public class MergingSortedList {     // Creating a class which handles linked li
         Node current1 = list1.head;        // Creating a current pointer of list 1 pointing at head
         Node current2 = list2.head;        // Creating a current pointer of list 2 pointing at head
 
-        System.out.println("Merged the linked list in ascending order:");
+        System.out.println("\nMerged the linked list in ascending order:");
 
         // Using while loop till both the pointers of the list reaches the end of the list
         while (current1 !=  null && current2 != null) {
@@ -83,11 +92,13 @@ public class MergingSortedList {     // Creating a class which handles linked li
                 current2 = current2.next;
             }
         }
+
         // Inserting the remaining nodes from the linked list 1 to the merge list
         while (current1 != null) {
             mergeList.insertLast(current1.value);
             current1 = current1.next;
         }
+
         // Inserting the remaining nodes from the linked list 2 to the merge list
         while (current2 != null) {
             mergeList.insertLast(current2.value);
@@ -106,15 +117,6 @@ public class MergingSortedList {     // Creating a class which handles linked li
         System.out.print("END\n");      // Displaying 'head' for reference
     }
 
-    static class Node {       // Creating a node class
-        int value;      // Creating an instance variable to store a value for the node
-        Node next;      // Creating a reference, pointing towards the next node
-
-        Node(int value) {       // Creating a parameter constructor by passing the value
-            this.value = value;     // Assigning the parameter value to the instance variable
-        }
-    }
-
     public static void main(String[] args) {        // Main method
         // Creating an object of class type
         MergingSortedList obj1 = new MergingSortedList();
@@ -131,15 +133,13 @@ public class MergingSortedList {     // Creating a class which handles linked li
 
         obj1.sortLinkedList();      // Sorting the linked list 1
         obj1.display();      // Displaying the sorted lined list 1
-        System.out.println();
 
         // Displaying the linked list 2
-        System.out.println("Linked list 2: ");
+        System.out.println("\nLinked list 2: ");
         obj2.display();
 
         obj2.sortLinkedList();      // Sorting the linked list 2
         obj2.display();       // Displaying the sorted lined list 2
-        System.out.println();
 
         MergingSortedList result = MergingSortedList.mergeLinkedList(obj1, obj2);         // Creating an object to store the merged lined list
         result.display();       // Calling the method to display the merged linked list
