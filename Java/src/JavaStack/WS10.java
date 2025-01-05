@@ -9,7 +9,7 @@ public class WS10 {//
         top = -1;//
     }
     public void push(int num) {//
-        if (top == arr.length - 1) {
+        if (top == arr.length - 1) {//
             System.out.println("Stack is full");
         } else {
             top++;
