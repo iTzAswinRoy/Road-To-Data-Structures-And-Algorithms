@@ -1,5 +1,6 @@
 package JavaStack;
 // Write a Java program to find the top and bottom elements of a given stack.
+
 public class WS10 {
     int[] arr;
     int top;
