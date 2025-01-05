@@ -10,7 +10,7 @@ public class WS10 {//
     }
     public void push(int num) {//
         if (top == arr.length - 1) {//
-            System.out.println("Stack is full");
+            System.out.println("Stack is full");//
         } else {
             top++;
             arr[top] = num;
