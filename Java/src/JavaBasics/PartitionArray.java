@@ -14,13 +14,14 @@ public class PartitionArray {
     }
 
     public ArrayList<Integer> userInputs() {     // Method to get user inputs
+        ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list
         Scanner in = new Scanner(System.in);      // Creating a scanner object
 
-        ArrayList<Integer> temp = new ArrayList<>();    // Creating an array list
         System.out.println("Enter the size of the array:");
         int size = in.nextInt();    // Getting the size using scanner object
 
         System.out.println("Enter the values of the array list:");
+
         for (int i = 0; i < size; i++) {    // Iterating over the array
             temp.add(in.nextInt());     // Adding elements for each iteration of the array list
         }
