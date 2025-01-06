@@ -12,9 +12,9 @@ public class SumOfPrimeNumbers {
         int[] arr = obj.userInput();    // Creating an array by calling the user input method to store values
         System.out.println("Original array:\n" + Arrays.toString(arr));      // Displaying the given array
 
-        System.out.println("Extracting only prime numbers from the array:\n" + obj.displayPrime(arr));   // Displaying the array consisting of prime numbers
+        System.out.println("\nExtracting only prime numbers from the array:\n" + obj.displayPrime(arr));   // Displaying the array consisting of prime numbers
 
-        System.out.println("Sum of prime numbers: " + obj.sumOfPrime(arr));     // Displaying the sum of prime numbers is an array
+        System.out.println("\nSum of prime numbers: " + obj.sumOfPrime(obj.displayPrime(arr)));     // Displaying the sum of prime numbers is an array
     }
 
     public int[] userInput() {      // Method to get user inputs
@@ -61,12 +61,12 @@ public class SumOfPrimeNumbers {
         return temp;    // Returning the list containing the prime numbers
     }
 
-    public int sumOfPrime(int[] num) {     // Method to calculate the sum of prime numbers
+    public int sumOfPrime(ArrayList<Integer> num) {     // Method to calculate the sum of prime numbers
         int sum = 0;    // Creating an empty variable to store the sum.
 
-        for (int i = 0; i < num.length; i++) {      // Iterating through the array
-            if (checkPrime(num[i])) {     // Checking if the number is prime number
-                sum += num[i];      // Adding it to a variable
+        for (int i = 0; i < num.size(); i++) {      // Iterating through the array
+            if (checkPrime(num.get(i))) {     // Checking if the number is prime number
+                sum += num.get(i);      // Adding it to a variable
             }
         }
         return sum;     // Returning the sum of prime numbers
