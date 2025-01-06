@@ -45,7 +45,7 @@ public class NumberOfPrimeNumbers {
         } else {
             for (int i = 2; i <= num; i++) {    // Iterating thrown the given number
 
-                if (isPrime(i)) {       // Checking i f the 'i is prime number
+                if (isPrime(i)) {       // Checking if the 'i' is prime number
                     count++;    // If yes, count increments by 1
                 }
             }
