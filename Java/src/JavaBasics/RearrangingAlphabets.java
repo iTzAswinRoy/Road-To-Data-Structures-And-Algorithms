@@ -4,11 +4,12 @@ import java.util.Scanner;   // Importing Scanner class
 
 // Write a Java program to rearrange the alphabets in the order
 // followed by the sum of digits in a given string containing uppercase alphabets and integer digits (from 0 to 9).
+
 public class RearrangingAlphabets {
     public static void main(String[] args) {     // Main method
         RearrangingAlphabets obj = new RearrangingAlphabets();       // Creating a class object
 
-        System.out.println("Enter a set of character's (in upper case) and number's:");
+        System.out.println("Enter a set of character's and number's:");
         String upperCaseText = obj.userInputs();     // Creating a variable to store inputs from the user
 
         System.out.println("\nSorting the character's with the sum of number's: ");
@@ -18,7 +19,7 @@ public class RearrangingAlphabets {
     public String userInputs() {      // Method to get inputs from the user
         Scanner in = new Scanner(System.in);    // Creating a scanner object
 
-        return in.nextLine();     // Returning the scanner object
+        return in.nextLine().toUpperCase();     // Returning the scanner object
     }
 
     public void rearrangeCharacters(String input) {     // Method to rearrange the characters
@@ -39,8 +40,8 @@ public class RearrangingAlphabets {
                 numSum += character - '0';     // With the help of ASCII value, we can find the difference between zero character and given character
             }
         }
-        for (int i = 0; i < alphabetsCount - 1; i++) {      // Using bubble sort to rearrange the alphabets
 
+        for (int i = 0; i < alphabetsCount - 1; i++) {      // Using bubble sort to rearrange the alphabets
             for (int j = 0; j < alphabetsCount - i - 1; j++) {     // Reducing the length for each sorted elements
 
                 if(alphabets[j] > alphabets[j+1]) {     // Checking if the element is greater than the next element
@@ -51,6 +52,7 @@ public class RearrangingAlphabets {
                 }
             }
         }
+
         for (int i = 0; i < alphabetsCount; i++) {      // Printing each element in a for loop
             System.out.print(alphabets[i]);     // Prints the element for each iteration
         }
