@@ -26,8 +26,8 @@ public class SentenceComparison {
         String[] temp1 = str1.split(" ");   // Storing the 1st sentence in an array by splitting them
         String[] temp2 = str2.split(" ");   // Storing the 2nd sentence in an array
 
-        for (int i = 0; i < temp1.length; i++) {    // Iterating over each array in order to find any similar words between them
-
+        // Iterating over each array in order to find any similar words between them
+        for (int i = 0; i < temp1.length; i++) {
             for (int j = 0; j < temp1.length; j++) {
 
                 if (Objects.equals(temp1[i], temp2[j])) {   // With the help of object class I'm comparing the sentence word by word
