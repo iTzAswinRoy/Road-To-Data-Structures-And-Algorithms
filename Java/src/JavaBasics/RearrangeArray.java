@@ -34,10 +34,11 @@ public class RearrangeArray {
     public int[] rearrangeArray(int[] data) {       // Method to rearrange the array
         int[] newArray = new int[data.length];       // Creating a new array to store the rearranged array
 
-        int right = data.length-1;     // Assigning a value for right index of an array
         int left = 0;       // Assigning a value for left index of an array
+        int right = data.length-1;     // Assigning a value for right index of an array
 
         for (int i = 0; i < data.length; i++) {      // Iterating over the array to rearrange the positive and negative elements
+
             // Checking if the value is positive or negative
             if (data[i] > 0) {      // If it's positive, then it adds on the right of the array
                 newArray[right] = data[i];      // Initializing the value to the right of the array
