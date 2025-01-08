@@ -5,7 +5,7 @@ abstract class Shape {      // Creating a class named 'Shape'
     // Creating instance variables for the class
     private String color;
 
-    Shape(String colour){       // Creating a parameterized constructor by passing arguments
+    Shape(String colour) {       // Creating a parameterized constructor by passing arguments
         // Initialing values to the instance variables
         this.color = colour;
     }
