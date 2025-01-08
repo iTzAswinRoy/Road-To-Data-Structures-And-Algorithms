@@ -1,4 +1,5 @@
 package JavaConstructor;
+
 // Implement a class DatabaseConnection using the Singleton pattern with a private constructor.
 public class DatabaseConnection {      // Creating a class named 'DatabaseConnection' that contains 'database'
     // Creating instance variables for the class
