@@ -46,7 +46,7 @@ public class FindElementIndex {
             return false;
         }
 
-        if(data.get(index) == specificElement){
+        if (data.get(index) == specificElement) {
             return true;
         }
         return elementCheck(data, index+1, specificElement);
