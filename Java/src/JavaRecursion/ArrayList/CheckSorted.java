@@ -28,7 +28,7 @@ public class CheckSorted {
     }
 
     public void swap(ArrayList<Integer> data, int i, int j) {       // Method to swap the values present in the index
-        // Swappkg
+        // Here the swapping process takes place
         int temp = data.get(i);
         data.set(i, data.get(j));
         data.set(j, temp);
