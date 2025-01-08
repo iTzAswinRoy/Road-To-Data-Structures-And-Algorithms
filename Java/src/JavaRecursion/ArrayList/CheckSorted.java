@@ -12,20 +12,23 @@ public class CheckSorted {
 
         boolean isSwapped = false;      // Creating a check to avoid unnecessary running of for loop
 
+        // Iterating through the array list
         for (int i = 0; i < data.size() - index - 1; i++) {
+            // Implementing bubble sort
             if (data.get(i) > data.get(i + 1)) {
-                swap(data, i, i + 1);
-                isSwapped = true;
+                swap(data, i, i + 1);       // Calling a helper method called swap
+                isSwapped = true;       // Changing the boolean to 'true', if the swap occurs
             }
         }
 
-        if (!isSwapped) {      // If no swaps were made after a recursive call, the array is sorted
-            return data;
+        if (!isSwapped) {      // If no swaps were made after a recursive call, the array is already sorted
+            return data;        // Retuning the array list
         }
-        return sortingList(data,index + 1);
+        return sortingList(data,index + 1);         // Calling the recursive function by incrementing the index
     }
 
-    public void swap(ArrayList<Integer> data, int i, int j) {
+    public void swap(ArrayList<Integer> data, int i, int j) {       // Method to swap the values present in the index
+        // Swappkg
         int temp = data.get(i);
         data.set(i, data.get(j));
         data.set(j, temp);
