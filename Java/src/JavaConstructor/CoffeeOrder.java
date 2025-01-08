@@ -29,7 +29,7 @@ public class CoffeeOrder {      // Creating a class named 'CoffeeOrder'
 
         // Calling the method to display the coffee orders
         System.out.println("Coffee order:\n------------");
-        System.out.println("Size: "+order.getSize());
-        System.out.println("Number of orders: "+order.getOrderCount());
+        System.out.println("Size: " + order.getSize());
+        System.out.println("Number of orders: " + order.getOrderCount());
     }
 }
