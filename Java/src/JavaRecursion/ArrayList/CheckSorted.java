@@ -34,7 +34,7 @@ public class CheckSorted {
         data.set(j, temp);
     }
 
-    public boolean isSorted(ArrayList<Integer> data, int index) {
+    public boolean isSorted(ArrayList<Integer> data, int index) {       // Method to check if the array list is sorted in ascending order.
         if (index == data.size() - 1 || data.isEmpty()) {
             return true;
         }
