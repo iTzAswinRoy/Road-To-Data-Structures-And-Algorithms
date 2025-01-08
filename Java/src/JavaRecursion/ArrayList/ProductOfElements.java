@@ -1,6 +1,5 @@
 package JavaRecursion.ArrayList;
 
-
 import java.util.ArrayList;
 
 // Write a recursive function to find the product of all elements in an ArrayList of integers.
@@ -20,8 +19,8 @@ public class ProductOfElements {
         System.out.println("\nFinding the product of the elements in the array list:\n" + result);
     }
 
-    public int multiplyingElements(ArrayList<Integer> data, int index){
-        if (index >= data.size()){
+    public int multiplyingElements(ArrayList<Integer> data, int index) {
+        if (index >= data.size()) {
             return 1;
         }
         return multiplyingElements(data, index+1) * data.get(index);
