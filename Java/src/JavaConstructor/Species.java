@@ -7,7 +7,6 @@ package JavaConstructor;
 
      Animal(String species) {
          this.species = species;
-
      }
 
      public void displaySpecies() {      //
