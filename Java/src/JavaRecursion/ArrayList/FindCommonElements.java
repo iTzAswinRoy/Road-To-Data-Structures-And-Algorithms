@@ -18,7 +18,7 @@ public class FindCommonElements {
         list2.add(1);//
         list2.add(0);//
         list2.add(3);//
-        list2.add(0);
+        list2.add(0);//
         list2.add(5);
 
         System.out.println("Given array list:" );
