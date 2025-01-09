@@ -12,7 +12,7 @@ public class FindCommonElements {
         list1.add(2);//
         list1.add(3);//
         list1.add(4);//
-        list1.add(5);
+        list1.add(5);//
 
         ArrayList<Integer> list2 = new ArrayList<>();
         list2.add(1);
