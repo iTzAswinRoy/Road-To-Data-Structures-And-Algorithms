@@ -15,7 +15,7 @@ public class FindCommonElements {
         list1.add(5);//
 
         ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(1);
+        list2.add(1);//
         list2.add(0);
         list2.add(3);//
         list2.add(0);
