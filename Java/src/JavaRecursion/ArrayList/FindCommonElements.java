@@ -7,7 +7,7 @@ public class FindCommonElements {
     public static void main(String[] args) {
         FindCommonElements obj = new FindCommonElements();
 
-        ArrayList<Integer> list1 = new ArrayList<>();
+        ArrayList<Integer> list1 = new ArrayList<>();//
         list1.add(1);
         list1.add(2);
         list1.add(3);
