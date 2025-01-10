@@ -4,7 +4,7 @@ public class WS14 {
     int[] arr;//
     int top;//
     WS14(int size) {//
-        arr = new int[size];
+        arr = new int[size];//
         top = -1;
     }
     public void push(int num) {
