@@ -2,7 +2,7 @@ package JavaStack;
 // Write a Java program to swap the top two elements of a given stack.
 public class WS14 {
     int[] arr;
-    int top;
+    int top;//
     WS14(int size) {//
         arr = new int[size];
         top = -1;
