@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 // Write a recursive function to find duplicate elements in an ArrayList.
 public class FindDuplicates {//
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         FindDuplicates obj = new FindDuplicates();
 
         ArrayList<Integer> list = new ArrayList<>();
