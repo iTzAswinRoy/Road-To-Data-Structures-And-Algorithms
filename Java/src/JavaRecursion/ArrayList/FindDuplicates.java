@@ -8,7 +8,7 @@ public class FindDuplicates {//
         FindDuplicates obj = new FindDuplicates();//
 
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(5);
+        list.add(5);//
         list.add(2);
         list.add(5);
         list.add(1);
