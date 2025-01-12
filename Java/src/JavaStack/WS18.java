@@ -11,7 +11,7 @@ public class WS18 {//
         if(top == arr.length-1) {//
             System.out.println("stack is full");
         } else {
-            top++;
+            top++;//
             arr[top] = num;
         }
     }
