@@ -8,7 +8,7 @@ public class WS18 {//
         top = -1;//
     }
     public void push(int num) {//
-        if(top == arr.length-1) {
+        if(top == arr.length-1) {//
             System.out.println("stack is full");
         } else {
             top++;
