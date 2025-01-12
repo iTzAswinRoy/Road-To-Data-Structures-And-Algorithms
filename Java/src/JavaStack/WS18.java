@@ -12,7 +12,7 @@ public class WS18 {//
             System.out.println("stack is full");
         } else {
             top++;//
-            arr[top] = num;
+            arr[top] = num;//
         }
     }
     public void pop(){
