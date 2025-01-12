@@ -3,7 +3,7 @@ package JavaStack;
 public class WS18 {//
     int[] arr;//
     int top;//
-    WS18(int size){
+    WS18(int size){//
         arr = new int[size];
         top = -1;
     }
