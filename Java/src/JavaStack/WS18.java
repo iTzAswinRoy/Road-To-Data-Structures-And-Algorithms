@@ -7,7 +7,7 @@ public class WS18 {//
         arr = new int[size];//
         top = -1;//
     }
-    public void push(int num) {
+    public void push(int num) {//
         if(top == arr.length-1) {
             System.out.println("stack is full");
         } else {
