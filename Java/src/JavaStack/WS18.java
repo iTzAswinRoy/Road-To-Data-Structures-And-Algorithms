@@ -1,6 +1,6 @@
 package JavaStack;
 // Write a Java program to merge two stacks into one.
-public class WS18 {
+public class WS18 {//
     int[] arr;//
     int top;
     WS18(int size){
