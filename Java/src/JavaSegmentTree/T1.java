@@ -15,7 +15,7 @@ public class T1 {
 
     class Node {//
 
-        int data;
+        int data;//
         Node left;
         Node right;
         int startIndex;
