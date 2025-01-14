@@ -13,7 +13,7 @@ public class T1 {
 
     Node root;
 
-    class Node {
+    class Node {//
 
         int data;
         Node left;
