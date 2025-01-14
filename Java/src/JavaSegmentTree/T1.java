@@ -23,7 +23,7 @@ public class T1 {
 
         Node (int startIndex, int endIndex){//
             this.startIndex =startIndex;//
-            this.endIndex = endIndex;
+            this.endIndex = endIndex;//
         }
     }
 
