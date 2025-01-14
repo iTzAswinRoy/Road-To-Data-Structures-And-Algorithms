@@ -22,7 +22,7 @@ public class T1 {
         int endIndex;//
 
         Node (int startIndex, int endIndex){//
-            this.startIndex =startIndex;
+            this.startIndex =startIndex;//
             this.endIndex = endIndex;
         }
     }
