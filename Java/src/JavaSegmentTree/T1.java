@@ -21,7 +21,7 @@ public class T1 {
         int startIndex;//
         int endIndex;//
 
-        Node (int startIndex, int endIndex){
+        Node (int startIndex, int endIndex){//
             this.startIndex =startIndex;
             this.endIndex = endIndex;
         }
