@@ -11,7 +11,7 @@ package JavaSegmentTree;
 //        - Query sum from index 1 to 3.
 public class T1 {
 
-    Node root;
+    Node root;//
 
     class Node {//
 
