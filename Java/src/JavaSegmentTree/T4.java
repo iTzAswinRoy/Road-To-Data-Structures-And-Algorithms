@@ -15,7 +15,7 @@ public class T4 {//
     Node root;
 
     class Node{//
-        int data;
+        int data;//
         Node left;//
         Node right;//
         int startIndex;//
