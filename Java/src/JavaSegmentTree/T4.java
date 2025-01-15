@@ -19,7 +19,7 @@ public class T4 {//
         Node left;//
         Node right;//
         int startIndex;//
-        int endIndex;
+        int endIndex;//
 
         Node(int startIndex, int endIndex){
             this.startIndex =startIndex;
