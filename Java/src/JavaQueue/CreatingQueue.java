@@ -27,7 +27,7 @@ public class CreatingQueue {
            newNode.next = head;         // New node pointing at head
            head = newNode;          // Assigning head as new node
        }
-        System.out.println("Element added.");
+        System.out.println("Element added.");//
     }
 
     public void deQueue() {       // Method to remove elements from the queue
