@@ -7,7 +7,7 @@ public class CreatingQueue {
     private Node tail;      // Crating a reference variable 'tail' of class Node type
 
     class Node {////
-        private int value;//
+        private int value;////
         private Node next;//
 
         Node (int value) {////
