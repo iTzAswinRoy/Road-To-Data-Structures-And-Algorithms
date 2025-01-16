@@ -10,7 +10,7 @@ public class CreatingQueue {
         private int value;//
         private Node next;//
 
-        Node (int value) {
+        Node (int value) {//
             this.value = value;
         }
     }
