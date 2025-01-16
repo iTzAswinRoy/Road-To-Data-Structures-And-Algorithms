@@ -8,7 +8,7 @@ public class CreatingQueue {
 
     class Node {//
         private int value;//
-        private Node next;
+        private Node next;//
 
         Node (int value) {
             this.value = value;
