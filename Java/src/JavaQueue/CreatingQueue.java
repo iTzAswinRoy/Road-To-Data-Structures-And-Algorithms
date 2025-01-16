@@ -51,7 +51,7 @@ public class CreatingQueue {
 
     public void view() {        // Method to view the queue
         Node temp = head;       // Creating a temp node pointing at head
-        System.out.println("Viewing Queue:");
+        System.out.println("Viewing Queue:");//
 
         // Iterating till the temp reaches null
         while (temp != null) {
