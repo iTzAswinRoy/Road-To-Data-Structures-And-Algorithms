@@ -6,29 +6,25 @@ import java.util.Arrays;
 public class PeakElement {
     public static void main(String[] args) {
         PeakElement obj = new PeakElement();
-        int[] array = {1,2,3,4,5};
+        int[] array = {11,2,3,4,5};
         System.out.println("Given array:\n"+ Arrays.toString(array));
 
-        int result = obj.findingPeakElement(array, 0, array.length -1,0 );
+        int result = obj.findingPeakElement(array, 0, array.length -1 );
         System.out.println("\nFinding peak element in the array:\n"+ result);
     }
 
-    public int findingPeakElement(int[] data,  int s, int e, int peakElement){
+    public int findingPeakElement(int[] data,  int s, int e){
         if(s == e){
-            return peakElement;
+            return data[s];
         }
         int mid = s + (e-s)/2;
 
-        if(data[mid] > data[mid-1] && data[mid] > data[mid+1]){
-            return peakElement;
+        if (mid > 0 && mid < data.length - 1 && data[mid] > data[mid - 1] && data[mid] > data[mid + 1]) {
+            return data[mid];
         }
         if(data[mid] < data[mid-1]){
-            findingPeakElement(data, 0 , mid, peakElement);
-        } else {
-            findingPeakElement(data, mid, data.length-1, peakElement );
+            return findingPeakElement(data, s , mid);
         }
-
-
-        return peakElement;
+        return findingPeakElement(data, mid + 1, e);
     }
 }
