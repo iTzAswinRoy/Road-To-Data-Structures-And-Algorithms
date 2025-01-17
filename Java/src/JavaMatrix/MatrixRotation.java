@@ -28,7 +28,7 @@ public class MatrixRotation {
         for (int i = 0; i < data.length; i++) {         // Iterating through the rows of the matrix
             for (int j = 0; j < data[0].length; j++) {          // Iterating through the columns of the matrix
 
-                result[j][size-i] = data[i][j];          // Multiplying each element using scalar value
+                result[j][size - i] = data[i][j];          // Multiplying each element using scalar value
             }
         }
         return result;          // Returning the result
