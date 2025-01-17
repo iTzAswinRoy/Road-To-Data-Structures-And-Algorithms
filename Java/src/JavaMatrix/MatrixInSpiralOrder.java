@@ -21,8 +21,6 @@ public class MatrixInSpiralOrder {
 
     public void spiralOrder(int[][] data) {         // Method to display the matrix in spiral order
         // Creating a nested for loop to vies each element in the matrix
-
-        // Creating a nested for loop to vies each element in the matrix
         for (int i = 0; i < data.length; i++) {         // Iterating through the rows of the matrix
             for (int j = 0; j < data[0].length; j++) {          // Iterating through the columns of the matrix
 
