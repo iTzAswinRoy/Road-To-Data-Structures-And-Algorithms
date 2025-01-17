@@ -33,7 +33,7 @@ public class CheckingIdentityMatrix {
             for (int j = 0; j < data[0].length; j++) {         // Iterating through the columns of the matrix
 
                 // Checking the matrix is an identity matrix.
-                if(data[i][i] != 1 || (i != j && data[i][j] != 0)) {
+                if (data[i][i] != 1 || (i != j && data[i][j] != 0)) {
                     return false;        // Returns false
                 }
             }
