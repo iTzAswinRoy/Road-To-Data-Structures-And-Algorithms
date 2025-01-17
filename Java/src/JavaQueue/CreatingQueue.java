@@ -3,22 +3,24 @@ package JavaQueue;
 import java.util.Scanner;       // Importing scanner class
 
 public class CreatingQueue {
+    // Creating instance variables for the class
     private Node head;      // Crating a reference variable 'head' of class Node type
     private Node tail;      // Crating a reference variable 'tail' of class Node type
 
-    class Node {////
-        private int value;////
-        private Node next;//
+    class Node {        // Creating a class for node
+        // Creating instance variables for the class
+        private int value;      // Creating an instance variable to store a value of the node
+        private Node next;      // Creating a reference variable, pointing towards the next node
 
-        Node (int value) {////
-            this.value = value;//
+        Node (int value) {
+            this.value = value;
         }
     }
 
     public void enqueue(int value) {        // Method to add elements to the queue
         Node newNode = new Node(value);         // Creating a node
 
-        // Checking if the queue is empty
+       // Checking if the queue is empty
        if (tail == null) {
            head = newNode;     // Assigning value to head
            tail = head;        // Assigning tail as head
@@ -27,7 +29,7 @@ public class CreatingQueue {
            newNode.next = head;         // New node pointing at head
            head = newNode;          // Assigning head as new node
        }
-        System.out.println("Element added.");//
+        System.out.println("Element added.");
     }
 
     public void deQueue() {       // Method to remove elements from the queue
