@@ -6,10 +6,11 @@ import java.util.Arrays;
 public class ReplaceOccurrence {
     public static void main(String[] args) {
     ReplaceOccurrence obj = new ReplaceOccurrence();
-    int[] array = {1,2,4,2,5,8,2,10};
-    int[] result = obj.replaceElements(array, 0, 2, 99);
+        int[] array = {1,2,4,2,5,8,2,10};
+        System.out.println("Given array:\n"+ Arrays.toString(array));
 
-    System.out.println("Given array:\n"+ Arrays.toString(array));
+
+        int[] result = obj.replaceElements(array, 0, 2, 99);
     System.out.println("\nArray after replacing all the occurrence with the specie element:\n" + Arrays.toString(result));
     }
 
