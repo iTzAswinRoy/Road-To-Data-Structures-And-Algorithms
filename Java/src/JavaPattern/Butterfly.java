@@ -14,7 +14,7 @@ public class Butterfly {
             }
 
             // Second inner loop: Prints spaces between the two halves of the butterfly
-            for (int j = 0; j <  2*(n - i -1); j++) {
+            for (int j = 0; j < 2 * (n - i -1); j++) {
 
                 System.out.print(" ");
             }
