@@ -56,7 +56,7 @@ public class CheckingElement {
             temp = temp.next;       // Moving the 'temp' pointer to the next node
         }
 
-        // If the boolean remains flas, then the element not found
+        // If the boolean remains false, then the element not found
         if (!isFound) {
             System.err.println("Element not found!");       // Displays the error message
         }
