@@ -1,7 +1,5 @@
 package JavaStack;
 
-import java.util.Arrays;
-
 // Write a Java program to reverse the elements of a stack.
 public class WS4 {          // Creating a class for stack
     // Creating instance variables for the class
@@ -16,7 +14,8 @@ public class WS4 {          // Creating a class for stack
 
     public void push(int num) {      // Method to add element into the stack
         if (top == arr.length - 1) {        // Checking if the stack is full
-            System.out.println("Stack is full");//
+            System.out.println("Stack is full");
+
         } else {
             top++;      // Incrementing top by 1
             arr[top] = num;     // Adding the value to the stack
