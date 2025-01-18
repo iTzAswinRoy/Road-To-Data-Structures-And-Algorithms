@@ -2,7 +2,8 @@ package JavaStack;
 
 // Write a Java program to implement a stack with push and pop operations.
 // Find the top element of the stack and check if the stack is empty or not.
- public class w1 {          // Creating a class for stack
+
+public class w1 {          // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
@@ -13,9 +14,10 @@ package JavaStack;
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
     }
 
-    public void push(int num){      // Method to add element into the stack
+    public void push(int num) {      // Method to add element into the stack
         if (top == arr.length - 1) {        // Checking if the stack is full
-            System.out.println("Stack is full");//
+            System.out.println("Stack is full");
+
         } else {
             top++;      // Incrementing top by 1
             arr[top] = num;     // Adding the value to the stack
