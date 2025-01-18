@@ -1,6 +1,7 @@
 package JavaStack;
 
 //  Write a Java program to find the maximum and minimum elements in a stack.
+
 public class WS5 {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
@@ -14,7 +15,8 @@ public class WS5 {      // Creating a class for stack
 
     public void push(int num) {      // Method to add element into the stack
         if (top == arr.length - 1) {        // Checking if the stack is full
-            System.out.println("Stack is full");//
+            System.out.println("Stack is full");
+
         } else {
             top++;      // Incrementing top by 1
             arr[top] = num;     // Adding the value to the stack
@@ -24,10 +26,11 @@ public class WS5 {      // Creating a class for stack
     public int pop() {      // Method to remove element from the stack
         if (top == -1) {        // Checking if the stack is empty
             System.out.println("Stack is empty");
-            return 0;
+            return 0;       // Returns 0, if empty
 
         } else {
             System.out.println("\nPopping element from the stack:");
+
             int popElement = arr[top];      // Accessing the last element from the stack
             top--;      // Decrementing top by 1
 
@@ -45,18 +48,22 @@ public class WS5 {      // Creating a class for stack
     }
 
     public void maxAndMin() {       // Method to find the maximum and minimum in the stack
-        int max = Integer.MAX_VALUE;
-        int min = Integer.MIN_VALUE;
+        int max = Integer.MIN_VALUE;        // Storing minimum value
+        int min = Integer.MAX_VALUE;        // Storing maximum value
 
+        // Iterating through stack
         for (int i = top; i >= 0; i--) {
-            if (arr[i] > min) {
-                min = arr[i];
+            // Checking if the element is greater than min value
+            if (arr[i] < min) {
+                min = arr[i];       // Updating the min
             }
-            if (arr[i] < max) {
-                max = arr[i];
+            // Checking if the element is less than max value
+            if (arr[i] > max) {
+                max = arr[i];       // Updating the max
             }
         }
-        System.out.println("The maximum element in the stack: " + max);
+        // Displaying the maximum and minimum element in the stack
+        System.out.println("\nThe maximum element in the stack: " + max);
         System.out.println("The minimum element in the stack: " + min);
     }
 
@@ -82,7 +89,6 @@ public class WS5 {      // Creating a class for stack
         obj.display();
 
         // Calling the method to find the maximum and minimum in the stack
-        System.out.println();
         obj.maxAndMin();
     }
 }
