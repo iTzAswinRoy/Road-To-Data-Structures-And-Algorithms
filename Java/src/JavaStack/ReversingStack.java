@@ -1,12 +1,13 @@
 package JavaStack;
 
 // Write a Java program to reverse the elements of a stack.
-public class WS4 {          // Creating a class for stack
+
+public class ReversingStack {          // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS4 (int size) {          // Creating a parameterized constructor by passing a value
+    ReversingStack(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -44,9 +45,9 @@ public class WS4 {          // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    public WS4 reverse(WS4 originalStack) {         // Method to reverse the element in the stack
+    public ReversingStack reverse(ReversingStack originalStack) {         // Method to reverse the element in the stack
 
-        WS4 newStack = new WS4(originalStack.arr.length);
+        ReversingStack newStack = new ReversingStack(originalStack.arr.length);
 
         for (int i = 0; i < originalStack.arr.length ; i++) {
             newStack.push(originalStack.pop());
@@ -64,7 +65,7 @@ public class WS4 {          // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS4 obj = new WS4(5);       // Creating an object of the class by passing a value
+        ReversingStack obj = new ReversingStack(5);       // Creating an object of the class by passing a value
 
         // Calling the method to insert elements into the stack
         obj.push(1);
@@ -79,7 +80,7 @@ public class WS4 {          // Creating a class for stack
 
         // Calling the method to reverse all the elements in the stack
         System.out.println("\nReversed stack:");
-        WS4 reversedStack = obj.reverse(obj);           // Creating a new object to store the reversed stack
+        ReversingStack reversedStack = obj.reverse(obj);           // Creating a new object to store the reversed stack
 
         // Displaying the reversed stack
         reversedStack.display();
