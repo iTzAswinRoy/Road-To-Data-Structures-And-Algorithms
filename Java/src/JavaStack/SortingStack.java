@@ -1,12 +1,13 @@
 package JavaStack;
 
 //Write a Java program to sort the elements of a given stack in ascending order
-public class WS2 {      // Creating a class for stack
+
+public class SortingStack {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS2 (int size) {          // Creating a parameterized constructor by passing a value
+    SortingStack(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -68,7 +69,7 @@ public class WS2 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS2 obj = new WS2(5);       // Creating an object of the class by passing a value
+        SortingStack obj = new SortingStack(5);       // Creating an object of the class by passing a value
 
         // Calling the method to insert elements into the stack
         System.out.println("Pushing elements to the stack:");
