@@ -12,7 +12,7 @@ public class CreatingQueue {
         private int value;      // Creating an instance variable to store a value of the node
         private Node next;      // Creating a reference variable, pointing towards the next node
 
-        Node (int value) {///////
+        Node (int value) {////////
             this.value = value;
         }
     }
