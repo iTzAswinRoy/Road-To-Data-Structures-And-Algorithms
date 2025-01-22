@@ -2,12 +2,12 @@ package JavaStack;
 
 // Write a Java program that implements a stack and finds common elements between two stacks.
 
-public class WS21 {      // Creating a class for stack
+public class FindingCommonElements {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS21 (int size) {          // Creating a parameterized constructor by passing a value
+    FindingCommonElements(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -45,8 +45,8 @@ public class WS21 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    public static void commonElement(WS21 obj1, WS21 obj2) {          // Method to get the common elements from the both the stack
-        WS21 newStack = new WS21(Math.min(obj1.arr.length, obj2.arr.length));           // Creating a stack to get store the common elements
+    public static void commonElement(FindingCommonElements obj1, FindingCommonElements obj2) {          // Method to get the common elements from the both the stack
+        FindingCommonElements newStack = new FindingCommonElements(Math.min(obj1.arr.length, obj2.arr.length));           // Creating a stack to get store the common elements
 
         // Using nested for loop
         for (int i = obj1.top; i >= 0; i--) {
@@ -69,7 +69,7 @@ public class WS21 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS21 obj1 = new WS21(5);        // Creating a new stack by passing a value
+        FindingCommonElements obj1 = new FindingCommonElements(5);        // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj1.push(1);
@@ -82,7 +82,7 @@ public class WS21 {      // Creating a class for stack
         System.out.println("Stack - 1:");
         obj1.display();
 
-        WS21 obj2 = new WS21(5);            // Creating a new stack by passing a value
+        FindingCommonElements obj2 = new FindingCommonElements(5);            // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj2.push(3);
