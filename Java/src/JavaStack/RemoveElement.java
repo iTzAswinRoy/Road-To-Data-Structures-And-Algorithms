@@ -2,12 +2,12 @@ package JavaStack;
 
 // Write a Java program to remove a specific element from a stack.
 
-public class WS13 {      // Creating a class for stack
+public class RemoveElement {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS13 (int size) {          // Creating a parameterized constructor by passing a value
+    RemoveElement(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -45,7 +45,7 @@ public class WS13 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    public void removeElement(int element) {        // Method to remove specific element from the stack
+    public void remove(int element) {        // Method to remove specific element from the stack
         // Checking if the helper method is true
         if (checkingElement(element)) {
             System.out.println("\nStack after removing the element " + element + ":");
@@ -82,7 +82,7 @@ public class WS13 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS13 obj = new WS13(5);         // Creating an object of the class by passing a value
+        RemoveElement obj = new RemoveElement(5);         // Creating an object of the class by passing a value
 
         // Calling the method to insert elements into the stack
         obj.push(65);
@@ -96,6 +96,6 @@ public class WS13 {      // Creating a class for stack
         obj.display();
 
         // Calling the method to remove specific element from the stack
-        obj.removeElement(99);
+        obj.remove(99);
     }
 }
