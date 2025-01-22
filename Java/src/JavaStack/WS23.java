@@ -92,22 +92,58 @@ public class WS23 {      // Creating a class for stack
 
         // Using nested loop to compare elements with all elements
         for (int i = mergeStack.top; i >= 0; i--) {
+            int currentElement = mergeStack.arr[i];
+            int count = 0;
+
             for (int j = mergeStack.top; j >= 0; j--) {
 
-                boolean existingElement = false;
-
-                if (mergeStack.arr[i] == newStack.arr[j]) {
-                    existingElement = true;
-                    break;
+                int checkElement = mergeStack.arr[j];
+                if (checkElement == currentElement) {
+                    count++;
                 }
+            }
 
-                if(!existingElement) {
-                    newStack.push(mergeStack.arr[i]);
-                }
+            if (count > 0 && check(mergeStack, currentElement)) {
+                newStack.push(currentElement);
             }
         }
         newStack.display();
     }
+
+    static boolean check(WS23 temp, int element) {
+        for (int i = 0; i < temp.top; i++) {
+            if (temp.arr[i] == element) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+//    static void removeDuplicateElements(WS23 mergeStack) {
+//        WS23 newStack = new WS23(mergeStack.arr.length); // Create a new stack to store unique elements
+//
+//        // Outer loop to process each element of the stack
+//        for (int i = mergeStack.top; i >= 0; i--) {
+//            int currentElement = mergeStack.arr[i];
+//            boolean isDuplicate = false;
+//
+//            // Inner loop to check if the current element exists in the new stack
+//            for (int j = 0; j <= newStack.top; j++) {
+//                if (newStack.arr[j] == currentElement) {
+//                    isDuplicate = true; // Mark as duplicate
+//                    break;
+//                }
+//            }
+//
+//            // If not a duplicate, push it to the new stack
+//            if (!isDuplicate) {
+//                newStack.push(currentElement);
+//            }
+//        }
+//
+//        newStack.display(); // Display the stack with unique elements
+//    }
+
 
     public void display() {         // Method to display elements int the stack
         // Iterating each element from end to beginning
