@@ -2,12 +2,12 @@ package JavaStack;
 
 // Write a Java program to find the top and bottom elements of a given stack.
 
-public class WS10 {      // Creating a class for stack
+public class FindingTopAndBottomElement {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS10 (int size) {          // Creating a parameterized constructor by passing a value
+    FindingTopAndBottomElement(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -58,7 +58,7 @@ public class WS10 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS10 obj = new WS10(5);         // Creating an object of the class by passing a value
+        FindingTopAndBottomElement obj = new FindingTopAndBottomElement(5);         // Creating an object of the class by passing a value
 
         // Calling the method to insert elements into the stack
         obj.push(62);
