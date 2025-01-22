@@ -2,12 +2,12 @@ package JavaStack;
 
 // Write a Java program that implements a stack and checks if two stacks are equal.
 
-public class WS20 {      // Creating a class for stack
+public class CheckingStackIsEqual {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS20 (int size) {          // Creating a parameterized constructor by passing a value
+    CheckingStackIsEqual(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -45,7 +45,7 @@ public class WS20 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    static boolean checkStack(WS20 obj1, WS20 obj2) {           // Method to check if both the stacks are equal
+    static boolean checkStack(CheckingStackIsEqual obj1, CheckingStackIsEqual obj2) {           // Method to check if both the stacks are equal
         if (obj1.top != obj2.top) {
             return false;
 
@@ -68,7 +68,7 @@ public class WS20 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {        // Main method
-        WS20 obj1 = new WS20(5);        // Creating a new stack by passing a value
+        CheckingStackIsEqual obj1 = new CheckingStackIsEqual(5);        // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj1.push(1);
@@ -81,7 +81,7 @@ public class WS20 {      // Creating a class for stack
         System.out.println("Stack - 1:");
         obj1.display();
 
-        WS20 obj2 = new WS20(5);        // Creating a new stack by passing a value
+        CheckingStackIsEqual obj2 = new CheckingStackIsEqual(5);        // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj2.push(1);
