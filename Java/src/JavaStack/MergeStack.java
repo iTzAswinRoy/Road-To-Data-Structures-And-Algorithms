@@ -2,12 +2,12 @@ package JavaStack;
 
 // Write a Java program to merge two stacks into one.
 
-public class WS18 {      // Creating a class for stack
+public class MergeStack {      // Creating a class for stack
     // Creating instance variables for the class
     private int[] arr;      // Creating a reference variable of an array
     private int top;        // Creating a reference variable top
 
-    WS18 (int size) {          // Creating a parameterized constructor by passing a value
+    MergeStack(int size) {          // Creating a parameterized constructor by passing a value
         // Initializing the reference variable
         arr = new int[size];        // Here, we're creating an array object whenever an object is created
         top = -1;       // Initializing the top to -1, which indicates the stack size is empty
@@ -45,10 +45,10 @@ public class WS18 {      // Creating a class for stack
         return arr[top];        // Restringing the last element
     }
 
-    public static void mergeStack(WS18 obj1, WS18 obj2) {           // Method to merge stack
+    public static void merge(MergeStack obj1, MergeStack obj2) {           // Method to merge stack
         int newSize = obj1.arr.length + obj2.arr.length;        // Storing the size for the both stacks
 
-        WS18 result = new WS18(newSize);          // Creating a new stack to store the merged stack
+        MergeStack result = new MergeStack(newSize);          // Creating a new stack to store the merged stack
 
         // Iterating through th first stack
         for (int i = obj1.arr.length-1; i >= 0; i--) {
@@ -70,7 +70,7 @@ public class WS18 {      // Creating a class for stack
     }
 
     public static void main(String[] args) {       // Main method
-        WS18 obj1 = new WS18(5);        // Creating a new stack by passing a value
+        MergeStack obj1 = new MergeStack(5);        // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj1.push(5);
@@ -83,7 +83,7 @@ public class WS18 {      // Creating a class for stack
         System.out.println("Stack - 1");
         obj1.display();
 
-        WS18 obj2 = new WS18(5);        // Creating a new stack by passing a value
+        MergeStack obj2 = new MergeStack(5);        // Creating a new stack by passing a value
 
         // Calling the method to insert elements into the stack
         obj2.push(10);
@@ -98,6 +98,6 @@ public class WS18 {      // Creating a class for stack
 
         // Calling the method to merge the two stacks
         System.out.println("\nMerging those two stacks into one");
-        mergeStack(obj1, obj2);
+        merge(obj1, obj2);
     }
 }
