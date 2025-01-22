@@ -119,31 +119,6 @@ public class WS23 {      // Creating a class for stack
         return true;
     }
 
-//    static void removeDuplicateElements(WS23 mergeStack) {
-//        WS23 newStack = new WS23(mergeStack.arr.length); // Create a new stack to store unique elements
-//
-//        // Outer loop to process each element of the stack
-//        for (int i = mergeStack.top; i >= 0; i--) {
-//            int currentElement = mergeStack.arr[i];
-//            boolean isDuplicate = false;
-//
-//            // Inner loop to check if the current element exists in the new stack
-//            for (int j = 0; j <= newStack.top; j++) {
-//                if (newStack.arr[j] == currentElement) {
-//                    isDuplicate = true; // Mark as duplicate
-//                    break;
-//                }
-//            }
-//
-//            // If not a duplicate, push it to the new stack
-//            if (!isDuplicate) {
-//                newStack.push(currentElement);
-//            }
-//        }
-//
-//        newStack.display(); // Display the stack with unique elements
-//    }
-
 
     public void display() {         // Method to display elements int the stack
         // Iterating each element from end to beginning
