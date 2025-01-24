@@ -18,7 +18,7 @@ public class CountEvenNumbers {
             return count;
         }
         if(checkEven(data[index])){//
-            count++;
+            count++;//
         }
         return countEven(data, index+1, count);//
     }
