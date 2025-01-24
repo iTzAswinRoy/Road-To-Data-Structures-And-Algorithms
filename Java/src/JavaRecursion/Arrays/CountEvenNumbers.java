@@ -3,7 +3,7 @@ package JavaRecursion.Arrays;
 import java.util.Arrays;
 
 //Write a recursive function to count the number of even numbers in an array.
-public class CountEvenNumbers {
+public class CountEvenNumbers {//
     public static void main(String[] args) {
         CountEvenNumbers obj = new CountEvenNumbers();
 
