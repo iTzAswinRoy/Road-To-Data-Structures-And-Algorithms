@@ -17,7 +17,7 @@ public class CountEvenNumbers {
         if (index == data.length){//
             return count;
         }
-        if(checkEven(data[index])){
+        if(checkEven(data[index])){//
             count++;
         }
         return countEven(data, index+1, count);
