@@ -20,7 +20,7 @@ public class CountEvenNumbers {
         if(checkEven(data[index])){//
             count++;
         }
-        return countEven(data, index+1, count);
+        return countEven(data, index+1, count);//
     }
 
     public boolean checkEven(int num){
