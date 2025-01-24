@@ -14,7 +14,7 @@ public class CountEvenNumbers {
     }
 
     public int countEven(int[] data, int index, int count){
-        if (index == data.length){
+        if (index == data.length){//
             return count;
         }
         if(checkEven(data[index])){
