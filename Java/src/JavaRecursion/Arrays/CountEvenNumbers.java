@@ -8,7 +8,7 @@ public class CountEvenNumbers {
         CountEvenNumbers obj = new CountEvenNumbers();
 
         int[] array = {2,12,7,10,99};//
-        System.out.println("Given array:\n"+ Arrays.toString(array));
+        System.out.println("Given array:\n"+ Arrays.toString(array));//
         System.out.println("\nProduct of the array:\n"+obj.countEven(array, 0, 0));
 
     }
