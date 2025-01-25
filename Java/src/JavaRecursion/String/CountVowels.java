@@ -25,5 +25,5 @@ public class CountVowels {//
             }
         }
         return count(str, index+1, result);//
-    }
+    }//
 }
