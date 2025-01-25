@@ -7,7 +7,7 @@ public class CountVowels {//
         String text = "Aswin Roy";//
 
         System.out.println("Given string:\n" + text);
-        System.out.println("\nNumber of vowels in a string:\n"+obj.count(text, 0,0));
+        System.out.println("\nNumber of vowels in a string:\n"+obj.count(text, 0,0));//
     }
 
     public int count(String str, int index, int result){
