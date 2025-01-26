@@ -9,7 +9,7 @@ public class R1 {//
         System.out.println(obj.skipChar(temp));//
     }
 
-    public String skipChar(String sen) {
+    public String skipChar(String sen) {//
         if (sen.isEmpty()) {
             return "";
         }
