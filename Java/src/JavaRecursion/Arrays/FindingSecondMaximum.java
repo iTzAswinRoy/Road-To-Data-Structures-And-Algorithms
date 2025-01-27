@@ -11,7 +11,7 @@ public class FindingSecondMaximum {
         int result = obj.findSecondMax(array, array.length, obj.findMax(array, array.length, Integer.MIN_VALUE), Integer.MIN_VALUE);//
 
         System.out.println("Given array:\n" + Arrays.toString(array));
-        System.out.println("\nThe second maximum element in the array:\n" + result);
+        System.out.println("\nThe second maximum element in the array:\n" + result);//
     }
 
     public int findMax(int[] data, int length, int max) {
