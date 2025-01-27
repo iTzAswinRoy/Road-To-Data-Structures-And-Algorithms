@@ -7,7 +7,7 @@ public class FindingSecondMaximum {
     public static void main(String[] args) {
         FindingSecondMaximum obj = new FindingSecondMaximum();//
 
-        int[] array = {8, 2, 9, 3};//
+        int[] array = {8, 2, 9, 3};
         int result = obj.findSecondMax(array, array.length, obj.findMax(array, array.length, Integer.MIN_VALUE), Integer.MIN_VALUE);//
 
         System.out.println("Given array:\n" + Arrays.toString(array));
