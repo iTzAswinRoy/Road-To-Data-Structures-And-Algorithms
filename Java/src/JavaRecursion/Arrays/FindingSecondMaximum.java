@@ -16,7 +16,7 @@ public class FindingSecondMaximum {
 
     public int findMax(int[] data, int length, int max) {
         if (length <= 0) {//
-            return max;
+            return max;//
         }
 
         if (data[length - 1] > max) {
