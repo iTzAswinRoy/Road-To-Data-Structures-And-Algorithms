@@ -25,7 +25,7 @@ public class FindingLongestPalindrome {
 
         String currentString = data.substring(0, data.indexOf(" "));//
 
-        if(checkPalindrome(currentString)){
+        if(checkPalindrome(currentString)){//
 
             if(currentString.length() > max) {
 
