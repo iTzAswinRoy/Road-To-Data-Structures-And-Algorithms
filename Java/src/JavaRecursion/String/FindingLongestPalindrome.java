@@ -11,7 +11,7 @@ public class FindingLongestPalindrome {
     }
 
     public String longestPalindrome(String data, String result, int max){
-        if(data.isEmpty() ){
+        if(data.isEmpty() ){//
             return result;
         }
         if(data.indexOf(" ") == -1){
