@@ -23,7 +23,7 @@ public class FindingLongestPalindrome {
             return result;//
         }
 
-        String currentString = data.substring(0, data.indexOf(" "));
+        String currentString = data.substring(0, data.indexOf(" "));//
 
         if(checkPalindrome(currentString)){
 
