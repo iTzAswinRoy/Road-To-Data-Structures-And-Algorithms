@@ -16,6 +16,6 @@ public class R2 {//
         char ch = data.charAt(0);//
 
         subSeq(data.substring(1), result + ch);//
-        subSeq(data.substring(1), result);
+        subSeq(data.substring(1), result);//
     }
 }
