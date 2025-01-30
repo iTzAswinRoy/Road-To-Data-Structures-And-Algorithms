@@ -17,7 +17,7 @@ public class T4 {
     class Node{
         int data;//
         Node left;
-        Node right;//
+        Node right;
         int startIndex;//
         int endIndex;//
 
