@@ -1,6 +1,6 @@
 package JavaSegmentTree;
 
-import java.util.Arrays;//
+import java.util.Arrays;
 
 // Build a segment tree to handle:
 // Update: Modify the value of an element in the array.
