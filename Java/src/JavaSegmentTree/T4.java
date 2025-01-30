@@ -14,7 +14,7 @@ import java.util.Arrays;//
 public class T4 {//
     Node root;//
 
-    class Node{//
+    class Node{
         int data;//
         Node left;//
         Node right;//
