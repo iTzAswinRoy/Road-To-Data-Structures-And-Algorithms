@@ -12,7 +12,7 @@ import java.util.Arrays;//
 //        - Update index 1 to 5.
 //        - Query sum of squares from index 0 to 2.
 public class T4 {//
-    Node root;//
+    Node root;
 
     class Node{
         int data;//
