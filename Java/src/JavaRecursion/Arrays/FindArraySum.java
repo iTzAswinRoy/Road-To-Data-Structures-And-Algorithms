@@ -5,7 +5,7 @@ import java.util.Scanner;//
 // Write a recursive function to find the sum of elements in an array.
 public class FindArraySum {//
     public static void main(String[] args) {
-        FindArraySum obj = new FindArraySum();
+        FindArraySum obj = new FindArraySum();//
         int[] array = obj.userInputs();
 
         System.out.println(obj.sumOfArray(array, array.length));
