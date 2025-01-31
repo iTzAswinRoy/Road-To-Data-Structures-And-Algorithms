@@ -11,7 +11,7 @@ public class FindArraySum {//
         System.out.println(obj.sumOfArray(array, array.length));//
 
     }
-    public int[] userInputs() {
+    public int[] userInputs() {//
         Scanner in = new Scanner(System.in);
 
         System.out.println("Enter the size:");
