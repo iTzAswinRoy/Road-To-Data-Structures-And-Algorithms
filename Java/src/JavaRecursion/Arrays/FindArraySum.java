@@ -1,6 +1,6 @@
 package JavaRecursion.Arrays;
 
-import java.util.Scanner;
+import java.util.Scanner;//
 
 // Write a recursive function to find the sum of elements in an array.
 public class FindArraySum {
