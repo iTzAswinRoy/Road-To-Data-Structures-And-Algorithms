@@ -12,7 +12,7 @@ public class FindArraySum {//
 
     }
     public int[] userInputs() {//
-        Scanner in = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);//
 
         System.out.println("Enter the size:");
         int size = in.nextInt();
