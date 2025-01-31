@@ -8,7 +8,7 @@ public class FindArraySum {//
         FindArraySum obj = new FindArraySum();//
         int[] array = obj.userInputs();//
 
-        System.out.println(obj.sumOfArray(array, array.length));
+        System.out.println(obj.sumOfArray(array, array.length));//
 
     }
     public int[] userInputs() {
