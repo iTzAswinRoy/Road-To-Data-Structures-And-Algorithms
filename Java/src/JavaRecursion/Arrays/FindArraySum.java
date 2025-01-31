@@ -14,7 +14,7 @@ public class FindArraySum {//
     public int[] userInputs() {//
         Scanner in = new Scanner(System.in);//
 
-        System.out.println("Enter the size:");
+        System.out.println("Enter the size:");//
         int size = in.nextInt();//
 
         int[] temp_arr = new int[size];
