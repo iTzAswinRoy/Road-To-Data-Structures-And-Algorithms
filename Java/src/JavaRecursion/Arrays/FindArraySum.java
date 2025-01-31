@@ -19,7 +19,7 @@ public class FindArraySum {//
 
         int[] temp_arr = new int[size];
         System.out.println("Enter the values:");
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {//
             temp_arr[i] = in.nextInt();
         }
         in.close();
