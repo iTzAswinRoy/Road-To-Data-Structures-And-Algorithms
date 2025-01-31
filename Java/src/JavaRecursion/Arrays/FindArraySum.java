@@ -6,7 +6,7 @@ import java.util.Scanner;//
 public class FindArraySum {//
     public static void main(String[] args) {
         FindArraySum obj = new FindArraySum();//
-        int[] array = obj.userInputs();
+        int[] array = obj.userInputs();//
 
         System.out.println(obj.sumOfArray(array, array.length));
 
