@@ -22,7 +22,7 @@ public class FindingDuplicateCharacters {//
 
             if(seen.toString().contains(Character.toString(currentLetter))){
 
-                if(!duplicates.toString().contains(Character.toString(currentLetter))){
+                if(!duplicates.toString().contains(Character.toString(currentLetter))){//
                    duplicates.append(currentLetter).append(" ");
                 }
 
