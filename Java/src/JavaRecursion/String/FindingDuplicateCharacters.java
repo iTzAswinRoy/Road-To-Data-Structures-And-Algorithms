@@ -14,7 +14,7 @@ public class FindingDuplicateCharacters {//
 
     public StringBuilder duplicateCharacters(String data, int index, StringBuilder duplicates, StringBuilder seen){
         if(index >= data.length()){//
-            return duplicates;
+            return duplicates;//
         }
 
         if(Character.isLetter(data.charAt(index))) {
