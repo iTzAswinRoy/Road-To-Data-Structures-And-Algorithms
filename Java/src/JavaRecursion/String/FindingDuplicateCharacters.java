@@ -5,7 +5,7 @@ import java.lang.StringBuilder;
 public class FindingDuplicateCharacters {//
     public static void main(String[] args) {//
 
-        FindingDuplicateCharacters obj = new FindingDuplicateCharacters();
+        FindingDuplicateCharacters obj = new FindingDuplicateCharacters();//
         String text = "Hi, there. I'm Aswin Roy C from Chennai.";
 
         System.out.println("Given string:\n"+text);
