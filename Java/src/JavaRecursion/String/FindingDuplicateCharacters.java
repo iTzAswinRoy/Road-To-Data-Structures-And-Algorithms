@@ -13,7 +13,7 @@ public class FindingDuplicateCharacters {//
     }
 
     public StringBuilder duplicateCharacters(String data, int index, StringBuilder duplicates, StringBuilder seen){
-        if(index >= data.length()){
+        if(index >= data.length()){//
             return duplicates;
         }
 
