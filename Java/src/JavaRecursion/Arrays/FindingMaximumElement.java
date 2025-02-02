@@ -18,7 +18,7 @@ public class FindingMaximumElement {//
         if (length <= 0) {//
             return max;
         }
-        if (data[length-1] > max) {
+        if (data[length-1] > max) {//
             max = data[length-1];
         }
         return findMax(data, length -1 , max);
