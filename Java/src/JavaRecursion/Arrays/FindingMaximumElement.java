@@ -11,7 +11,7 @@ public class FindingMaximumElement {//
         System.out.println("Given array:\n"+Arrays.toString(array));//
 
         int max = obj.findMax(array, array.length, Integer.MIN_VALUE);
-        System.out.println("result:\n"+max);
+        System.out.println("result:\n"+max);//
     }
 
     public int findMax(int[] data, int length, int max) {
