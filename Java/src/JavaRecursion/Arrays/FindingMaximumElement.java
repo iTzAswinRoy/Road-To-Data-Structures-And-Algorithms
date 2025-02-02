@@ -5,7 +5,7 @@ import java.util.Arrays;//
 // Write a recursive function to find the maximum element in an array of integers.
 public class FindingMaximumElement {
     public static void main(String[] args) {
-        FindingMaximumElement obj = new FindingMaximumElement();//
+        FindingMaximumElement obj = new FindingMaximumElement();
 
         int[] array = {8,2,9,3};
         System.out.println("Given array:\n"+Arrays.toString(array));//
