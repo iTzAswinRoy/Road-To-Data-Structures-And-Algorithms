@@ -3,7 +3,7 @@ package JavaRecursion.Arrays;
 import java.util.Arrays;//
 
 // Write a recursive function to find the maximum element in an array of integers.
-public class FindingMaximumElement {//
+public class FindingMaximumElement {
     public static void main(String[] args) {
         FindingMaximumElement obj = new FindingMaximumElement();//
 
