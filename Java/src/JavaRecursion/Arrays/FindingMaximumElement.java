@@ -8,7 +8,7 @@ public class FindingMaximumElement {//
         FindingMaximumElement obj = new FindingMaximumElement();//
 
         int[] array = {8,2,9,3};
-        System.out.println("Given array:\n"+Arrays.toString(array));
+        System.out.println("Given array:\n"+Arrays.toString(array));//
 
         int max = obj.findMax(array, array.length, Integer.MIN_VALUE);
         System.out.println("result:\n"+max);
