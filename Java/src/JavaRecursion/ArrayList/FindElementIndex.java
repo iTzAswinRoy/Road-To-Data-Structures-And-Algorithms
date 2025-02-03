@@ -21,17 +21,18 @@ public class FindElementIndex {
         Scanner in = new Scanner(System.in);
         int findElement = in.nextInt();
 
-        if(obj.elementCheck(list, 0, findElement) ) {
+        if (obj.elementCheck(list, 0, findElement) ) {
             int result = obj.findingIndex(list, 0, findElement);
 
             System.out.println("\nElement " + findElement + " is found at given index " + result);
         } else {
             System.out.println("\nElement not found!");
         }
+
         in.close();
     }
 
-    public int findingIndex(ArrayList<Integer> data, int index, int element){
+    public int findingIndex(ArrayList<Integer> data, int index, int element) {
             if (index >= data.size()) {
                 return -1;
             }
@@ -41,14 +42,14 @@ public class FindElementIndex {
             return findingIndex(data, index + 1, element);
     }
 
-    public boolean elementCheck(ArrayList<Integer> data, int index, int specificElement){
-        if(index >= data.size()){
+    public boolean elementCheck(ArrayList<Integer> data, int index, int specificElement) {
+        if (index >= data.size()) {
             return false;
         }
 
         if (data.get(index) == specificElement) {
             return true;
         }
-        return elementCheck(data, index+1, specificElement);
+        return elementCheck(data, index + 1, specificElement);
     }
 }
