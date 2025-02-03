@@ -1,12 +1,13 @@
 package JavaRecursion.ArrayList;
 
-import java.util.ArrayList;         // Importing Array list class
+import java.util.ArrayList;         // Importing the array list class
 
 // Write a recursive function to check if an ArrayList of integers is sorted in ascending order.
+
 public class CheckSorted {
     public ArrayList<Integer> sortingList(ArrayList<Integer> data, int index) {         // Method to sort the list in ascending order
         // Base case
-        if(index == data.size()) {      // Checking if the index reaches the size of the list
+        if(index == data.size() - 1) {      // Checking if the index reaches the size of the list
             return data;        // Returning the array list
         }
 
@@ -35,28 +36,33 @@ public class CheckSorted {
     }
 
     public boolean isSorted(ArrayList<Integer> data, int index) {       // Method to check if the array list is sorted in ascending order.
-        if (index == data.size() - 1 || data.isEmpty()) {
+
+        // Base case
+        if (index == data.size() - 1 || data.isEmpty()) {       // Checking if the index reaches the end of the list
             return true;
         }
 
-        if(data.get(index) > data.get(index + 1)) {
+        if (data.get(index) > data.get(index + 1)) {        // Checking if the current element is greater than the next element in the stack
             return false;
         }
-        return isSorted(data, index + 1);
+
+        return isSorted(data, index + 1);       // Calling the recursive function by incrementing the index
     }
 
     public static void main(String[] args) {        // Main method
-        CheckSorted obj = new CheckSorted();//
+        CheckSorted obj = new CheckSorted();        // Creating an object of the class
 
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(5);//
-        list.add(2);//
-        list.add(4);//
-        list.add(1);//
-        list.add(3);//
+        ArrayList<Integer> list = new ArrayList<>();        // Creating an array list
 
-        System.out.println("Given array list:\n" + list);
-        System.out.println("\nSorting the array list:\n" + obj.sortingList(list, 0));
-        System.out.println("\nChecking if the array list are sorted in order.\n" + obj.isSorted(list, 0));
+        // Calling the method to add elements in the array list
+        list.add(5);
+        list.add(2);
+        list.add(4);
+        list.add(1);
+        list.add(3);
+
+        System.out.println("Given array list:\n" + list);       // Displaying the array list
+        System.out.println("\nSorting the array list:\n" + obj.sortingList(list, 0));       // Calling the method to sort the list using recursion
+        System.out.println("\nChecking if the array list are sorted in order.\n" + obj.isSorted(list, 0));          // Calling the method to check if the stack is sorted in ascending order
     }
 }
