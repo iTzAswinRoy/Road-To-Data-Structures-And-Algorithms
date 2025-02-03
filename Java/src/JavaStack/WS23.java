@@ -60,65 +60,29 @@ public class WS23 {      // Creating a class for stack
         return mergedStack;        // Retuning the merged stack
     }
 
-//    static void removeDuplicateElements(WS23 mergeStack) {          // Method to remove duplicate elements
-//        WS23 newStack = new WS23(mergeStack.arr.length);        // Creating a stack to get store the removed duplicate elements
-//
-//        // Using nested loop to compare elements with all elements
-//        for (int i = mergeStack.top; i >= 0; i--) {
-//            for (int j = mergeStack.top; j >= 0; j--) {
-//
-//                if (mergeStack.arr[i] == mergeStack.arr[j]) {
-//                    boolean existingElement = false;
-//
-//                    for (int k = mergeStack.top; k >= 0; k--) {
-//
-//                        if (mergeStack.arr[i] == newStack.arr[k]) {
-//                            existingElement = true;
-//                            break;
-//                        }
-//                    }
-//
-//                    if(!existingElement) {
-//                        newStack.push(mergeStack.arr[i]);
-//                    }
-//                }
-//            }
-//        }
-//        newStack.display();
-//    }
-
-    static void removeDuplicateElements(WS23 mergeStack) {          // Method to remove duplicate elements
-        WS23 newStack = new WS23(mergeStack.arr.length);        // Creating a stack to get store the removed duplicate elements
+    public void removeDuplicateElements(WS23 mergeStack) {          // Method to remove duplicate elements
+        WS23 result = new WS23(mergeStack.arr.length);        // Creating a stack to get store the removed duplicate elements
 
         // Using nested loop to compare elements with all elements
         for (int i = mergeStack.top; i >= 0; i--) {
             int currentElement = mergeStack.arr[i];
-            int count = 0;
 
-            for (int j = mergeStack.top; j >= 0; j--) {
-
-                int checkElement = mergeStack.arr[j];
-                if (checkElement == currentElement) {
-                    count++;
-                }
-            }
-
-            if (count > 0 && check(mergeStack, currentElement)) {
-                newStack.push(currentElement);
+            // Checking if the element is already present in the stack
+            if (!contains(result, currentElement)) {
+                result.push(currentElement);        // Pushing the element into the stack
             }
         }
-        newStack.display();
+        result.display();       // Displaying the result
     }
 
-    static boolean check(WS23 temp, int element) {
-        for (int i = 0; i < temp.top; i++) {
-            if (temp.arr[i] == element) {
-                return false;
+    public boolean contains(WS23 stack, int element) {          // Method to check if the element is present in the stack
+        for (int i = stack.top; i >=0; i--) {
+            if(stack.arr[i] == element) {
+                return true;        // Returning true, if element is found
             }
         }
-        return true;
+        return false;      // Returning false, if element is not found
     }
-
 
     public void display() {         // Method to display elements int the stack
         // Iterating each element from end to beginning
@@ -127,30 +91,40 @@ public class WS23 {      // Creating a class for stack
         }
     }
 
-    public static void main(String[] args) {
-        WS23 obj1 = new WS23(5);
+    public static void main(String[] args) {        // Main method
+        WS23 obj1 = new WS23(5);            // Creating an object of the class by passing a value
+
+        // Calling the method to insert elements into the stack
+        obj1.push(1);
+        obj1.push(1);
+        obj1.push(6);
+        obj1.push(6);
+        obj1.push(3);
+
+        // Displaying all the elements in the stack
         System.out.println("Stack - 1:");
-        obj1.push(1);
-        obj1.push(1);
-        obj1.push(6);
-        obj1.push(6);
-        obj1.push(5);
         obj1.display();
 
+        WS23 obj2 = new WS23(4);        // Creating an object of the class by passing a value
+
+        // Calling the method to insert elements into the stack
+        obj2.push(5);
+        obj2.push(2);
+        obj2.push(2);
+        obj2.push(5);
+
+        // Displaying all the elements in the stack
         System.out.println("\nStack - 2:");
-        WS23 obj2 = new WS23(4);
-        obj2.push(5);
-        obj2.push(2);
-        obj2.push(2);
-        obj2.push(5);
         obj2.display();
 
+        WS23 combinedStack = mergeStack(obj1, obj2);        // Calling the method to merge both the stack
         System.out.println("\nMerged stack:");
-        WS23 combinedStack = mergeStack(obj1, obj2);
+
+        // Displaying the merged stack
         combinedStack.display();
 
-
+        // Calling the method to remove the duplicates in the merge stack
         System.out.println("\nAfter removing duplicate elements: ");
-        removeDuplicateElements(mergeStack(obj1, obj2));
+        obj1.removeDuplicateElements(combinedStack);
     }
 }
