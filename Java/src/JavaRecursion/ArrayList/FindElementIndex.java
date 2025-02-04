@@ -9,7 +9,7 @@ public class FindElementIndex {
         FindElementIndex obj = new FindElementIndex();
 
         ArrayList<Integer> list = new ArrayList<>();
-        list.add(1);//
+        list.add(1);
         list.add(2);//
         list.add(3);//
         list.add(4);//
