@@ -13,7 +13,7 @@ public class FindElementIndex {
         list.add(2);
         list.add(3);
         list.add(4);
-        list.add(5);//
+        list.add(5);
 
         System.out.println("Given array list:\n" + list);
         System.out.println("\nEnter the element to find its index:");
