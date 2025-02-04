@@ -12,7 +12,7 @@ public class FindElementIndex {
         list.add(1);
         list.add(2);
         list.add(3);
-        list.add(4);//
+        list.add(4);
         list.add(5);//
 
         System.out.println("Given array list:\n" + list);
