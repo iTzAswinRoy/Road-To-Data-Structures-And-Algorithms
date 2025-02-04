@@ -1,7 +1,7 @@
 package JavaRecursion.ArrayList;
 
 import java.util.ArrayList;//
-import java.util.Scanner;
+import java.util.Scanner;//
 
 // Write a recursive function to find the first index of a specific element in an ArrayList.
 public class FindElementIndex {
