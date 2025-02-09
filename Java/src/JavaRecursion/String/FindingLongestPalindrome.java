@@ -18,7 +18,7 @@ public class FindingLongestPalindrome {
 
             if(checkPalindrome(data) && data.length() > max) {
 
-                return data;//
+                return data;
             }
             return result;//
         }
