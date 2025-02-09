@@ -37,7 +37,7 @@ public class FindingLongestPalindrome {
     }
 
     public boolean checkPalindrome(String data) {
-        int currentIndex = 0;//
+        int currentIndex = 0;
         int lastIndex = data.length()-1;
 
         if(currentIndex >= lastIndex){
