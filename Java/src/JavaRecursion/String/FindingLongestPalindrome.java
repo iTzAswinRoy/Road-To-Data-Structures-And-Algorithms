@@ -4,7 +4,7 @@ package JavaRecursion.String;
 public class FindingLongestPalindrome {
     public static void main(String[] args) {
         FindingLongestPalindrome obj = new FindingLongestPalindrome();
-        String sentence = "bopob holloh";//
+        String sentence = "bopob holloh";
 
         System.out.println("Enter a series of string containing palindrome:\n"+sentence);//
         System.out.println("\nFinding longest palindromic substring in a string:\n" + obj.longestPalindrome(sentence, "", Integer.MIN_VALUE));
