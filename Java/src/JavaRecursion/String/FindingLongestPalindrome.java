@@ -20,7 +20,7 @@ public class FindingLongestPalindrome {
 
                 return data;
             }
-            return result;//
+            return result;
         }
 
         String currentString = data.substring(0, data.indexOf(" "));//
