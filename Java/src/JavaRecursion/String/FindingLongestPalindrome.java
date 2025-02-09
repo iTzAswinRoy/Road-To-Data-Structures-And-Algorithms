@@ -33,7 +33,7 @@ public class FindingLongestPalindrome {
                 max = currentString.length();
             }
         }
-        return longestPalindrome(data.substring(data.indexOf(" ")+1), result, max);//
+        return longestPalindrome(data.substring(data.indexOf(" ")+1), result, max);
     }
 
     public boolean checkPalindrome(String data) {
