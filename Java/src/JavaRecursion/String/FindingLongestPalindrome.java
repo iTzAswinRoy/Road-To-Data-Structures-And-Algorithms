@@ -6,7 +6,7 @@ public class FindingLongestPalindrome {
         FindingLongestPalindrome obj = new FindingLongestPalindrome();
         String sentence = "bopob holloh";
 
-        System.out.println("Enter a series of string containing palindrome:\n"+sentence);//
+        System.out.println("Enter a series of string containing palindrome:\n"+sentence);
         System.out.println("\nFinding longest palindromic substring in a string:\n" + obj.longestPalindrome(sentence, "", Integer.MIN_VALUE));
     }
 
