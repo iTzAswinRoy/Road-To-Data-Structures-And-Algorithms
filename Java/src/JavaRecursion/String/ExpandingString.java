@@ -13,7 +13,7 @@ public class ExpandingString {
 
     public String stringExpand(String data){
         if(data.length() == 0){//
-            return data;
+            return data;//
         }
 
         char currentLetter = data.charAt(0);
