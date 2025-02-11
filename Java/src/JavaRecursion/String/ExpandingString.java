@@ -1,7 +1,7 @@
 package JavaRecursion.String;
 
 // Write a recursive function to expand a compressed string (e.g., "a2b1c5a3" becomes "aabcccccaaa").
-public class ExpandingString {
+public class ExpandingString {//
     public static void main(String[] args) {
         ExpandingString obj = new ExpandingString();
 
