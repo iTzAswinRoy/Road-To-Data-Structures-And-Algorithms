@@ -12,7 +12,7 @@ public class ExpandingString {
     }
 
     public String stringExpand(String data){
-        if(data.length() == 0){//
+        if(data.length() == 0){
             return data;//
         }
 
