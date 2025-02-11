@@ -5,7 +5,7 @@ public class ExpandingString {
     public static void main(String[] args) {
         ExpandingString obj = new ExpandingString();
 
-        String sentence = "a2b1c5a3";//
+        String sentence = "a2b1c5a3";
         System.out.println("Given compressed string:\n" + sentence);
 
         System.out.println("\nString after compressing:\n" + obj.stringExpand(sentence));//
