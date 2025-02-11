@@ -16,7 +16,7 @@ public class ExpandingString {
             return data;//
         }
 
-        char currentLetter = data.charAt(0);
+        char currentLetter = data.charAt(0);//
         int charCount = Integer.parseInt(String.valueOf(data.charAt(1)));
 
         String expandedString = "";
