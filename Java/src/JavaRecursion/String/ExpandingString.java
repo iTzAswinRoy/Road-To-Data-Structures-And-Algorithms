@@ -8,7 +8,7 @@ public class ExpandingString {
         String sentence = "a2b1c5a3";//
         System.out.println("Given compressed string:\n" + sentence);
 
-        System.out.println("\nString after compressing:\n" + obj.stringExpand(sentence));
+        System.out.println("\nString after compressing:\n" + obj.stringExpand(sentence));//
     }
 
     public String stringExpand(String data){
