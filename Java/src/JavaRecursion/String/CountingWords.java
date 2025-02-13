@@ -13,7 +13,7 @@ public class CountingWords {
 
     public int countWords(String data){//
         if(data.isEmpty()){//
-            return 0;
+            return 0;//
         }
         if (data.indexOf(" ") == -1){//
             return 1;
