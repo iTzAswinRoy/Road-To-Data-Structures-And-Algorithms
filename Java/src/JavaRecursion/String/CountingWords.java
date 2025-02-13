@@ -18,7 +18,7 @@ public class CountingWords {
         if (data.indexOf(" ") == -1){//
             return 1;
         }
-        return 1 + countWords(data.substring(data.indexOf(" ")+1));
+        return 1 + countWords(data.substring(data.indexOf(" ")+1));//
 
     }
 }
