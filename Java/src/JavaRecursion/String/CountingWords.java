@@ -11,7 +11,7 @@ public class CountingWords {
         System.out.println("\nCounting number of words in a string:\n"+obj.countWords(sentence));//
     }
 
-    public int countWords(String data){
+    public int countWords(String data){//
         if(data.isEmpty()){
             return 0;
         }
