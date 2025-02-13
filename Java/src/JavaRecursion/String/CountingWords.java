@@ -15,7 +15,7 @@ public class CountingWords {
         if(data.isEmpty()){
             return 0;
         }
-        if (data.indexOf(" ") == -1){
+        if (data.indexOf(" ") == -1){//
             return 1;
         }
         return 1 + countWords(data.substring(data.indexOf(" ")+1));
