@@ -8,7 +8,7 @@ public class CountingWords {
         String sentence = "Hi! I'm Aswin Roy.";//
 
         System.out.println("Given string:\n"+sentence);
-        System.out.println("\nCounting number of words in a string:\n"+obj.countWords(sentence));
+        System.out.println("\nCounting number of words in a string:\n"+obj.countWords(sentence));//
     }
 
     public int countWords(String data){
