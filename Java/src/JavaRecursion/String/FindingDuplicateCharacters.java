@@ -3,7 +3,7 @@ import java.lang.StringBuilder;
 
 // Write a recursive function to find all duplicate characters in a string.
 
-public class FindingDuplicateCharacters {//
+public class FindingDuplicateCharacters {
     public static void main(String[] args) {
 
         FindingDuplicateCharacters obj = new FindingDuplicateCharacters();
