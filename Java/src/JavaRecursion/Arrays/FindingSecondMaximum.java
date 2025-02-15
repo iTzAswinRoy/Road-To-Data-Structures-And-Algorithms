@@ -1,10 +1,11 @@
 package JavaRecursion.Arrays;
 
-import java.util.Arrays;
+import java.util.Arrays;            // Importing arrays class
 
 // Write a recursive function to find the second maximum element in an array of integers.
+
 public class FindingSecondMaximum {
-    public static void main(String[] args) {
+    public static void main(String[] args) {            // Main Method
         FindingSecondMaximum obj = new FindingSecondMaximum();
 
         int[] array = {8, 2, 9, 3};
