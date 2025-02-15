@@ -13,10 +13,10 @@ public class ExpandingString {
 
     public String stringExpand(String data){
         if(data.length() == 0){
-            return data;
+            return data;//
         }
 
-        char currentLetter = data.charAt(0);
+        char currentLetter = data.charAt(0);//
         int charCount = Integer.parseInt(String.valueOf(data.charAt(1)));
 
         String expandedString = "";
