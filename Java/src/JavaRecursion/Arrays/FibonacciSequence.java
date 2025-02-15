@@ -12,12 +12,12 @@ public class FibonacciSequence {
     public int findFibonacciNumber(int num) {           // Method to find the fibonacci number
         // Base case
         if (num == 0) {         // Checking if the num is 0
-            return 0;
+            return 0;           // Returns 0
         }
 
         // Base case
         if (num == 1) {         // Checking if the num is 1
-            return 1;
+            return 1;           // Returns 0
         }
 
         return findFibonacciNumber(num - 1) + findFibonacciNumber(num - 2);         // Calling the recursive function by adding two recursive calls
