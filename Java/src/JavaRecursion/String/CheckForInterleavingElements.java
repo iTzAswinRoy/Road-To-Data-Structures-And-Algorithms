@@ -21,19 +21,16 @@ public class CheckForInterleavingElements {
         if(s1.isEmpty() && s2.isEmpty()) {
             return result;
         }
-        int i = 0;
-        int j = 0;
 
         if(!s1.isEmpty()) {
             result += s1.charAt(0);
-            i++;
-        }
-        if(!s2.isEmpty()) {
-            result += s2.charAt(0);
-            j++;
         }
 
-        return interleaveElements(s1.substring(i), s2.substring(j), result);
+        if(!s2.isEmpty()) {
+            result += s2.charAt(0);
+        }
+
+        return interleaveElements(s1.substring(1), s2.substring(1), result);
     }
 
     public boolean isInterleave(String s1, String s2, String s3){
