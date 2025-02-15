@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {        // Main method
         TicketSystem ticketSystem = new TicketSystem();
 
-        while (true) {
+        while (true) {          // While
             Scanner in = new Scanner(System.in);
             System.out.println("1. Book\n2. Cancel\n3. Display");
             System.out.println("Enter an option:");
