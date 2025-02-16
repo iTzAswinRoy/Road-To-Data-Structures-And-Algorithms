@@ -17,7 +17,7 @@ public class FindingSecondMaximum {
         System.out.println("\nThe second maximum element in the array:\n" + result);        // Displaying the result
     }
 
-    public int findMax(int[] data, int length, int max) {
+    public int findMax(int[] data, int length, int max) {           // Method to find the second max in the array
         if (length <= 0) {//
             return max;//
         }
