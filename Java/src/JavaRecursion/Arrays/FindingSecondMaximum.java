@@ -24,9 +24,9 @@ public class FindingSecondMaximum {
         }
 
         if (data[length - 1] > max) {           // Checking if the current element is greater than the max value
-            max = data[length - 1];//
+            max = data[length - 1];         // Updating the current max value
         }
-        return findMax(data, length - 1, max);// Calling
+        return findMax(data, length - 1, max);      // Calling the recursive function by passing the max value and reducing the length by 1
     }
 
     public int findSecondMax(int[] data, int length, int max, int secondMax) {
