@@ -17,13 +17,13 @@ public class FindingSecondMaximum {
         System.out.println("\nThe second maximum element in the array:\n" + result);        // Displaying the result
     }
 
-    public int findMax(int[] data, int length, int max) {           // Method to find the second max in the array
+    public int findMax(int[] data, int length, int max) {           // Method to find the max in the array
         // Base case
         if (length <= 0) {          // Checking if the length is less than zero
-            return max;         // Returning the second max value
+            return max;         // Returning the max value
         }
 
-        if (data[length - 1] > max) {
+        if (data[length - 1] > max) {           // Checking if the current element is greater than the max value
             max = data[length - 1];//
         }
         return findMax(data, length - 1, max);// Calling
