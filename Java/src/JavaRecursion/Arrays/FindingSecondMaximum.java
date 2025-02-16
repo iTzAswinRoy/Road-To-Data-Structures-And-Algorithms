@@ -29,14 +29,14 @@ public class FindingSecondMaximum {
         return findMax(data, length - 1, max);      // Calling the recursive function by passing the max value and reducing the length by 1
     }
 
-    public int findSecondMax(int[] data, int length, int max, int secondMax) {
+    public int findSecondMax(int[] data, int length, int max, int secondMax) {          // Method to find the second max in the array
+        // Base class
         if (length <= 0) {
             return secondMax;
         }
-        if (data[length-1] > secondMax && data[length-1] != max) {
-            secondMax = data[length-1];
+        if (data[length - 1] > secondMax && data[length - 1] != max) {
+            secondMax = data[length - 1];
         }
-        return findSecondMax(data, length-1, max, secondMax);
+        return findSecondMax(data, length - 1, max, secondMax);
     }
 }
-
