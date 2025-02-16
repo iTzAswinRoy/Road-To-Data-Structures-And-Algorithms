@@ -35,7 +35,7 @@ public class FindingSecondMaximum {
             return secondMax;           // Returning the max value
         }
 
-        if (data[length - 1] > secondMax && data[length - 1] != max) {
+        if (data[length - 1] > secondMax && data[length - 1] != max) {         // Checking if the current element is greater than the second max
             secondMax = data[length - 1];
         }
         return findSecondMax(data, length - 1, max, secondMax);
