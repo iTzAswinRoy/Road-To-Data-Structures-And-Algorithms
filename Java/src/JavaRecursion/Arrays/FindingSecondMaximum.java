@@ -19,7 +19,7 @@ public class FindingSecondMaximum {
 
     public int findMax(int[] data, int length, int max) {           // Method to find the second max in the array
         // Base case
-        if (length <= 0) {//
+        if (length <= 0) {          // Checking if the length is less than zero
             return max;//
         }
 
