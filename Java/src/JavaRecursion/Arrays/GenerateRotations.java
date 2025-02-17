@@ -12,10 +12,10 @@ public class GenerateRotations {
         System.out.println("Given array:\n" + Arrays.toString(array));          // Converting the array to sting
 
         System.out.println("\nGenerating all possible rotations of the array:");
-        obj.generateRotational(array, 0);             // CAlling the object ti
+        obj.generateRotational(array, 0);             // Calling the method to generate rotational of the array
     }
 
-    public void generateRotational(int[] data, int index){
+    public void generateRotational(int[] data, int index) {         // Method to generate rotational of the array
         if(index == data.length){
             return;
         }
