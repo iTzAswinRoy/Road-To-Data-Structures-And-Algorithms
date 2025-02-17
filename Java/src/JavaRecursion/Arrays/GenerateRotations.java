@@ -6,8 +6,10 @@ import java.util.Arrays;        // Importing arrays class
 public class GenerateRotations {
     public static void main(String[] args) {            // Main method
         GenerateRotations obj = new GenerateRotations();        // Creating an object of the class
-        int[] array = {1,2,3,4,5};
-        System.out.println("Given array:\n"+Arrays.toString(array));
+
+        int[] array = {1,2,3,4,5};          // Creating an array
+
+        System.out.println("Given array:\n" + Arrays.toString(array));          // Converting the array to sting
 
         System.out.println("\nGenerating all possible rotations of the array:");
         obj.genArray(array, 0);
