@@ -36,8 +36,8 @@ public class FindingSecondMaximum {
         }
 
         if (data[length - 1] > secondMax && data[length - 1] != max) {         // Checking if the current element is greater than the second max
-            secondMax = data[length - 1];
+            secondMax = data[length - 1];           // Updating the current second max
         }
-        return findSecondMax(data, length - 1, max, secondMax);
+        return findSecondMax(data, length - 1, max, secondMax);         // Calling the recursive function
     }
 }
