@@ -24,7 +24,7 @@ public class GenerateRotations {
 
         printArray(data);           // Printing the array for each rotation
 
-        generateRotational(data, index+1);
+        generateRotational(data, index + 1);        // Calling the recursive function by incrementing the index by 1
     }
 
     public void rotateArray(int[] data){
