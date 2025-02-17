@@ -17,8 +17,8 @@ public class GenerateRotations {
 
     public void generateRotational(int[] data, int index) {         // Method to generate rotational of the array
         // Base case
-        if(index == data.length) {
-            return;
+        if(index == data.length) {          // Checking if the index is equal to its array length
+            return;         // Exits the method
         }
         rotateArray(data);
 
