@@ -1,11 +1,11 @@
 package JavaRecursion.Arrays;
 
-import java.util.Arrays;
+import java.util.Arrays;        // Importing arrays class
 
 // Write a recursive function to generate all possible rotations of an array.
 public class GenerateRotations {
-    public static void main(String[] args) {
-        GenerateRotations obj = new GenerateRotations();
+    public static void main(String[] args) {            // Main method
+        GenerateRotations obj = new GenerateRotations();        // Creating an object of the class
         int[] array = {1,2,3,4,5};
         System.out.println("Given array:\n"+Arrays.toString(array));
 
