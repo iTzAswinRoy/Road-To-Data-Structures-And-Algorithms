@@ -22,7 +22,7 @@ public class GenerateRotations {
         }
         rotateArray(data);          // Calling the rotate method to rotate the array
 
-        printArray(data);
+        printArray(data);           // Printing the array for each rotation
 
         generateRotational(data, index+1);
     }
