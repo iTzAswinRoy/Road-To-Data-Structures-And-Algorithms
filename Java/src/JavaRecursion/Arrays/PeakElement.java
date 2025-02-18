@@ -17,7 +17,7 @@ public class PeakElement {//
         if(s == e){//
             return data[s];
         }
-        int mid = s + (e-s)/2;
+        int mid = s + (e-s)/2;//
 
         if (mid > 0 && mid < data.length - 1 && data[mid] > data[mid - 1] && data[mid] > data[mid + 1]) {
             return data[mid];
