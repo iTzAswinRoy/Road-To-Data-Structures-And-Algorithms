@@ -1,5 +1,5 @@
 package JavaRecursion.String;
-import java.lang.StringBuilder;
+import java.lang.StringBuilder;//
 
 // Write a recursive function to remove all adjacent duplicate characters in a string.
 public class RemoveAdjacentDuplicates {
