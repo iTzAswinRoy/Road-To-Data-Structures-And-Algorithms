@@ -13,7 +13,7 @@ public class RemoveAdjacentDuplicates {//
     }
     public String adjacentDuplicates(String data){
         if(data.length() <= 1){//
-            return data;
+            return data;//
         }
 
         if(data.charAt(0) == data.charAt(1)){
