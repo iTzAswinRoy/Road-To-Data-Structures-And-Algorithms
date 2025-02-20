@@ -20,7 +20,7 @@ public class RemoveAdjacentDuplicates {//
             int index = 1;//
             return adjacentDuplicates(data.substring(index+1));//
         }
-        return data.charAt(0) + " " + adjacentDuplicates(data.substring(1));
+        return data.charAt(0) + " " + adjacentDuplicates(data.substring(1));//
 
     }
 }
