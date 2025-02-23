@@ -2,7 +2,7 @@ package JavaRecursion.String;
 
 // Skip a character
 public class R1 {//
-    public static void main(String[] args) {//
+    public static void main(String[] args) {
         R1 obj = new R1();//
         String temp = "baccad";//
 
