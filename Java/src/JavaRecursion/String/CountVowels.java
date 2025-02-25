@@ -20,7 +20,7 @@ public class CountVowels {
 
         for (int i = 0; i < vowels.length; i++) {
             if (currentChar == vowels[i]) {
-                result++;//
+                result++;
                 break;//
             }
         }
