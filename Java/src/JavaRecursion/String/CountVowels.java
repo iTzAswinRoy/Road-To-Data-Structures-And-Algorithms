@@ -21,7 +21,7 @@ public class CountVowels {
         for (int i = 0; i < vowels.length; i++) {
             if (currentChar == vowels[i]) {
                 result++;
-                break;//
+                break;
             }
         }
         return count(str, index+1, result);//
