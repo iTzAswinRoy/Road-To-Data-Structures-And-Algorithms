@@ -4,7 +4,7 @@ package JavaRecursion.String;
 public class CountVowels {
     public static void main(String[] args) {
         CountVowels obj = new CountVowels();
-        String text = "Aswin Roy";//
+        String text = "Aswin Roy";
 
         System.out.println("Given string:\n" + text);
         System.out.println("\nNumber of vowels in a string:\n"+obj.count(text, 0,0));//
