@@ -12,7 +12,7 @@ public class CountVowels {
 
     public int count(String str, int index, int result){//
         if(index >= str.length()){//
-            return result;
+            return result;//
         }
 
         char[] vowels = {'A','E','I','O','U','a','e','i','o','u'};
