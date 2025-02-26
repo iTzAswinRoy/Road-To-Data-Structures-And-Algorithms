@@ -11,7 +11,7 @@ public class CountVowels {
     }
 
     public int count(String str, int index, int result){//
-        if(index >= str.length()){
+        if(index >= str.length()){//
             return result;
         }
 
