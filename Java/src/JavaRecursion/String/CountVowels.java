@@ -15,7 +15,7 @@ public class CountVowels {
             return result;//
         }
 
-        char[] vowels = {'A','E','I','O','U','a','e','i','o','u'};
+        char[] vowels = {'A','E','I','O','U','a','e','i','o','u'};//
         char currentChar = str.charAt(index);
 
         for (int i = 0; i < vowels.length; i++) {
