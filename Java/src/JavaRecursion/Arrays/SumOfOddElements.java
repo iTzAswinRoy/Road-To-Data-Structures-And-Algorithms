@@ -18,7 +18,7 @@ public class SumOfOddElements {//
         if(index <= 0){//
             return sum;//
         }
-        if (checkingOddNumber(data[index-1])) {
+        if (checkingOddNumber(data[index-1])) {//
             sum = sum + data[index-1];//
         }
         return sumOfOddNumbers(data, index-1, sum);
