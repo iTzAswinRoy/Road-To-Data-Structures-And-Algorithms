@@ -11,7 +11,7 @@ public class SumOfOddElements {//
         int result = obj.sumOfOddNumbers(array, array.length, 0);//
 
         System.out.println("Given array:\n" + Arrays.toString(array));
-        System.out.println("\nSum of odd numbers:\n" + result);
+        System.out.println("\nSum of odd numbers:\n" + result);//
     }
 
     public int sumOfOddNumbers(int[] data, int index, int sum) {
