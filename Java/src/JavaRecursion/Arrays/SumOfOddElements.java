@@ -19,7 +19,7 @@ public class SumOfOddElements {//
             return sum;//
         }
         if (checkingOddNumber(data[index-1])) {
-            sum = sum + data[index-1];
+            sum = sum + data[index-1];//
         }
         return sumOfOddNumbers(data, index-1, sum);
     }
