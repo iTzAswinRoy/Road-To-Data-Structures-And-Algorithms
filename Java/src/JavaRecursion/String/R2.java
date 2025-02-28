@@ -11,7 +11,7 @@ public class R2 {
 
         if(data.isEmpty()) {
             System.out.println(result);
-            return;//
+            return;
         }
         char ch = data.charAt(0);
 
