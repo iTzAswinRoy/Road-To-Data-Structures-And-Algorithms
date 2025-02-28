@@ -7,7 +7,7 @@ public class R2 {//
     }
 
     public void subSeq(String data, String result) {
-        System.out.println("subSeq called with data: \"" + data + "\", result: \"" + result + "\"");
+        System.out.println("subSeq called with data: \"" + data + "\", result: \"" + result + "\"");//
 
         if(data.isEmpty()) {
             System.out.println(result);
