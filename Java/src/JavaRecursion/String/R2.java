@@ -1,6 +1,6 @@
 package JavaRecursion.String;
 // subsequence of the string
-public class R2 {//
+public class R2 {
     public static void main(String[] args) {
         R2 obj = new R2();//
         obj.subSeq("abc", "");//
