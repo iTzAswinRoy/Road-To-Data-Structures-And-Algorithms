@@ -3,7 +3,7 @@ package JavaRecursion.Arrays;
 import java.util.Arrays;
 
 // Write a recursive function to find the sum of elements at odd indices in an array.
-public class SumOfOddElements {//
+public class SumOfOddElements {
     public static void main(String[] args) {
         SumOfOddElements obj = new SumOfOddElements();
 
