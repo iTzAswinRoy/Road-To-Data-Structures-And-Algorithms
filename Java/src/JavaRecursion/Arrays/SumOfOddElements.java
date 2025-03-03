@@ -8,7 +8,7 @@ public class SumOfOddElements {
         SumOfOddElements obj = new SumOfOddElements();
 
         int[] array = {8,5,1,3,6};
-        int result = obj.sumOfOddNumbers(array, array.length, 0);//
+        int result = obj.sumOfOddNumbers(array, array.length, 0);
 
         System.out.println("Given array:\n" + Arrays.toString(array));
         System.out.println("\nSum of odd numbers:\n" + result);//
