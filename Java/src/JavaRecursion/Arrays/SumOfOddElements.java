@@ -14,7 +14,7 @@ public class SumOfOddElements {
         System.out.println("\nSum of odd numbers:\n" + result);
     }
 
-    public int sumOfOddNumbers(int[] data, int index, int sum) {//
+    public int sumOfOddNumbers(int[] data, int index, int sum) {
         if(index <= 0){
             return sum;
         }
