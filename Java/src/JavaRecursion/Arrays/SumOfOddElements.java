@@ -16,7 +16,7 @@ public class SumOfOddElements {
 
     public int sumOfOddNumbers(int[] data, int index, int sum) {//
         if(index <= 0){
-            return sum;//
+            return sum;
         }
         if (checkingOddNumber(data[index-1])) {//
             sum = sum + data[index-1];//
