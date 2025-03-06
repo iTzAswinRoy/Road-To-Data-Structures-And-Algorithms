@@ -14,7 +14,7 @@ public class ProductOfArray {
 
     public int multiplyingElements(int[] data, int index, int product){//
         if( index >= data.length) {
-            return 1;
+            return 1;//
         }
         return data[index] * multiplyingElements(data, index + 1, product);
     }
