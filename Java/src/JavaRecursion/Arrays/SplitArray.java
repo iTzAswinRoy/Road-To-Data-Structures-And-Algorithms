@@ -1,6 +1,6 @@
 package JavaRecursion.Arrays;
 
-import java.util.Arrays;
+import java.util.Arrays;//
 
 // Write a recursive function to split an array into two parts at a given index.
 public class SplitArray {
