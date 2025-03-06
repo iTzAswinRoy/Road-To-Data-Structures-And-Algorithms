@@ -9,7 +9,7 @@ public class ProductOfArray {
         int[] array = {2,3,5,1};//
 
         System.out.println("Given array:\n"+ Arrays.toString(array));//
-        System.out.println("\nProduct of the array:\n"+obj.multiplyingElements(array, 0, 0));
+        System.out.println("\nProduct of the array:\n"+obj.multiplyingElements(array, 0, 0));//
     }
 
     public int multiplyingElements(int[] data, int index, int product){
