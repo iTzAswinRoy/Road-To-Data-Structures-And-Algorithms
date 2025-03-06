@@ -4,7 +4,7 @@ import java.util.Arrays;//
 
 //Write a recursive function to find the product of all elements in an array.
 public class ProductOfArray {
-    public static void main(String[] args) {
+    public static void main(String[] args) {//
         ProductOfArray obj = new ProductOfArray();
         int[] array = {2,3,5,1};
 
