@@ -12,7 +12,7 @@ public class ProductOfArray {
         System.out.println("\nProduct of the array:\n"+obj.multiplyingElements(array, 0, 0));//
     }
 
-    public int multiplyingElements(int[] data, int index, int product){
+    public int multiplyingElements(int[] data, int index, int product){//
         if( index >= data.length) {
             return 1;
         }
