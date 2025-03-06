@@ -8,7 +8,7 @@ public class ProductOfArray {
         ProductOfArray obj = new ProductOfArray();//
         int[] array = {2,3,5,1};//
 
-        System.out.println("Given array:\n"+ Arrays.toString(array));
+        System.out.println("Given array:\n"+ Arrays.toString(array));//
         System.out.println("\nProduct of the array:\n"+obj.multiplyingElements(array, 0, 0));
     }
 
