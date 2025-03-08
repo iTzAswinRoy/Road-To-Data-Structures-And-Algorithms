@@ -10,7 +10,7 @@ public class PeakElement {
         System.out.println("Given array:\n"+ Arrays.toString(array));
 
         int result = obj.findingPeakElement(array, 0, array.length -1 );//
-        System.out.println("\nFinding peak element in the array:\n"+ result);//
+        System.out.println("\nFinding peak element in the array:\n"+ result);
     }
 
     public int findingPeakElement(int[] data,  int s, int e){
