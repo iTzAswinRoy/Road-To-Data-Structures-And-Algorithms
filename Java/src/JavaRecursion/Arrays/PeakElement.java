@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 // Write a recursive function to find a peak element in an array (an element that is not smaller than its neighbors).
 public class PeakElement {
-    public static void main(String[] args) {//
+    public static void main(String[] args) {
         PeakElement obj = new PeakElement();
         int[] array = {11,2,3,4,5};
         System.out.println("Given array:\n"+ Arrays.toString(array));//
