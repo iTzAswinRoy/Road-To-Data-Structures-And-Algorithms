@@ -7,7 +7,7 @@ public class PeakElement {
     public static void main(String[] args) {
         PeakElement obj = new PeakElement();
         int[] array = {11,2,3,4,5};
-        System.out.println("Given array:\n"+ Arrays.toString(array));//
+        System.out.println("Given array:\n"+ Arrays.toString(array));
 
         int result = obj.findingPeakElement(array, 0, array.length -1 );//
         System.out.println("\nFinding peak element in the array:\n"+ result);//
