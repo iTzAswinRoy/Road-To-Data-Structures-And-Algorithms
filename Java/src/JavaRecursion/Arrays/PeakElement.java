@@ -20,7 +20,7 @@ public class PeakElement {
         int mid = s + (e-s)/2;
 
         if (mid > 0 && mid < data.length - 1 && data[mid] > data[mid - 1] && data[mid] > data[mid + 1]) {
-            return data[mid];//
+            return data[mid];
         }
         if(data[mid] < data[mid-1]){
             return findingPeakElement(data, s , mid);
