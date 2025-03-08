@@ -15,7 +15,7 @@ public class PeakElement {
 
     public int findingPeakElement(int[] data,  int s, int e){
         if(s == e){
-            return data[s];//
+            return data[s];
         }
         int mid = s + (e-s)/2;
 
