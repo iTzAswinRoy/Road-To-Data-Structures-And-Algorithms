@@ -1,6 +1,6 @@
 package JavaRecursion.Arrays;
 
-import java.util.Arrays;//
+import java.util.Arrays;
 
 // Write a recursive function to find a peak element in an array (an element that is not smaller than its neighbors).
 public class PeakElement {//
