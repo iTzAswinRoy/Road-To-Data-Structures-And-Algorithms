@@ -18,7 +18,7 @@ public class RemoveAdjacentDuplicates {
 
         if(data.charAt(0) == data.charAt(1)){
             int index = 1;
-            return adjacentDuplicates(data.substring(index+1));//
+            return adjacentDuplicates(data.substring(index+1));
         }
         return data.charAt(0) + " " + adjacentDuplicates(data.substring(1));//
 
