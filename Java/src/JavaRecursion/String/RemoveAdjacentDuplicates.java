@@ -6,7 +6,7 @@ public class RemoveAdjacentDuplicates {
     public static void main(String[] args) {
         RemoveAdjacentDuplicates obj = new RemoveAdjacentDuplicates();
 
-        String text = "aaxbbyccz";//
+        String text = "aaxbbyccz";
 
         System.out.println("Given string:\n" + text);
         System.out.println("\nRemoving adjacent duplicates from the string:\n"+obj.adjacentDuplicates(text));//
