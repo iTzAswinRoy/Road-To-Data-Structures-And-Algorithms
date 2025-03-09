@@ -9,7 +9,7 @@ public class RemoveAdjacentDuplicates {
         String text = "aaxbbyccz";
 
         System.out.println("Given string:\n" + text);
-        System.out.println("\nRemoving adjacent duplicates from the string:\n"+obj.adjacentDuplicates(text));//
+        System.out.println("\nRemoving adjacent duplicates from the string:\n"+obj.adjacentDuplicates(text));
     }
     public String adjacentDuplicates(String data){
         if(data.length() <= 1){
