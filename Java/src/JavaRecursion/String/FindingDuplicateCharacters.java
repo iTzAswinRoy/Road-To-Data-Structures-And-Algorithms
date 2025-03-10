@@ -19,7 +19,7 @@ public class FindingDuplicateCharacters {
         }
 
         if(Character.isLetter(data.charAt(index))) {
-            char currentLetter = Character.toLowerCase(data.charAt(index));
+            char currentLetter = Character.toLowerCase(data.charAt(index));//
 
             if(seen.toString().contains(Character.toString(currentLetter))){
 
