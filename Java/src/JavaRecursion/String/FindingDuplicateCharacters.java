@@ -10,7 +10,7 @@ public class FindingDuplicateCharacters {
         String text = "Hi, there. I'm Aswin Roy C from Chennai.";
 
         System.out.println("Given string:\n"+text);
-        System.out.println("\nThe duplicate characters in the string:\n"+obj.duplicateCharacters(text, 0, new StringBuilder(), new StringBuilder()));
+        System.out.println("\nThe duplicate characters in the string:\n"+obj.duplicateCharacters(text, 0, new StringBuilder(), new StringBuilder()));//
     }
 
     public StringBuilder duplicateCharacters(String data, int index, StringBuilder duplicates, StringBuilder seen){
