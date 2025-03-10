@@ -7,7 +7,7 @@ public class FindingDuplicateCharacters {
     public static void main(String[] args) {
 
         FindingDuplicateCharacters obj = new FindingDuplicateCharacters();
-        String text = "Hi, there. I'm Aswin Roy C from Chennai.";//
+        String text = "Hi, there. I'm Aswin Roy C from Chennai.";
 
         System.out.println("Given string:\n"+text);
         System.out.println("\nThe duplicate characters in the string:\n"+obj.duplicateCharacters(text, 0, new StringBuilder(), new StringBuilder()));
