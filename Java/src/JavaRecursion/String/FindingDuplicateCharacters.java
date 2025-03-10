@@ -30,7 +30,7 @@ public class FindingDuplicateCharacters {
             } else {
                 seen.append(currentLetter);
             }
-        }//
+        }
         return duplicateCharacters(data, index+1, duplicates, seen);
     }
 }
