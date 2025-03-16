@@ -13,7 +13,7 @@ public class R2 {
             System.out.println(result);
             return;
         }
-        char ch = data.charAt(0);//
+        char ch = data.charAt(0);
 
         subSeq(data.substring(1), result + ch);
         subSeq(data.substring(1), result);
