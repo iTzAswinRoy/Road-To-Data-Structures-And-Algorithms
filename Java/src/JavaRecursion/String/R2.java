@@ -6,7 +6,7 @@ public class R2 {
         obj.subSeq("abc", "");
     }
 
-    public void subSeq(String data, String result) {//
+    public void subSeq(String data, String result) {
         System.out.println("subSeq called with data: \"" + data + "\", result: \"" + result + "\"");
 
         if(data.isEmpty()) {
