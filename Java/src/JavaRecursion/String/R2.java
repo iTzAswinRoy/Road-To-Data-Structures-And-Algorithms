@@ -3,7 +3,7 @@ package JavaRecursion.String;
 public class R2 {
     public static void main(String[] args) {//
         R2 obj = new R2();//
-        obj.subSeq("abc", "");
+        obj.subSeq("abc", "");//
     }
 
     public void subSeq(String data, String result) {
