@@ -10,7 +10,7 @@ public class R2 {
         System.out.println("subSeq called with data: \"" + data + "\", result: \"" + result + "\"");
 
         if(data.isEmpty()) {//
-            System.out.println(result);
+            System.out.println(result);//
             return;
         }
         char ch = data.charAt(0);
