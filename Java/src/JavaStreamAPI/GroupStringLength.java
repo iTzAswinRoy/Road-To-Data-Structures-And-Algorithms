@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class GroupStringLength {
     public static void main(String[] args) {
-        List<String> list = List.of("Aswin", "Melwin", "Abishek", "Prince", "Foods");
+        List<String> list = List.of("Aswin", "Melwin", "Abish", "Prince", "Foods");
 
         Map<Integer, List<String>> result = list.stream().collect(Collectors.groupingBy(String::length));
 
