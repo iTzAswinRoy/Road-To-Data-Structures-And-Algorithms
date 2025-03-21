@@ -13,7 +13,7 @@ public class R1 {//
         if (sen.isEmpty()) {//
             return "";
         }
-        char currentChar = sen.charAt(0);
+        char currentChar = sen.charAt(0);//
 
         if (sen.charAt(0) == 'a') {
             return skipChar(sen.substring(1));
