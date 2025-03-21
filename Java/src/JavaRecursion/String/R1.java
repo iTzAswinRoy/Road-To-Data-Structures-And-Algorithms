@@ -10,7 +10,7 @@ public class R1 {//
     }
 
     public String skipChar(String sen) {
-        if (sen.isEmpty()) {
+        if (sen.isEmpty()) {//
             return "";
         }
         char currentChar = sen.charAt(0);
