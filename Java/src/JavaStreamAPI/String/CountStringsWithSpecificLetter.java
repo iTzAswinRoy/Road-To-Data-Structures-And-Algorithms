@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.String;
 
 
 import java.util.List;
@@ -9,6 +9,7 @@ public class CountStringsWithSpecificLetter {
         List<String> words = List.of("Apple", "Banana", "Avocado", "Cherry", "Apricot", "Blueberry");
 
         long count = words.stream().filter(n -> n.startsWith("A")).count();
+
 
         System.out.println(count);
     }

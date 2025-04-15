@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.Integer;
 
 // Given a list of integers, use the Stream API to calculate the sum of all the numbers.
 

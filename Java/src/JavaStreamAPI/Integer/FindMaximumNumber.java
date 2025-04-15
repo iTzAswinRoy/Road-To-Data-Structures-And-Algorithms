@@ -1,9 +1,7 @@
-package JavaStreamAPI;
+package JavaStreamAPI.Integer;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
-import java.util.OptionalInt;
 
 //Given a list of integers, use the Stream API to find the maximum number.
 public class FindMaximumNumber {

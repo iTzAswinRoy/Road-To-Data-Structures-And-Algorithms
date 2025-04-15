@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.String;
 
 import java.util.List;
 import java.util.Map;
@@ -10,11 +10,10 @@ public class GroupStringLength {
     public static void main(String[] args) {
         List<String> list = List.of("Aswin", "Melwin", "Abishek", "Prince", "Foods");
 
-        Map<Integer, List<String>> result = list.stream().collect(Collectors.groupingBy(String::length));
+        Map<Integer, List<String>> result = list.stream()
+                .collect(Collectors.groupingBy(String::length));
 
         System.out.println(result);
         
     }
-
-
 }

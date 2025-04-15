@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.Integer;
 
 import java.util.Arrays;
 import java.util.List;

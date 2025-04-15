@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.String;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -8,9 +8,9 @@ import java.util.stream.Collectors;
 public class SortStringsList {
     public static void main(String[] args) {
 
-        List<String> list = List.of("Aswin", "DataNimbus", "Book");
+        List<String> words = List.of("Apple", "Banana", "Avocado", "Cherry", "Apricot", "Blueberry");
 
-        List<String> result = list.stream().sorted().collect(Collectors.toList());
+        List<String> result = words.stream().sorted().collect(Collectors.toList());
 
         System.out.println(result);
     }

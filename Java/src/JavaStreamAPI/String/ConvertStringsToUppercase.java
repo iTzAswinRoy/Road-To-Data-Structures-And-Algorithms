@@ -1,4 +1,4 @@
-package JavaStreamAPI;
+package JavaStreamAPI.String;
 
 //Given a list of strings, use the Stream API to convert all strings to uppercase.
 
