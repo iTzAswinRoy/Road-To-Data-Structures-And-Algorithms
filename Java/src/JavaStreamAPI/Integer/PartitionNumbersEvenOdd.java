@@ -10,7 +10,7 @@ public class PartitionNumbersEvenOdd {
     public static void main(String[] args) {
         List<Integer> list = List.of(1,2,3,4,5,6);
 
-        Map<Boolean, List<Integer>> result = list.stream().collect(Collectors.groupingBy(n -> n%2==0));
+        Map<Boolean, List<Integer>> result = list.stream().collect(Collectors.partitioningBy(n -> n%2==0));
 
 
         System.out.println(result);

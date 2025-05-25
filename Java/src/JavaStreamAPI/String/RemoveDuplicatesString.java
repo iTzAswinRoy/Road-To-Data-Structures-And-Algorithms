@@ -10,13 +10,13 @@ public class RemoveDuplicatesString {
 
         Arrays.stream(str.split("")).map(String::toLowerCase).distinct().forEach(System.out::print);
 
-//        List<String> list = List.of("Aswiin", "melwiin");
-//
-//
+        List<String> list = List.of("Aswiin", "melwiin");
+
+
 //        List<String> sortChar = list.stream().map(String::toLowerCase)
 //                .map(s->s.chars().sorted().mapToObj(c->String.valueOf(c))
 //
-//        System.out.println(result);
+//        System.out.println(sortChar);
 
                 List<Integer> list1 = List.of(1,2,3,4,5);
         List<Integer> list2 = List.of(2,23,4,45);

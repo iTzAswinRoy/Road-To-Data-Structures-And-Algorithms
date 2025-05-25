@@ -11,11 +11,11 @@ public class DistinctCharacters {
 
         List<String> result = words.stream()
                 .map(String::toLowerCase)
-                .map(String::toLowerCase)
                 .map(w-> w.chars().distinct()
                         .mapToObj(c->String.valueOf((char)c))
                         .collect(Collectors.joining()))
                         .collect(Collectors.toList());
+
 
         System.out.println(result);
     }

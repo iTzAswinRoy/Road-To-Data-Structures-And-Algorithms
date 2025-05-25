@@ -10,10 +10,16 @@ public class CheckPalindrome {
         List<String> words = List.of("abab", "hoho", "abc", "abcd", "hello", "testtest", "tot");
 
         Map<Boolean, List<String>> result = words.stream()
-                .collect(Collectors.groupingBy(
+                .collect(Collectors.partitioningBy(
                         s -> s.length() % 2 != 0 && s.substring(0, s.length() / 2).equals(s.substring((s.length() / 2) + 1)) ||
                                 s.length() % 2 == 0 && s.substring(0, s.length() / 2).equals(s.substring(s.length() / 2))
                 ));
+
+        // Or
+
+//        boolean result = words.stream()
+//                .anyMatch(s-> s.substring(0, s.length()/2).equals(s.substring(s.length()/2)) ||
+//                        s.substring(0, s.length()/2).equals(s.substring(s.length()/2 + 1)));
 
         System.out.println(result);
     }

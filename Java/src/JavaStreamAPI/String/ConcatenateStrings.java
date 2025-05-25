@@ -9,7 +9,7 @@ public class ConcatenateStrings {
     public static void main(String[] args) {
         List<String> list = List.of("Aswin", "Melwin", "Joan");
 
-//        String str = list.stream().reduce("", (a,b) -> a+b);
+//        String str = list.stream().reduce("", (a,b) -> a+" "+b);
 
         String str = list.stream().collect(Collectors.joining(" "));
 
