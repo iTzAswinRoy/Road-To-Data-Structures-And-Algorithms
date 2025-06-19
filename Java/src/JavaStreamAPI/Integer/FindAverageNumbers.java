@@ -8,7 +8,12 @@ public class FindAverageNumbers {
     public static void main(String[] args) {
         List<Integer> list = List.of(1,2,3,4,5);
 
-        int avg = list.stream().reduce(0, (a,b)-> a+b)/ list.size();
+//        int avg = list.stream().reduce(0, (a,b)-> a+b)/ list.size();
+
+        // OR
+
+        double avg = list.stream().mapToInt(Integer::intValue).average().orElse(0);
+
 
         System.out.println(avg);
     }
